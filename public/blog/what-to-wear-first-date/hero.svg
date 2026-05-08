@@ -1,17 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="DATE NIGHT: What to Wear on a First Date">
   <defs>
-    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1a1a1a"/>
-      <stop offset="50%" stop-color="#111111"/>
-      <stop offset="100%" stop-color="#0a0a0a"/>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a1525"/>
+      <stop offset="100%" stop-color="#1a0a18"/>
     </linearGradient>
-    <linearGradient id="a" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+    <linearGradient id="vg" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="630" fill="url(#g)"/>
-  <rect x="0" y="580" width="1200" height="50" fill="url(#a)"/>
-  <text x="600" y="300" text-anchor="middle" fill="#c9a84c" font-family="system-ui,sans-serif" font-size="28" font-weight="700" letter-spacing="2">DRIPMATIQ</text>
-  <text x="600" y="340" text-anchor="middle" fill="#888888" font-family="system-ui,sans-serif" font-size="16">Hero image placeholder</text>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="950" cy="315" r="240" fill="#e8a8b8" opacity="0.10"/><circle cx="950" cy="315" r="160" fill="#e8a8b8" opacity="0.10"/><circle cx="950" cy="315" r="80" fill="#e8a8b8" opacity="0.20"/>
+  <rect width="1200" height="630" fill="url(#vg)"/>
+  <g transform="translate(80,80)">
+    <circle cx="0" cy="0" r="6" fill="#c9a84c"/>
+    <text x="18" y="6" fill="#c9a84c" font-family="Georgia,serif" font-size="20" font-weight="600" letter-spacing="3">DRIPMATIQ</text>
+  </g>
+  <text x="80" y="290" fill="#e8a8b8" font-family="system-ui,sans-serif" font-size="16" font-weight="700" letter-spacing="4">DATE NIGHT</text>
+  <rect x="80" y="305" width="48" height="3" fill="#e8a8b8"/>
+  <text x="80" y="370" fill="#ffffff" font-family="Georgia,serif" font-size="60" font-weight="700">What to Wear</text>
+  <text x="80" y="440" fill="#ffffff" font-family="Georgia,serif" font-size="60" font-weight="700">on a First Date</text>
+  <text x="80" y="540" fill="#888" font-family="system-ui,sans-serif" font-size="14" letter-spacing="2">DRIPMATIQ.APP / BLOG</text>
 </svg>

@@ -1,17 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="ECONOMICS: Recession- Proof Your Closet">
   <defs>
-    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1a1a1a"/>
-      <stop offset="50%" stop-color="#111111"/>
-      <stop offset="100%" stop-color="#0a0a0a"/>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a2010"/>
+      <stop offset="100%" stop-color="#1a1408"/>
     </linearGradient>
-    <linearGradient id="a" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+    <linearGradient id="vg" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="630" fill="url(#g)"/>
-  <rect x="0" y="580" width="1200" height="50" fill="url(#a)"/>
-  <text x="600" y="290" text-anchor="middle" fill="#c9a84c" font-family="system-ui,sans-serif" font-size="28" font-weight="700" letter-spacing="2">DRIPMATIQ</text>
-  <text x="600" y="340" text-anchor="middle" fill="#e6e6e6" font-family="system-ui,sans-serif" font-size="38" font-weight="600">Cost Per Wear</text>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="870" y="140" width="115" height="140" fill="#e8c878" opacity="0.40" rx="6"/><rect x="1000" y="140" width="115" height="140" fill="#c8a858" opacity="0.40" rx="6"/><rect x="870" y="300" width="115" height="140" fill="#a88838" opacity="0.40" rx="6"/><rect x="1000" y="300" width="115" height="140" fill="#886820" opacity="0.40" rx="6"/>
+  <rect width="1200" height="630" fill="url(#vg)"/>
+  <g transform="translate(80,80)">
+    <circle cx="0" cy="0" r="6" fill="#c9a84c"/>
+    <text x="18" y="6" fill="#c9a84c" font-family="Georgia,serif" font-size="20" font-weight="600" letter-spacing="3">DRIPMATIQ</text>
+  </g>
+  <text x="80" y="290" fill="#e8c878" font-family="system-ui,sans-serif" font-size="16" font-weight="700" letter-spacing="4">ECONOMICS</text>
+  <rect x="80" y="305" width="48" height="3" fill="#e8c878"/>
+  <text x="80" y="370" fill="#ffffff" font-family="Georgia,serif" font-size="60" font-weight="700">Recession-</text>
+  <text x="80" y="440" fill="#ffffff" font-family="Georgia,serif" font-size="60" font-weight="700">Proof Your Closet</text>
+  <text x="80" y="540" fill="#888" font-family="system-ui,sans-serif" font-size="14" letter-spacing="2">DRIPMATIQ.APP / BLOG</text>
 </svg>

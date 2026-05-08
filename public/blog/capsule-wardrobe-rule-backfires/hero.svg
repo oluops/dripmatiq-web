@@ -1,17 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="CAPSULE: When the Rule Backfires">
   <defs>
-    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1a1a1a"/>
-      <stop offset="50%" stop-color="#111111"/>
-      <stop offset="100%" stop-color="#0a0a0a"/>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f2a1a"/>
+      <stop offset="100%" stop-color="#101810"/>
     </linearGradient>
-    <linearGradient id="a" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+    <linearGradient id="vg" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="630" fill="url(#g)"/>
-  <rect x="0" y="580" width="1200" height="50" fill="url(#a)"/>
-  <text x="600" y="300" text-anchor="middle" fill="#c9a84c" font-family="system-ui,sans-serif" font-size="28" font-weight="700" letter-spacing="2">DRIPMATIQ</text>
-  <text x="600" y="340" text-anchor="middle" fill="#888888" font-family="system-ui,sans-serif" font-size="16">Hero image placeholder</text>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="830" y="120" width="40" height="40" fill="#b8d8a0" opacity="0.05" rx="4"/><rect x="830" y="175" width="40" height="40" fill="#b8d8a0" opacity="0.07" rx="4"/><rect x="830" y="230" width="40" height="40" fill="#b8d8a0" opacity="0.09" rx="4"/><rect x="830" y="285" width="40" height="40" fill="#b8d8a0" opacity="0.11" rx="4"/><rect x="830" y="340" width="40" height="40" fill="#b8d8a0" opacity="0.13" rx="4"/><rect x="885" y="120" width="40" height="40" fill="#b8d8a0" opacity="0.07" rx="4"/><rect x="885" y="175" width="40" height="40" fill="#b8d8a0" opacity="0.09" rx="4"/><rect x="885" y="230" width="40" height="40" fill="#b8d8a0" opacity="0.11" rx="4"/><rect x="885" y="285" width="40" height="40" fill="#b8d8a0" opacity="0.13" rx="4"/><rect x="885" y="340" width="40" height="40" fill="#b8d8a0" opacity="0.15" rx="4"/><rect x="940" y="120" width="40" height="40" fill="#b8d8a0" opacity="0.09" rx="4"/><rect x="940" y="175" width="40" height="40" fill="#b8d8a0" opacity="0.11" rx="4"/><rect x="940" y="230" width="40" height="40" fill="#b8d8a0" opacity="0.13" rx="4"/><rect x="940" y="285" width="40" height="40" fill="#b8d8a0" opacity="0.15" rx="4"/><rect x="940" y="340" width="40" height="40" fill="#b8d8a0" opacity="0.17" rx="4"/><rect x="995" y="120" width="40" height="40" fill="#b8d8a0" opacity="0.11" rx="4"/><rect x="995" y="175" width="40" height="40" fill="#b8d8a0" opacity="0.13" rx="4"/><rect x="995" y="230" width="40" height="40" fill="#b8d8a0" opacity="0.15" rx="4"/><rect x="995" y="285" width="40" height="40" fill="#b8d8a0" opacity="0.17" rx="4"/><rect x="995" y="340" width="40" height="40" fill="#b8d8a0" opacity="0.19" rx="4"/><rect x="1050" y="120" width="40" height="40" fill="#b8d8a0" opacity="0.13" rx="4"/><rect x="1050" y="175" width="40" height="40" fill="#b8d8a0" opacity="0.15" rx="4"/><rect x="1050" y="230" width="40" height="40" fill="#b8d8a0" opacity="0.17" rx="4"/><rect x="1050" y="285" width="40" height="40" fill="#b8d8a0" opacity="0.19" rx="4"/><rect x="1050" y="340" width="40" height="40" fill="#b8d8a0" opacity="0.21" rx="4"/>
+  <rect width="1200" height="630" fill="url(#vg)"/>
+  <g transform="translate(80,80)">
+    <circle cx="0" cy="0" r="6" fill="#c9a84c"/>
+    <text x="18" y="6" fill="#c9a84c" font-family="Georgia,serif" font-size="20" font-weight="600" letter-spacing="3">DRIPMATIQ</text>
+  </g>
+  <text x="80" y="290" fill="#b8d8a0" font-family="system-ui,sans-serif" font-size="16" font-weight="700" letter-spacing="4">CAPSULE</text>
+  <rect x="80" y="305" width="48" height="3" fill="#b8d8a0"/>
+  <text x="80" y="370" fill="#ffffff" font-family="Georgia,serif" font-size="60" font-weight="700">When the Rule</text>
+  <text x="80" y="440" fill="#ffffff" font-family="Georgia,serif" font-size="60" font-weight="700">Backfires</text>
+  <text x="80" y="540" fill="#888" font-family="system-ui,sans-serif" font-size="14" letter-spacing="2">DRIPMATIQ.APP / BLOG</text>
 </svg>

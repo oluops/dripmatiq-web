@@ -1,17 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="RESTYLING: One Dress, Two Events">
   <defs>
-    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1a1a1a"/>
-      <stop offset="50%" stop-color="#111111"/>
-      <stop offset="100%" stop-color="#0a0a0a"/>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a2230"/>
+      <stop offset="100%" stop-color="#0e1420"/>
     </linearGradient>
-    <linearGradient id="a" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+    <linearGradient id="vg" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="630" fill="url(#g)"/>
-  <rect x="0" y="580" width="1200" height="50" fill="url(#a)"/>
-  <text x="600" y="290" text-anchor="middle" fill="#c9a84c" font-family="system-ui,sans-serif" font-size="28" font-weight="700" letter-spacing="2">DRIPMATIQ</text>
-  <text x="600" y="340" text-anchor="middle" fill="#e6e6e6" font-family="system-ui,sans-serif" font-size="38" font-weight="600">One Dress, Two Ways</text>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <path d="M820 100 L 1180 100 L 1180 200" stroke="#c8b8e8" stroke-width="3" fill="none" opacity="0.4"/><path d="M1180 530 L 1180 430" stroke="#c8b8e8" stroke-width="3" fill="none" opacity="0.4"/><rect x="860" y="180" width="280" height="280" fill="#c8b8e8" opacity="0.08" rx="8"/><rect x="900" y="220" width="280" height="280" fill="#c8b8e8" opacity="0.10" rx="8"/>
+  <rect width="1200" height="630" fill="url(#vg)"/>
+  <g transform="translate(80,80)">
+    <circle cx="0" cy="0" r="6" fill="#c9a84c"/>
+    <text x="18" y="6" fill="#c9a84c" font-family="Georgia,serif" font-size="20" font-weight="600" letter-spacing="3">DRIPMATIQ</text>
+  </g>
+  <text x="80" y="290" fill="#c8b8e8" font-family="system-ui,sans-serif" font-size="16" font-weight="700" letter-spacing="4">RESTYLING</text>
+  <rect x="80" y="305" width="48" height="3" fill="#c8b8e8"/>
+  <text x="80" y="370" fill="#ffffff" font-family="Georgia,serif" font-size="60" font-weight="700">One Dress,</text>
+  <text x="80" y="440" fill="#ffffff" font-family="Georgia,serif" font-size="60" font-weight="700">Two Events</text>
+  <text x="80" y="540" fill="#888" font-family="system-ui,sans-serif" font-size="14" letter-spacing="2">DRIPMATIQ.APP / BLOG</text>
 </svg>

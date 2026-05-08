@@ -1,17 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="OPINIONS: Fashion Hills You'll Die On">
   <defs>
-    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1a1a1a"/>
-      <stop offset="50%" stop-color="#111111"/>
-      <stop offset="100%" stop-color="#0a0a0a"/>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a1a1a"/>
+      <stop offset="100%" stop-color="#180e0e"/>
     </linearGradient>
-    <linearGradient id="a" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+    <linearGradient id="vg" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="630" fill="url(#g)"/>
-  <rect x="0" y="580" width="1200" height="50" fill="url(#a)"/>
-  <text x="600" y="290" text-anchor="middle" fill="#c9a84c" font-family="system-ui,sans-serif" font-size="28" font-weight="700" letter-spacing="2">DRIPMATIQ</text>
-  <text x="600" y="340" text-anchor="middle" fill="#e6e6e6" font-family="system-ui,sans-serif" font-size="38" font-weight="600">Fashion Hills</text>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.30" stroke="#e89898" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="880" cy="200" r="6"/><path d="M880 206 L 880 230"/><path d="M825 285 L 880 230 L 935 285 Z"/></g><g opacity="0.40" stroke="#e89898" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="990" cy="260" r="6"/><path d="M990 266 L 990 290"/><path d="M935 345 L 990 290 L 1045 345 Z"/></g><g opacity="0.50" stroke="#e89898" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="1100" cy="200" r="6"/><path d="M1100 206 L 1100 230"/><path d="M1045 285 L 1100 230 L 1155 285 Z"/></g>
+  <rect width="1200" height="630" fill="url(#vg)"/>
+  <g transform="translate(80,80)">
+    <circle cx="0" cy="0" r="6" fill="#c9a84c"/>
+    <text x="18" y="6" fill="#c9a84c" font-family="Georgia,serif" font-size="20" font-weight="600" letter-spacing="3">DRIPMATIQ</text>
+  </g>
+  <text x="80" y="290" fill="#e89898" font-family="system-ui,sans-serif" font-size="16" font-weight="700" letter-spacing="4">OPINIONS</text>
+  <rect x="80" y="305" width="48" height="3" fill="#e89898"/>
+  <text x="80" y="370" fill="#ffffff" font-family="Georgia,serif" font-size="60" font-weight="700">Fashion Hills</text>
+  <text x="80" y="440" fill="#ffffff" font-family="Georgia,serif" font-size="60" font-weight="700">You'll Die On</text>
+  <text x="80" y="540" fill="#888" font-family="system-ui,sans-serif" font-size="14" letter-spacing="2">DRIPMATIQ.APP / BLOG</text>
 </svg>

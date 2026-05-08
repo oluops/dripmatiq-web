@@ -1,17 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="PRIVACY: Skip the Mirror Selfie">
   <defs>
-    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1a1a1a"/>
-      <stop offset="50%" stop-color="#111111"/>
-      <stop offset="100%" stop-color="#0a0a0a"/>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a2a"/>
+      <stop offset="100%" stop-color="#0e0e1a"/>
     </linearGradient>
-    <linearGradient id="a" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+    <linearGradient id="vg" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="630" fill="url(#g)"/>
-  <rect x="0" y="580" width="1200" height="50" fill="url(#a)"/>
-  <text x="600" y="290" text-anchor="middle" fill="#c9a84c" font-family="system-ui,sans-serif" font-size="28" font-weight="700" letter-spacing="2">DRIPMATIQ</text>
-  <text x="600" y="340" text-anchor="middle" fill="#e6e6e6" font-family="system-ui,sans-serif" font-size="38" font-weight="600">Private Fit Check</text>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="848" cy="156" r="25" fill="#a8a8e8" opacity="0.10"/><circle cx="1004" cy="196" r="67" fill="#a8a8e8" opacity="0.16"/><circle cx="977" cy="238" r="58" fill="#a8a8e8" opacity="0.14"/><circle cx="928" cy="420" r="22" fill="#a8a8e8" opacity="0.09"/><circle cx="1117" cy="458" r="30" fill="#a8a8e8" opacity="0.10"/><circle cx="1040" cy="436" r="45" fill="#a8a8e8" opacity="0.12"/><circle cx="1080" cy="300" r="54" fill="#a8a8e8" opacity="0.14"/><circle cx="1047" cy="367" r="37" fill="#a8a8e8" opacity="0.11"/><circle cx="838" cy="124" r="43" fill="#a8a8e8" opacity="0.12"/><circle cx="1058" cy="273" r="44" fill="#a8a8e8" opacity="0.12"/><circle cx="1036" cy="379" r="30" fill="#a8a8e8" opacity="0.10"/><circle cx="1106" cy="200" r="35" fill="#a8a8e8" opacity="0.11"/><circle cx="938" cy="122" r="31" fill="#a8a8e8" opacity="0.10"/><circle cx="986" cy="198" r="28" fill="#a8a8e8" opacity="0.10"/>
+  <rect width="1200" height="630" fill="url(#vg)"/>
+  <g transform="translate(80,80)">
+    <circle cx="0" cy="0" r="6" fill="#c9a84c"/>
+    <text x="18" y="6" fill="#c9a84c" font-family="Georgia,serif" font-size="20" font-weight="600" letter-spacing="3">DRIPMATIQ</text>
+  </g>
+  <text x="80" y="290" fill="#a8a8e8" font-family="system-ui,sans-serif" font-size="16" font-weight="700" letter-spacing="4">PRIVACY</text>
+  <rect x="80" y="305" width="48" height="3" fill="#a8a8e8"/>
+  <text x="80" y="370" fill="#ffffff" font-family="Georgia,serif" font-size="60" font-weight="700">Skip the</text>
+  <text x="80" y="440" fill="#ffffff" font-family="Georgia,serif" font-size="60" font-weight="700">Mirror Selfie</text>
+  <text x="80" y="540" fill="#888" font-family="system-ui,sans-serif" font-size="14" letter-spacing="2">DRIPMATIQ.APP / BLOG</text>
 </svg>
