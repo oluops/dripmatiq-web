@@ -1,0 +1,73 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+
+const siteUrl = 'https://dripmatiq.app';
+const url = `${siteUrl}/privacy/`;
+const updated = '2026-05-09';
+---
+
+<Base
+  title="Privacy Policy — Dripmatiq"
+  description="How Dripmatiq collects, uses, and protects your data. Photos of your clothes are processed on-device by default and never sold."
+  canonicalUrl={url}
+>
+  <Nav />
+  <main class="pt-24 pb-16 px-4 sm:px-6">
+    <article class="max-w-3xl mx-auto prose prose-invert prose-headings:font-light">
+      <Breadcrumbs crumbs={[{ label: 'Home', href: '/' }, { label: 'Privacy' }]} />
+      <h1>Privacy Policy</h1>
+      <p class="text-content-muted text-sm">Last updated: {updated}</p>
+
+      <h2>What we collect</h2>
+      <ul>
+        <li><strong>Closet photos</strong> you take in the Dripmatiq iOS app.</li>
+        <li><strong>Account info</strong> (email, sign-in identifier) when you create an account.</li>
+        <li><strong>Usage analytics</strong> (page views, app events) — aggregated, no third-party ad tracking.</li>
+      </ul>
+
+      <h2>How we use it</h2>
+      <ul>
+        <li>Photos of your clothes are used to build outfit recommendations for you.</li>
+        <li>Account info is used to sync your closet across devices and contact you about your account.</li>
+        <li>Analytics help us understand which features matter so we can improve the product.</li>
+      </ul>
+
+      <h2>What we never do</h2>
+      <ul>
+        <li>We do not sell your data to advertisers, brands, or data brokers.</li>
+        <li>We do not use your photos to train public AI models.</li>
+        <li>We do not share your closet with anyone unless you explicitly export or share it.</li>
+      </ul>
+
+      <h2>Where data lives</h2>
+      <p>
+        Closet image processing happens on-device wherever possible. Account data and synced closet metadata
+        are stored on Supabase (encrypted at rest, US region). Analytics are processed by Plausible / Cloudflare
+        Web Analytics in privacy-respecting (cookieless) mode.
+      </p>
+
+      <h2>Your rights</h2>
+      <p>
+        You can request export or deletion of your account data at any time by emailing
+        <a href="mailto:privacy@dripmatiq.app">privacy@dripmatiq.app</a>. We honor GDPR and CCPA requests
+        regardless of where you live.
+      </p>
+
+      <h2>Children</h2>
+      <p>Dripmatiq is not directed at children under 13 and we do not knowingly collect data from them.</p>
+
+      <h2>Changes</h2>
+      <p>
+        We'll update this page when our practices change and bump the "Last updated" date. Material changes
+        will be announced in-app.
+      </p>
+
+      <h2>Contact</h2>
+      <p>Questions: <a href="mailto:privacy@dripmatiq.app">privacy@dripmatiq.app</a></p>
+    </article>
+  </main>
+  <Footer />
+</Base>
