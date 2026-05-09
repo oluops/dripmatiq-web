@@ -66,3 +66,9 @@ Once you internalize that an outfit is a system — base piece plus shoes plus a
 That's not minimalism. That's strategy.
 
 Dripmatiq is building restyling suggestions directly into the app — pick a base piece from your closet, select two occasions, and see exactly how to restyle it for both. One piece, infinite possibilities.
+
+## Related reading
+
+- [The Third-Piece Rule](/blog/third-piece-rule-styling/)
+- [What To Wear on a First Date](/blog/what-to-wear-first-date/)
+- [The 3 Outfits Your Closet Already Has](/blog/color-trend-closet-unlock/)

@@ -70,3 +70,9 @@ The life-stage check isn't a one-time purge. It's a recurring practice — becau
 The goal isn't minimalism for its own sake. It's relevance. A closet where every piece has a job to do in the life you're actually living.
 
 Dripmatiq is building a "Life Check" feature that does exactly this — mapping your closet against your real routines and flagging mismatches, so your wardrobe evolves when your life does.
+
+## Related reading
+
+- [The Capsule Wardrobe Rule That Quietly Backfires](/blog/capsule-wardrobe-rule-backfires/)
+- [The Cost-Per-Wear Trick That Actually Works](/blog/recession-proof-your-closet/)
+- [The 3 Outfits Your Closet Already Has](/blog/color-trend-closet-unlock/)

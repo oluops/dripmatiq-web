@@ -73,3 +73,9 @@ Recession-proofing your closet isn't about deprivation. It's about clarity. When
 The Reddit thread that started this conversation was full of people realizing the same thing: the smartest fashion move in uncertain times isn't buying less. It's buying right.
 
 Dripmatiq is building exactly this — AI-powered outfit logging that tracks what you actually wear, so your closet finally has the data to prove what's worth keeping.
+
+## Related reading
+
+- [The Capsule Wardrobe Rule That Quietly Backfires](/blog/capsule-wardrobe-rule-backfires/)
+- [The Life-Stage Wardrobe Check](/blog/wardrobe-life-check/)
+- [The 3 Outfits Your Closet Already Has](/blog/color-trend-closet-unlock/)

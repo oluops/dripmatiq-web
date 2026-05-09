@@ -81,3 +81,9 @@ The people in that Reddit thread with the strongest opinions? They're not arroga
 So: what fashion hill will you die on? Name it. Defend it. Let it do its job.
 
 Dripmatiq is building tools that learn your style hills over time — your fit preferences, your color patterns, your effort level — so your closet starts filtering for you. Your opinions, automated.
+
+## Related reading
+
+- [The Capsule Wardrobe Rule That Quietly Backfires](/blog/capsule-wardrobe-rule-backfires/)
+- [Why Your Fit Check Deserves Privacy](/blog/private-ai-fit-check/)
+- [The Third-Piece Rule](/blog/third-piece-rule-styling/)

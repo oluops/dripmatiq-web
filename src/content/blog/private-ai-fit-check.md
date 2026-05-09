@@ -74,3 +74,9 @@ No strangers. No comments section. No screenshots floating around the internet.
 Just you, your mirror, and an honest answer.
 
 That's the fit check you deserve — and it's exactly what Dripmatiq is building: private, AI-powered outfit feedback that stays on your device.
+
+## Related reading
+
+- [What To Wear on a First Date](/blog/what-to-wear-first-date/)
+- [Fashion Hills You'll Die On](/blog/fashion-hills-youll-die-on/)
+- [The Third-Piece Rule](/blog/third-piece-rule-styling/)

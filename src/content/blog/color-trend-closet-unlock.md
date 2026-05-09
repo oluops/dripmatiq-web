@@ -61,3 +61,9 @@ It's sustainable. It's satisfying. And it turns your closet from a storage unit 
 The next time a color trends — and it will, every few weeks, reliably — try the color pull before the color purchase. You might find that the trend you're chasing has been hanging in your closet all along.
 
 Dripmatiq is building this into the app — when a color trends, it surfaces outfits from your existing wardrobe that you've probably forgotten about. Your closet, rediscovered.
+
+## Related reading
+
+- [The Capsule Wardrobe Rule That Quietly Backfires](/blog/capsule-wardrobe-rule-backfires/)
+- [The Life-Stage Wardrobe Check](/blog/wardrobe-life-check/)
+- [The Cost-Per-Wear Trick That Actually Works](/blog/recession-proof-your-closet/)
