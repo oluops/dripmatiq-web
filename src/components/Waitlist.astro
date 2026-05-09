@@ -1,0 +1,132 @@
+---
+// Waitlist — email capture wired to Supabase via PostgREST (insert-only RLS).
+// Renders inline; degrades gracefully if env vars missing.
+const SUPABASE_URL = import.meta.env.PUBLIC_SUPABASE_URL ?? '';
+const SUPABASE_ANON_KEY = import.meta.env.PUBLIC_SUPABASE_ANON_KEY ?? '';
+const enabled = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
+---
+
+<div
+  class="waitlist mt-6 max-w-md mx-auto lg:mx-0"
+  data-enabled={enabled ? 'true' : 'false'}
+  data-supabase-url={SUPABASE_URL}
+  data-supabase-key={SUPABASE_ANON_KEY}
+>
+  <form class="waitlist-form flex flex-col sm:flex-row gap-2" novalidate>
+    <label for="waitlist-email" class="sr-only">Email address</label>
+    <input
+      id="waitlist-email"
+      name="email"
+      type="email"
+      autocomplete="email"
+      required
+      placeholder="you@email.com"
+      class="flex-1 min-w-0 px-4 py-3 rounded-btn bg-surface-elevated border border-border focus:border-gold focus:outline-none text-content-primary placeholder:text-content-muted"
+    />
+    <button
+      type="submit"
+      class="inline-flex items-center justify-center gap-2 bg-gold hover:bg-gold-hover text-surface-primary font-extrabold text-sm px-6 py-3 rounded-btn tracking-button transition-colors duration-200 disabled:opacity-60 disabled:cursor-not-allowed"
+    >
+      <span class="waitlist-cta-label">Join waitlist</span>
+    </button>
+  </form>
+  <p class="waitlist-status mt-2 text-xs text-content-muted min-h-[1rem]" role="status" aria-live="polite"></p>
+  <p class="mt-1 text-xs text-content-muted">
+    First 1000 signups get <span class="text-gold font-semibold">Pro free for 30 days</span>.
+  </p>
+</div>
+
+<script>
+  type WaitlistRoot = HTMLElement & {
+    dataset: {
+      enabled?: string;
+      supabaseUrl?: string;
+      supabaseKey?: string;
+    };
+  };
+
+  function getUtm(): Record<string, string> {
+    const params = new URLSearchParams(window.location.search);
+    const out: Record<string, string> = {};
+    for (const key of ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content']) {
+      const v = params.get(key);
+      if (v) out[key] = v.slice(0, 128);
+    }
+    return out;
+  }
+
+  function isEmail(value: string): boolean {
+    return /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(value);
+  }
+
+  document.querySelectorAll<WaitlistRoot>('.waitlist').forEach((root) => {
+    const form = root.querySelector<HTMLFormElement>('.waitlist-form');
+    const status = root.querySelector<HTMLParagraphElement>('.waitlist-status');
+    const button = root.querySelector<HTMLButtonElement>('button[type="submit"]');
+    const label = root.querySelector<HTMLSpanElement>('.waitlist-cta-label');
+    if (!form || !status || !button || !label) return;
+
+    const enabled = root.dataset.enabled === 'true';
+    const url = root.dataset.supabaseUrl ?? '';
+    const key = root.dataset.supabaseKey ?? '';
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const input = form.elements.namedItem('email') as HTMLInputElement | null;
+      const email = (input?.value ?? '').trim();
+      status.classList.remove('text-red-400', 'text-gold');
+      status.textContent = '';
+
+      if (!isEmail(email)) {
+        status.textContent = 'Please enter a valid email.';
+        status.classList.add('text-red-400');
+        input?.focus();
+        return;
+      }
+
+      if (!enabled) {
+        status.textContent = "We'll be in touch — capture is in pre-flight.";
+        status.classList.add('text-gold');
+        form.reset();
+        return;
+      }
+
+      button.disabled = true;
+      label.textContent = 'Joining…';
+
+      try {
+        const response = await fetch(`${url}/rest/v1/waitlist`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            apikey: key,
+            Authorization: `Bearer ${key}`,
+            Prefer: 'return=minimal',
+          },
+          body: JSON.stringify({
+            email: email.toLowerCase(),
+            source: 'web',
+            user_agent: navigator.userAgent.slice(0, 256),
+            referrer: document.referrer.slice(0, 512) || null,
+            utm: getUtm(),
+          }),
+        });
+
+        if (response.ok || response.status === 201 || response.status === 409) {
+          status.textContent = "You're on the list. Watch your inbox.";
+          status.classList.add('text-gold');
+          form.reset();
+        } else {
+          throw new Error(`HTTP ${response.status}`);
+        }
+      } catch (err) {
+        console.error('[waitlist] submit failed', err);
+        status.textContent = "Couldn't save right now — try again in a bit.";
+        status.classList.add('text-red-400');
+      } finally {
+        button.disabled = false;
+        label.textContent = 'Join waitlist';
+      }
+    });
+  });
+</script>
