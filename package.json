@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
-    "prebuild": "node scripts/rasterize-heroes.mjs",
+    "lint:content": "node scripts/lint-content.mjs",
+    "prebuild": "node scripts/lint-content.mjs && node scripts/rasterize-heroes.mjs",
     "build": "astro build",
     "preview": "astro preview",
     "rasterize": "node scripts/rasterize-heroes.mjs"

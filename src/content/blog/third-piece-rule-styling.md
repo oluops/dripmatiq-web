@@ -85,7 +85,7 @@ The idea is dead simple. When your outfit is neutral or monochrome, swap your bl
 
 This works especially well with the third-piece rule. If your third piece is neutral (a beige trench, a gray cardigan), the colored shoe prevents the outfit from going flat. You get two points of interest — the third piece for structure, the shoe for color — without any pattern-clashing anxiety.
 
-[Vogue's editors](https://www.vogue.com/article/ballet-flat-trend){:target="_blank" rel="noopener"} have been calling the ballet flat revival one of the defining trends of the year. But the pop-of-color principle works with any shoe shape. It's about strategic contrast, not a specific silhouette.
+[Vogue's editors](https://www.vogue.com/article/ballet-flat-trend) have been calling the ballet flat revival one of the defining trends of the year. But the pop-of-color principle works with any shoe shape. It's about strategic contrast, not a specific silhouette.
 
 ## Putting It Together
 

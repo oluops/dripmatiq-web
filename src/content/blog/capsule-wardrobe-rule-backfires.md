@@ -18,7 +18,7 @@ This isn't an unusual story. Browse any capsule wardrobe community and you'll fi
 
 ## Where the 12-Month Rule Comes From
 
-The idea is simple and seductive: if you haven't worn something in twelve months, you've survived every season without it. It's dead weight. Marie Kondo popularized a version of it with her "spark joy" framework. Courtney Carver's [Project 333](https://bemorewithless.com/project-333-challenge/){:target="_blank" rel="noopener"} distilled it further — 33 items for 3 months, rotating seasonally.
+The idea is simple and seductive: if you haven't worn something in twelve months, you've survived every season without it. It's dead weight. Marie Kondo popularized a version of it with her "spark joy" framework. Courtney Carver's [Project 333](https://bemorewithless.com/project-333-challenge/) distilled it further — 33 items for 3 months, rotating seasonally.
 
 These systems changed how millions of people think about clothes. They replaced guilt-closets stuffed with impulse buys with curated, intentional wardrobes. The 12-month rule became the scalpel: clean, objective, unemotional.
 
@@ -38,7 +38,7 @@ Your style at 28 isn't your style at 31. People cycle through aesthetics — min
 
 ### Wardrobe nostalgia is real
 
-Psychologists who study [clothing and identity](https://www.refinery29.com/en-us/emotional-attachment-clothes-psychology){:target="_blank" rel="noopener"} note that garments carry memory weight — they're tied to who you were when you wore them. Decluttering advice treats this as sentimentality to overcome. But sometimes the attachment is information: this piece is part of your style DNA, even if it's dormant.
+Psychologists who study [clothing and identity](https://www.refinery29.com/en-us/emotional-attachment-clothes-psychology) note that garments carry memory weight — they're tied to who you were when you wore them. Decluttering advice treats this as sentimentality to overcome. But sometimes the attachment is information: this piece is part of your style DNA, even if it's dormant.
 
 ### Climate and context aren't static
 
