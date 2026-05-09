@@ -1,0 +1,157 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+
+const founderEmail = 'press@dripmatiq.app';
+const screenshots = [
+  { src: '/screenshots/step1-onboarding.jpg', alt: 'Onboarding flow' },
+  { src: '/screenshots/step2-closet.jpg', alt: 'Personal closet view' },
+  { src: '/screenshots/step3-add-garment.jpg', alt: 'Add a garment' },
+  { src: '/screenshots/step4-outfit.jpg', alt: 'AI outfit suggestion' },
+  { src: '/screenshots/step5-style.jpg', alt: 'Style breakdown' },
+  { src: '/screenshots/step6-saved.jpg', alt: 'Saved looks' },
+];
+---
+
+<Base
+  title="Press Kit · Dripmatiq"
+  description="Press kit, founder quotes, screenshots, and brand assets for Dripmatiq — the private AI stylist."
+  canonicalUrl="https://dripmatiq.app/press"
+>
+  <Nav />
+
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 pt-28 pb-20">
+    <header class="mb-14 text-center">
+      <p class="text-xs uppercase tracking-button text-gold mb-3">Press Kit</p>
+      <h1 class="text-4xl sm:text-5xl font-light leading-tight mb-4">
+        Everything you need to <span class="text-gold">write about Dripmatiq.</span>
+      </h1>
+      <p class="text-lg text-content-secondary max-w-2xl mx-auto">
+        Logos, screenshots, founder quotes, and the one-paragraph blurb. Use anything below — no permission needed.
+      </p>
+    </header>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4">The one-liner</h2>
+      <blockquote class="border-l-4 border-gold pl-5 py-2 text-xl text-content-secondary italic">
+        Dripmatiq is the private AI stylist that scans your closet, learns your
+        taste, and builds daily outfits you'll actually wear — without uploading
+        a single photo to a stranger's server.
+      </blockquote>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4">The blurb (50 words)</h2>
+      <p class="text-content-secondary leading-relaxed bg-surface-elevated rounded-2xl p-5 border border-border">
+        Dripmatiq is a private AI stylist for iPhone and Android. You snap your
+        closet, it learns your taste, and every morning it builds an outfit
+        from clothes you already own. Photos stay on your device. Built solo,
+        bootstrapped, and obsessively designed for women who'd rather skip the
+        decision-fatigue.
+      </p>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4">Founder quotes</h2>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <blockquote class="bg-surface-elevated rounded-2xl p-5 border border-border">
+          <p class="text-content-secondary italic mb-3">
+            "Most fashion AI assumes you'll buy more clothes. Dripmatiq assumes
+            you already have enough — it just doesn't know what to wear with
+            what."
+          </p>
+          <footer class="text-xs uppercase tracking-button text-gold">— Olu, Founder</footer>
+        </blockquote>
+        <blockquote class="bg-surface-elevated rounded-2xl p-5 border border-border">
+          <p class="text-content-secondary italic mb-3">
+            "Privacy isn't a feature, it's a precondition. Your closet is yours.
+            Dripmatiq processes everything on-device because the alternative is
+            indefensible."
+          </p>
+          <footer class="text-xs uppercase tracking-button text-gold">— Olu, Founder</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4">Fast facts</h2>
+      <dl class="grid sm:grid-cols-2 gap-4">
+        {[
+          ['Category', 'Lifestyle / Shopping / AI'],
+          ['Platforms', 'iOS 16+, Android 10+'],
+          ['Pricing', 'Free tier; Pro $6.99/mo or $59.99/yr; Elite $15.99/mo or $169.99/yr'],
+          ['Founded', '2025'],
+          ['Founder', 'Olu (solo, bootstrapped)'],
+          ['HQ', 'New York, USA'],
+          ['Privacy', 'Photos processed on-device; no images uploaded'],
+          ['Press contact', founderEmail],
+        ].map(([k, v]) => (
+          <div class="bg-surface-elevated rounded-xl p-4 border border-border">
+            <dt class="text-xs uppercase tracking-button text-content-muted mb-1">{k}</dt>
+            <dd class="text-sm text-content-primary">{v}</dd>
+          </div>
+        ))}
+      </dl>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4">Screenshots</h2>
+      <p class="text-sm text-content-muted mb-4">Right-click → Save, or download all as a ZIP below.</p>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+        {screenshots.map((s) => (
+          <a href={s.src} download class="block rounded-xl overflow-hidden border border-border hover:border-gold transition-colors">
+            <img src={s.src} alt={s.alt} loading="lazy" class="w-full h-auto" />
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4">Brand assets</h2>
+      <div class="grid sm:grid-cols-3 gap-4">
+        <a href="/assets/icon.png" download class="bg-surface-elevated rounded-xl p-5 border border-border hover:border-gold transition-colors text-center">
+          <img src="/assets/icon.png" alt="Dripmatiq icon" class="w-20 h-20 mx-auto mb-3 rounded-2xl" />
+          <p class="text-sm font-semibold">App icon</p>
+          <p class="text-xs text-content-muted">PNG · 1024×1024</p>
+        </a>
+        <a href="/assets/wordmark-light.svg" download class="bg-surface-elevated rounded-xl p-5 border border-border hover:border-gold transition-colors text-center flex flex-col justify-center">
+          <p class="text-2xl font-light tracking-tight mb-2">DRIPMATIQ</p>
+          <p class="text-sm font-semibold">Wordmark (light)</p>
+          <p class="text-xs text-content-muted">SVG</p>
+        </a>
+        <a href="/assets/wordmark-dark.svg" download class="bg-surface-elevated rounded-xl p-5 border border-border hover:border-gold transition-colors text-center flex flex-col justify-center">
+          <p class="text-2xl font-light tracking-tight mb-2 text-gold">DRIPMATIQ</p>
+          <p class="text-sm font-semibold">Wordmark (gold)</p>
+          <p class="text-xs text-content-muted">SVG</p>
+        </a>
+      </div>
+      <p class="text-xs text-content-muted mt-3">
+        Brand colors: gold <code class="text-gold">#D4AF37</code> · surface
+        <code>#0E0E10</code> · ink <code>#F5F1E6</code>. Typography: Georgia
+        (display) + system-ui (body).
+      </p>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4">Download everything</h2>
+      <a
+        href="/press/dripmatiq-press-kit.zip"
+        download
+        class="inline-flex items-center gap-2 bg-gold hover:bg-gold-hover text-surface-primary font-extrabold text-sm px-6 py-3 rounded-btn tracking-button transition-colors"
+      >
+        Download press kit (.zip)
+      </a>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">Get in touch</h2>
+      <p class="text-content-secondary">
+        Questions, interviews, or anything else: <a href={`mailto:${founderEmail}`} class="text-gold hover:underline">{founderEmail}</a>.
+        Response within 24h on weekdays.
+      </p>
+    </section>
+  </main>
+
+  <Footer />
+</Base>
