@@ -20,6 +20,38 @@ const {
 const siteUrl = 'https://dripmatiq.app';
 const resolvedCanonical = canonicalUrl || new URL(Astro.url.pathname, siteUrl).href;
 const resolvedOgImage = ogImage || `${siteUrl}/assets/icon.png`;
+
+const isHome = Astro.url.pathname === '/' || Astro.url.pathname === '';
+
+const orgSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Dripmatiq',
+  url: siteUrl,
+  logo: `${siteUrl}/assets/icon.png`,
+  sameAs: [
+    'https://www.instagram.com/dripmatiq',
+    'https://www.pinterest.com/dripmatiq',
+    'https://twitter.com/dripmatiq',
+  ],
+};
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Dripmatiq',
+  url: siteUrl,
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: `${siteUrl}/blog?q={search_term_string}`,
+    'query-input': 'required name=search_term_string',
+  },
+};
+
+const gscToken = import.meta.env.PUBLIC_GSC_VERIFICATION;
+const bingToken = import.meta.env.PUBLIC_BING_VERIFICATION;
+const plausibleDomain = import.meta.env.PUBLIC_PLAUSIBLE_DOMAIN;
+const cfBeacon = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
 ---
 
 <!doctype html>
@@ -47,10 +79,26 @@ const resolvedOgImage = ogImage || `${siteUrl}/assets/icon.png`;
     <!-- RSS -->
     <link rel="alternate" type="application/rss+xml" title="Dripmatiq Blog" href="/rss.xml" />
 
+    <!-- Search engine verification -->
+    {gscToken && <meta name="google-site-verification" content={gscToken} />}
+    {bingToken && <meta name="msvalidate.01" content={bingToken} />}
+
     <link rel="icon" type="image/png" href="/favicon.png" />
     <title>{title}</title>
 
+    <!-- Site-wide structured data -->
+    <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
+    {isHome && <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />}
+
     {jsonLd && <script type="application/ld+json" set:html={jsonLd} />}
+
+    <!-- Privacy-respecting analytics -->
+    {plausibleDomain && (
+      <script defer data-domain={plausibleDomain} src="https://plausible.io/js/script.outbound-links.js"></script>
+    )}
+    {cfBeacon && (
+      <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={`{"token": "${cfBeacon}"}`}></script>
+    )}
   </head>
   <body class="bg-surface-primary text-content-primary antialiased">
     <slot />

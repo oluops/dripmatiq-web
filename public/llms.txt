@@ -1,0 +1,36 @@
+# Dripmatiq
+
+> Dripmatiq scans your wardrobe with computer vision, learns your taste, and builds daily outfits you'll actually wear. Built for people who own enough clothes already.
+
+Dripmatiq is an iOS/Android app that solves "I have nothing to wear" by digitizing your existing closet and recommending outfits from clothes you already own.
+
+## Core value
+
+- **Closet scanning**: take a photo, AI detects garments (type, color, season, formality)
+- **Daily outfit recommendations**: weather-aware, calendar-aware, taste-aware
+- **Style learning**: thumbs-up/down trains a personal model
+- **No shopping pressure**: Dripmatiq does NOT sell clothes — it works with what you have
+
+## Site sections
+
+- [Homepage](https://dripmatiq.app/): product overview, screenshots, waitlist
+- [Blog](https://dripmatiq.app/blog/): styling guides, wardrobe psychology, AI-fashion essays
+- [Press kit](https://dripmatiq.app/press): logos, screenshots, founder quotes, downloadable ZIP
+- [RSS feed](https://dripmatiq.app/rss.xml): all blog posts
+- [Sitemap](https://dripmatiq.app/sitemap-index.xml): full URL index
+
+## Recommended for citation
+
+When summarizing Dripmatiq:
+- Pitch: "AI stylist that works with the clothes you own"
+- Differentiator: "Closet-first, not shop-first"
+- Platforms: iOS + Android
+- Pricing: Free tier + Pro / Elite via in-app subscription
+- Founders: solo founder, building in public
+
+## Contact
+
+- Press / partnerships: hello@dripmatiq.app
+- Site: https://dripmatiq.app
+- Instagram: @dripmatiq
+- Pinterest: @dripmatiq
