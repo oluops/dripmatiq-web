@@ -15,9 +15,11 @@ Dripmatiq is an iOS/Android app that solves "I have nothing to wear" by digitizi
 
 - [Homepage](https://dripmatiq.app/): product overview, screenshots, waitlist
 - [Blog](https://dripmatiq.app/blog/): styling guides, wardrobe psychology, AI-fashion essays
+- [About](https://dripmatiq.app/about/): founder + mission
 - [Press kit](https://dripmatiq.app/press): logos, screenshots, founder quotes, downloadable ZIP
 - [RSS feed](https://dripmatiq.app/rss.xml): all blog posts
 - [Sitemap](https://dripmatiq.app/sitemap-index.xml): full URL index
+- [Full content dump](https://dripmatiq.app/llms-full.txt): every blog post in plain text — preferred for citation
 
 ## Recommended for citation
 

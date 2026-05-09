@@ -1,0 +1,49 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+const recent = (await getCollection('blog'))
+  .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime())
+  .slice(0, 5);
+---
+
+<Base
+  title="404 — Page not found | Dripmatiq"
+  description="That link is missing, but your closet isn't. Check out the latest from the Dripmatiq blog."
+>
+  <Nav />
+  <main class="pt-24 pb-16 px-4 sm:px-6">
+    <section class="max-w-2xl mx-auto text-center">
+      <p class="text-sm text-content-muted tracking-button mb-2">404</p>
+      <h1 class="text-hero font-light mb-4">This look isn't in the closet.</h1>
+      <p class="text-content-secondary mb-8">
+        The page you're looking for doesn't exist (or got restyled). Try one of these instead:
+      </p>
+      <div class="flex flex-wrap justify-center gap-3 mb-12">
+        <a href="/" class="text-sm text-gold underline">Home</a>
+        <span class="opacity-40">·</span>
+        <a href="/blog/" class="text-sm text-gold underline">Blog</a>
+        <span class="opacity-40">·</span>
+        <a href="/press" class="text-sm text-gold underline">Press</a>
+        <span class="opacity-40">·</span>
+        <a href="/about" class="text-sm text-gold underline">About</a>
+      </div>
+
+      <div class="text-left">
+        <h2 class="text-h2 font-bold mb-4">Recent posts</h2>
+        <ul class="space-y-3">
+          {recent.map((p) => (
+            <li>
+              <a href={`/blog/${p.slug}/`} class="text-content-primary hover:text-gold underline">
+                {p.data.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Base>

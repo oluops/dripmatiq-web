@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Nav from '../../components/Nav.astro';
 import Footer from '../../components/Footer.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { getCollection } from 'astro:content';
 import type { GetStaticPaths } from 'astro';
 
@@ -23,8 +24,8 @@ const heroFull = post.data.heroImage
   ? new URL(post.data.heroImage, siteUrl).href
   : `${siteUrl}/blog/${post.slug}/hero.svg`;
 
-// Reading time estimate
-const words = post.body?.split(/\s+/).length || 0;
+// Reading time + word count
+const words = post.body?.split(/\s+/).filter(Boolean).length || 0;
 const readingTime = Math.max(1, Math.ceil(words / 250));
 
 // Related posts by tag overlap
@@ -46,33 +47,76 @@ const pubDateFormatted = post.data.pubDate.toLocaleDateString('en-US', {
   day: 'numeric',
 });
 
-// JSON-LD BlogPosting
+// Combined JSON-LD graph (BlogPosting + Breadcrumb + optional FAQ/HowTo)
+const author = post.data.author || 'Olu';
+const graph: any[] = [
+  {
+    '@type': 'BlogPosting',
+    '@id': `${postUrl}#article`,
+    headline: post.data.title,
+    description: post.data.description,
+    image: heroFull,
+    datePublished: pubDateISO,
+    dateModified: post.data.updatedDate?.toISOString() || pubDateISO,
+    wordCount: words,
+    keywords: post.data.tags.join(', '),
+    inLanguage: 'en-US',
+    url: postUrl,
+    author: {
+      '@type': 'Person',
+      name: author,
+      url: `${siteUrl}/about/`,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Dripmatiq',
+      url: siteUrl,
+      logo: { '@type': 'ImageObject', url: `${siteUrl}/assets/icon.png` },
+    },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': postUrl },
+    articleSection: post.data.tags[0] || 'Style',
+  },
+  {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/` },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: `${siteUrl}/blog/` },
+      { '@type': 'ListItem', position: 3, name: post.data.title, item: postUrl },
+    ],
+  },
+];
+
+if (post.data.faq && post.data.faq.length > 0) {
+  graph.push({
+    '@type': 'FAQPage',
+    mainEntity: post.data.faq.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  });
+}
+
+if (post.data.howto) {
+  graph.push({
+    '@type': 'HowTo',
+    name: post.data.howto.name,
+    step: post.data.howto.steps.map((s, i) => {
+      const text = typeof s === 'string' ? s : s.text;
+      const name = typeof s === 'string' ? `Step ${i + 1}` : s.name;
+      return { '@type': 'HowToStep', position: i + 1, name, text };
+    }),
+  });
+}
+
 const blogPostingLd = JSON.stringify({
   '@context': 'https://schema.org',
-  '@type': 'BlogPosting',
-  headline: post.data.title,
-  description: post.data.description,
-  image: heroFull,
-  datePublished: pubDateISO,
-  dateModified: post.data.updatedDate?.toISOString() || pubDateISO,
-  author: {
-    '@type': 'Organization',
-    name: 'Dripmatiq',
-    url: siteUrl,
-  },
-  publisher: {
-    '@type': 'Organization',
-    name: 'Dripmatiq',
-    url: siteUrl,
-    logo: { '@type': 'ImageObject', url: `${siteUrl}/assets/icon.png` },
-  },
-  mainEntityOfPage: { '@type': 'WebPage', '@id': postUrl },
+  '@graph': graph,
 });
 
-const appStoreUrl =
-  'https://apps.apple.com/app/dripmatiq/id6743753909?utm_source=web&utm_medium=cta&utm_campaign=blog';
-const twitterShareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(post.data.title)}&url=${encodeURIComponent(postUrl)}`;
-const pinterestShareUrl = `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(postUrl)}&description=${encodeURIComponent(post.data.title)}`;
+const appStoreUrl = `https://apps.apple.com/app/dripmatiq/id6743753909?utm_source=web&utm_medium=cta&utm_campaign=blog&utm_content=${post.slug}`;
+const twitterShareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(post.data.title)}&url=${encodeURIComponent(postUrl + '?utm_source=twitter&utm_medium=share')}`;
+const pinterestShareUrl = `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(postUrl + '?utm_source=pinterest&utm_medium=share')}&description=${encodeURIComponent(post.data.title)}&media=${encodeURIComponent(heroFull)}`;
 ---
 
 <Base
@@ -86,6 +130,13 @@ const pinterestShareUrl = `https://pinterest.com/pin/create/button/?url=${encode
   <Nav />
   <main class="pt-24 pb-16 px-4 sm:px-6">
     <article class="max-w-3xl mx-auto">
+      <Breadcrumbs
+        crumbs={[
+          { label: 'Home', href: '/' },
+          { label: 'Blog', href: '/blog/' },
+          { label: post.data.title, href: postUrl },
+        ]}
+      />
       <!-- Top CTA -->
       <div class="mb-8 p-4 rounded-card bg-surface-elevated border border-border text-center">
         <p class="text-sm text-content-secondary mb-2">Style your closet with AI</p>

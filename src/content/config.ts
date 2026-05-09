@@ -12,6 +12,28 @@ const blog = defineCollection({
     tags: z.array(z.string()),
     slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/).optional(),
     excerpt: z.string().min(50).max(300).optional(),
+    author: z.string().default('Olu'),
+    // Optional FAQ schema — array of {q, a}
+    faq: z
+      .array(
+        z.object({
+          q: z.string(),
+          a: z.string(),
+        })
+      )
+      .optional(),
+    // Optional HowTo schema — array of step strings (or {name, text})
+    howto: z
+      .object({
+        name: z.string(),
+        steps: z.array(
+          z.union([
+            z.string(),
+            z.object({ name: z.string(), text: z.string() }),
+          ])
+        ),
+      })
+      .optional(),
   }),
 });
 

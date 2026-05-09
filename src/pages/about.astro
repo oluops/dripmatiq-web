@@ -1,0 +1,88 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+
+const siteUrl = 'https://dripmatiq.app';
+const aboutUrl = `${siteUrl}/about/`;
+
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Olu',
+  url: aboutUrl,
+  image: `${siteUrl}/assets/icon.png`,
+  jobTitle: 'Founder',
+  worksFor: {
+    '@type': 'Organization',
+    name: 'Dripmatiq',
+    url: siteUrl,
+  },
+  sameAs: [
+    'https://www.instagram.com/dripmatiq',
+    'https://www.pinterest.com/dripmatiq',
+    'https://twitter.com/dripmatiq',
+  ],
+  knowsAbout: ['AI fashion', 'Wardrobe styling', 'Computer vision', 'Capsule wardrobe', 'Personal style'],
+  description:
+    "Solo founder of Dripmatiq — an AI stylist that works with the clothes you already own. Building in public.",
+};
+---
+
+<Base
+  title="About Dripmatiq — The AI Stylist Built for Real Closets"
+  description="Dripmatiq scans your wardrobe, learns your taste, and builds outfits from clothes you already own. Built by a solo founder who got tired of shopping recommendations."
+  canonicalUrl={aboutUrl}
+  jsonLd={JSON.stringify(personSchema)}
+>
+  <Nav />
+  <main class="pt-24 pb-16 px-4 sm:px-6">
+    <article class="max-w-3xl mx-auto">
+      <Breadcrumbs crumbs={[{ label: 'Home', href: '/' }, { label: 'About', href: aboutUrl }]} />
+
+      <h1 class="text-hero font-light mb-6">About Dripmatiq</h1>
+
+      <p class="text-lg text-content-secondary mb-8">
+        Dripmatiq is an AI stylist that works with the clothes you already own — not the ones a brand wants you to buy.
+      </p>
+
+      <h2 class="text-h2 font-bold mt-12 mb-4">Why we built it</h2>
+      <p class="mb-4">
+        Every fashion app on the market wants to sell you something. Closets fill up. Decision fatigue grows.
+        Meanwhile most people wear roughly 20% of what they own.
+      </p>
+      <p class="mb-4">
+        Dripmatiq inverts the model. Snap a photo, the AI sees a garment, learns the rules of your taste, and
+        builds daily outfits from the clothes already in your wardrobe. No shopping carts. No affiliate links.
+        Just better use of what you have.
+      </p>
+
+      <h2 class="text-h2 font-bold mt-12 mb-4">Who's behind it</h2>
+      <p class="mb-4">
+        Dripmatiq is built by Olu, a solo founder. The product, the code, the writing on this blog — all one person,
+        building in public. If you have feedback, hit reply on any email or DM us on Instagram
+        <a href="https://www.instagram.com/dripmatiq" class="text-gold underline">@dripmatiq</a>.
+      </p>
+
+      <h2 class="text-h2 font-bold mt-12 mb-4">Press &amp; partnerships</h2>
+      <p class="mb-4">
+        Logos, screenshots, founder quotes, and a downloadable kit are on the
+        <a href="/press" class="text-gold underline">press page</a>. For interviews or partnerships, email
+        <a href="mailto:hello@dripmatiq.app" class="text-gold underline">hello@dripmatiq.app</a>.
+      </p>
+
+      <div class="mt-12 p-6 rounded-card bg-surface-elevated border border-border text-center">
+        <p class="text-lg font-bold mb-2">Try Dripmatiq free</p>
+        <p class="text-content-secondary mb-4">Your closet, styled by AI.</p>
+        <a
+          href="https://apps.apple.com/app/dripmatiq/id6743753909?utm_source=web&utm_medium=cta&utm_campaign=about"
+          class="inline-flex items-center gap-2 bg-gold hover:bg-gold-hover text-surface-primary font-bold text-sm px-6 py-3 rounded-btn tracking-button transition-colors duration-200"
+        >
+          Download on the App Store
+        </a>
+      </div>
+    </article>
+  </main>
+  <Footer />
+</Base>
