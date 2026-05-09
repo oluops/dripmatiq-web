@@ -4,8 +4,10 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
+    "prebuild": "node scripts/rasterize-heroes.mjs",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "rasterize": "node scripts/rasterize-heroes.mjs"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.18",
@@ -13,6 +15,7 @@
     "@astrojs/tailwind": "^6.0.2",
     "@tailwindcss/typography": "^0.5.19",
     "astro": "^5.18.1",
+    "sharp": "^0.34.5",
     "tailwindcss": "^3.4.19"
   }
 }

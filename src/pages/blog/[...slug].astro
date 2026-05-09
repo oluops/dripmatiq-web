@@ -20,9 +20,8 @@ const { Content } = await post.render();
 const siteUrl = 'https://dripmatiq.app';
 const postUrl = `${siteUrl}/blog/${post.slug}/`;
 const heroSrc = post.data.heroImage || `/blog/${post.slug}/hero.svg`;
-const heroFull = post.data.heroImage
-  ? new URL(post.data.heroImage, siteUrl).href
-  : `${siteUrl}/blog/${post.slug}/hero.svg`;
+const heroJpg = heroSrc.replace(/\.svg$/, '.jpg');
+const heroFull = new URL(heroJpg, siteUrl).href;
 
 // Reading time + word count
 const words = post.body?.split(/\s+/).filter(Boolean).length || 0;
@@ -126,6 +125,14 @@ const pinterestShareUrl = `https://pinterest.com/pin/create/button/?url=${encode
   ogType="article"
   canonicalUrl={postUrl}
   jsonLd={blogPostingLd}
+  articleMeta={{
+    publishedTime: post.data.pubDate.toISOString(),
+    modifiedTime: (post.data.updatedDate || post.data.pubDate).toISOString(),
+    author: post.data.author || 'Olu',
+    section: post.data.tags?.[0],
+    tags: post.data.tags,
+    readingTimeMin: readingTime,
+  }}
 >
   <Nav />
   <main class="pt-24 pb-16 px-4 sm:px-6">
@@ -150,13 +157,18 @@ const pinterestShareUrl = `https://pinterest.com/pin/create/button/?url=${encode
 
       <!-- Hero image -->
       <div class="overflow-hidden rounded-card mb-8">
-        <img
-          src={heroSrc}
-          alt={post.data.heroAlt || post.data.title}
-          width="1200"
-          height="630"
-          class="w-full aspect-[1200/630] object-cover"
-        />
+        <picture>
+          <source srcset={heroSrc} type="image/svg+xml" />
+          <img
+            src={heroJpg}
+            alt={post.data.heroAlt || post.data.title}
+            width="1200"
+            height="630"
+            fetchpriority="high"
+            decoding="async"
+            class="w-full aspect-[1200/630] object-cover"
+          />
+        </picture>
       </div>
 
       <!-- Meta -->
@@ -240,11 +252,12 @@ const pinterestShareUrl = `https://pinterest.com/pin/create/button/?url=${encode
               <a href={`/blog/${r.slug}/`} class="group block">
                 <div class="overflow-hidden rounded-card mb-3">
                   <img
-                    src={r.data.heroImage || `/blog/${r.slug}/hero.svg`}
+                    src={(r.data.heroImage || `/blog/${r.slug}/hero.svg`).replace(/\.svg$/, '.jpg')}
                     alt={r.data.heroAlt || r.data.title}
                     width="600"
                     height="315"
                     loading="lazy"
+                    decoding="async"
                     class="w-full aspect-[1200/630] object-cover transition-transform duration-300 group-hover:scale-[1.02]"
                   />
                 </div>

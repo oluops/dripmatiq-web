@@ -27,7 +27,7 @@ const allTags = [...new Set(posts.flatMap((p) => p.data.tags))].sort();
       <div class="space-y-10">
         {posts.map((post) => {
           const href = `/blog/${post.slug}/`;
-          const heroSrc = post.data.heroImage || `/blog/${post.slug}/hero.svg`;
+          const heroSrc = (post.data.heroImage || `/blog/${post.slug}/hero.svg`).replace(/\.svg$/, '.jpg');
           return (
             <article class="group">
               <a href={href} class="block">
@@ -38,6 +38,7 @@ const allTags = [...new Set(posts.flatMap((p) => p.data.tags))].sort();
                     width="1200"
                     height="630"
                     loading="lazy"
+                    decoding="async"
                     class="w-full aspect-[1200/630] object-cover transition-transform duration-300 group-hover:scale-[1.02]"
                   />
                 </div>

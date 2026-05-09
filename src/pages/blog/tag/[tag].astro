@@ -19,21 +19,28 @@ export async function getStaticPaths() {
 }
 
 const { tag, posts } = Astro.props;
+
+const tagLabel = tag.replace(/-/g, ' ').replace(/\b\w/g, (c: string) => c.toUpperCase());
+const count = posts.length;
+const intro = `Smart-closet thinking on ${tagLabel.toLowerCase()} — outfit ideas, AI fit checks, and wardrobe systems from Dripmatiq. ${count} article${count === 1 ? '' : 's'} curated for people who want to dress better with less.`;
+const pageTitle = `${tagLabel} — ${count} article${count === 1 ? '' : 's'} | Dripmatiq Blog`;
+const pageDesc = `Read ${count} ${tagLabel.toLowerCase()} article${count === 1 ? '' : 's'} on the Dripmatiq blog: AI-powered outfit ideas, capsule wardrobe tips, and smart styling rules that actually work.`.slice(0, 160);
 ---
 
 <Base
-  title={`${tag} — Dripmatiq Blog`}
-  description={`Articles tagged "${tag}" on the Dripmatiq blog.`}
+  title={pageTitle}
+  description={pageDesc}
 >
   <Nav />
   <main class="pt-24 pb-16 px-4 sm:px-6 max-w-6xl mx-auto">
     <a href="/blog" class="text-sm text-content-muted hover:text-gold transition-colors mb-6 inline-block">&larr; All posts</a>
-    <h1 class="text-hero font-light mb-12">Posts tagged &ldquo;{tag}&rdquo;</h1>
+    <h1 class="text-hero font-light mb-4">{tagLabel}</h1>
+    <p class="text-content-secondary max-w-2xl mb-12">{intro}</p>
 
     <div class="space-y-10 max-w-3xl">
       {posts.map((post) => {
         const href = `/blog/${post.slug}/`;
-        const heroSrc = post.data.heroImage || `/blog/${post.slug}/hero.svg`;
+        const heroSrc = (post.data.heroImage || `/blog/${post.slug}/hero.svg`).replace(/\.svg$/, '.jpg');
         return (
           <article class="group">
             <a href={href} class="block">
@@ -44,6 +51,7 @@ const { tag, posts } = Astro.props;
                   width="1200"
                   height="630"
                   loading="lazy"
+                  decoding="async"
                   class="w-full aspect-[1200/630] object-cover transition-transform duration-300 group-hover:scale-[1.02]"
                 />
               </div>

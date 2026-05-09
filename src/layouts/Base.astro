@@ -6,6 +6,14 @@ interface Props {
   ogType?: string;
   canonicalUrl?: string;
   jsonLd?: string;
+  articleMeta?: {
+    publishedTime?: string;
+    modifiedTime?: string;
+    author?: string;
+    section?: string;
+    tags?: string[];
+    readingTimeMin?: number;
+  };
 }
 
 const {
@@ -15,6 +23,7 @@ const {
   ogType = 'website',
   canonicalUrl,
   jsonLd,
+  articleMeta,
 } = Astro.props;
 
 const siteUrl = 'https://dripmatiq.app';
@@ -46,6 +55,19 @@ const websiteSchema = {
     target: `${siteUrl}/blog?q={search_term_string}`,
     'query-input': 'required name=search_term_string',
   },
+};
+
+const appSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'MobileApplication',
+  name: 'Dripmatiq',
+  operatingSystem: 'iOS',
+  applicationCategory: 'LifestyleApplication',
+  description: 'AI-powered closet scanner that builds daily outfits from clothes you already own.',
+  url: 'https://apps.apple.com/app/dripmatiq/id6752700776',
+  installUrl: 'https://apps.apple.com/app/dripmatiq/id6752700776',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  publisher: { '@type': 'Organization', name: 'Dripmatiq', url: siteUrl },
 };
 
 const gscToken = import.meta.env.PUBLIC_GSC_VERIFICATION;
@@ -89,8 +111,23 @@ const cfBeacon = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
     <!-- Site-wide structured data -->
     <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
     {isHome && <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />}
+    {isHome && <script type="application/ld+json" set:html={JSON.stringify(appSchema)} />}
+
+    <!-- Performance hints -->
+    <link rel="preconnect" href="https://apps.apple.com" crossorigin />
+    <link rel="dns-prefetch" href="https://apps.apple.com" />
+    <link rel="dns-prefetch" href="https://plausible.io" />
+    <link rel="dns-prefetch" href="https://static.cloudflareinsights.com" />
 
     {jsonLd && <script type="application/ld+json" set:html={jsonLd} />}
+
+    {articleMeta?.publishedTime && <meta property="article:published_time" content={articleMeta.publishedTime} />}
+    {articleMeta?.modifiedTime && <meta property="article:modified_time" content={articleMeta.modifiedTime} />}
+    {articleMeta?.author && <meta property="article:author" content={articleMeta.author} />}
+    {articleMeta?.section && <meta property="article:section" content={articleMeta.section} />}
+    {articleMeta?.tags?.map((t) => <meta property="article:tag" content={t} />)}
+    {articleMeta?.readingTimeMin && <meta name="twitter:label1" content="Reading time" />}
+    {articleMeta?.readingTimeMin && <meta name="twitter:data1" content={`${articleMeta.readingTimeMin} min read`} />}
 
     <!-- Privacy-respecting analytics -->
     {plausibleDomain && (
