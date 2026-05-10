@@ -1,0 +1,272 @@
+---
+// AppFlow.astro — sticky scroll-stepped demo: occasion → closet → FitMatic try-on
+---
+
+<section id="app-flow" class="relative bg-surface-primary">
+  <!-- Tall wrapper gives scroll real estate for 3 steps -->
+  <div class="h-[280vh]">
+    <div class="sticky top-0 h-screen flex flex-col items-center justify-center overflow-hidden px-4 py-8">
+
+      <!-- Header -->
+      <div class="text-center mb-8">
+        <p class="text-xs font-bold tracking-wide uppercase text-gold mb-3">See it in action</p>
+        <h2 class="text-h2 font-light">Occasion to outfit in seconds</h2>
+      </div>
+
+      <!-- Step indicators -->
+      <div class="flex items-center gap-2 sm:gap-3 mb-8" id="flow-steps">
+        <button class="flow-step-btn is-active" data-step="0">
+          <span class="step-num">1</span>
+          <span class="step-label">Set occasion</span>
+        </button>
+        <div class="w-6 sm:w-10 h-px bg-border"></div>
+        <button class="flow-step-btn" data-step="1">
+          <span class="step-num">2</span>
+          <span class="step-label">AI scans closet</span>
+        </button>
+        <div class="w-6 sm:w-10 h-px bg-border"></div>
+        <button class="flow-step-btn" data-step="2">
+          <span class="step-num">3</span>
+          <span class="step-label">Try it on</span>
+        </button>
+      </div>
+
+      <!-- Phone frame -->
+      <div class="relative w-[220px] sm:w-[250px] h-[440px] sm:h-[500px] bg-surface-elevated border border-border rounded-[36px] shadow-elevated overflow-hidden flex-shrink-0">
+        <!-- Notch -->
+        <div class="absolute top-3 left-1/2 -translate-x-1/2 w-16 h-1.5 bg-border rounded-full z-10"></div>
+
+        <!-- Screen 0: Occasion picker -->
+        <div class="flow-screen is-visible absolute inset-0 pt-10 px-4 pb-5 flex flex-col" data-screen="0">
+          <p class="text-[10px] text-content-muted uppercase tracking-wide mb-0.5">What's the vibe?</p>
+          <p class="text-sm font-semibold text-content-primary mb-4">Pick your occasion</p>
+          <div class="space-y-2">
+            <div class="occasion-chip is-active">🌙 Date Night</div>
+            <div class="occasion-chip">💼 Work Meeting</div>
+            <div class="occasion-chip">☀️ Weekend Casual</div>
+            <div class="occasion-chip">🎉 Night Out</div>
+          </div>
+          <div class="mt-auto pt-4">
+            <div class="w-full py-2.5 rounded-btn bg-gold text-surface-primary text-xs font-bold text-center tracking-button">
+              Style me →
+            </div>
+          </div>
+        </div>
+
+        <!-- Screen 1: Closet with AI picking -->
+        <div class="flow-screen absolute inset-0 pt-10 px-4 pb-5 flex flex-col" data-screen="1">
+          <p class="text-[10px] text-content-muted uppercase tracking-wide mb-0.5">Your closet</p>
+          <p class="text-sm font-semibold text-content-primary mb-3">AI picking your look…</p>
+          <div class="grid grid-cols-3 gap-1.5">
+            <div class="garment-card is-selected">
+              <span class="text-xl">👔</span>
+              <span class="garment-label">Shirt</span>
+            </div>
+            <div class="garment-card">
+              <span class="text-xl">👗</span>
+              <span class="garment-label">Dress</span>
+            </div>
+            <div class="garment-card is-selected">
+              <span class="text-xl">👖</span>
+              <span class="garment-label">Trousers</span>
+            </div>
+            <div class="garment-card">
+              <span class="text-xl">🧥</span>
+              <span class="garment-label">Jacket</span>
+            </div>
+            <div class="garment-card is-selected">
+              <span class="text-xl">👟</span>
+              <span class="garment-label">Sneakers</span>
+            </div>
+            <div class="garment-card">
+              <span class="text-xl">👜</span>
+              <span class="garment-label">Bag</span>
+            </div>
+          </div>
+          <div class="mt-3 py-2.5 px-3 rounded-card bg-surface-secondary border border-gold/30">
+            <p class="text-[11px] text-gold">✦ 3 items selected for Date Night</p>
+          </div>
+          <div class="mt-auto pt-3">
+            <div class="w-full py-2.5 rounded-btn bg-gold text-surface-primary text-xs font-bold text-center tracking-button">
+              Try it on →
+            </div>
+          </div>
+        </div>
+
+        <!-- Screen 2: FitMatic try-on -->
+        <div class="flow-screen absolute inset-0 pt-10 px-4 pb-5 flex flex-col" data-screen="2">
+          <p class="text-[10px] text-content-muted uppercase tracking-wide mb-0.5">FitMatic</p>
+          <p class="text-sm font-semibold text-content-primary mb-3">See it on you</p>
+          <div class="flex-1 rounded-card bg-surface-secondary border border-border flex flex-col items-center justify-center gap-3 min-h-0">
+            <div class="text-5xl leading-none">🧍</div>
+            <div class="flex gap-2 text-2xl">
+              <span>👔</span>
+              <span>👖</span>
+              <span>👟</span>
+            </div>
+            <div class="text-center px-4">
+              <p class="text-xs text-gold font-semibold">✦ 94% style match</p>
+              <p class="text-[10px] text-content-muted mt-0.5">Date Night · Casual Smart</p>
+            </div>
+          </div>
+          <div class="mt-3 space-y-2">
+            <div class="py-2.5 rounded-btn bg-gold text-surface-primary text-xs font-bold text-center tracking-button">
+              Save this look
+            </div>
+            <div class="py-2 rounded-btn bg-surface-secondary border border-border text-content-secondary text-xs text-center">
+              ← Previous &nbsp;·&nbsp; Next →
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll cue -->
+      <p class="mt-6 text-xs text-content-muted transition-opacity duration-500" id="flow-hint">
+        scroll to continue ↓
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Step pill buttons */
+  .flow-step-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 10px;
+    border-radius: 999px;
+    border: 1px solid #2a2a2a;
+    background: #1a1a1a;
+    transition: border-color 0.3s, background 0.3s;
+    cursor: default;
+    white-space: nowrap;
+  }
+  .flow-step-btn.is-active {
+    border-color: #c9a84c;
+    background: rgba(201, 168, 76, 0.08);
+  }
+  .step-num {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #2a2a2a;
+    color: #555;
+    font-size: 10px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background 0.3s, color 0.3s;
+  }
+  .flow-step-btn.is-active .step-num {
+    background: #c9a84c;
+    color: #0a0a0a;
+  }
+  .step-label {
+    font-size: 11px;
+    color: #555;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  .flow-step-btn.is-active .step-label {
+    color: #c9a84c;
+  }
+
+  /* Occasion chips */
+  .occasion-chip {
+    padding: 9px 12px;
+    border-radius: 10px;
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    font-size: 12px;
+    color: #888;
+    transition: border-color 0.3s, background 0.3s, color 0.3s;
+  }
+  .occasion-chip.is-active {
+    border-color: #c9a84c;
+    background: rgba(201, 168, 76, 0.1);
+    color: #f0ece4;
+  }
+
+  /* Garment cards */
+  .garment-card {
+    aspect-ratio: 1;
+    background: #111;
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    transition: border-color 0.3s, background 0.3s;
+  }
+  .garment-label {
+    font-size: 9px;
+    color: #555;
+    transition: color 0.3s;
+  }
+  .garment-card.is-selected {
+    border-color: #c9a84c;
+    background: rgba(201, 168, 76, 0.07);
+  }
+  .garment-card.is-selected .garment-label {
+    color: #c9a84c;
+  }
+
+  /* Phone screens */
+  .flow-screen {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.45s ease, transform 0.45s ease;
+    pointer-events: none;
+  }
+  .flow-screen.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  .flow-screen.is-above {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+</style>
+
+<script>
+  (function () {
+    const section = document.getElementById('app-flow');
+    const screens = document.querySelectorAll('.flow-screen');
+    const stepBtns = document.querySelectorAll('.flow-step-btn');
+    const hint = document.getElementById('flow-hint');
+    let current = -1;
+
+    function goTo(step) {
+      if (step === current) return;
+      screens.forEach((s, i) => {
+        s.classList.remove('is-visible', 'is-above');
+        if (i < step) s.classList.add('is-above');
+      });
+      if (screens[step]) screens[step].classList.add('is-visible');
+      stepBtns.forEach((b, i) => b.classList.toggle('is-active', i === step));
+      if (hint) hint.style.opacity = step > 0 ? '0' : '1';
+      current = step;
+    }
+
+    function onScroll() {
+      if (!section) return;
+      const rect = section.getBoundingClientRect();
+      const totalScroll = section.offsetHeight - window.innerHeight;
+      const scrolled = Math.max(0, -rect.top);
+      const progress = Math.min(1, scrolled / totalScroll);
+      // 3 steps: 0–0.33, 0.33–0.66, 0.66–1
+      const step = Math.min(2, Math.floor(progress * 3));
+      goTo(step);
+    }
+
+    // Init
+    goTo(0);
+    window.addEventListener('scroll', onScroll, { passive: true });
+  })();
+</script>
