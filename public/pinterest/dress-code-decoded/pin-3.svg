@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1500" viewBox="0 0 1000 1500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="60%" stop-color="#16213e"/>
+      <stop offset="100%" stop-color="#0f0f23"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c9a84c"/>
+      <stop offset="100%" stop-color="#f0d078"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1500" fill="url(#bg)"/>
+  <!-- gold accent line -->
+  <rect x="80" y="200" width="120" height="4" fill="url(#gold)" rx="2"/>
+
+  <text x="500" y="260" font-family="Georgia, serif" font-size="120" fill="url(#gold)" text-anchor="middle" opacity="0.3">?</text>
+  <text x="500" y="380" font-family="Georgia, serif" font-size="54" fill="#ffffff" text-anchor="middle" font-style="italic">What if your closet</text>
+  <text x="500" y="455" font-family="Georgia, serif" font-size="54" fill="#ffffff" text-anchor="middle" font-style="italic">already had the</text>
+  <text x="500" y="530" font-family="Georgia, serif" font-size="54" fill="#ffffff" text-anchor="middle" font-style="italic">perfect outfit?</text>
+  <text x="500" y="705" font-family="Georgia, serif" font-size="32" fill="url(#gold)" text-anchor="middle">It does. You just need the right</text>
+  <text x="500" y="755" font-family="Georgia, serif" font-size="32" fill="url(#gold)" text-anchor="middle">framework to find it.</text>
+  <!-- footer -->
+  <rect x="0" y="1380" width="1000" height="120" fill="#0f0f23" opacity="0.9"/>
+  <text x="500" y="1435" font-family="Georgia, serif" font-size="36" fill="url(#gold)" text-anchor="middle" font-weight="bold">DRIPMATIQ.APP</text>
+  <text x="500" y="1470" font-family="Arial, sans-serif" font-size="18" fill="#888" text-anchor="middle">/blog/dress-code-decoded</text>
+</svg>
