@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0f0f1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1350" fill="url(#bg)"/>
+  <!-- Gold accent bar -->
+  <rect x="80" y="270" width="120" height="6" fill="#D4A847" rx="3"/>
+  <text x="80" y="350.0" font-family="Georgia, serif" font-size="56" fill="#FFFFFF" font-weight="700">The Capsule Wardrobe</text>
+<text x="80" y="422.8" font-family="Georgia, serif" font-size="56" fill="#FFFFFF" font-weight="700">Rule</text>
+<text x="80" y="495.6" font-family="Georgia, serif" font-size="56" fill="#FFFFFF" font-weight="700">That Quietly Backfires</text>
+  <text x="80" y="630.0" font-family="Georgia, serif" font-size="32" fill="#FFFFFF" >You followed the rule.</text>
+<text x="80" y="671.6" font-family="Georgia, serif" font-size="32" fill="#FFFFFF" >You still regret it.</text>
+  <!-- Brand footer -->
+  <text x="540" y="1290" font-family="Arial, sans-serif" font-size="24" fill="#D4A847" text-anchor="middle" letter-spacing="4">DRIPMATIQ.APP</text>
+</svg>
