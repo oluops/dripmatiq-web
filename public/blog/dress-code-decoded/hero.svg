@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="DRESS CODE DECODED: From casual to black tie">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a2230"/>
+      <stop offset="100%" stop-color="#0e1420"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c9a84c"/>
+      <stop offset="100%" stop-color="#f0d78c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle grid lines -->
+  <g opacity="0.06" stroke="#c9a84c" stroke-width="0.5">
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+  </g>
+
+  <!-- Four tier indicators -->
+  <!-- Casual -->
+  <g transform="translate(150,280)">
+    <circle cx="0" cy="0" r="45" fill="none" stroke="#c9a84c" stroke-width="1.5" opacity="0.4"/>
+    <circle cx="0" cy="0" r="6" fill="#c9a84c" opacity="0.5"/>
+    <text x="0" y="75" fill="#8a9bb5" font-family="Georgia, serif" font-size="14" text-anchor="middle" letter-spacing="2">CASUAL</text>
+  </g>
+
+  <!-- Smart Casual -->
+  <g transform="translate(420,280)">
+    <circle cx="0" cy="0" r="45" fill="none" stroke="#c9a84c" stroke-width="1.5" opacity="0.55"/>
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#c9a84c" stroke-width="1" opacity="0.4"/>
+    <circle cx="0" cy="0" r="6" fill="#c9a84c" opacity="0.65"/>
+    <text x="0" y="75" fill="#8a9bb5" font-family="Georgia, serif" font-size="14" text-anchor="middle" letter-spacing="2">SMART CASUAL</text>
+  </g>
+
+  <!-- Cocktail -->
+  <g transform="translate(690,280)">
+    <circle cx="0" cy="0" r="45" fill="none" stroke="#c9a84c" stroke-width="1.5" opacity="0.7"/>
+    <circle cx="0" cy="0" r="28" fill="none" stroke="#c9a84c" stroke-width="1" opacity="0.4"/>
+    <circle cx="0" cy="0" r="14" fill="none" stroke="#c9a84c" stroke-width="1" opacity="0.3"/>
+    <circle cx="0" cy="0" r="6" fill="#c9a84c" opacity="0.8"/>
+    <text x="0" y="75" fill="#8a9bb5" font-family="Georgia, serif" font-size="14" text-anchor="middle" letter-spacing="2">COCKTAIL</text>
+  </g>
+
+  <!-- Black Tie -->
+  <g transform="translate(960,280)">
+    <circle cx="0" cy="0" r="45" fill="none" stroke="url(#gold)" stroke-width="2"/>
+    <circle cx="0" cy="0" r="32" fill="none" stroke="#c9a84c" stroke-width="1" opacity="0.5"/>
+    <circle cx="0" cy="0" r="20" fill="none" stroke="#c9a84c" stroke-width="1" opacity="0.4"/>
+    <circle cx="0" cy="0" r="10" fill="#c9a84c" opacity="0.6"/>
+    <circle cx="0" cy="0" r="5" fill="#f0d78c"/>
+    <text x="0" y="75" fill="#c9a84c" font-family="Georgia, serif" font-size="14" text-anchor="middle" letter-spacing="2">BLACK TIE</text>
+  </g>
+
+  <!-- Connecting line -->
+  <line x1="195" y1="280" x2="915" y2="280" stroke="#c9a84c" stroke-width="1" opacity="0.15"/>
+
+  <!-- Title -->
+  <text x="600" y="490" fill="url(#gold)" font-family="Georgia, serif" font-size="42" text-anchor="middle" letter-spacing="1">DRESS CODE DECODED</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="530" fill="#8a9bb5" font-family="Georgia, serif" font-size="16" text-anchor="middle" letter-spacing="3" opacity="0.7">WHAT TO WEAR WHEN YOU HAVE NO IDEA</text>
+
+  <!-- Corner accents -->
+  <line x1="40" y1="40" x2="120" y2="40" stroke="#c9a84c" stroke-width="1" opacity="0.3"/>
+  <line x1="40" y1="40" x2="40" y2="120" stroke="#c9a84c" stroke-width="1" opacity="0.3"/>
+  <line x1="1160" y1="590" x2="1080" y2="590" stroke="#c9a84c" stroke-width="1" opacity="0.3"/>
+  <line x1="1160" y1="590" x2="1160" y2="510" stroke="#c9a84c" stroke-width="1" opacity="0.3"/>
+</svg>
