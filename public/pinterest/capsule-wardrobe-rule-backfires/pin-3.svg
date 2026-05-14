@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1500" width="1000" height="1500">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#0f0f1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1500" fill="url(#bg3)"/>
+  <!-- Gold accent line -->
+  <rect x="80" y="200" width="60" height="4" fill="#d4af37"/>
+  
+  <text x="500" y="400" font-family="Georgia, serif" font-size="56" fill="#ffffff" text-anchor="middle" font-style="italic">What if your closet</text>
+  <text x="500" y="480" font-family="Georgia, serif" font-size="56" fill="#ffffff" text-anchor="middle" font-style="italic">rule is wrong?</text>
+  <rect x="400" y="540" width="200" height="3" fill="#d4af37"/>
+  <text x="500" y="650" font-family="Georgia, serif" font-size="32" fill="#cccccc" text-anchor="middle">The 12-month decluttering rule</text>
+  <text x="500" y="700" font-family="Georgia, serif" font-size="32" fill="#cccccc" text-anchor="middle">causes capsule wardrobe regret.</text>
+  <text x="500" y="820" font-family="Georgia, serif" font-size="28" fill="#d4af37" text-anchor="middle">There's a smarter test. →</text>
+
+  <!-- Footer -->
+  <rect x="0" y="1380" width="1000" height="120" fill="#0a0a14"/>
+  <text x="500" y="1440" font-family="Georgia, serif" font-size="32" fill="#d4a f37" text-anchor="middle" font-weight="bold">DRIPMATIQ.APP</text>
+  <text x="500" y="1475" font-family="Arial, sans-serif" font-size="18" fill="#888" text-anchor="middle">/blog/capsule-wardrobe-rule-backfires</text>
+</svg>
