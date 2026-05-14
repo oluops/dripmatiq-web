@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1500" viewBox="0 0 1000 1500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="60%" stop-color="#16213e"/>
+      <stop offset="100%" stop-color="#0f0f23"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c9a84c"/>
+      <stop offset="100%" stop-color="#f0d078"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1500" fill="url(#bg)"/>
+  <!-- gold accent line -->
+  <rect x="80" y="200" width="120" height="4" fill="url(#gold)" rx="2"/>
+  <text x="500" y="310" font-family="Georgia, serif" font-size="52" fill="#ffffff" text-anchor="middle" font-weight="bold">3 Ways to Decode Any</text>
+  <text x="500" y="380" font-family="Georgia, serif" font-size="52" fill="#ffffff" text-anchor="middle" font-weight="bold">Dress Code</text>
+  <text x="140" y="500" font-family="Georgia, serif" font-size="48" fill="url(#gold)" font-weight="bold">1.</text>
+  <text x="200" y="500" font-family="Georgia, serif" font-size="36" fill="#ffffff">Know what the dress code</text>
+  <text x="200" y="545" font-family="Georgia, serif" font-size="36" fill="#ffffff">actually means</text>
+  <text x="140" y="620" font-family="Georgia, serif" font-size="48" fill="url(#gold)" font-weight="bold">2.</text>
+  <text x="200" y="620" font-family="Georgia, serif" font-size="36" fill="#ffffff">Build outfits from what you</text>
+  <text x="200" y="665" font-family="Georgia, serif" font-size="36" fill="#ffffff">already own</text>
+  <text x="140" y="740" font-family="Georgia, serif" font-size="48" fill="url(#gold)" font-weight="bold">3.</text>
+  <text x="200" y="740" font-family="Georgia, serif" font-size="36" fill="#ffffff">Walk in with zero outfit</text>
+  <text x="200" y="785" font-family="Georgia, serif" font-size="36" fill="#ffffff">anxiety</text>
+  <!-- footer -->
+  <rect x="0" y="1380" width="1000" height="120" fill="#0f0f23" opacity="0.9"/>
+  <text x="500" y="1435" font-family="Georgia, serif" font-size="36" fill="url(#gold)" text-anchor="middle" font-weight="bold">DRIPMATIQ.APP</text>
+  <text x="500" y="1470" font-family="Arial, sans-serif" font-size="18" fill="#888" text-anchor="middle">/blog/dress-code-decoded</text>
+</svg>
