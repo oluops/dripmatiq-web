@@ -55,19 +55,39 @@ jobs:
           set -euo pipefail
           # Wait for CDN to pick up new deploy
           sleep 30
+
           KEY="431ccfd3a43f79a7a9d0dcfc1419308f"
           HOST="dripmatiq.app"
-          URLS=$(curl -sf "https://${HOST}/sitemap-0.xml" | grep -oE '<loc>[^<]+</loc>' | sed -E 's|</?loc>||g')
+
+          URLS=""
+          for ATTEMPT in 1 2 3; do
+            URLS=$(curl -fsS "https://${HOST}/sitemap-0.xml" | grep -oE '<loc>[^<]+</loc>' | sed -E 's|</?loc>||g' || true)
+            if [[ -n "$URLS" ]]; then
+              break
+            fi
+            echo "Sitemap not ready (attempt ${ATTEMPT}/3); retrying in 20s..."
+            sleep 20
+          done
+
           if [[ -z "$URLS" ]]; then
-            echo "No URLs from sitemap; skipping"
+            echo "No URLs from sitemap after retries; skipping IndexNow ping"
             exit 0
           fi
+
           URL_JSON=$(echo "$URLS" | python3 -c "import sys,json; print(json.dumps([l.strip() for l in sys.stdin if l.strip()]))")
           PAYLOAD=$(printf '{"host":"%s","key":"%s","keyLocation":"https://%s/%s.txt","urlList":%s}' \
             "$HOST" "$KEY" "$HOST" "$KEY" "$URL_JSON")
+
           for ENDPOINT in https://api.indexnow.org/indexnow https://www.bing.com/indexnow; do
-            CODE=$(curl -s -o /tmp/out -w "%{http_code}" -X POST "$ENDPOINT" \
+            CODE=$(curl -sS -o /tmp/out -w "%{http_code}" -X POST "$ENDPOINT" \
               -H "Content-Type: application/json; charset=utf-8" \
-              -d "$PAYLOAD")
+              -d "$PAYLOAD" || true)
+            CODE=${CODE:-000}
             echo "$ENDPOINT -> $CODE"
+            if [[ "$CODE" == "000" ]]; then
+              echo "Network/connectivity issue while pinging $ENDPOINT (continuing)"
+            elif [[ "$CODE" -ge 400 ]]; then
+              echo "IndexNow returned HTTP $CODE from $ENDPOINT"
+              cat /tmp/out || true
+            fi
           done
