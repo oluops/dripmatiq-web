@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="50%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#0f3460"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d4a853"/>
+      <stop offset="100%" style="stop-color:#f0c674"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Timeline line -->
+  <line x1="150" y1="400" x2="1050" y2="400" stroke="url(#gold)" stroke-width="2" opacity="0.6"/>
+  <!-- Decade markers -->
+  <circle cx="250" cy="400" r="6" fill="#d4a853" opacity="0.8"/>
+  <circle cx="450" cy="400" r="6" fill="#d4a853" opacity="0.7"/>
+  <circle cx="650" cy="400" r="6" fill="#f0c674" opacity="0.6"/>
+  <circle cx="850" cy="400" r="6" fill="#f0c674" opacity="0.5"/>
+  <circle cx="1000" cy="400" r="4" fill="#f0c674" opacity="0.3"/>
+  <!-- Garment silhouette (coat/blazer shape) -->
+  <path d="M540 150 L560 130 L600 120 L640 130 L660 150 L670 300 L650 310 L620 300 L600 310 L580 300 L550 310 L530 300 Z" fill="none" stroke="url(#gold)" stroke-width="2.5" opacity="0.7"/>
+  <line x1="600" y1="130" x2="600" y2="300" stroke="#d4a853" stroke-width="1" opacity="0.3"/>
+  <!-- Title -->
+  <text x="600" y="470" font-family="Georgia, serif" font-size="44" fill="#f0c674" text-anchor="middle" font-weight="bold">Clothes That Outlive Trends</text>
+  <text x="600" y="520" font-family="Georgia, serif" font-size="24" fill="#ffffff" text-anchor="middle" opacity="0.7">Building a Wardrobe for Decades</text>
+  <!-- Corner accents -->
+  <rect x="50" y="50" width="60" height="3" fill="url(#gold)" opacity="0.8"/>
+  <rect x="50" y="50" width="3" height="60" fill="url(#gold)" opacity="0.8"/>
+  <rect x="1090" y="577" width="60" height="3" fill="url(#gold)" opacity="0.8"/>
+  <rect x="1147" y="520" width="3" height="60" fill="url(#gold)" opacity="0.8"/>
+  <!-- Watermark -->
+  <text x="600" y="590" font-family="Georgia, serif" font-size="16" fill="#d4a853" text-anchor="middle" opacity="0.5">dripmatiq.app</text>
+</svg>
