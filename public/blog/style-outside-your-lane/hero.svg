@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="STYLE OUTSIDE YOUR LANE: Dressing for One Night">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1225"/>
+      <stop offset="100%" stop-color="#0e0a18"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c9a84c"/>
+      <stop offset="50%" stop-color="#f0d078"/>
+      <stop offset="100%" stop-color="#c9a84c"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7c5cbf" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3a2266" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Decorative elements -->
+  <circle cx="950" cy="120" r="180" fill="url(#accent)" opacity="0.4"/>
+  <circle cx="200" cy="500" r="120" fill="url(#accent)" opacity="0.25"/>
+  <!-- Chain accent -->
+  <path d="M80 315 Q200 280 320 315 Q440 350 560 315 Q680 280 800 315 Q920 350 1040 315 Q1100 298 1120 315" fill="none" stroke="url(#gold)" stroke-width="2" opacity="0.5"/>
+  <path d="M80 325 Q200 360 320 325 Q440 290 560 325 Q680 360 800 325 Q920 290 1040 325 Q1100 342 1120 325" fill="none" stroke="url(#gold)" stroke-width="1.5" opacity="0.35"/>
+  <!-- Hanger icon -->
+  <path d="M600 160 L600 180 Q600 190 590 195 L480 250 Q470 255 470 265 L470 270 L730 270 L730 265 Q730 255 720 250 L610 195 Q600 190 600 180" fill="none" stroke="url(#gold)" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="600" cy="155" r="8" fill="none" stroke="url(#gold)" stroke-width="2.5"/>
+  <!-- Title -->
+  <text x="600" y="370" font-family="Georgia, serif" font-size="52" font-weight="bold" fill="url(#gold)" text-anchor="middle" letter-spacing="1">STYLE OUTSIDE</text>
+  <text x="600" y="430" font-family="Georgia, serif" font-size="52" font-weight="bold" fill="url(#gold)" text-anchor="middle" letter-spacing="1">YOUR LANE</text>
+  <!-- Subtitle -->
+  <text x="600" y="490" font-family="Georgia, serif" font-size="22" fill="#b8a0d4" text-anchor="middle" opacity="0.9">Dressing for One Night You'd Never Normally Own</text>
+  <!-- Bottom line accent -->
+  <rect x="450" y="540" width="300" height="2" fill="url(#gold)" opacity="0.6" rx="1"/>
+  <!-- Dripmatiq mark -->
+  <text x="600" y="590" font-family="Georgia, serif" font-size="16" fill="#8a7a9e" text-anchor="middle" letter-spacing="3">DRIPMATIQ</text>
+</svg>
