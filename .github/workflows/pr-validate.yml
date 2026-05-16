@@ -1,0 +1,33 @@
+name: PR Validate
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pr-validate-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+        env:
+          PUBLIC_SUPABASE_URL: https://example.supabase.co
+          PUBLIC_SUPABASE_ANON_KEY: placeholder
+          PUBLIC_GSC_VERIFICATION: placeholder
+          PUBLIC_BING_VERIFICATION: placeholder
+          PUBLIC_PLAUSIBLE_DOMAIN: dripmatiq.app
+          PUBLIC_CF_BEACON_TOKEN: placeholder
