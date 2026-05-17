@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#06070F"/>
+      <stop offset="50%" stop-color="#101326"/>
+      <stop offset="100%" stop-color="#19132A"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8A6B2A"/>
+      <stop offset="50%" stop-color="#D6B66F"/>
+      <stop offset="100%" stop-color="#9E7D38"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="82%" cy="18%" r="42%">
+      <stop offset="0%" stop-color="#D6B66F" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#D6B66F" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#bg)"/>
+  <rect width="100%" height="100%" fill="url(#glow)"/>
+
+  <rect x="97" y="88" width="886" height="10" rx="5" fill="url(#gold)"/>
+  <rect x="969" y="122" width="6" height="702" rx="3" fill="#C6A35E" fill-opacity="0.85"/>
+
+  <text x="97" y="283" font-family="Georgia, 'Times New Roman', serif" font-size="74" font-weight="700" fill="#F4EEE2" letter-spacing="0.1"><tspan x="97" dy="0">Can&#x27;t Picture</tspan>
+<tspan x="97" dy="88">Outfits in Your</tspan>
+<tspan x="97" dy="88">Head? You&#x27;re Not</tspan>
+<tspan x="97" dy="88">Alone</tspan></text>
+
+  <text x="97" y="972" font-family="Georgia, 'Times New Roman', serif" font-size="42" font-weight="600" fill="#D8B770">Stop trying to imagine outfits—see them instead.</text>
+
+  <line x1="97" y1="996" x2="983" y2="996" stroke="#6F5630" stroke-width="2" stroke-opacity="0.8"/>
+
+  <text x="97" y="1278" font-family="Georgia, 'Times New Roman', serif" font-size="28" letter-spacing="5" fill="#D0B075">DRIPMATIQ.APP</text>
+</svg>
