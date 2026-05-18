@@ -3,8 +3,13 @@ import { getCollection } from 'astro:content';
 
 export const GET: APIRoute = async () => {
   const posts = await getCollection('blog');
-  const cutoff = Date.now() - 1000 * 60 * 60 * 48; // 48 hours
-  const recent = posts.filter((p) => p.data.pubDate.valueOf() >= cutoff);
+  const cutoff = Date.now() - 1000 * 60 * 60 * 24 * 7; // 7 days
+  let recent = posts.filter((p) => p.data.pubDate.valueOf() >= cutoff);
+  // Always include at least the most recent post so the sitemap is never empty
+  if (recent.length === 0) {
+    const sorted = [...posts].sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+    if (sorted.length > 0) recent = [sorted[0]];
+  }
 
   const escape = (s: string) =>
     s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
