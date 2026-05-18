@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /cdn-cgi/
 
 # Block AI scrapers we don't want training on our content (allow Googlebot, Bingbot, etc.)
 User-agent: GPTBot
