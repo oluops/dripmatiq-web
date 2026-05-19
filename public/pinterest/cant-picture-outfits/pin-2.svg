@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1500" width="1000" height="1500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0f0f1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1500" fill="url(#bg)"/>
+  <!-- Gold accent line -->
+  <rect x="80" y="120" width="60" height="4" fill="#d4a853"/>
+  
+  <text x="500" y="300" font-family="Georgia, serif" font-size="52" font-weight="bold" fill="#d4a853" text-anchor="middle">3 Signs You Can't</text>
+  <text x="500" y="370" font-family="Georgia, serif" font-size="52" font-weight="bold" fill="#d4a853" text-anchor="middle">Visualise Outfits</text>
+  <text x="120" y="550" font-family="Georgia, serif" font-size="36" fill="#ffffff">1. You over-buy "safe" basics</text>
+  <text x="120" y="650" font-family="Georgia, serif" font-size="36" fill="#ffffff">2. Morning = endless try-ons</text>
+  <text x="120" y="750" font-family="Georgia, serif" font-size="36" fill="#ffffff">3. You forget what you own</text>
+  <rect x="120" y="870" width="760" height="2" fill="#d4a853" opacity="0.5"/>
+  <text x="500" y="950" font-family="Arial, sans-serif" font-size="28" fill="#cccccc" text-anchor="middle">A visual wardrobe planner fixes all three.</text>
+  <text x="500" y="1050" font-family="Georgia, serif" font-size="24" fill="#888" text-anchor="middle">Aphantasia affects 2-5% of people.</text>
+  <text x="500" y="1090" font-family="Georgia, serif" font-size="24" fill="#888" text-anchor="middle">Weak mental imagery? Even more.</text>
+  <!-- Footer -->
+  <rect x="0" y="1380" width="1000" height="120" fill="#0a0a14"/>
+  <text x="500" y="1440" font-family="Georgia, serif" font-size="28" fill="#d4a853" text-anchor="middle" letter-spacing="4">DRIPMATIQ.APP</text>
+  <text x="500" y="1470" font-family="Arial, sans-serif" font-size="14" fill="#888" text-anchor="middle">/blog/cant-picture-outfits</text>
+</svg>
