@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1500" width="1000" height="1500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0f0f1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1500" fill="url(#bg)"/>
+  <!-- Gold accent line -->
+  <rect x="80" y="120" width="60" height="4" fill="#d4a853"/>
+    <text x="500" y="400" font-family="Georgia, serif" font-size="68" font-weight="bold" fill="#ffffff" text-anchor="middle">Can't Picture</text>
+  <text x="500" y="485" font-family="Georgia, serif" font-size="68" font-weight="bold" fill="#ffffff" text-anchor="middle">Outfits in Your</text>
+  <text x="500" y="570" font-family="Georgia, serif" font-size="68" font-weight="bold" fill="#ffffff" text-anchor="middle">Head? You're Not</text>
+  <text x="500" y="655" font-family="Georgia, serif" font-size="68" font-weight="bold" fill="#ffffff" text-anchor="middle">Alone</text>
+
+  <text x="500" y="780" font-family="Arial, sans-serif" font-size="28" fill="#cccccc" text-anchor="middle">Aphantasia affects how millions plan outfits.</text>
+  <!-- Gold decorative circle -->
+  <circle cx="500" cy="900" r="80" fill="none" stroke="#d4a853" stroke-width="2" opacity="0.4"/>
+  <circle cx="500" cy="900" r="120" fill="none" stroke="#d4a853" stroke-width="1" opacity="0.2"/>
+  <!-- Footer -->
+  <rect x="0" y="1380" width="1000" height="120" fill="#0a0a14"/>
+  <text x="500" y="1440" font-family="Georgia, serif" font-size="28" fill="#d4a853" text-anchor="middle" letter-spacing="4">DRIPMATIQ.APP</text>
+  <text x="500" y="1470" font-family="Arial, sans-serif" font-size="14" fill="#888" text-anchor="middle">/blog/cant-picture-outfits</text>
+</svg>
