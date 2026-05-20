@@ -4,7 +4,8 @@ description: "Everlane's Shein acquisition has shoppers scrambling. Here's how t
 pubDate: 2026-05-18
 author: "Mira"
 tags: ["sustainability", "capsule wardrobe", "closet audit", "ethical fashion", "AI styling"]
-image: "/blog/everlane-alternatives-closet-audit.jpg"
+heroImage: "/blog/everlane-alternatives-closet-audit/hero.svg"
+heroAlt: "A beloved garment unraveling into a grid of replacement pieces from an existing closet, dark navy background with gold thread connections"
 ---
 
 # Your Favorite Brand Just Got Acquired — Now What?

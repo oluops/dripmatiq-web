@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="50%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#0f3460"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d4a853"/>
+      <stop offset="100%" style="stop-color:#f0c674"/>
+    </linearGradient>
+    <linearGradient id="thread" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d4a853" stop-opacity="0.7"/>
+      <stop offset="100%" style="stop-color:#f0c674" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Left side: original garment (shirt silhouette) dissolving -->
+  <g opacity="0.85">
+    <!-- Shirt body -->
+    <path d="M 290 200 L 340 180 L 360 200 L 380 180 L 430 200 L 430 360 L 290 360 Z"
+          fill="none" stroke="url(#gold)" stroke-width="2" stroke-dasharray="6 4" opacity="0.6"/>
+    <!-- Collar -->
+    <path d="M 340 180 L 360 210 L 380 180" fill="none" stroke="url(#gold)" stroke-width="1.5" opacity="0.7"/>
+    <!-- Sleeves -->
+    <path d="M 290 200 L 260 260 L 285 270 L 310 215" fill="none" stroke="url(#gold)" stroke-width="1.5" opacity="0.5"/>
+    <path d="M 430 200 L 460 260 L 435 270 L 410 215" fill="none" stroke="url(#gold)" stroke-width="1.5" opacity="0.5"/>
+  </g>
+
+  <!-- "Acquired" stamp over shirt -->
+  <g transform="translate(360 280) rotate(-12)">
+    <rect x="-70" y="-22" width="140" height="44" rx="4" fill="none" stroke="#e85d75" stroke-width="2" opacity="0.7"/>
+    <text x="0" y="6" font-family="Georgia, serif" font-size="22" fill="#e85d75" text-anchor="middle" font-weight="bold" opacity="0.85" letter-spacing="2">ACQUIRED</text>
+  </g>
+
+  <!-- Gold threads connecting old to new -->
+  <path d="M 470 280 Q 560 220 660 200" fill="none" stroke="url(#thread)" stroke-width="1.5" stroke-dasharray="3 5"/>
+  <path d="M 470 320 Q 560 320 660 320" fill="none" stroke="url(#thread)" stroke-width="1.5" stroke-dasharray="3 5"/>
+  <path d="M 470 360 Q 560 400 660 420" fill="none" stroke="url(#thread)" stroke-width="1.5" stroke-dasharray="3 5"/>
+
+  <!-- Right side: closet grid of replacements -->
+  <g>
+    <!-- Row 1 -->
+    <rect x="680" y="160" width="80" height="100" rx="4" fill="#d4a853" opacity="0.55"/>
+    <rect x="770" y="160" width="80" height="100" rx="4" fill="#f0c674" opacity="0.45"/>
+    <rect x="860" y="160" width="80" height="100" rx="4" fill="#d4a853" opacity="0.35"/>
+    <!-- Row 2 -->
+    <rect x="680" y="270" width="80" height="100" rx="4" fill="#f0c674" opacity="0.4"/>
+    <rect x="770" y="270" width="80" height="100" rx="4" fill="#d4a853" opacity="0.6"/>
+    <rect x="860" y="270" width="80" height="100" rx="4" fill="#f0c674" opacity="0.5"/>
+    <!-- Row 3 -->
+    <rect x="680" y="380" width="80" height="100" rx="4" fill="#d4a853" opacity="0.3"/>
+    <rect x="770" y="380" width="80" height="100" rx="4" fill="#f0c674" opacity="0.35"/>
+    <rect x="860" y="380" width="80" height="100" rx="4" fill="#d4a853" opacity="0.45"/>
+    <!-- "Already in your closet" check marks on a few -->
+    <text x="810" y="325" font-family="Georgia, serif" font-size="32" fill="#1a1a2e" text-anchor="middle" font-weight="bold" opacity="0.6">✓</text>
+    <text x="900" y="215" font-family="Georgia, serif" font-size="28" fill="#1a1a2e" text-anchor="middle" font-weight="bold" opacity="0.5">✓</text>
+    <text x="720" y="435" font-family="Georgia, serif" font-size="28" fill="#1a1a2e" text-anchor="middle" font-weight="bold" opacity="0.5">✓</text>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="540" font-family="Georgia, serif" font-size="36" fill="#f0c674" text-anchor="middle" font-weight="bold">Your Brand Got Acquired</text>
+  <text x="600" y="575" font-family="Georgia, serif" font-size="20" fill="#ffffff" text-anchor="middle" opacity="0.75">The Replacements Are Already in Your Closet</text>
+
+  <!-- Corner accents -->
+  <rect x="50" y="50" width="60" height="3" fill="url(#gold)" opacity="0.8"/>
+  <rect x="50" y="50" width="3" height="60" fill="url(#gold)" opacity="0.8"/>
+  <rect x="1090" y="577" width="60" height="3" fill="url(#gold)" opacity="0.8"/>
+  <rect x="1147" y="520" width="3" height="60" fill="url(#gold)" opacity="0.8"/>
+
+  <!-- Watermark -->
+  <text x="600" y="610" font-family="Georgia, serif" font-size="14" fill="#d4a853" text-anchor="middle" opacity="0.5">dripmatiq.app</text>
+</svg>
