@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="50%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="warm" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#fbbf24"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Neural network nodes (AI) -->
+  <circle cx="200" cy="200" r="12" fill="none" stroke="url(#accent)" stroke-width="2" opacity="0.7"/>
+  <circle cx="200" cy="315" r="12" fill="none" stroke="url(#accent)" stroke-width="2" opacity="0.7"/>
+  <circle cx="200" cy="430" r="12" fill="none" stroke="url(#accent)" stroke-width="2" opacity="0.7"/>
+  <circle cx="400" cy="250" r="14" fill="none" stroke="url(#accent)" stroke-width="2" opacity="0.8"/>
+  <circle cx="400" cy="380" r="14" fill="none" stroke="url(#accent)" stroke-width="2" opacity="0.8"/>
+  <circle cx="600" cy="315" r="16" fill="url(#accent)" opacity="0.6"/>
+  <!-- Network connections -->
+  <line x1="212" y1="200" x2="386" y2="250" stroke="#6366f1" stroke-width="1" opacity="0.4"/>
+  <line x1="212" y1="200" x2="386" y2="380" stroke="#6366f1" stroke-width="1" opacity="0.3"/>
+  <line x1="212" y1="315" x2="386" y2="250" stroke="#6366f1" stroke-width="1" opacity="0.4"/>
+  <line x1="212" y1="315" x2="386" y2="380" stroke="#6366f1" stroke-width="1" opacity="0.4"/>
+  <line x1="212" y1="430" x2="386" y2="250" stroke="#6366f1" stroke-width="1" opacity="0.3"/>
+  <line x1="212" y1="430" x2="386" y2="380" stroke="#6366f1" stroke-width="1" opacity="0.4"/>
+  <line x1="414" y1="250" x2="584" y2="315" stroke="#a78bfa" stroke-width="1.5" opacity="0.5"/>
+  <line x1="414" y1="380" x2="584" y2="315" stroke="#a78bfa" stroke-width="1.5" opacity="0.5"/>
+  <!-- Arrow from AI to wardrobe -->
+  <path d="M620 315 C680 315, 720 315, 760 315" fill="none" stroke="url(#warm)" stroke-width="2" opacity="0.6" stroke-dasharray="8 4"/>
+  <polygon points="760,308 775,315 760,322" fill="#f59e0b" opacity="0.7"/>
+  <!-- Wardrobe/closet -->
+  <rect x="800" y="180" width="200" height="270" rx="6" fill="none" stroke="url(#warm)" stroke-width="2" opacity="0.6"/>
+  <line x1="900" y1="180" x2="900" y2="450" stroke="#f59e0b" stroke-width="1" opacity="0.3"/>
+  <!-- Hangers -->
+  <path d="M840 220 L850 210 L860 220" fill="none" stroke="#fbbf24" stroke-width="1.5" opacity="0.5"/>
+  <rect x="838" y="220" width="24" height="50" rx="2" fill="none" stroke="#fbbf24" stroke-width="1" opacity="0.4"/>
+  <path d="M880 220 L890 210 L900 220" fill="none" stroke="#fbbf24" stroke-width="1.5" opacity="0.5"/>
+  <rect x="878" y="220" width="24" height="60" rx="2" fill="none" stroke="#fbbf24" stroke-width="1" opacity="0.4"/>
+  <path d="M920 220 L930 210 L940 220" fill="none" stroke="#fbbf24" stroke-width="1.5" opacity="0.5"/>
+  <rect x="918" y="220" width="24" height="45" rx="2" fill="none" stroke="#fbbf24" stroke-width="1" opacity="0.4"/>
+  <path d="M955 220 L965 210 L975 220" fill="none" stroke="#fbbf24" stroke-width="1.5" opacity="0.5"/>
+  <rect x="953" y="220" width="24" height="55" rx="2" fill="none" stroke="#fbbf24" stroke-width="1" opacity="0.4"/>
+  <!-- Shelf items -->
+  <rect x="820" y="360" width="40" height="30" rx="2" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.4"/>
+  <rect x="870" y="355" width="35" height="35" rx="2" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.3"/>
+  <rect x="920" y="360" width="50" height="28" rx="2" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.4"/>
+  <!-- Checkmark on center node (the real differentiator) -->
+  <path d="M590 315 L597 322 L612 307" fill="none" stroke="#22c55e" stroke-width="2.5" opacity="0.8"/>
+  <!-- "Table Stakes" crossed out text area -->
+  <text x="300" y="550" font-family="system-ui, sans-serif" font-size="28" font-weight="600" fill="#6366f1" opacity="0.5">TABLE STAKES</text>
+  <line x1="290" y1="550" x2="510" y2="545" stroke="#ef4444" stroke-width="2" opacity="0.6"/>
+  <!-- "What matters" text -->
+  <text x="600" y="550" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#fbbf24" opacity="0.8">WHAT ACTUALLY MATTERS</text>
+  <!-- Subtle grid/dots background -->
+  <circle cx="100" cy="100" r="2" fill="#6366f1" opacity="0.2"/>
+  <circle cx="150" cy="80" r="1.5" fill="#6366f1" opacity="0.15"/>
+  <circle cx="1100" cy="100" r="2" fill="#f59e0b" opacity="0.2"/>
+  <circle cx="1050" cy="150" r="1.5" fill="#f59e0b" opacity="0.15"/>
+  <circle cx="100" cy="530" r="2" fill="#6366f1" opacity="0.2"/>
+  <circle cx="1100" cy="530" r="1.5" fill="#f59e0b" opacity="0.15"/>
+</svg>

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Lint blog markdown for common mistakes that render literally on the page.
 // Runs as part of `npm run prebuild`. Exits 1 on any error.
-import { readdir, readFile } from 'node:fs/promises';
+import { readdir, readFile, stat } from 'node:fs/promises';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -42,6 +42,29 @@ for (const file of files) {
       console.log(`${tag} ${file}:${line}  ${label}\n         > ${snippet}`);
       sev === 'error' ? errors++ : warnings++;
     }
+  }
+}
+
+// Check hero images exist for every blog post
+const publicRoot = join(dirname(fileURLToPath(import.meta.url)), '..', 'public');
+for (const file of files) {
+  const path = join(root, file);
+  const raw = await readFile(path, 'utf8');
+  const m = raw.match(/^---\n([\s\S]*?)\n---/);
+  if (!m) continue;
+  const fm = m[1];
+  const heroMatch = fm.match(/heroImage:\s*["']?([^"'\n]+)["']?/);
+  if (!heroMatch) {
+    console.log(`✗ ERROR ${file}:1  missing heroImage in frontmatter`);
+    errors++;
+    continue;
+  }
+  const heroPath = join(publicRoot, heroMatch[1]);
+  try {
+    await stat(heroPath);
+  } catch {
+    console.log(`✗ ERROR ${file}:1  heroImage file not found: ${heroMatch[1]}`);
+    errors++;
   }
 }
 

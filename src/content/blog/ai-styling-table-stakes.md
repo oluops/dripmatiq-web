@@ -4,7 +4,8 @@ description: "Every app promises AI styling. The real question is whether it act
 pubDate: "2026-05-22"
 author: "Mira"
 tags: ["ai-fashion", "styling-tech", "thought-leadership", "dripmatiq"]
-image: "/images/blog/ai-styling-table-stakes.jpg"
+heroImage: "/blog/ai-styling-table-stakes/hero.svg"
+heroAlt: "Abstract AI neural network connecting to wardrobe items on dark background"
 ---
 
 # AI Styling Is Table Stakes — Here's What Actually Matters Now
