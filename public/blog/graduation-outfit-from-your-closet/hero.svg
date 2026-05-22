@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="50%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#0f3460"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d4a853"/>
+      <stop offset="100%" style="stop-color:#f0c674"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Graduation cap silhouette -->
+  <path d="M600 180 L480 240 L600 300 L720 240 Z" fill="none" stroke="url(#gold)" stroke-width="2.5" opacity="0.8"/>
+  <rect x="575" y="140" width="50" height="40" fill="none" stroke="#d4a853" stroke-width="2" opacity="0.6"/>
+  <line x1="600" y1="180" x2="680" y2="160" stroke="#f0c674" stroke-width="1.5" opacity="0.7"/>
+  <circle cx="680" cy="155" r="8" fill="#f0c674" opacity="0.5"/>
+  <!-- Closet/wardrobe outline -->
+  <rect x="200" y="200" width="160" height="220" rx="4" fill="none" stroke="#d4a853" stroke-width="1.5" opacity="0.5"/>
+  <line x1="280" y1="200" x2="280" y2="420" stroke="#d4a853" stroke-width="1" opacity="0.3"/>
+  <!-- Hanging garments inside closet -->
+  <line x1="230" y1="230" x2="230" y2="230" stroke="#f0c674" stroke-width="1" opacity="0.4"/>
+  <path d="M220 250 L230 240 L240 250 L240 320 L220 320 Z" fill="none" stroke="#f0c674" stroke-width="1" opacity="0.5"/>
+  <path d="M250 250 L260 240 L270 250 L270 330 L250 330 Z" fill="none" stroke="#f0c674" stroke-width="1" opacity="0.4"/>
+  <path d="M295 250 L305 240 L315 250 L315 340 L295 340 Z" fill="none" stroke="#d4a853" stroke-width="1" opacity="0.5"/>
+  <path d="M325 250 L335 240 L345 250 L345 310 L325 310 Z" fill="none" stroke="#d4a853" stroke-width="1" opacity="0.4"/>
+  <!-- Arrow from closet to cap -->
+  <path d="M370 310 C420 310, 450 280, 490 250" fill="none" stroke="#f0c674" stroke-width="1.5" opacity="0.5" stroke-dasharray="6 4"/>
+  <!-- Outfit pieces floating toward cap -->
+  <rect x="820" y="220" width="80" height="120" rx="3" fill="none" stroke="#d4a853" stroke-width="1.5" opacity="0.5"/>
+  <path d="M840 220 L860 200 L880 220" fill="none" stroke="#f0c674" stroke-width="1.5" opacity="0.6"/>
+  <!-- Connecting dots -->
+  <circle cx="430" cy="280" r="3" fill="#f0c674" opacity="0.4"/>
+  <circle cx="470" cy="260" r="3" fill="#f0c674" opacity="0.5"/>
+  <circle cx="730" cy="250" r="3" fill="#d4a853" opacity="0.4"/>
+  <circle cx="780" cy="240" r="3" fill="#d4a853" opacity="0.5"/>
+  <!-- Title text -->
+  <text x="600" y="460" font-family="Georgia, serif" font-size="42" fill="#f0c674" text-anchor="middle" font-weight="bold">Your Graduation Outfit</text>
+  <text x="600" y="510" font-family="Georgia, serif" font-size="24" fill="#ffffff" text-anchor="middle" opacity="0.7">Is Already in Your Closet</text>
+  <!-- Corner accents -->
+  <rect x="50" y="50" width="60" height="3" fill="url(#gold)" opacity="0.8"/>
+  <rect x="50" y="50" width="3" height="60" fill="url(#gold)" opacity="0.8"/>
+  <rect x="1090" y="577" width="60" height="3" fill="url(#gold)" opacity="0.8"/>
+  <rect x="1147" y="520" width="3" height="60" fill="url(#gold)" opacity="0.8"/>
+</svg>

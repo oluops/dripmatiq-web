@@ -4,7 +4,8 @@ description: "Skip the panic buy. Here's how to pull together a graduation-worth
 pubDate: 2026-05-20
 author: "Mira"
 tags: ["event dressing", "closet styling", "graduation", "capsule wardrobe"]
-image: "/blog/graduation-outfit.jpg"
+heroImage: "/blog/graduation-outfit-from-your-closet/hero.svg"
+heroAlt: "Graduation cap silhouette with wardrobe pieces flowing toward it, dark navy background with gold accents"
 ---
 
 Graduation season just hit, and your group chat is full of "what are you wearing??" energy. The temptation to one-click something new is real. But here's the thing: the best graduation outfits aren't bought in a panic — they're built from pieces that already fit your life.
