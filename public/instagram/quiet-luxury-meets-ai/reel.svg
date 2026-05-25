@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#090D1A"/>
+      <stop offset="50%" stop-color="#131327"/>
+      <stop offset="100%" stop-color="#1C1420"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.15" cy="0.2" r="1.1">
+      <stop offset="0%" stop-color="#8A6A2D" stop-opacity="0.35"/>
+      <stop offset="70%" stop-color="#8A6A2D" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#B8892D"/>
+      <stop offset="50%" stop-color="#E3C66D"/>
+      <stop offset="100%" stop-color="#A87821"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#bg)"/>
+  <rect width="100%" height="100%" fill="url(#glow)"/>
+
+  <!-- brand bar -->
+  <rect x="0" y="0" width="1080" height="84" fill="#070A14" opacity="0.92"/>
+  <rect x="0" y="82" width="1080" height="4" fill="url(#gold)"/>
+
+  <!-- gold accent geometry -->
+  <rect x="1052" y="140" width="8" height="1640" rx="4" fill="url(#gold)" opacity="0.9"/>
+  <circle cx="990" cy="1750" r="56" fill="none" stroke="#CDAF58" stroke-width="3" opacity="0.45"/>
+  <path d="M96 1700 H910" stroke="#A97C2C" stroke-width="2" opacity="0.55"/>
+
+  <!-- eyebrow -->
+  <rect x="96" y="300" width="250" height="52" rx="26" fill="#11182D" stroke="#D9BA61" stroke-width="2"/>
+  <text x="126" y="335" fill="#E6C76A" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="600" letter-spacing="1.2">NEW BLOG</text>
+
+  <text x="96" y="560" fill="#F8F4ED" font-family="Georgia, 'Times New Roman', serif" font-size="74" font-weight="600" letter-spacing="0.2"><tspan x="96" dy="0">Quiet Luxury Meets AI:</tspan><tspan x="96" dy="86">Why the Best Outfit App</tspan><tspan x="96" dy="86">Subtracts, Not Adds</tspan></text>
+
+  <text x="96" y="1250" fill="#E6C76A" font-family="Georgia, 'Times New Roman', serif" font-size="46" font-weight="500" letter-spacing="0.2"><tspan x="96" dy="0">Great style starts with</tspan><tspan x="96" dy="56">subtraction — not more shopping.</tspan></text>
+
+  <text x="96" y="1836" fill="#C9C2B4" font-family="Inter, Arial, sans-serif" font-size="24" letter-spacing="2.2">DRIPMATIQ.APP</text>
+</svg>
