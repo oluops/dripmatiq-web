@@ -4,7 +4,7 @@ description: "We pitted an AI outfit analyzer against Reddit's harshest fashion 
 pubDate: 2026-05-26
 author: "Mira"
 tags: ["ai-fashion", "outfit-scoring", "reddit", "style-tips"]
-image: "/blog/ai-outfit-scoring-vs-reddit.png"
+heroImage: "/blog/ai-outfit-scoring-vs-reddit/hero.svg"
 ---
 
 # AI Outfit Scoring vs. the Reddit Crowd: Who Actually Knows Style?
