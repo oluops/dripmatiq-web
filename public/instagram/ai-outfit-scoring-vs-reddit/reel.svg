@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" role="img" aria-label="Dripmatiq Instagram creative">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#07080E"/>
+      <stop offset="52%" stop-color="#121A2A"/>
+      <stop offset="100%" stop-color="#1A2134"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.84" cy="0.16" r="0.92">
+      <stop offset="0%" stop-color="#D3B15A" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#D3B15A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8D6D1D"/>
+      <stop offset="45%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#F1DD8F"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity="0.48"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#bg)"/>
+  <rect width="100%" height="100%" fill="url(#glow)"/>
+
+  <rect x="0" y="0" width="1080" height="16" fill="url(#gold)"/>
+  <rect x="84" y="74" width="912" height="2" fill="url(#gold)" opacity="0.74"/>
+
+  <text x="84" y="126" font-family="Arial, sans-serif" font-size="30" letter-spacing="1.8" fill="#EEE2BF">DRIPMATIQ JOURNAL</text>
+
+  <text x="84" y="422" font-family="Georgia, 'Times New Roman', serif" font-size="44" font-style="italic" fill="#D4AF37">
+    <tspan x="84" dy="0">Reddit judges your fit. AI</tspan>
+<tspan x="84" dy="52">shows why it works.</tspan>
+  </text>
+
+  <text x="84" y="787" font-family="Georgia, 'Times New Roman', serif" font-size="74" font-weight="700" fill="#F6F2E8" filter="url(#shadow)">
+    <tspan x="84" dy="0">AI Outfit Scoring vs.</tspan>
+<tspan x="84" dy="85">the Reddit Crowd: Who</tspan>
+<tspan x="84" dy="85">Actually Knows Style?</tspan>
+  </text>
+
+  <rect x="84" y="1764" width="912" height="1" fill="#E6CC79" opacity="0.45"/>
+  <text x="84" y="1810" font-family="Georgia, 'Times New Roman', serif" font-size="28" fill="#CCB47A" letter-spacing="1.8">DRIPMATIQ.APP</text>
+</svg>
