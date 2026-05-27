@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="50%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="warm" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#fbbf24"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Sneaker silhouette (left) -->
+  <g transform="translate(180,330)" fill="none" stroke="url(#accent)" stroke-width="3" opacity="0.9">
+    <path d="M 0 60 Q 20 20 80 20 L 220 20 Q 260 20 280 50 L 300 70 Q 320 75 320 90 L 320 100 Q 320 110 305 110 L 15 110 Q 0 110 0 95 Z"/>
+    <line x1="60"  y1="40"  x2="60"  y2="20" />
+    <line x1="100" y1="40"  x2="100" y2="20" />
+    <line x1="140" y1="40"  x2="140" y2="20" />
+    <line x1="180" y1="40"  x2="180" y2="20" />
+    <line x1="220" y1="40"  x2="220" y2="20" />
+    <line x1="0"   y1="95"  x2="320" y2="95"  stroke-width="2" opacity="0.7"/>
+  </g>
+
+  <!-- Heel/dress shoe (right) -->
+  <g transform="translate(720,310)" fill="none" stroke="url(#warm)" stroke-width="3" opacity="0.9">
+    <path d="M 0 90 Q 0 60 40 50 L 200 30 Q 260 20 290 60 L 300 85 Q 305 100 290 105 L 30 110 Q 0 110 0 95 Z"/>
+    <line x1="265" y1="105" x2="285" y2="180" stroke-width="3"/>
+    <line x1="275" y1="180" x2="295" y2="185" stroke-width="3"/>
+  </g>
+
+  <!-- Pairing connector -->
+  <path d="M 500 380 Q 600 320 700 380" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.35" stroke-dasharray="6 8"/>
+  <circle cx="600" cy="335" r="6" fill="url(#accent)"/>
+
+  <!-- Title block -->
+  <text x="600" y="540" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="40" font-weight="800" fill="#ffffff">AI Shoe Pairing</text>
+  <text x="600" y="580" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="500" fill="#fbbf24" opacity="0.9">the right shoe for the outfit you already have</text>
+  <text x="600" y="610" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="500" fill="#a78bfa" opacity="0.8">dripmatiq · style intelligence</text>
+</svg>
