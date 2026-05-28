@@ -1,7 +1,7 @@
-Your outfit is done—until the shoe choice kills the whole look.
+Your outfit can be perfect — and one wrong shoe can break the whole look.
 
-Most shoe indecision isn’t about “bad taste,” it’s too many variables hitting at once: silhouette, formality, and color temperature in 30 rushed seconds. That’s why we keep defaulting to the same safe pair, even when better options are already in our closet. The interesting part is what happens when you score combinations on context instead of vibes—you start wearing the pairs you forgot you loved. If you’ve ever stood by your shoe rack feeling 90% ready, this one is for you.
+Most styling advice says “just pick what looks good,” but shoe pairing is where great outfits often stall. This post breaks down the hidden variables—silhouette, formality, and color temperature—that decide whether a look feels intentional or off. Then it shows how AI outfit scoring helps you uncover better pairings from shoes you already own. If you’ve ever stood in front of your shoe rack running late, this one is for you.
 
 Full read → link in bio (dripmatiq.app/blog/ai-shoe-pairing?utm_source=instagram&utm_medium=social&utm_campaign=ai-shoe-pairing)
 
-#ootd #fashion #style #aifashion #wardrobe #stylinghacks #aistyling #shoes #outfitscoring #wardrobetips #shoepairing #whattowear
+#ootd #fashion #style #aifashion #wardrobe #stylinghacks #aistyling #shoes #outfitscoring #wardrobetips
