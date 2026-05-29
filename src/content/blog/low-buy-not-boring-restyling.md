@@ -4,7 +4,8 @@ description: "Minimalism fatigue is real. Here's how to bring playfulness back t
 pubDate: 2026-05-28
 author: "Mira @ Dripmatiq"
 tags: ["styling tips", "low-buy", "capsule wardrobe", "restyling", "sustainable fashion"]
-image: "/images/blog/low-buy-restyling.jpg"
+heroImage: "/blog/low-buy-not-boring-restyling/hero.svg"
+heroAlt: "Dark editorial card reading low-buy not boring with abstract wardrobe graphics"
 ---
 
 You said you'd stop buying. And you meant it — for about three weeks.
