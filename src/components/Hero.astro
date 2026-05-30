@@ -14,27 +14,13 @@ import Waitlist from './Waitlist.astro';
         <p class="text-lg sm:text-xl text-content-secondary max-w-lg mx-auto lg:mx-0 mb-8">
           Dripmatiq scans your wardrobe, learns your taste, and builds daily outfits you'll actually wear.
         </p>
-        <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start mb-6">
-          <a
-            href="https://apps.apple.com/app/dripmatiq/id6760679168"
-            class="inline-flex items-center gap-2 bg-gold hover:bg-gold-hover text-surface-primary font-extrabold text-base px-8 py-4 rounded-btn tracking-button transition-colors duration-200 shadow-elevated"
-          >
-            🍎 Get Styled Free
-          </a>
-          <a
-            href="https://play.google.com/store/apps/details?id=com.dripmatic.app"
-            class="inline-flex items-center gap-2 bg-gold hover:bg-gold-hover text-surface-primary font-extrabold text-base px-8 py-4 rounded-btn tracking-button transition-colors duration-200 shadow-elevated"
-          >
-            ▶ Get Styled Free
-          </a>
-        </div>
         <!-- Store badges -->
         <div class="flex items-center gap-4 justify-center lg:justify-start">
           <a href="https://apps.apple.com/app/dripmatiq/id6760679168" class="transition-opacity hover:opacity-80">
-            <img src="/assets/badge-appstore.svg" alt="Download on the App Store" class="h-10" onerror="this.parentElement.innerHTML='<span class=&quot;inline-flex items-center gap-1.5 border border-border rounded-lg px-4 py-2 text-sm text-content-secondary&quot;>🍎 App Store</span>'" />
+            <img src="/assets/badge-appstore.svg" alt="Download on the App Store" class="h-[40px]" />
           </a>
           <a href="https://play.google.com/store/apps/details?id=com.dripmatic.app" class="transition-opacity hover:opacity-80">
-            <img src="/assets/badge-googleplay.svg" alt="Get it on Google Play" class="h-10" onerror="this.parentElement.innerHTML='<span class=&quot;inline-flex items-center gap-1.5 border border-border rounded-lg px-4 py-2 text-sm text-content-secondary&quot;>▶ Google Play</span>'" />
+            <img src="/assets/badge-googleplay.svg" alt="Get it on Google Play" class="h-[40px]" />
           </a>
         </div>
         <Waitlist />
