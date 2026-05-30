@@ -11,17 +11,18 @@ export default defineConfig({
       filter: (page) => !/\/blog\/tag\//.test(page),
       changefreq: 'weekly',
       priority: 0.7,
+      lastmod: new Date(),
       serialize(item) {
         if (item.url === 'https://dripmatiq.app/' || item.url === 'https://dripmatiq.app') {
-          return { ...item, priority: 1.0, changefreq: 'daily' };
+          return { ...item, priority: 1.0, changefreq: 'daily', lastmod: new Date() };
         }
         if (/\/blog\/[^/]+\/?$/.test(item.url)) {
-          return { ...item, priority: 0.8, changefreq: 'monthly' };
+          return { ...item, priority: 0.8, changefreq: 'weekly', lastmod: new Date() };
         }
         if (item.url.endsWith('/blog/') || item.url.endsWith('/blog')) {
-          return { ...item, priority: 0.9, changefreq: 'daily' };
+          return { ...item, priority: 0.9, changefreq: 'daily', lastmod: new Date() };
         }
-        return item;
+        return { ...item, lastmod: new Date() };
       },
     }),
   ],
