@@ -114,6 +114,7 @@ const blogPostingLd = JSON.stringify({
 });
 
 const appStoreUrl = `https://apps.apple.com/app/dripmatiq/id6760679168?utm_source=web&utm_medium=cta&utm_campaign=blog&utm_content=${post.slug}`;
+const playStoreUrl = `https://play.google.com/store/apps/details?id=com.dripmatic.app&utm_source=web&utm_medium=cta&utm_campaign=blog&utm_content=${post.slug}`;
 const twitterShareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(post.data.title)}&url=${encodeURIComponent(postUrl + '?utm_source=twitter&utm_medium=share')}`;
 const pinterestShareUrl = `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(postUrl + '?utm_source=pinterest&utm_medium=share')}&description=${encodeURIComponent(post.data.title)}&media=${encodeURIComponent(heroFull)}`;
 ---
@@ -147,12 +148,20 @@ const pinterestShareUrl = `https://pinterest.com/pin/create/button/?url=${encode
       <!-- Top CTA -->
       <div class="mb-8 p-4 rounded-card bg-surface-elevated border border-border text-center">
         <p class="text-sm text-content-secondary mb-2">Style your closet with AI</p>
-        <a
-          href={appStoreUrl}
-          class="inline-flex items-center gap-2 bg-gold hover:bg-gold-hover text-surface-primary font-bold text-sm px-5 py-2.5 rounded-btn tracking-button transition-colors duration-200"
-        >
-          Try Dripmatiq Free
-        </a>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+          <a
+            href={appStoreUrl}
+            class="inline-flex items-center gap-2 bg-gold hover:bg-gold-hover text-surface-primary font-bold text-sm px-5 py-2.5 rounded-btn tracking-button transition-colors duration-200"
+          >
+            🍎 Try Free on iOS
+          </a>
+          <a
+            href={playStoreUrl}
+            class="inline-flex items-center gap-2 bg-gold hover:bg-gold-hover text-surface-primary font-bold text-sm px-5 py-2.5 rounded-btn tracking-button transition-colors duration-200"
+          >
+            ▶ Try Free on Android
+          </a>
+        </div>
       </div>
 
       <!-- Hero image -->
@@ -235,12 +244,20 @@ const pinterestShareUrl = `https://pinterest.com/pin/create/button/?url=${encode
       <div class="mt-12 p-6 rounded-card bg-surface-elevated border border-border text-center">
         <p class="text-lg font-bold mb-2">Your closet, styled by AI.</p>
         <p class="text-content-secondary mb-4">See what you already own in a whole new way.</p>
-        <a
-          href={appStoreUrl}
-          class="inline-flex items-center gap-2 bg-gold hover:bg-gold-hover text-surface-primary font-bold text-sm px-6 py-3 rounded-btn tracking-button transition-colors duration-200"
-        >
-          Download Dripmatiq Free
-        </a>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+          <a
+            href={appStoreUrl}
+            class="inline-flex items-center gap-2 bg-gold hover:bg-gold-hover text-surface-primary font-bold text-sm px-6 py-3 rounded-btn tracking-button transition-colors duration-200"
+          >
+            🍎 Download for iOS
+          </a>
+          <a
+            href={playStoreUrl}
+            class="inline-flex items-center gap-2 bg-gold hover:bg-gold-hover text-surface-primary font-bold text-sm px-6 py-3 rounded-btn tracking-button transition-colors duration-200"
+          >
+            ▶ Download for Android
+          </a>
+        </div>
       </div>
 
       <!-- Related posts -->
