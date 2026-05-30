@@ -3,11 +3,11 @@
 ---
 
 <nav class="fixed top-0 left-0 right-0 z-50 bg-surface-primary/80 backdrop-blur-lg border-b border-border">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-    <div class="flex items-center gap-6">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 h-14 sm:h-16 flex items-center justify-between">
+    <div class="flex items-center gap-4 sm:gap-6">
       <a href="/" class="flex items-center gap-2">
-        <img src="/assets/icon.png" alt="Dripmatiq" class="w-8 h-8 rounded-lg" />
-        <span class="text-lg font-bold text-content-primary tracking-wide">Dripmatiq</span>
+        <img src="/assets/icon.png" alt="Dripmatiq" class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg" />
+        <span class="text-base sm:text-lg font-bold text-content-primary tracking-wide">Dripmatiq</span>
       </a>
       <a href="/blog/" class="text-sm text-content-secondary hover:text-content-primary transition-colors duration-200">
         Blog
@@ -19,7 +19,7 @@
         Press
       </a>
     </div>
-    <div class="flex items-center gap-2">
+    <div class="hidden sm:flex items-center gap-2">
       <a href="https://apps.apple.com/app/dripmatiq/id6760679168?utm_source=web&utm_medium=cta&utm_campaign=landing" class="transition-opacity hover:opacity-80">
         <img src="/assets/badge-appstore.svg" alt="Download on the App Store" class="h-[32px]" />
       </a>
@@ -27,5 +27,9 @@
         <img src="/assets/badge-googleplay.svg" alt="Get it on Google Play" class="h-[32px]" />
       </a>
     </div>
+    <!-- Mobile: single download CTA -->
+    <a href="https://apps.apple.com/app/dripmatiq/id6760679168?utm_source=web&utm_medium=cta&utm_campaign=landing" class="sm:hidden text-xs font-semibold text-gold border border-gold/40 rounded-full px-3 py-1.5 hover:bg-gold/10 transition-colors duration-200">
+      Get App
+    </a>
   </div>
 </nav>
