@@ -8,6 +8,11 @@ import Features from '../components/Features.astro';
 import SocialProof from '../components/SocialProof.astro';
 import Pricing from '../components/Pricing.astro';
 import Footer from '../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+const latestPosts = (await getCollection('blog'))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 6);
 ---
 
 <Base title="Dripmatiq — Your closet, styled by AI">
@@ -19,6 +24,41 @@ import Footer from '../components/Footer.astro';
     <Features />
     <SocialProof />
     <Pricing />
+
+    <!-- Latest blog posts — improves internal linking for SEO -->
+    <section class="py-20 px-4 sm:px-6 max-w-6xl mx-auto">
+      <div class="flex items-center justify-between mb-10">
+        <h2 class="text-h2 font-bold">Latest from the blog</h2>
+        <a href="/blog/" class="text-sm text-gold hover:text-gold-hover transition-colors duration-200">
+          View all &rarr;
+        </a>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {latestPosts.map((post) => {
+          const href = `/blog/${post.slug}/`;
+          const heroSrc = (post.data.heroImage || `/blog/${post.slug}/hero.svg`).replace(/\.svg$/, '.jpg');
+          return (
+            <a href={href} class="group block">
+              <div class="overflow-hidden rounded-card mb-3">
+                <img
+                  src={heroSrc}
+                  alt={post.data.heroAlt || post.data.title}
+                  width="600"
+                  height="315"
+                  loading="lazy"
+                  decoding="async"
+                  class="w-full aspect-[1200/630] object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                />
+              </div>
+              <h3 class="text-base font-bold mb-1 group-hover:text-gold transition-colors duration-200">
+                {post.data.title}
+              </h3>
+              <p class="text-sm text-content-secondary line-clamp-2">{post.data.description}</p>
+            </a>
+          );
+        })}
+      </div>
+    </section>
   </main>
   <Footer />
 </Base>
