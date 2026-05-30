@@ -31,13 +31,23 @@ import Waitlist from './Waitlist.astro';
       <div class="flex-1 flex justify-center">
         <div class="relative w-[260px] sm:w-[300px] lg:w-[340px]">
           <div class="rounded-phone bg-surface-elevated border-2 border-border-active shadow-elevated overflow-hidden aspect-[9/19.5]">
-            <!-- Static fallback for v1 (reduced motion friendly) -->
-            <img
-              src="/screenshots/fitmatic-outfit.jpg"
-              alt="Dripmatiq AI-generated outfit with FitMatic virtual try-on"
+            <!-- Looping 4x montage video -->
+            <video
+              autoplay
+              muted
+              loop
+              playsinline
+              poster="/screenshots/fitmatic-outfit.jpg"
               class="w-full h-full object-cover"
-              loading="eager"
-            />
+            >
+              <source src="/app-previews/preview3-montage-4x.mp4" type="video/mp4" />
+              <!-- Fallback for reduced motion / no video support -->
+              <img
+                src="/screenshots/fitmatic-outfit.jpg"
+                alt="Dripmatiq AI-generated outfit with FitMatic virtual try-on"
+                class="w-full h-full object-cover"
+              />
+            </video>
           </div>
           <!-- Decorative glow -->
           <div class="absolute -inset-4 bg-gold/5 rounded-full blur-3xl -z-10"></div>
