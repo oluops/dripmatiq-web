@@ -25,7 +25,7 @@ Pull every pair of shorts you own into one pile. Yes, even the questionable ones
 
 **Restyle** — the fit is fine but you're bored. These need new pairings, not replacement. A structured blazer over gym shorts. A tucked linen shirt with cargo shorts. Context changes everything.
 
-**Release** — genuinely doesn't fit, damaged beyond care, or makes you feel bad. If you haven't worn them in two full summers, [your closet is telling you something](/blog/wardrobe-life-check).
+**Release** — genuinely doesn't fit, damaged beyond care, or makes you feel bad. If you haven't worn them in two full summers, [your closet is telling you something](/blog/wardrobe-life-check/).
 
 Most people find 3-5 wearable pairs they'd completely forgotten. That's a week of summer outfits without spending a cent.
 
@@ -35,7 +35,7 @@ Once you've rediscovered your shorts, the next trap is wearing them the same way
 
 ### 1. Denim Cutoffs + Button-Down (Rolled Sleeves)
 
-The most versatile summer combination that somehow gets overlooked. An oversized cotton button-down, sleeves rolled twice, half-tucked into mid-rise denim shorts. Add flat sandals for errands or block heels for dinner. One outfit, two contexts — [the same restyling logic that works for dresses](/blog/one-dress-two-events) applies to shorts.
+The most versatile summer combination that somehow gets overlooked. An oversized cotton button-down, sleeves rolled twice, half-tucked into mid-rise denim shorts. Add flat sandals for errands or block heels for dinner. One outfit, two contexts — [the same restyling logic that works for dresses](/blog/one-dress-two-events/) applies to shorts.
 
 ### 2. Athletic Shorts + Structured Layer
 
@@ -53,7 +53,7 @@ The hardest shorts to deal with are the "maybe" pile. They fit, they're fine, bu
 
 **Worn fabric but solid construction** — faded black shorts or pilled cotton. A fabric shaver (under £10) and a cold-water dye refresh can add another full season to shorts you were about to bin. That's sustainability you can actually feel.
 
-**Fit shifted after a life change** — your body changed and [the capsule approach needs to adapt with you](/blog/capsule-wardrobe-rule-backfires). Don't force old shorts. But don't replace them with five new pairs either. One well-fitting pair in a neutral covers more ground than you'd expect.
+**Fit shifted after a life change** — your body changed and [the capsule approach needs to adapt with you](/blog/capsule-wardrobe-rule-backfires/). Don't force old shorts. But don't replace them with five new pairs either. One well-fitting pair in a neutral covers more ground than you'd expect.
 
 ## The "Three-Pair Summer" Challenge
 
