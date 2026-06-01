@@ -24,7 +24,7 @@ The concept comes from editorial fashion styling, where photographers and art di
 
 In real life, it works the same way. A white tee and jeans is fine. A white tee, jeans, and an oversized blazer with the sleeves pushed up? That's a look. The third piece creates visual interest without complexity.
 
-The rule isn't about *more* clothes. It's about one right addition. Quality over quantity — which, coincidentally, is the same principle behind a [well-edited capsule wardrobe](/blog/capsule-wardrobe-rule-backfires).
+The rule isn't about *more* clothes. It's about one right addition. Quality over quantity — which, coincidentally, is the same principle behind a [well-edited capsule wardrobe](/blog/capsule-wardrobe-rule-backfires/).
 
 ## 10 Third-Piece Options You Already Own
 
@@ -59,7 +59,7 @@ For neutral-heavy wardrobes, your third piece is the easiest place to introduce 
 
 The third piece should change your silhouette, not just sit on top of it. An oversized blazer over slim jeans creates a top-heavy triangle that editorial stylists call "power proportion." A fitted vest over a billowy blouse creates structure against flow.
 
-Rule of thumb: if your base is loose, your third piece should be structured. If your base is fitted, your third piece can be relaxed. The contrast is what creates visual interest, and it's the same principle behind [choosing the right outfit for any occasion](/blog/what-to-wear-first-date).
+Rule of thumb: if your base is loose, your third piece should be structured. If your base is fitted, your third piece can be relaxed. The contrast is what creates visual interest, and it's the same principle behind [choosing the right outfit for any occasion](/blog/what-to-wear-first-date/).
 
 ### Occasion calibration
 

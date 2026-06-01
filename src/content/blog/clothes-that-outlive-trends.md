@@ -35,11 +35,11 @@ Pieces that pass the 10-year test share traits:
 
 ### 1. The Perfect-Fit Jean
 
-Not the trendy silhouette — the one that makes your body look the way you like it. For some people that's a straight leg. For others, a high-rise flare. The silhouette matters less than the fit. When you find it, **buy two.** [Your wardrobe reflects your current life](/blog/wardrobe-life-check), and a great-fitting jean anchors that reality.
+Not the trendy silhouette — the one that makes your body look the way you like it. For some people that's a straight leg. For others, a high-rise flare. The silhouette matters less than the fit. When you find it, **buy two.** [Your wardrobe reflects your current life](/blog/wardrobe-life-check/), and a great-fitting jean anchors that reality.
 
 ### 2. The Workhorse Layer
 
-A blazer, a leather jacket, a denim jacket, a trench. Pick the one that matches your lifestyle and invest in quality. This is the piece that transforms "I'm wearing a T-shirt and jeans" into "I have a look." A good layer [makes one outfit work for multiple occasions](/blog/one-dress-two-events) without effort.
+A blazer, a leather jacket, a denim jacket, a trench. Pick the one that matches your lifestyle and invest in quality. This is the piece that transforms "I'm wearing a T-shirt and jeans" into "I have a look." A good layer [makes one outfit work for multiple occasions](/blog/one-dress-two-events/) without effort.
 
 ### 3. The White Shirt (Your Version)
 
@@ -69,7 +69,7 @@ Timeless wardrobes still need maintenance. Things wear out. Your body changes. Y
 
 **One-in-one-out.** Every addition requires a removal. This isn't minimalism for its own sake — it's forcing yourself to evaluate whether the new thing is actually better than what it replaces. Most of the time, it isn't.
 
-**Annual audit, not seasonal purge.** Once a year, try everything on. Not to declutter aggressively — [aggressive decluttering backfires](/blog/capsule-wardrobe-rule-backfires) — but to check fit, condition, and relevance. Repair what's fixable. Release what's truly done.
+**Annual audit, not seasonal purge.** Once a year, try everything on. Not to declutter aggressively — [aggressive decluttering backfires](/blog/capsule-wardrobe-rule-backfires/) — but to check fit, condition, and relevance. Repair what's fixable. Release what's truly done.
 
 ## The Confidence of Knowing What Works
 

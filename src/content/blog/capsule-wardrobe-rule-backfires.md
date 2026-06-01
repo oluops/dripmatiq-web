@@ -100,7 +100,7 @@ There's no magic number. Project 333 suggests 33 items per season. Others land b
 
 ### How often should I declutter my wardrobe?
 
-Twice a year (spring and fall) is a common cadence. But event-triggered reviews — after a move, a job change, or a significant weight shift — matter more than the calendar. The [third-piece rule](/blog/third-piece-rule-styling) can also help you see which items are pulling their weight in outfits.
+Twice a year (spring and fall) is a common cadence. But event-triggered reviews — after a move, a job change, or a significant weight shift — matter more than the calendar. The [third-piece rule](/blog/third-piece-rule-styling/) can also help you see which items are pulling their weight in outfits.
 
 ### How do I handle sentimental clothing I never wear?
 
@@ -112,7 +112,7 @@ Poorly. In a four-season climate, heavy coats and swimsuits each get roughly thr
 
 ### Can AI really help with wardrobe decisions?
 
-Yes — if the tool understands your actual closet. Generic "outfit inspiration" apps show you clothes you don't own. [Dripmatiq](/) works with the pieces you've already photographed, so every suggestion is something you can actually put on tomorrow morning. That makes it useful for both [daily styling](/blog/what-to-wear-first-date) and decluttering decisions.
+Yes — if the tool understands your actual closet. Generic "outfit inspiration" apps show you clothes you don't own. [Dripmatiq](/) works with the pieces you've already photographed, so every suggestion is something you can actually put on tomorrow morning. That makes it useful for both [daily styling](/blog/what-to-wear-first-date/) and decluttering decisions.
 
 <script type="application/ld+json">
 {
