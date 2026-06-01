@@ -3,7 +3,7 @@ title: "Outfit Ideas From My Own Clothes: A Practical AI Workflow That Actually 
 description: "Get outfit ideas from your own clothes with a simple 15-minute workflow. Build a digital wardrobe, generate looks fast, and stop buying duplicates."
 pubDate: "2026-06-01"
 author: "Mira"
-tags: ["outfit-planning", "digital-wardrobe", "ai-styling", "closet-organization", "dripmatiq"]
+tags: ["outfit planning", "digital-wardrobe", "AI styling", "closet organization", "dripmatiq"]
 slug: "outfit-ideas-from-my-own-clothes"
 excerpt: "If you keep asking for outfit ideas from your own clothes, the real problem is retrieval, not creativity. Here is a repeatable system to catalog your wardrobe and generate looks in minutes."
 heroImage: "/blog/outfit-ideas-from-my-own-clothes/hero.svg"
