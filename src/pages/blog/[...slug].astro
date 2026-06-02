@@ -27,17 +27,21 @@ const heroFull = new URL(heroJpg, siteUrl).href;
 const words = post.body?.split(/\s+/).filter(Boolean).length || 0;
 const readingTime = Math.max(1, Math.ceil(words / 250));
 
-// Related posts by tag overlap
+// Related posts by tag overlap, fallback to most recent
 const allPosts = await getCollection('blog');
-const related = allPosts
+const otherPosts = allPosts
   .filter((p) => p.slug !== post.slug)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const withOverlap = otherPosts
   .map((p) => ({
     ...p,
-    overlap: p.data.tags.filter((t: string) => post.data.tags.includes(t)).length,
+    overlap: p.data.tags.filter((t: string) =>
+      post.data.tags.some((pt: string) => pt.toLowerCase() === t.toLowerCase())
+    ).length,
   }))
-  .filter((p) => p.overlap > 0)
-  .sort((a, b) => b.overlap - a.overlap)
-  .slice(0, 3);
+  .sort((a, b) => b.overlap - a.overlap || b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+// Take top 3 by relevance; if fewer than 3 have overlap, fill with recent posts
+const related = withOverlap.slice(0, 3);
 
 const pubDateISO = post.data.pubDate.toISOString();
 const pubDateFormatted = post.data.pubDate.toLocaleDateString('en-US', {
