@@ -27,9 +27,9 @@ howto:
 
 # Outfit of the Day Planner App: Plan Better Looks in 5 Minutes
 
-You open closet. Closet full. Brain empty.
+You open your closet. Closet full. Brain empty.
 
-Most people do not need more clothes. Most people need better plan.
+Most people do not need more clothes. Most people need a better plan.
 
 That is why search for **outfit of the day planner app** keeps growing. Not because style got harder. Because mornings got faster, calendars got busier, and decision fatigue got worse.
 
