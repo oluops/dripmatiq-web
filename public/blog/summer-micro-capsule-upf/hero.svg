@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Summer Micro-Capsule: UPF + Cute, Not Boring">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1510"/>
+      <stop offset="100%" stop-color="#0f1018"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8b84b"/>
+      <stop offset="100%" stop-color="#f0d080"/>
+    </linearGradient>
+    <linearGradient id="vg" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- abstract summer pieces: clothing silhouettes as rounded rects -->
+  <g opacity="0.13">
+    <rect x="820" y="90"  width="55" height="90"  rx="6" fill="#e8b84b"/>
+    <rect x="890" y="110" width="45" height="75"  rx="6" fill="#d4856a"/>
+    <rect x="950" y="80"  width="60" height="100" rx="6" fill="#7ab8c8"/>
+    <rect x="1025" y="100" width="50" height="85" rx="6" fill="#e8b84b"/>
+    <rect x="820" y="200" width="55" height="60"  rx="28" fill="#d4856a"/>
+    <rect x="890" y="205" width="45" height="55"  rx="22" fill="#7ab8c8"/>
+    <rect x="950" y="195" width="60" height="65"  rx="30" fill="#e8b84b"/>
+    <rect x="1025" y="200" width="50" height="58" rx="25" fill="#c8a87a"/>
+    <rect x="820" y="290" width="255" height="3"  rx="2" fill="#e8b84b"/>
+    <rect x="820" y="310" width="55" height="80"  rx="4" fill="#c8a87a"/>
+    <rect x="890" y="310" width="45" height="80"  rx="4" fill="#7ab8c8"/>
+    <rect x="950" y="310" width="60" height="80"  rx="4" fill="#d4856a"/>
+    <rect x="1025" y="310" width="50" height="80" rx="4" fill="#e8b84b"/>
+  </g>
+
+  <!-- sun arc top-right -->
+  <circle cx="1100" cy="80" r="55" fill="none" stroke="#e8b84b" stroke-width="2" opacity="0.18"/>
+  <circle cx="1100" cy="80" r="38" fill="none" stroke="#e8b84b" stroke-width="1" opacity="0.12"/>
+
+  <rect width="1200" height="630" fill="url(#vg)"/>
+
+  <!-- brand -->
+  <g transform="translate(80,82)">
+    <circle cx="0" cy="0" r="6" fill="#e8b84b"/>
+    <text x="18" y="6" fill="#e8b84b" font-family="Georgia,serif" font-size="20" font-weight="600" letter-spacing="3">DRIPMATIQ</text>
+  </g>
+
+  <!-- tag -->
+  <text x="80" y="295" fill="#7ab8c8" font-family="system-ui,sans-serif" font-size="15" font-weight="700" letter-spacing="5">SUMMER</text>
+  <rect x="80" y="310" width="56" height="3" fill="#7ab8c8"/>
+
+  <!-- title -->
+  <text x="80" y="380" fill="#ffffff" font-family="Georgia,serif" font-size="58" font-weight="700">Micro-Capsule:</text>
+  <text x="80" y="450" fill="#e8b84b" font-family="Georgia,serif" font-size="58" font-weight="700">UPF + Cute</text>
+
+  <!-- footer -->
+  <text x="80" y="548" fill="#666" font-family="system-ui,sans-serif" font-size="14" letter-spacing="2">DRIPMATIQ.APP / BLOG</text>
+</svg>
