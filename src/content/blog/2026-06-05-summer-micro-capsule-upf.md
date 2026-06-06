@@ -3,9 +3,9 @@ title: "Summer Micro-Capsule: UPF + Cute, Not Boring"
 description: "7-piece summer micro-capsule that keeps you sun-safe and stylish. 14 looks from same 7 pieces, plus packing and rewear tips."
 pubDate: "2026-06-05"
 author: "Mira"
-tags: ["capsule wardrobe","summer","UPF","travel","outfit ideas"]
+tags: ["capsule wardrobe", "summer", "UPF", "travel", "outfit ideas"]
 slug: "summer-micro-capsule-upf"
-excerpt: "7-piece summer capsule that protects from sun and stays interesting  mix, match, layer, repeat."
+excerpt: "7-piece summer capsule that protects from sun and stays interesting — mix, match, layer, repeat."
 heroImage: "/blog/summer-micro-capsule-upf/hero.svg"
 heroAlt: "Flat lay of 7 summer wardrobe pieces with UPF swim top, skirt, lightweight layer, and neutral sandals"
 faq:
@@ -14,7 +14,7 @@ faq:
   - q: "Can I make this capsule work for 10 days?"
     a: "Yes. Pack neutral base pieces and 1-2 statement items for variety; plan laundry or rewear strategically."
 howto:
-  name: "7 pieces, 14 looks  Summer micro-capsule setup"
+  name: "7 pieces, 14 looks — Summer micro-capsule setup"
   steps:
     - "Pick 7 core pieces: 2 tops, 2 bottoms, 1 lightweight layer, 1 pair shoes, 1 travel-friendly accessory."
     - "Prioritize UPF or sun-protective fabric for at least one top or layer."
@@ -44,7 +44,20 @@ UPF fabrics block harmful UV rays. If you'll be outdoors for more than an hour, 
 
 ## 14 ways to wear it
 
-(Descriptive, short bullets showing swaps  omitted here for brevity)
+- UPF tee + shorts — casual sightseeing look
+- Skirt + statement top — dinner or evening out
+- Layer + hat + sandals — beach to brunch
+- Linen shorts + tee — hot day, easy movement
+- Skirt + neutral tee — museum or gallery
+- Statement top + shorts — city stroll
+- Layer over dress or skirt — cooler evening
+- UPF tee + skirt — effortless day look
+- Shorts + layer — breezy morning walk
+- Statement top + skirt + hat — market day
+- Neutral tee + shorts + sandals — travel transit
+- Skirt + layer + sandals — evening stroll
+- UPF tee + shorts + hat — peak sun hours
+- Statement top + skirt + layer — rooftop dinner
 
 ## Packing tips
 
@@ -61,12 +74,12 @@ UPF fabrics block harmful UV rays. If you'll be outdoors for more than an hour, 
 ## 7-day edit for city travel
 
 - Day 1: Arrival casual + hat
-- Day 2: Sightseeing  UPF tee + shorts
-- Day 3: Dinner out  skirt + statement top
+- Day 2: Sightseeing — UPF tee + shorts
+- Day 3: Dinner out — skirt + statement top
 - Day 4: Museum + layer
 - Day 5: Beach morning + hat
 - Day 6: City stroll + sandals
-- Day 7: Travel day  neutral, easy pack
+- Day 7: Travel day — neutral, easy pack
 
 ## Why this capsule works
 
