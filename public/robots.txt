@@ -23,4 +23,3 @@ Disallow: /
 
 # Sitemaps
 Sitemap: https://dripmatiq.app/sitemap-index.xml
-Sitemap: https://dripmatiq.app/sitemap-news.xml
