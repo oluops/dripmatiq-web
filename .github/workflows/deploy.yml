@@ -49,7 +49,6 @@ jobs:
   indexnow:
     needs: deploy
     runs-on: ubuntu-latest
-    continue-on-error: true
     steps:
       - name: Ping IndexNow with sitemap URLs
         run: |
@@ -59,12 +58,10 @@ jobs:
 
           KEY="431ccfd3a43f79a7a9d0dcfc1419308f"
           HOST="dripmatiq.app"
-          # Spoof a browser UA — Cloudflare WAF blocks the default curl agent
-          UA="Mozilla/5.0 (compatible; Bingbot/2.0; +http://www.bing.com/bingbot.htm)"
 
           URLS=""
           for ATTEMPT in 1 2 3; do
-            URLS=$(curl -fsS -A "$UA" "https://${HOST}/sitemap-0.xml" | grep -oE '<loc>[^<]+</loc>' | sed -E 's|</?loc>||g' || true)
+            URLS=$(curl -fsS "https://${HOST}/sitemap-0.xml" | grep -oE '<loc>[^<]+</loc>' | sed -E 's|</?loc>||g' || true)
             if [[ -n "$URLS" ]]; then
               break
             fi
