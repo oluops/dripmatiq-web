@@ -80,6 +80,8 @@ const gscToken = import.meta.env.PUBLIC_GSC_VERIFICATION;
 const bingToken = import.meta.env.PUBLIC_BING_VERIFICATION;
 const plausibleDomain = import.meta.env.PUBLIC_PLAUSIBLE_DOMAIN;
 const cfBeacon = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
+// Reddit Ads pixel. Defaults to the Dripmatiq pixel; set PUBLIC_REDDIT_PIXEL_ID='' to disable.
+const redditPixelId = import.meta.env.PUBLIC_REDDIT_PIXEL_ID ?? 'a2_iy4gxvmjbu53';
 ---
 
 <!doctype html>
@@ -144,6 +146,40 @@ const cfBeacon = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
     )}
     {cfBeacon && (
       <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={`{"token": "${cfBeacon}"}`}></script>
+    )}
+    {redditPixelId && (
+      <!-- Reddit Ads pixel: PageVisit on load, Lead on any app-store click -->
+      <script is:inline define:vars={{ redditPixelId }}>
+        !(function (w, d) {
+          if (!w.rdt) {
+            var p = (w.rdt = function () {
+              p.sendEvent ? p.sendEvent.apply(p, arguments) : p.callQueue.push(arguments);
+            });
+            p.callQueue = [];
+            var t = d.createElement("script");
+            (t.src = "https://www.redditstatic.com/ads/pixel.js"), (t.async = !0);
+            var s = d.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(t, s);
+          }
+        })(window, document);
+        rdt("init", redditPixelId);
+        rdt("track", "PageVisit");
+        // Treat a click through to the App Store / Play Store as a Lead (install intent).
+        document.addEventListener(
+          "click",
+          function (e) {
+            var a = e.target && e.target.closest && e.target.closest("a[href]");
+            if (!a) return;
+            var href = a.getAttribute("href") || "";
+            if (href.indexOf("apps.apple.com") !== -1 || href.indexOf("play.google.com") !== -1) {
+              try {
+                rdt("track", "Lead");
+              } catch (err) {}
+            }
+          },
+          true
+        );
+      </script>
     )}
   </head>
   <body class="bg-surface-primary text-content-primary antialiased">
