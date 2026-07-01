@@ -2,14 +2,33 @@ User-agent: *
 Allow: /
 Disallow: /cdn-cgi/
 
-# Block AI scrapers we don't want training on our content (allow Googlebot, Bingbot, etc.)
-User-agent: GPTBot
-Disallow: /
-
+# AI retrieval / search crawlers — ALLOWED so AI answers can cite dripmatiq.app
 User-agent: ClaudeBot
-Disallow: /
+Allow: /
 
 User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# AI training-only crawlers — blocked (no model training on our content)
+User-agent: GPTBot
 Disallow: /
 
 User-agent: CCBot
