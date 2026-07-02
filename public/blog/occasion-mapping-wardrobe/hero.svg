@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="100%" style="stop-color:#111111"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="card1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Subtle grid -->
+  <line x1="0" y1="315" x2="1200" y2="315" stroke="#1f1f1f" stroke-width="1"/>
+  <line x1="600" y1="0" x2="600" y2="630" stroke="#1f1f1f" stroke-width="1"/>
+  <!-- Purple accent bar top -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#accent)"/>
+  <!-- Main headline -->
+  <text x="600" y="195" font-family="system-ui, -apple-system, sans-serif" font-size="52" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="-1">Map Your Real Occasions</text>
+  <text x="600" y="260" font-family="system-ui, -apple-system, sans-serif" font-size="52" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="-1">To the Clothes You Own</text>
+  <!-- Subheading -->
+  <text x="600" y="325" font-family="system-ui, -apple-system, sans-serif" font-size="24" fill="#a1a1aa" text-anchor="middle">AI occasion mapping wardrobe — finally know what works</text>
+  <!-- Occasion pills -->
+  <rect x="180" y="375" width="130" height="36" rx="18" fill="#7c3aed" opacity="0.85"/>
+  <text x="245" y="398" font-family="system-ui, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">WFH</text>
+  <rect x="325" y="375" width="130" height="36" rx="18" fill="#4f46e5" opacity="0.85"/>
+  <text x="390" y="398" font-family="system-ui, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">Office</text>
+  <rect x="470" y="375" width="130" height="36" rx="18" fill="#7c3aed" opacity="0.75"/>
+  <text x="535" y="398" font-family="system-ui, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">Casual</text>
+  <rect x="615" y="375" width="130" height="36" rx="18" fill="#4f46e5" opacity="0.75"/>
+  <text x="680" y="398" font-family="system-ui, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">Active</text>
+  <rect x="760" y="375" width="130" height="36" rx="18" fill="#7c3aed" opacity="0.65"/>
+  <text x="825" y="398" font-family="system-ui, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">Social</text>
+  <rect x="905" y="375" width="130" height="36" rx="18" fill="#4f46e5" opacity="0.65"/>
+  <text x="970" y="398" font-family="system-ui, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">Formal</text>
+  <!-- Brand -->
+  <text x="600" y="570" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#6366f1" text-anchor="middle" letter-spacing="2">DRIPMATIQ</text>
+  <text x="600" y="598" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#52525b" text-anchor="middle">dripmatiq.app</text>
+</svg>
