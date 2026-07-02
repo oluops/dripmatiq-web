@@ -1,0 +1,67 @@
+---
+// AppPreviews — 3 looping app preview videos (4x speed) in phone mockups
+const previews = [
+  { src: '/app-previews/preview1-onboarding-4x.mp4', poster: '/screenshots/step1-onboarding.jpg', label: 'Onboarding', caption: 'Set up your profile and style preferences in seconds' },
+  { src: '/app-previews/preview2-features-4x.mp4', poster: '/screenshots/style-breakdown.jpg', label: 'Features', caption: 'Outfit styling, virtual try-on, and wardrobe building' },
+  { src: '/app-previews/preview3-montage-4x.mp4', poster: '/screenshots/fitmatic-outfit.jpg', label: 'Full Experience', caption: 'From closet scan to styled outfit — the complete flow' },
+];
+---
+
+<section id="app-previews" class="py-20 bg-surface-secondary overflow-hidden">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-12">
+      <p class="text-xs font-bold tracking-wide uppercase text-gold mb-3">App Previews</p>
+      <h2 class="text-h2 font-light">Watch it in action</h2>
+      <p class="text-content-secondary mt-3 max-w-lg mx-auto">Real recordings from the app — sped up 4x so you can see the full experience fast.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+      {previews.map((preview) => (
+        <div class="w-full max-w-[280px]">
+          <!-- Phone frame -->
+          <div class="relative bg-surface-elevated border border-border rounded-[32px] overflow-hidden shadow-elevated p-2">
+            <!-- Notch -->
+            <div class="absolute top-3 left-1/2 -translate-x-1/2 w-14 h-1.5 bg-border rounded-full z-10"></div>
+            <!-- Video: preload="none" + poster; playback starts when scrolled into view (script below) -->
+            <video
+              muted
+              loop
+              playsinline
+              preload="none"
+              poster={preview.poster}
+              data-lazy-video
+              class="w-full rounded-[24px] object-cover"
+            >
+              <source src={preview.src} type="video/mp4" />
+            </video>
+          </div>
+          <!-- Caption -->
+          <div class="mt-4 text-center px-2">
+            <h3 class="text-sm font-bold text-content-primary">{preview.label}</h3>
+            <p class="text-xs text-content-secondary mt-1">{preview.caption}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  // Start (and stop) preview playback based on visibility so the 3 videos
+  // don't download on initial page load.
+  const videos = document.querySelectorAll<HTMLVideoElement>('video[data-lazy-video]');
+  const observer = new IntersectionObserver(
+    (entries) => {
+      for (const entry of entries) {
+        const video = entry.target as HTMLVideoElement;
+        if (entry.isIntersecting) {
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+        }
+      }
+    },
+    { rootMargin: '100px' }
+  );
+  videos.forEach((v) => observer.observe(v));
+</script>

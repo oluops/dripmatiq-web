@@ -24,14 +24,14 @@ const personSchema = {
     'https://www.pinterest.com/dripmatiq',
     'https://twitter.com/dripmatiq',
   ],
-  knowsAbout: ['AI fashion', 'Wardrobe styling', 'Computer vision', 'Capsule wardrobe', 'Personal style'],
+  knowsAbout: ['Fashion styling', 'Wardrobe styling', 'Computer vision', 'Capsule wardrobe', 'Personal style'],
   description:
-    "Solo founder of Dripmatiq — an AI stylist that works with the clothes you already own. Building in public.",
+    "Solo founder of Dripmatiq — a styling app that works with the clothes you already own. Building in public.",
 };
 ---
 
 <Base
-  title="About Dripmatiq — The AI Stylist Built for Real Closets"
+  title="About Dripmatiq — Built for Real Closets"
   description="Dripmatiq scans your wardrobe, learns your taste, and builds outfits from clothes you already own. Built by a solo founder who got tired of shopping recommendations."
   canonicalUrl={aboutUrl}
   jsonLd={JSON.stringify(personSchema)}
@@ -44,7 +44,7 @@ const personSchema = {
       <h1 class="text-hero font-light mb-6">About Dripmatiq</h1>
 
       <p class="text-lg text-content-secondary mb-8">
-        Dripmatiq is an AI stylist that works with the clothes you already own — not the ones a brand wants you to buy.
+        Dripmatiq works with the clothes you already own — not the ones a brand wants you to buy.
       </p>
 
       <h2 class="text-h2 font-bold mt-12 mb-4">Why we built it</h2>
@@ -53,8 +53,8 @@ const personSchema = {
         Meanwhile most people wear roughly 20% of what they own.
       </p>
       <p class="mb-4">
-        Dripmatiq inverts the model. Snap a photo, the AI sees a garment, learns the rules of your taste, and
-        builds daily outfits from the clothes already in your wardrobe. No shopping carts. No affiliate links.
+        Dripmatiq inverts the model. Snap a photo, it reads your wardrobe, learns the rules of your taste, and
+        builds daily outfits from the clothes already in your closet. No shopping carts. No affiliate links.
         Just better use of what you have.
       </p>
 
@@ -74,13 +74,15 @@ const personSchema = {
 
       <div class="mt-12 p-6 rounded-card bg-surface-elevated border border-border text-center">
         <p class="text-lg font-bold mb-2">Try Dripmatiq free</p>
-        <p class="text-content-secondary mb-4">Your closet, styled by AI.</p>
-        <a
-          href="https://apps.apple.com/app/dripmatiq/id6743753909?utm_source=web&utm_medium=cta&utm_campaign=about"
-          class="inline-flex items-center gap-2 bg-gold hover:bg-gold-hover text-surface-primary font-bold text-sm px-6 py-3 rounded-btn tracking-button transition-colors duration-200"
-        >
-          Download on the App Store
-        </a>
+        <p class="text-content-secondary mb-4">Your closet, decoded.</p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+          <a href="https://apps.apple.com/app/dripmatiq/id6760679168?utm_source=web&utm_medium=cta&utm_campaign=about" class="transition-opacity hover:opacity-80">
+            <img src="/assets/badge-appstore.svg" alt="Download on the App Store" class="h-[40px]" />
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.dripmatic.app&utm_source=web&utm_medium=cta&utm_campaign=about" class="transition-opacity hover:opacity-80">
+            <img src="/assets/badge-googleplay.svg" alt="Get it on Google Play" class="h-[40px]" />
+          </a>
+        </div>
       </div>
     </article>
   </main>

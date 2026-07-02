@@ -1,51 +1,72 @@
 ---
 // Hero — headline, subhead, CTA, store badges, phone mockup
-import Waitlist from './Waitlist.astro';
 ---
 
-<section class="relative pt-28 pb-20 sm:pt-36 sm:pb-28 overflow-hidden">
+<section class="relative pt-16 pb-12 sm:pt-36 sm:pb-28 overflow-hidden">
   <div class="max-w-6xl mx-auto px-4 sm:px-6">
-    <div class="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-16">
-      <!-- Text -->
-      <div class="flex-1 text-center lg:text-left">
-        <h1 class="text-hero font-light leading-tight mb-4">
-          Your closet, <span class="text-gold">styled by AI.</span>
+    <div class="flex flex-col lg:flex-row items-center gap-8 sm:gap-12 lg:gap-16">
+      <!-- Text (order-2 on mobile so phone shows first) -->
+      <div class="flex-1 text-center lg:text-left order-2 lg:order-1">
+        <h1 class="text-3xl sm:text-hero font-light leading-tight mb-3 sm:mb-4">
+          Never stare at a full closet with <span class="text-gold">nothing to wear.</span>
         </h1>
-        <p class="text-lg sm:text-xl text-content-secondary max-w-lg mx-auto lg:mx-0 mb-8">
-          Dripmatiq scans your wardrobe, learns your taste, and builds daily outfits you'll actually wear.
+        <p class="text-base sm:text-xl text-content-secondary max-w-lg mx-auto lg:mx-0 mb-6 sm:mb-8">
+          Snap your wardrobe. Dripmatiq builds daily outfits and shows them on you with FitMatic virtual try-on — before you get dressed.
         </p>
-        <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start mb-6">
+
+        <!-- Primary CTA -->
+        <div class="flex flex-col items-center lg:items-start gap-3 sm:gap-4 mb-2">
           <a
-            href="https://apps.apple.com/app/dripmatiq/id6743753909"
-            class="inline-flex items-center gap-2 bg-gold hover:bg-gold-hover text-surface-primary font-extrabold text-base px-8 py-4 rounded-btn tracking-button transition-colors duration-200 shadow-elevated"
+            href="https://apps.apple.com/app/dripmatiq/id6760679168"
+            class="inline-flex items-center justify-center gap-2 bg-gold text-surface-primary font-bold text-base px-8 py-4 rounded-full shadow-lg hover:bg-gold-hover transition-colors duration-200 w-full sm:w-auto max-w-xs"
           >
-            Get Styled Free
+            Download Free — iOS
+          </a>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.dripmatic.app"
+            class="inline-flex items-center justify-center gap-2 border border-border text-content-primary font-semibold text-sm px-8 py-3 rounded-full hover:border-border-active transition-colors duration-200 w-full sm:w-auto max-w-xs"
+          >
+            Get it on Android
           </a>
         </div>
-        <!-- Store badges -->
-        <div class="flex items-center gap-4 justify-center lg:justify-start">
-          <a href="https://apps.apple.com/app/dripmatiq/id6743753909" class="transition-opacity hover:opacity-80">
-            <img src="/assets/badge-appstore.svg" alt="Download on the App Store" class="h-10" onerror="this.parentElement.innerHTML='<span class=&quot;inline-flex items-center gap-1.5 border border-border rounded-lg px-4 py-2 text-sm text-content-secondary&quot;>🍎 App Store</span>'" />
+
+        <!-- Trust signals -->
+        <p class="text-xs text-content-muted mt-1 mb-5">Free to download &middot; No credit card required</p>
+
+        <!-- Store badges (secondary) -->
+        <div class="flex items-center gap-3 sm:gap-4 justify-center lg:justify-start">
+          <a href="https://apps.apple.com/app/dripmatiq/id6760679168" class="transition-opacity hover:opacity-80">
+            <img src="/assets/badge-appstore.svg" alt="Download on App Store" class="h-[36px] sm:h-[40px]" />
           </a>
-          <span class="inline-flex items-center gap-1.5 border border-border rounded-lg px-4 py-2 text-sm text-content-muted cursor-default" title="Android version coming soon">
-            ▶ Google Play <span class="text-xs opacity-60">(Soon)</span>
-          </span>
+          <a href="https://play.google.com/store/apps/details?id=com.dripmatic.app" class="transition-opacity hover:opacity-80">
+            <img src="/assets/badge-googleplay.svg" alt="Get it on Google Play" class="h-[36px] sm:h-[40px]" />
+          </a>
         </div>
-        <Waitlist />
-        <p class="mt-4 text-sm text-content-muted">See how it works ↓</p>
+
+        <a href="#how-it-works" class="mt-6 inline-block text-sm text-content-muted hover:text-content-secondary transition-colors duration-200">See how it works &darr;</a>
       </div>
 
-      <!-- Phone mockup -->
-      <div class="flex-1 flex justify-center">
-        <div class="relative w-[260px] sm:w-[300px] lg:w-[340px]">
+      <!-- Phone mockup (order-1 on mobile — visual hook first) -->
+      <div class="flex-1 flex justify-center order-1 lg:order-2">
+        <div class="relative w-[200px] sm:w-[300px] lg:w-[340px]">
           <div class="rounded-phone bg-surface-elevated border-2 border-border-active shadow-elevated overflow-hidden aspect-[9/19.5]">
-            <!-- Static fallback for v1 (reduced motion friendly) -->
-            <img
-              src="/screenshots/step4-outfit.jpg"
-              alt="Dripmatiq outfit suggestion"
+            <!-- Looping 4x montage video -->
+            <video
+              autoplay
+              muted
+              loop
+              playsinline
+              poster="/screenshots/fitmatic-outfit.jpg"
               class="w-full h-full object-cover"
-              loading="eager"
-            />
+            >
+              <source src="/app-previews/preview3-montage-4x.mp4" type="video/mp4" />
+              <!-- Fallback for reduced motion / no video support -->
+              <img
+                src="/screenshots/fitmatic-outfit.jpg"
+                alt="Dripmatiq outfit built with FitMatic virtual try-on"
+                class="w-full h-full object-cover"
+              />
+            </video>
           </div>
           <!-- Decorative glow -->
           <div class="absolute -inset-4 bg-gold/5 rounded-full blur-3xl -z-10"></div>

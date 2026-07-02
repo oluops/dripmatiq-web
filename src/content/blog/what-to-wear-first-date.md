@@ -31,7 +31,7 @@ The fix is counterintuitive: **dress for the venue, not the person.** You can't 
 **Blueprint:**
 - **Top:** A slightly elevated basic. A fitted ribbed tee (not a gym tee). A Breton stripe. A linen button-up with one extra button undone. Something that says "I put thought into this" without saying "I tried hard."
 - **Bottom:** Well-fitted jeans (straight leg or wide leg, whatever flatters you) or a midi skirt with movement. Clean lines. No distressing unless it's minimal and intentional.
-- **Third piece:** This is where the outfit goes from "getting coffee alone" to "meeting someone." A lightweight jacket draped on shoulders. A leather tote with structure. A silk scarf tucked into a collar. One element that adds a [styled layer](/blog/third-piece-rule-styling).
+- **Third piece:** This is where the outfit goes from "getting coffee alone" to "meeting someone." A lightweight jacket draped on shoulders. A leather tote with structure. A silk scarf tucked into a collar. One element that adds a [styled layer](/blog/third-piece-rule-styling/).
 - **Shoes:** Clean sneakers, loafers, or ballet flats. Nothing you can't walk in — brunch dates often evolve into walks.
 
 **Body-flattering tips:** High-waisted bottoms elongate the leg. A tucked or half-tucked top defines the waist without being tight. If you're self-conscious about arms, a light cardigan thrown over shoulders works better than a long-sleeve in warm weather — it looks styled rather than covered.
@@ -45,7 +45,7 @@ The fix is counterintuitive: **dress for the venue, not the person.** You can't 
 **Blueprint:**
 - **Top:** A silk or satin blouse, a bodysuit under a blazer, a fitted knit with interesting texture (ribbed, pointelle, cashmere). Something with a bit of sheen or drape that catches low lighting.
 - **Bottom:** Tailored trousers, a leather or pleather skirt, dark straight-leg jeans if the venue is more relaxed. Nothing restrictive — you'll be sitting on bar stools or in low booths.
-- **Third piece:** A blazer (the universal evening armor), a statement earring, or a clutch that pops against your palette. The [third-piece rule](/blog/third-piece-rule-styling) works beautifully here because it lets you keep the base simple while the accent does the talking.
+- **Third piece:** A blazer (the universal evening armor), a statement earring, or a clutch that pops against your palette. The [third-piece rule](/blog/third-piece-rule-styling/) works beautifully here because it lets you keep the base simple while the accent does the talking.
 - **Shoes:** A low heel, a pointed mule, or an elevated flat. Consider the walk from the Uber to the door — cobblestones and stilettos are a bad origin story.
 
 **Body-flattering tips:** Dark colors photograph well in low light. A V-neckline elongates the torso. If you want to show skin, pick *one* area — décolletage or legs, not both at once. It's not about modesty; it's about focus. One reveal reads as intentional. Two reads as competing for attention.
@@ -60,7 +60,7 @@ The fix is counterintuitive: **dress for the venue, not the person.** You can't 
 - **Top:** A structured blouse, a sleeveless knit top, or a dress (this is the one scenario where a dress can be your one-and-two-piece in one). Fabrics that hold their shape: crepe, ponte, structured silk.
 - **Bottom:** If not wearing a dress: tailored wide-leg trousers or a midi skirt in a substantial fabric. Nothing flimsy under restaurant lighting.
 - **Third piece:** A blazer or a leather jacket for the inevitable moment when you step outside. A statement necklace or a vintage watch. Something that invites a compliment and gives you both something to talk about.
-- **Shoes:** This is where heels earn their place — if you're comfortable in them. A strappy sandal, a pointed pump, a sculptural mule. If heels aren't your thing, a sharp loafer or a metallic flat works. [Pop-of-color flats](/blog/third-piece-rule-styling) are underrated here — red ballet flats under a black dress is editorial-level styling with zero discomfort.
+- **Shoes:** This is where heels earn their place — if you're comfortable in them. A strappy sandal, a pointed pump, a sculptural mule. If heels aren't your thing, a sharp loafer or a metallic flat works. [Pop-of-color flats](/blog/third-piece-rule-styling/) are underrated here — red ballet flats under a black dress is editorial-level styling with zero discomfort.
 
 **Body-flattering tips:** Monochrome looks (one color family head-to-toe) create a long, unbroken line that reads as polished and tall. Add texture variation within the color — matte top, satin bottom, leather jacket — so it doesn't look like a uniform.
 
@@ -80,7 +80,7 @@ Sit down. Cross your legs. Reach for something on a high shelf. Bend to pick up 
 
 ### 3. The compliment test
 
-Look in the mirror and find one thing you genuinely like. Not "it's fine." An actual "yes." If you can't find it, change the piece that's bothering you. One "yes" is enough to anchor the whole outfit. If you're struggling, try swapping just the [third piece](/blog/third-piece-rule-styling) — sometimes the base outfit is fine and the layer is what's off.
+Look in the mirror and find one thing you genuinely like. Not "it's fine." An actual "yes." If you can't find it, change the piece that's bothering you. One "yes" is enough to anchor the whole outfit. If you're struggling, try swapping just the [third piece](/blog/third-piece-rule-styling/) — sometimes the base outfit is fine and the layer is what's off.
 
 ## Stop Polling Reddit. Poll Your Closet.
 
@@ -104,7 +104,7 @@ The outfit spiral ends when you stop asking "what do they want me to wear?" and 
 
 ### What color is best for a first date?
 
-There's no universal "best" color — despite what red-dress-psychology articles claim. What matters more is wearing a color you feel good in and that flatters your skin tone. Navy, black, burgundy, and forest green are reliable evening choices. For daytime, softer tones (cream, sage, dusty rose) photograph well. If your wardrobe is mostly neutral, add color through a [third piece](/blog/third-piece-rule-styling) rather than a full-color outfit.
+There's no universal "best" color — despite what red-dress-psychology articles claim. What matters more is wearing a color you feel good in and that flatters your skin tone. Navy, black, burgundy, and forest green are reliable evening choices. For daytime, softer tones (cream, sage, dusty rose) photograph well. If your wardrobe is mostly neutral, add color through a [third piece](/blog/third-piece-rule-styling/) rather than a full-color outfit.
 
 ### Heels or flats?
 
@@ -116,7 +116,7 @@ If your outfit could double as what you'd wear to a 9 AM grocery run, it's too c
 
 ### What if I genuinely have nothing to wear?
 
-You probably do — you just can't see it. The average person wears about 20% of their closet regularly, which means 80% is sitting untapped. Try combining pieces you've never paired before. Use [Dripmatiq](/) to surface unexpected combinations from your photographed wardrobe. Sometimes the best outfit is two familiar pieces you never thought to put together, plus a [capsule piece you almost donated](/blog/capsule-wardrobe-rule-backfires).
+You probably do — you just can't see it. The average person wears about 20% of their closet regularly, which means 80% is sitting untapped. Try combining pieces you've never paired before. Use [Dripmatiq](/) to surface unexpected combinations from your photographed wardrobe. Sometimes the best outfit is two familiar pieces you never thought to put together, plus a [capsule piece you almost donated](/blog/capsule-wardrobe-rule-backfires/).
 
 <script type="application/ld+json">
 {

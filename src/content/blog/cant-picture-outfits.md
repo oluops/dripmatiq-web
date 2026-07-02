@@ -27,7 +27,7 @@ The result? Two common failure modes:
 
 **Over-buying.** Without mental simulation, you buy duplicates of "safe" items because you can't picture how anything else would work. Five black tops because you *know* black works, even if your closet has untapped potential.
 
-**Decision paralysis.** Every morning becomes a physical try-on session. Pull things out, hold them up, put them back. Repeat until you're late. The [life-stage wardrobe audit](/blog/wardrobe-life-check) helps, but only if you can remember what combinations you've already proven work.
+**Decision paralysis.** Every morning becomes a physical try-on session. Pull things out, hold them up, put them back. Repeat until you're late. The [life-stage wardrobe audit](/blog/wardrobe-life-check/) helps, but only if you can remember what combinations you've already proven work.
 
 ## What Visual Wardrobe Planning Actually Looks Like
 
@@ -49,7 +49,7 @@ This is particularly powerful for aphantasia because it replaces imagination wit
 
 Upload everything you own. Tag by colour, season, formality, category. Then use combination tools to generate pairings algorithmically. The system does the spatial reasoning your brain won't.
 
-This approach [works especially well with capsule systems](/blog/capsule-wardrobe-rule-backfires) because the reduced item count makes comprehensive photography practical. Thirty items photographed and tagged give you hundreds of validated combinations.
+This approach [works especially well with capsule systems](/blog/capsule-wardrobe-rule-backfires/) because the reduced item count makes comprehensive photography practical. Thirty items photographed and tagged give you hundreds of validated combinations.
 
 ## The Hidden Accessibility Gap in Fashion
 
@@ -75,7 +75,7 @@ You don't need an app to start. Here's a manual system that works:
 
 **Step 4: Add new combinations as you discover them.** Wearing something new that works? Photograph it before you leave the house. Your lookbook grows organically.
 
-The [third-piece styling rule](/blog/third-piece-rule-styling) becomes dramatically easier when you can *see* examples rather than imagine them. Add a scarf, a jacket, a hat — and photograph the difference.
+The [third-piece styling rule](/blog/third-piece-rule-styling/) becomes dramatically easier when you can *see* examples rather than imagine them. Add a scarf, a jacket, a hat — and photograph the difference.
 
 ## When Technology Meets Cognitive Needs
 

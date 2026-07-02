@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1A1A2E"/>
+      <stop offset="100%" stop-color="#0E0E1B"/>
+    </linearGradient>
+    <linearGradient id="brandBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4A847" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#D4A847" stop-opacity="0.07"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1080" height="1920" fill="url(#bg)"/>
+
+  <rect x="80" y="230" width="380" height="44" rx="22" fill="url(#brandBar)"/>
+  <text x="100" y="260" font-family="Arial, sans-serif" font-size="20" fill="#D4A847" letter-spacing="2">DRIPMATIQ JOURNAL</text>
+  <rect x="80" y="339" width="140" height="6" fill="#D4A847" rx="3"/>
+
+  <text x="80" y="510" font-family="Georgia, serif" font-size="66" fill="#FFFFFF" font-weight="700">Your Favorite Brand Just Got</text><text x="80" y="596" font-family="Georgia, serif" font-size="66" fill="#FFFFFF" font-weight="700">Acquired — Now What?</text>
+  <text x="80" y="980" font-family="Georgia, serif" font-size="42" fill="#CFCFD8">Don’t panic-shop your way through a</text><text x="80" y="1034" font-family="Georgia, serif" font-size="42" fill="#CFCFD8">brand betrayal.</text>
+
+  <text x="540" y="1860" font-family="Arial, sans-serif" font-size="24" fill="#D4A847" text-anchor="middle" letter-spacing="4">DRIPMATIQ.APP</text>
+</svg>

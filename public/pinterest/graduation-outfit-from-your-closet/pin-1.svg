@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1500" viewBox="0 0 1000 1500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0a1a"/>
+      <stop offset="100%" stop-color="#1a1a3e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1500" fill="url(#bg)"/>
+  <rect x="420" y="200" width="160" height="4" fill="#c9a84c" rx="2"/>
+  <text x="500" y="300" font-family="Georgia, serif" font-size="28" fill="#c9a84c" text-anchor="middle" letter-spacing="4">STYLE TIP</text>
+  <text x="500" y="500" font-family="Georgia, serif" font-size="68" fill="#ffffff" text-anchor="middle" font-weight="bold">Your Graduation</text>chr(10)  <text x="500" y="590" font-family="Georgia, serif" font-size="68" fill="#ffffff" text-anchor="middle" font-weight="bold">Outfit Is Already</text>chr(10)  <text x="500" y="680" font-family="Georgia, serif" font-size="68" fill="#ffffff" text-anchor="middle" font-weight="bold">in Your Closet</text>
+  <text x="500" y="810" font-family="Georgia, serif" font-size="30" fill="#aaa" text-anchor="middle">Skip the panic buy. Style what you own.</text>
+  <rect x="0" y="1380" width="1000" height="120" fill="#0a0a1a" opacity="0.8"/>
+  <text x="500" y="1430" font-family="Georgia, serif" font-size="36" fill="#c9a84c" text-anchor="middle" font-weight="bold">DRIPMATIQ.APP</text>
+  <text x="500" y="1470" font-family="Georgia, serif" font-size="20" fill="#888" text-anchor="middle">/blog/graduation-outfit-from-your-closet</text>
+</svg>

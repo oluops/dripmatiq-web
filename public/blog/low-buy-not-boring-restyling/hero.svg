@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-labelledby="title desc">
+  <title id="title">Low-Buy Not Boring</title>
+  <desc id="desc">Dark editorial card reading low-buy not boring with abstract wardrobe graphics</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="100%" stop-color="#131a2b"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d4a574"/>
+      <stop offset="100%" stop-color="#f0cf9b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="50" y="50" width="1100" height="530" rx="24" fill="none" stroke="rgba(212,165,116,0.35)" stroke-width="2"/>
+
+  <!-- abstract wardrobe tiles -->
+  <g opacity="0.25">
+    <rect x="90" y="120" width="140" height="200" rx="12" fill="#d4a574"/>
+    <rect x="250" y="90" width="120" height="230" rx="12" fill="#7e5a37"/>
+    <rect x="390" y="140" width="110" height="180" rx="12" fill="#b88a5d"/>
+    <rect x="710" y="110" width="160" height="230" rx="12" fill="#6b4a2c"/>
+    <rect x="890" y="150" width="120" height="190" rx="12" fill="#d4a574"/>
+  </g>
+
+  <text x="600" y="315" text-anchor="middle" fill="white" font-size="68" font-family="Georgia, serif" font-weight="700" letter-spacing="1">
+    LOW-BUY ≠ BORING
+  </text>
+  <rect x="300" y="340" width="600" height="5" fill="url(#gold)" opacity="0.9"/>
+  <text x="600" y="390" text-anchor="middle" fill="#e8d5b7" font-size="30" font-family="Georgia, serif" font-weight="500">
+    5 Restyling Tricks That Refresh Your Closet
+  </text>
+
+  <text x="600" y="560" text-anchor="middle" fill="#8a8f98" font-size="16" font-family="Inter, Arial, sans-serif" letter-spacing="3">
+    DRIPMATIQ.APP
+  </text>
+</svg>

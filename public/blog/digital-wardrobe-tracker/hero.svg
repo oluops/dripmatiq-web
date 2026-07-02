@@ -1,0 +1,58 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Digital wardrobe tracker hero image</title>
+  <desc id="desc">A dark elegant interface showing a closet grid and weekly outfit planner with AI suggestions.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#111827"/>
+      <stop offset="1" stop-color="#1F2937"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#34D399"/>
+      <stop offset="1" stop-color="#60A5FA"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1030" cy="90" r="190" fill="#334155" opacity="0.25"/>
+  <circle cx="140" cy="560" r="210" fill="#0EA5E9" opacity="0.12"/>
+
+  <text x="80" y="110" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="600">Dripmatiq</text>
+  <text x="80" y="180" fill="#F8FAFC" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="700">Digital Wardrobe Tracker</text>
+  <text x="80" y="228" fill="#CBD5E1" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="500">Plan better outfits from clothes you already own</text>
+
+  <rect x="80" y="276" rx="22" ry="22" width="1040" height="290" fill="url(#card)" stroke="#334155" stroke-width="2"/>
+
+  <rect x="118" y="316" rx="14" width="520" height="210" fill="#0B1220" stroke="#374151"/>
+  <text x="142" y="346" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="600">Closet Inventory</text>
+
+  <g opacity="0.95">
+    <rect x="142" y="366" width="98" height="72" rx="10" fill="#334155"/>
+    <rect x="252" y="366" width="98" height="72" rx="10" fill="#475569"/>
+    <rect x="362" y="366" width="98" height="72" rx="10" fill="#64748B"/>
+    <rect x="472" y="366" width="98" height="72" rx="10" fill="#94A3B8"/>
+
+    <rect x="142" y="446" width="98" height="58" rx="10" fill="#1E293B"/>
+    <rect x="252" y="446" width="98" height="58" rx="10" fill="#0F766E"/>
+    <rect x="362" y="446" width="98" height="58" rx="10" fill="#1D4ED8"/>
+    <rect x="472" y="446" width="98" height="58" rx="10" fill="#4338CA"/>
+  </g>
+
+  <rect x="674" y="316" rx="14" width="406" height="210" fill="#0B1220" stroke="#374151"/>
+  <text x="698" y="346" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="600">Weekly Outfit Plan</text>
+
+  <g>
+    <rect x="698" y="364" width="358" height="24" rx="8" fill="#1F2937"/>
+    <rect x="698" y="396" width="300" height="24" rx="8" fill="#1F2937"/>
+    <rect x="698" y="428" width="336" height="24" rx="8" fill="#1F2937"/>
+    <rect x="698" y="460" width="282" height="24" rx="8" fill="#1F2937"/>
+  </g>
+
+  <rect x="880" y="364" width="176" height="24" rx="8" fill="url(#accent)" opacity="0.95"/>
+  <rect x="820" y="428" width="214" height="24" rx="8" fill="url(#accent)" opacity="0.8"/>
+
+  <text x="84" y="602" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="18">Track • Plan • Repeat</text>
+</svg>

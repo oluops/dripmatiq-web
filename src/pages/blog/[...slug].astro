@@ -27,17 +27,21 @@ const heroFull = new URL(heroJpg, siteUrl).href;
 const words = post.body?.split(/\s+/).filter(Boolean).length || 0;
 const readingTime = Math.max(1, Math.ceil(words / 250));
 
-// Related posts by tag overlap
+// Related posts by tag overlap, fallback to most recent
 const allPosts = await getCollection('blog');
-const related = allPosts
+const otherPosts = allPosts
   .filter((p) => p.slug !== post.slug)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const withOverlap = otherPosts
   .map((p) => ({
     ...p,
-    overlap: p.data.tags.filter((t: string) => post.data.tags.includes(t)).length,
+    overlap: p.data.tags.filter((t: string) =>
+      post.data.tags.some((pt: string) => pt.toLowerCase() === t.toLowerCase())
+    ).length,
   }))
-  .filter((p) => p.overlap > 0)
-  .sort((a, b) => b.overlap - a.overlap)
-  .slice(0, 3);
+  .sort((a, b) => b.overlap - a.overlap || b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+// Take top 3 by relevance; if fewer than 3 have overlap, fill with recent posts
+const related = withOverlap.slice(0, 3);
 
 const pubDateISO = post.data.pubDate.toISOString();
 const pubDateFormatted = post.data.pubDate.toLocaleDateString('en-US', {
@@ -113,7 +117,8 @@ const blogPostingLd = JSON.stringify({
   '@graph': graph,
 });
 
-const appStoreUrl = `https://apps.apple.com/app/dripmatiq/id6743753909?utm_source=web&utm_medium=cta&utm_campaign=blog&utm_content=${post.slug}`;
+const appStoreUrl = `https://apps.apple.com/app/dripmatiq/id6760679168?utm_source=web&utm_medium=cta&utm_campaign=blog&utm_content=${post.slug}`;
+const playStoreUrl = `https://play.google.com/store/apps/details?id=com.dripmatic.app&utm_source=web&utm_medium=cta&utm_campaign=blog&utm_content=${post.slug}`;
 const twitterShareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(post.data.title)}&url=${encodeURIComponent(postUrl + '?utm_source=twitter&utm_medium=share')}`;
 const pinterestShareUrl = `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(postUrl + '?utm_source=pinterest&utm_medium=share')}&description=${encodeURIComponent(post.data.title)}&media=${encodeURIComponent(heroFull)}`;
 ---
@@ -146,13 +151,15 @@ const pinterestShareUrl = `https://pinterest.com/pin/create/button/?url=${encode
       />
       <!-- Top CTA -->
       <div class="mb-8 p-4 rounded-card bg-surface-elevated border border-border text-center">
-        <p class="text-sm text-content-secondary mb-2">Style your closet with AI</p>
-        <a
-          href={appStoreUrl}
-          class="inline-flex items-center gap-2 bg-gold hover:bg-gold-hover text-surface-primary font-bold text-sm px-5 py-2.5 rounded-btn tracking-button transition-colors duration-200"
-        >
-          Try Dripmatiq Free
-        </a>
+        <p class="text-sm text-content-secondary mb-2">Style your closet, your way</p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+          <a href={appStoreUrl} class="transition-opacity hover:opacity-80">
+            <img src="/assets/badge-appstore.svg" alt="Download on the App Store" class="h-[40px]" />
+          </a>
+          <a href={playStoreUrl} class="transition-opacity hover:opacity-80">
+            <img src="/assets/badge-googleplay.svg" alt="Get it on Google Play" class="h-[40px]" />
+          </a>
+        </div>
       </div>
 
       <!-- Hero image -->
@@ -233,14 +240,16 @@ const pinterestShareUrl = `https://pinterest.com/pin/create/button/?url=${encode
 
       <!-- Bottom CTA -->
       <div class="mt-12 p-6 rounded-card bg-surface-elevated border border-border text-center">
-        <p class="text-lg font-bold mb-2">Your closet, styled by AI.</p>
+        <p class="text-lg font-bold mb-2">Your closet, decoded.</p>
         <p class="text-content-secondary mb-4">See what you already own in a whole new way.</p>
-        <a
-          href={appStoreUrl}
-          class="inline-flex items-center gap-2 bg-gold hover:bg-gold-hover text-surface-primary font-bold text-sm px-6 py-3 rounded-btn tracking-button transition-colors duration-200"
-        >
-          Download Dripmatiq Free
-        </a>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+          <a href={appStoreUrl} class="transition-opacity hover:opacity-80">
+            <img src="/assets/badge-appstore.svg" alt="Download on the App Store" class="h-[44px]" />
+          </a>
+          <a href={playStoreUrl} class="transition-opacity hover:opacity-80">
+            <img src="/assets/badge-googleplay.svg" alt="Get it on Google Play" class="h-[44px]" />
+          </a>
+        </div>
       </div>
 
       <!-- Related posts -->

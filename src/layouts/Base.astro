@@ -6,6 +6,7 @@ interface Props {
   ogType?: string;
   canonicalUrl?: string;
   jsonLd?: string;
+  noindex?: boolean;
   articleMeta?: {
     publishedTime?: string;
     modifiedTime?: string;
@@ -23,12 +24,13 @@ const {
   ogType = 'website',
   canonicalUrl,
   jsonLd,
+  noindex = false,
   articleMeta,
 } = Astro.props;
 
 const siteUrl = 'https://dripmatiq.app';
 const resolvedCanonical = canonicalUrl || new URL(Astro.url.pathname, siteUrl).href;
-const resolvedOgImage = ogImage || `${siteUrl}/assets/icon.png`;
+const resolvedOgImage = ogImage || `${siteUrl}/assets/og-image.png`;
 
 const isHome = Astro.url.pathname === '/' || Astro.url.pathname === '';
 
@@ -61,11 +63,11 @@ const appSchema = {
   '@context': 'https://schema.org',
   '@type': 'MobileApplication',
   name: 'Dripmatiq',
-  operatingSystem: 'iOS',
+  operatingSystem: 'iOS, Android',
   applicationCategory: 'LifestyleApplication',
-  description: 'AI-powered closet scanner that builds daily outfits from clothes you already own.',
-  url: 'https://apps.apple.com/app/dripmatiq/id6752700776',
-  installUrl: 'https://apps.apple.com/app/dripmatiq/id6752700776',
+  description: 'Closet scanner that builds daily outfits from clothes you already own.',
+  url: 'https://apps.apple.com/app/dripmatiq/id6760679168',
+  installUrl: 'https://apps.apple.com/app/dripmatiq/id6760679168',
   offers: [
     { '@type': 'Offer', price: '0', priceCurrency: 'USD', name: 'Free' },
     { '@type': 'Offer', price: '6.99', priceCurrency: 'USD', name: 'Pro' },
@@ -78,6 +80,8 @@ const gscToken = import.meta.env.PUBLIC_GSC_VERIFICATION;
 const bingToken = import.meta.env.PUBLIC_BING_VERIFICATION;
 const plausibleDomain = import.meta.env.PUBLIC_PLAUSIBLE_DOMAIN;
 const cfBeacon = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
+// Reddit Ads pixel. Defaults to the Dripmatiq pixel; set PUBLIC_REDDIT_PIXEL_ID='' to disable.
+const redditPixelId = import.meta.env.PUBLIC_REDDIT_PIXEL_ID ?? 'a2_iy4gxvmjbu53';
 ---
 
 <!doctype html>
@@ -85,6 +89,30 @@ const cfBeacon = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NWCMM2C02J"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-NWCMM2C02J');
+      // Count App Store / Play Store clicks as store_click events.
+      document.addEventListener(
+        'click',
+        function (e) {
+          var a = e.target && e.target.closest && e.target.closest('a[href]');
+          if (!a) return;
+          var href = a.getAttribute('href') || '';
+          var store =
+            href.indexOf('apps.apple.com') !== -1 ? 'app_store' :
+            href.indexOf('play.google.com') !== -1 ? 'play_store' : null;
+          if (store) gtag('event', 'store_click', { store: store, page_path: location.pathname });
+        },
+        true
+      );
+    </script>
+
     <meta name="description" content={description} />
     <link rel="canonical" href={resolvedCanonical} />
 
@@ -105,8 +133,11 @@ const cfBeacon = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
     <!-- RSS -->
     <link rel="alternate" type="application/rss+xml" title="Dripmatiq Blog" href="/rss.xml" />
 
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow'} />
     <meta name="theme-color" content="#0f0f0f" />
+
+    <!-- Smart App Banner (Safari iOS) -->
+    <meta name="apple-itunes-app" content="app-id=6760679168" />
 
     <!-- Search engine verification -->
     {gscToken && <meta name="google-site-verification" content={gscToken} />}
@@ -123,8 +154,8 @@ const cfBeacon = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
     <!-- Performance hints -->
     <link rel="preconnect" href="https://apps.apple.com" crossorigin />
     <link rel="dns-prefetch" href="https://apps.apple.com" />
-    <link rel="dns-prefetch" href="https://plausible.io" />
-    <link rel="dns-prefetch" href="https://static.cloudflareinsights.com" />
+    {plausibleDomain && <link rel="dns-prefetch" href="https://plausible.io" />}
+    {cfBeacon && <link rel="dns-prefetch" href="https://static.cloudflareinsights.com" />}
 
     {jsonLd && <script type="application/ld+json" set:html={jsonLd} />}
 
@@ -142,6 +173,40 @@ const cfBeacon = import.meta.env.PUBLIC_CF_BEACON_TOKEN;
     )}
     {cfBeacon && (
       <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={`{"token": "${cfBeacon}"}`}></script>
+    )}
+    {redditPixelId && (
+      <!-- Reddit Ads pixel: PageVisit on load, Lead on any app-store click -->
+      <script is:inline define:vars={{ redditPixelId }}>
+        !(function (w, d) {
+          if (!w.rdt) {
+            var p = (w.rdt = function () {
+              p.sendEvent ? p.sendEvent.apply(p, arguments) : p.callQueue.push(arguments);
+            });
+            p.callQueue = [];
+            var t = d.createElement("script");
+            (t.src = "https://www.redditstatic.com/ads/pixel.js"), (t.async = !0);
+            var s = d.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(t, s);
+          }
+        })(window, document);
+        rdt("init", redditPixelId);
+        rdt("track", "PageVisit");
+        // Treat a click through to the App Store / Play Store as a Lead (install intent).
+        document.addEventListener(
+          "click",
+          function (e) {
+            var a = e.target && e.target.closest && e.target.closest("a[href]");
+            if (!a) return;
+            var href = a.getAttribute("href") || "";
+            if (href.indexOf("apps.apple.com") !== -1 || href.indexOf("play.google.com") !== -1) {
+              try {
+                rdt("track", "Lead");
+              } catch (err) {}
+            }
+          },
+          true
+        );
+      </script>
     )}
   </head>
   <body class="bg-surface-primary text-content-primary antialiased">

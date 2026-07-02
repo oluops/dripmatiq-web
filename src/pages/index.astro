@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import Nav from '../components/Nav.astro';
 import Hero from '../components/Hero.astro';
 import HowItWorks from '../components/HowItWorks.astro';
+import AppPreviews from '../components/AppPreviews.astro';
 import AppFlow from '../components/AppFlow.astro';
 import Features from '../components/Features.astro';
 import SocialProof from '../components/SocialProof.astro';
@@ -10,15 +11,53 @@ import Pricing from '../components/Pricing.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<Base title="Dripmatiq — Your closet, styled by AI">
+<Base title="Dripmatiq — AI Outfit Planner & Virtual Try-On From Your Own Closet">
   <Nav />
   <main>
     <Hero />
     <HowItWorks />
+    <AppPreviews />
     <AppFlow />
     <Features />
     <SocialProof />
     <Pricing />
   </main>
+
+  <!-- Sticky mobile download bar -->
+  <div
+    id="sticky-cta"
+    class="fixed bottom-0 left-0 right-0 z-50 sm:hidden bg-surface-primary border-t border-border px-4 py-3 flex gap-3"
+    style="display:none;"
+  >
+    <a
+      href="https://apps.apple.com/app/dripmatiq/id6760679168"
+      class="flex-1 inline-flex items-center justify-center bg-gold text-surface-primary font-bold text-sm py-3 rounded-full hover:bg-gold-hover transition-colors duration-200"
+    >
+      Download iOS
+    </a>
+    <a
+      href="https://play.google.com/store/apps/details?id=com.dripmatic.app"
+      class="flex-1 inline-flex items-center justify-center border border-border text-content-primary font-semibold text-sm py-3 rounded-full hover:border-border-active transition-colors duration-200"
+    >
+      Get Android
+    </a>
+  </div>
+
+  <script>
+    // Show sticky bar after scrolling past hero
+    const bar = document.getElementById('sticky-cta');
+    const hero = document.querySelector('section');
+    if (bar && hero) {
+      bar.style.display = 'none';
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          bar.style.display = entry.isIntersecting ? 'none' : 'flex';
+        },
+        { threshold: 0.1 }
+      );
+      observer.observe(hero);
+    }
+  </script>
+
   <Footer />
 </Base>
