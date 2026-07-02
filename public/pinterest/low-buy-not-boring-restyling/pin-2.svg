@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1500" width="1000" height="1500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0f0f1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1500" fill="url(#bg)"/>
+  <!-- Gold accent line -->
+  <rect x="80" y="120" width="60" height="4" fill="#d4a853"/>
+  <text x="500" y="300" font-family="Georgia, serif" font-size="60" font-weight="bold" fill="#ffffff" text-anchor="middle">5 Ways to Make</text>
+  <text x="500" y="380" font-family="Georgia, serif" font-size="60" font-weight="bold" fill="#ffffff" text-anchor="middle">Your Closet Feel</text>
+  <text x="500" y="460" font-family="Georgia, serif" font-size="60" font-weight="bold" fill="#ffffff" text-anchor="middle">Brand New</text>
+
+  <rect x="350" y="520" width="300" height="3" fill="#d4a853" opacity="0.5"/>
+
+  <text x="500" y="610" font-family="Arial, sans-serif" font-size="32" font-weight="normal" fill="#e0e0e0" text-anchor="middle">① The Unexpected Tuck</text>
+  <text x="500" y="660" font-family="Arial, sans-serif" font-size="32" font-weight="normal" fill="#e0e0e0" text-anchor="middle">② Texture Clash on Purpose</text>
+  <text x="500" y="710" font-family="Arial, sans-serif" font-size="32" font-weight="normal" fill="#e0e0e0" text-anchor="middle">③ One Piece, Three Silhouettes</text>
+  <text x="500" y="760" font-family="Arial, sans-serif" font-size="32" font-weight="normal" fill="#e0e0e0" text-anchor="middle">④ Color Bridge Your Neutrals</text>
+  <text x="500" y="810" font-family="Arial, sans-serif" font-size="32" font-weight="normal" fill="#e0e0e0" text-anchor="middle">⑤ The Reverse Capsule Day</text>
+
+  <rect x="350" y="870" width="300" height="3" fill="#d4a853" opacity="0.5"/>
+
+  <text x="500" y="940" font-family="Arial, sans-serif" font-size="26" font-weight="normal" fill="#999999" text-anchor="middle">No shopping required.</text>
+
+  <circle cx="500" cy="1080" r="80" fill="none" stroke="#d4a853" stroke-width="2" opacity="0.4"/>
+  <circle cx="500" cy="1080" r="120" fill="none" stroke="#d4a853" stroke-width="1" opacity="0.2"/>
+  <!-- Footer -->
+  <rect x="0" y="1380" width="1000" height="120" fill="#0a0a14"/>
+  <text x="500" y="1440" font-family="Georgia, serif" font-size="28" fill="#d4a853" text-anchor="middle" letter-spacing="4">DRIPMATIQ.APP</text>
+  <text x="500" y="1470" font-family="Arial, sans-serif" font-size="14" fill="#888" text-anchor="middle">/blog/low-buy-not-boring-restyling</text>
+</svg>
