@@ -9,14 +9,9 @@ import Features from '../components/Features.astro';
 import SocialProof from '../components/SocialProof.astro';
 import Pricing from '../components/Pricing.astro';
 import Footer from '../components/Footer.astro';
-import { getCollection } from 'astro:content';
-
-const latestPosts = (await getCollection('blog'))
-  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-  .slice(0, 6);
 ---
 
-<Base title="Dripmatiq — Your closet, decoded.">
+<Base title="Dripmatiq — AI Outfit Planner & Virtual Try-On From Your Own Closet">
   <Nav />
   <main>
     <Hero />
@@ -26,41 +21,43 @@ const latestPosts = (await getCollection('blog'))
     <Features />
     <SocialProof />
     <Pricing />
-
-    <!-- Latest blog posts — improves internal linking for SEO -->
-    <section class="py-20 px-4 sm:px-6 max-w-6xl mx-auto">
-      <div class="flex items-center justify-between mb-10">
-        <h2 class="text-h2 font-bold">Latest from the blog</h2>
-        <a href="/blog/" class="text-sm text-gold hover:text-gold-hover transition-colors duration-200">
-          View all &rarr;
-        </a>
-      </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {latestPosts.map((post) => {
-          const href = `/blog/${post.slug}/`;
-          const heroSrc = (post.data.heroImage || `/blog/${post.slug}/hero.svg`).replace(/\.svg$/, '.jpg');
-          return (
-            <a href={href} class="group block">
-              <div class="overflow-hidden rounded-card mb-3">
-                <img
-                  src={heroSrc}
-                  alt={post.data.heroAlt || post.data.title}
-                  width="600"
-                  height="315"
-                  loading="lazy"
-                  decoding="async"
-                  class="w-full aspect-[1200/630] object-cover transition-transform duration-300 group-hover:scale-[1.02]"
-                />
-              </div>
-              <h3 class="text-base font-bold mb-1 group-hover:text-gold transition-colors duration-200">
-                {post.data.title}
-              </h3>
-              <p class="text-sm text-content-secondary line-clamp-2">{post.data.description}</p>
-            </a>
-          );
-        })}
-      </div>
-    </section>
   </main>
+
+  <!-- Sticky mobile download bar -->
+  <div
+    id="sticky-cta"
+    class="fixed bottom-0 left-0 right-0 z-50 sm:hidden bg-surface-primary border-t border-border px-4 py-3 flex gap-3"
+    style="display:none;"
+  >
+    <a
+      href="https://apps.apple.com/app/dripmatiq/id6760679168"
+      class="flex-1 inline-flex items-center justify-center bg-gold text-surface-primary font-bold text-sm py-3 rounded-full hover:bg-gold-hover transition-colors duration-200"
+    >
+      Download iOS
+    </a>
+    <a
+      href="https://play.google.com/store/apps/details?id=com.dripmatic.app"
+      class="flex-1 inline-flex items-center justify-center border border-border text-content-primary font-semibold text-sm py-3 rounded-full hover:border-border-active transition-colors duration-200"
+    >
+      Get Android
+    </a>
+  </div>
+
+  <script>
+    // Show sticky bar after scrolling past hero
+    const bar = document.getElementById('sticky-cta');
+    const hero = document.querySelector('section');
+    if (bar && hero) {
+      bar.style.display = 'none';
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          bar.style.display = entry.isIntersecting ? 'none' : 'flex';
+        },
+        { threshold: 0.1 }
+      );
+      observer.observe(hero);
+    }
+  </script>
+
   <Footer />
 </Base>

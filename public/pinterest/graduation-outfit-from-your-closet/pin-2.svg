@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1500" viewBox="0 0 1000 1500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0a1a"/>
+      <stop offset="100%" stop-color="#1a1a3e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1500" fill="url(#bg)"/>
+  <rect x="420" y="200" width="160" height="4" fill="#c9a84c" rx="2"/>
+  <text x="500" y="300" font-family="Georgia, serif" font-size="28" fill="#c9a84c" text-anchor="middle" letter-spacing="4">3 STEPS</text>
+  <text x="500" y="500" font-family="Georgia, serif" font-size="54" fill="#ffffff" text-anchor="middle" font-weight="bold">3 Ways to Style</text>
+  <text x="500" y="580" font-family="Georgia, serif" font-size="54" fill="#ffffff" text-anchor="middle" font-weight="bold">Graduation From</text>
+  <text x="500" y="660" font-family="Georgia, serif" font-size="54" fill="#ffffff" text-anchor="middle" font-weight="bold">Your Closet</text>
+  <text x="140" y="820" font-family="Georgia, serif" font-size="32" fill="#c9a84c">1.</text>
+  <text x="180" y="820" font-family="Georgia, serif" font-size="32" fill="#ddd">Find your anchor piece</text>
+  <text x="140" y="890" font-family="Georgia, serif" font-size="32" fill="#c9a84c">2.</text>
+  <text x="180" y="890" font-family="Georgia, serif" font-size="32" fill="#ddd">Layer the ceremony stack</text>
+  <text x="140" y="960" font-family="Georgia, serif" font-size="32" fill="#c9a84c">3.</text>
+  <text x="180" y="960" font-family="Georgia, serif" font-size="32" fill="#ddd">Photograph-proof your look</text>
+  <text x="500" y="1100" font-family="Georgia, serif" font-size="26" fill="#888" text-anchor="middle">No new purchases required.</text>
+  <rect x="0" y="1380" width="1000" height="120" fill="#0a0a1a" opacity="0.8"/>
+  <text x="500" y="1430" font-family="Georgia, serif" font-size="36" fill="#c9a84c" text-anchor="middle" font-weight="bold">DRIPMATIQ.APP</text>
+  <text x="500" y="1470" font-family="Georgia, serif" font-size="20" fill="#888" text-anchor="middle">/blog/graduation-outfit-from-your-closet</text>
+</svg>

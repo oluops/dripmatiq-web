@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1500" viewBox="0 0 1000 1500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#0f0f1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1500" fill="url(#bg)"/>
+  
+  <rect x="400" y="180" width="200" height="4" fill="#d4af37"/>
+  <text x="500" y="260" font-family="Georgia, serif" font-size="24" fill="#d4af37" text-anchor="middle" letter-spacing="4">CLOSET AUDIT</text>
+  <text x="500" y="420" font-family="Georgia, serif" font-size="56" fill="#ffffff" text-anchor="middle" font-weight="bold">3 Steps to Take</text>
+  <text x="500" y="490" font-family="Georgia, serif" font-size="56" fill="#ffffff" text-anchor="middle" font-weight="bold">When Your Brand</text>
+  <text x="500" y="560" font-family="Georgia, serif" font-size="56" fill="#ffffff" text-anchor="middle" font-weight="bold">Sells Out</text>
+  <text x="150" y="720" font-family="Georgia, serif" font-size="32" fill="#d4af37">1.</text>
+  <text x="190" y="720" font-family="Georgia, serif" font-size="32" fill="#ccc">Audit your existing pieces</text>
+  <text x="150" y="800" font-family="Georgia, serif" font-size="32" fill="#d4af37">2.</text>
+  <text x="190" y="800" font-family="Georgia, serif" font-size="32" fill="#ccc">Find replacements you already own</text>
+  <text x="150" y="880" font-family="Georgia, serif" font-size="32" fill="#d4af37">3.</text>
+  <text x="190" y="880" font-family="Georgia, serif" font-size="32" fill="#ccc">Align your wardrobe with values</text>
+  <text x="500" y="1020" font-family="Georgia, serif" font-size="26" fill="#888" text-anchor="middle">No shopping required.</text>
+  <polygon points="500,1080 515,1095 500,1110 485,1095" fill="#d4af37"/>
+
+  <!-- Footer -->
+  <rect x="0" y="1380" width="1000" height="120" fill="#0f0f1a" opacity="0.9"/>
+  <text x="500" y="1430" font-family="Georgia, serif" font-size="36" fill="#d4af37" text-anchor="middle" font-weight="bold">DRIPMATIQ.APP</text>
+  <text x="500" y="1465" font-family="Georgia, serif" font-size="18" fill="#888" text-anchor="middle">/blog/everlane-alternatives-closet-audit</text>
+  <!-- Gold accent line -->
+  <rect x="100" y="1375" width="800" height="2" fill="#d4af37" opacity="0.6"/>
+</svg>
