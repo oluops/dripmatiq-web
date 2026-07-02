@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1500" viewBox="0 0 1000 1500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b0b12"/>
+      <stop offset="100%" stop-color="#1a1224"/>
+    </linearGradient>
+    <radialGradient id="goldGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f0d98a"/>
+      <stop offset="100%" stop-color="#d4af37" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1000" height="1500" fill="url(#bg)"/>
+  
+    <circle cx="860" cy="220" r="120" fill="url(#goldGlow)" opacity="0.22"/>
+    <circle cx="140" cy="1280" r="160" fill="url(#goldGlow)" opacity="0.18"/>
+    <path d="M90 250 L910 250" stroke="#d4af37" stroke-width="2" opacity="0.5"/>
+    
+  
+    <rect x="0" y="0" width="1000" height="26" fill="#d4af37"/>
+    <rect x="0" y="1368" width="1000" height="132" fill="#0d0d13"/>
+    
+
+  <text x="90" y="150" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" fill="#f0d98a" letter-spacing="1.5">DRIPMATIQ STYLE NOTE</text>
+
+  <text font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="700" fill="#f7f3ea" letter-spacing="0.5">
+    <tspan x="90" y="320">3 ways to nail your first-</tspan>
+<tspan x="90" y="394">date outfit</tspan>
+  </text>
+
+  
+        <text x="90" y="538" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="500" fill="#cdbfa2">Brunch easy. Bar sharp. Rooftop elevated.</text>
+        
+
+  <text x="90" y="1330" font-family="Inter, Arial, sans-serif" font-size="28" fill="#f0d98a">/blog/what-to-wear-first-date</text>
+  <text x="90" y="1450" font-family="Georgia, 'Times New Roman', serif" font-size="64" font-weight="700" fill="#f7f3ea" letter-spacing="3">DRIPMATIQ.APP</text>
+</svg>

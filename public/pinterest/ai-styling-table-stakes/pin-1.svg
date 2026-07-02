@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1500" width="1000" height="1500">
+<defs>
+  <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#1a1a2e"/>
+    <stop offset="100%" stop-color="#0d0d0d"/>
+  </linearGradient>
+</defs>
+<rect width="1000" height="1500" fill="url(#bg)"/>
+<rect x="40" y="40" width="920" height="1300" rx="16" fill="none" stroke="#c9a84c" stroke-width="2" opacity="0.3"/>
+<circle cx="500" cy="250" r="60" fill="none" stroke="#c9a84c" stroke-width="3"/>
+<text x="500" y="270" font-family="Georgia, 'Times New Roman', serif" font-size="48" fill="#c9a84c" text-anchor="middle">✦</text>
+<text x="500" y="500" font-family="Georgia, 'Times New Roman', serif" font-size="66" font-weight="bold" fill="#f5f0e8" text-anchor="middle">AI STYLING IS</text>
+<text x="500" y="590" font-family="Georgia, 'Times New Roman', serif" font-size="66" font-weight="bold" fill="#f5f0e8" text-anchor="middle">TABLE STAKES —</text>
+<text x="500" y="680" font-family="Georgia, 'Times New Roman', serif" font-size="66" font-weight="bold" fill="#f5f0e8" text-anchor="middle">HERE'S WHAT</text>
+<text x="500" y="770" font-family="Georgia, 'Times New Roman', serif" font-size="66" font-weight="bold" fill="#f5f0e8" text-anchor="middle">ACTUALLY MATTERS</text>
+<text x="500" y="860" font-family="Georgia, 'Times New Roman', serif" font-size="66" font-weight="bold" fill="#f5f0e8" text-anchor="middle">NOW</text>
+<text x="500" y="900" font-family="Georgia, 'Times New Roman', serif" font-size="28" fill="#f5f0e8" text-anchor="middle" opacity="0.8">The real question isn't whether — it's how well.</text>
+<rect x="0" y="1380" width="1000" height="120" fill="#c9a84c"/>
+<text x="500" y="1440" font-family="Georgia, 'Times New Roman', serif" font-size="36" font-weight="bold" fill="#0d0d0d" text-anchor="middle">DRIPMATIQ.APP</text>
+<text x="500" y="1475" font-family="Georgia, 'Times New Roman', serif" font-size="18" fill="#0d0d0d" text-anchor="middle">/blog/ai-styling-table-stakes</text>
+</svg>

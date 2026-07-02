@@ -1,16 +1,44 @@
 ---
-// Social Proof — hidden in v1 (no reviews yet), placeholder ready
-const hasReviews = false;
+// Social proof — stat-based trust block (no reviews needed)
+const stats = [
+  { value: 'Free', label: 'to download, always' },
+  { value: 'FitMatic', label: 'virtual try-on built-in' },
+  { value: 'iOS + Android', label: 'available on both platforms' },
+];
 ---
 
-{hasReviews && (
-  <section class="py-20 sm:py-28 bg-surface-secondary">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-      <p class="text-gold text-lg mb-4">⭐⭐⭐⭐⭐</p>
-      <blockquote class="text-xl sm:text-2xl font-light italic mb-4">
-        "Finally an app that actually knows my style."
-      </blockquote>
-      <p class="text-content-secondary text-sm">— Happy User</p>
+<section class="py-16 sm:py-20 bg-surface-primary border-y border-border">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6">
+    <p class="text-xs font-bold tracking-wide uppercase text-gold text-center mb-10">Why Dripmatiq</p>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+      {stats.map((s) => (
+        <div>
+          <p class="text-3xl sm:text-4xl font-bold text-content-primary mb-2">{s.value}</p>
+          <p class="text-content-secondary text-sm">{s.label}</p>
+        </div>
+      ))}
     </div>
-  </section>
-)}
+
+    <!-- Pull quote -->
+    <div class="mt-12 bg-surface-secondary border border-border rounded-card p-8 text-center max-w-2xl mx-auto">
+      <p class="text-lg sm:text-xl font-light italic text-content-primary mb-4">
+        "Your closet, decoded."
+      </p>
+      <p class="text-content-muted text-sm">Dripmatiq builds outfits from clothes you already own — then shows them on you before you get dressed.</p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
+        <a
+          href="https://apps.apple.com/app/dripmatiq/id6760679168"
+          class="inline-flex items-center justify-center gap-2 bg-gold text-surface-primary font-bold text-base px-8 py-4 rounded-full shadow-lg hover:bg-gold-hover transition-colors duration-200 w-full sm:w-auto max-w-xs"
+        >
+          Download Free — iOS
+        </a>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.dripmatic.app"
+          class="inline-flex items-center justify-center gap-2 border border-border text-content-primary font-semibold text-sm px-8 py-3 rounded-full hover:border-border-active transition-colors duration-200 w-full sm:w-auto max-w-xs"
+        >
+          Get it on Android
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
