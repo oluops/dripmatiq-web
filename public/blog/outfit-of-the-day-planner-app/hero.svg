@@ -1,0 +1,83 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Outfit of the day planner app hero image</title>
+  <desc id="desc">Dark interface with weekly outfit cards, weather chips, and AI styling connections</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A0A0A"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="violet" x1="140" y1="120" x2="420" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+    <linearGradient id="warm" x1="760" y1="180" x2="1030" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F43F5E"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+    <filter id="glow" x="80" y="40" width="1040" height="540" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <g filter="url(#glow)" opacity="0.3">
+    <circle cx="250" cy="220" r="90" fill="#7C3AED"/>
+    <circle cx="930" cy="250" r="110" fill="#06B6D4"/>
+    <circle cx="620" cy="470" r="95" fill="#F43F5E"/>
+  </g>
+
+  <rect x="80" y="74" width="1040" height="482" rx="26" fill="#0F172A" stroke="#334155"/>
+
+  <!-- Left closet panel -->
+  <rect x="118" y="116" width="300" height="398" rx="18" fill="#111827" stroke="#374151"/>
+  <rect x="146" y="152" width="244" height="88" rx="14" fill="url(#violet)"/>
+  <rect x="146" y="256" width="244" height="88" rx="14" fill="#1F2937" stroke="#4B5563"/>
+  <rect x="146" y="360" width="244" height="126" rx="14" fill="#1F2937" stroke="#4B5563"/>
+
+  <g stroke="#E5E7EB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+    <path d="M190 188c8-16 24-16 32 0"/>
+    <path d="M206 188v36"/>
+    <path d="M172 224h68"/>
+
+    <path d="M272 180c8-16 24-16 32 0"/>
+    <path d="M288 180v44"/>
+    <path d="M254 224h68"/>
+
+    <path d="M352 188c8-16 24-16 32 0"/>
+    <path d="M368 188v36"/>
+    <path d="M334 224h68"/>
+  </g>
+
+  <!-- Right planner panel -->
+  <rect x="448" y="116" width="634" height="180" rx="18" fill="#111827" stroke="#374151"/>
+  <rect x="448" y="314" width="634" height="200" rx="18" fill="#111827" stroke="#374151"/>
+
+  <!-- Top row cards -->
+  <rect x="480" y="146" width="182" height="120" rx="14" fill="#1F2937" stroke="#4B5563"/>
+  <rect x="674" y="146" width="182" height="120" rx="14" fill="#1F2937" stroke="#4B5563"/>
+  <rect x="868" y="146" width="182" height="120" rx="14" fill="url(#warm)"/>
+
+  <!-- Weekly chips -->
+  <g>
+    <rect x="482" y="344" width="80" height="28" rx="14" fill="#0EA5E9" opacity="0.25"/>
+    <rect x="572" y="344" width="80" height="28" rx="14" fill="#22C55E" opacity="0.25"/>
+    <rect x="662" y="344" width="80" height="28" rx="14" fill="#EAB308" opacity="0.25"/>
+    <rect x="752" y="344" width="80" height="28" rx="14" fill="#A855F7" opacity="0.25"/>
+    <rect x="842" y="344" width="80" height="28" rx="14" fill="#F97316" opacity="0.25"/>
+    <rect x="932" y="344" width="80" height="28" rx="14" fill="#14B8A6" opacity="0.25"/>
+  </g>
+
+  <!-- Outfit rows -->
+  <rect x="482" y="386" width="560" height="28" rx="8" fill="#1F2937"/>
+  <rect x="482" y="426" width="520" height="28" rx="8" fill="#1F2937"/>
+  <rect x="482" y="466" width="470" height="28" rx="8" fill="#1F2937"/>
+
+  <!-- AI connectors -->
+  <path d="M418 246C456 246 456 196 494 196" stroke="#22D3EE" stroke-width="3" stroke-dasharray="7 7"/>
+  <path d="M418 366C474 366 474 440 530 440" stroke="#A78BFA" stroke-width="3" stroke-dasharray="7 7"/>
+
+  <text x="84" y="52" fill="#E5E7EB" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="30" font-weight="700">
+    Outfit of the Day Planner App
+  </text>
+</svg>
