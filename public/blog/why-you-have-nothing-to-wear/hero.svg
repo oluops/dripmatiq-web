@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1f2e"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <linearGradient id="vg" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Subtle vignette -->
+  <rect width="1200" height="630" fill="url(#vg)"/>
+  <!-- Brand mark -->
+  <g transform="translate(80,80)">
+    <circle cx="0" cy="0" r="6" fill="#c9a84c"/>
+    <text x="18" y="6" fill="#c9a84c" font-family="Georgia,serif" font-size="20" font-weight="600" letter-spacing="3">DRIPMATIQ</text>
+  </g>
+  <!-- Category label -->
+  <text x="80" y="250" fill="#c9a84c" font-family="system-ui,sans-serif" font-size="16" font-weight="700" letter-spacing="4">WARDROBE PSYCHOLOGY</text>
+  <!-- Divider line -->
+  <rect x="80" y="265" width="48" height="3" fill="#c9a84c"/>
+  <!-- Main headline -->
+  <text x="80" y="340" fill="#ffffff" font-family="Georgia,serif" font-size="48" font-weight="700" line-height="1.15">WHY YOU HAVE</text>
+  <text x="80" y="400" fill="#c9a84c" font-family="Georgia,serif" font-size="48" font-weight="700" line-height="1.15" filter="url(#glow)">NOTHING TO WEAR</text>
+  <!-- Subtext -->
+  <text x="80" y="470" fill="#aaa" font-family="system-ui,sans-serif" font-size="18">It's not your closet. It's your visibility.</text>
+  <!-- Footer -->
+  <text x="80" y="560" fill="#555" font-family="system-ui,sans-serif" font-size="14" letter-spacing="2">DRIPMATIQ.APP / BLOG</text>
+</svg>
