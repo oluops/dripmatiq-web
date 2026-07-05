@@ -1,10 +1,10 @@
 ---
 const features = [
-  { icon: '🪄', title: 'Smart Styling', description: 'Personalized outfit suggestions that learn your taste over time.' },
-  { icon: '👗', title: 'Virtual Try-On', description: 'See how pieces look together before you get dressed.' },
-  { icon: '📅', title: 'Daily Outfits', description: 'Fresh looks every morning tailored to your calendar and weather.' },
-  { icon: '📸', title: 'Closet Scanner', description: 'Photograph garments and auto-tag color, category, and season.' },
-  { icon: '🎨', title: 'Color Matching', description: 'Colors paired based on your palette and skin tone preferences.' },
+  { icon: '🪄', title: 'AI Outfit Suggestions', description: 'An AI stylist that learns your taste and generates outfit ideas from your own clothes.' },
+  { icon: '👗', title: 'Virtual Try-On', description: 'See outfits on your body — not a flat collage — before you get dressed or buy anything new.' },
+  { icon: '📅', title: 'Outfit Calendar', description: 'Fresh looks every morning, planned around your calendar and the weather.' },
+  { icon: '📸', title: 'Digital Closet Organizer', description: 'Digitize your wardrobe in minutes — photograph garments and auto-tag color, category, and season.' },
+  { icon: '🎨', title: 'Color Analysis', description: 'Colors paired to your palette and skin tone, so every combination actually works.' },
   { icon: '🔒', title: 'Privacy First', description: 'Your wardrobe data stays on-device. No selling, no sharing.' },
 ];
 ---
@@ -12,7 +12,10 @@ const features = [
 <section class="py-20 sm:py-28">
   <div class="max-w-6xl mx-auto px-4 sm:px-6">
     <p class="text-xs font-bold tracking-wide uppercase text-gold text-center mb-3">Features</p>
-    <h2 class="text-h2 font-light text-center mb-16">What you get.</h2>
+    <h2 class="text-h2 font-light text-center mb-4">Your digital wardrobe, working for you.</h2>
+    <p class="text-content-secondary text-center max-w-xl mx-auto mb-16">
+      Most virtual closet apps stop at cataloging. Dripmatiq is the one that styles you — and shows you the result on your body.
+    </p>
 
     <div class="grid grid-cols-2 md:grid-cols-3 gap-6 lg:gap-8">
       {features.map((f) => (
@@ -38,5 +41,9 @@ const features = [
         Get it on Android
       </a>
     </div>
+    <p class="text-center text-sm text-content-muted mt-6">
+      Switching from another wardrobe app? See how Dripmatiq compares as a
+      <a href="/alternatives/" class="text-gold hover:text-gold-hover underline underline-offset-4">Whering, Acloset &amp; Stylebook alternative</a>.
+    </p>
   </div>
 </section>

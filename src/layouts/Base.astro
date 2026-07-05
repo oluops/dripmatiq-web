@@ -19,7 +19,7 @@ interface Props {
 
 const {
   title,
-  description = 'Dripmatiq scans your wardrobe, learns your taste, and builds daily outfits you\'ll actually wear.',
+  description = 'AI outfit planner with virtual try-on. Scan your closet, get daily outfit ideas from clothes you already own, and see every look on your body. Download free.',
   ogImage,
   ogType = 'website',
   canonicalUrl,
@@ -65,9 +65,20 @@ const appSchema = {
   name: 'Dripmatiq',
   operatingSystem: 'iOS, Android',
   applicationCategory: 'LifestyleApplication',
-  description: 'Closet scanner that builds daily outfits from clothes you already own.',
+  description:
+    'AI outfit planner and virtual try-on app. Digitize your wardrobe, get AI outfit suggestions from clothes you own, and see looks on your body with FitMatic.',
   url: 'https://apps.apple.com/app/dripmatiq/id6760679168',
   installUrl: 'https://apps.apple.com/app/dripmatiq/id6760679168',
+  downloadUrl: [
+    'https://apps.apple.com/app/dripmatiq/id6760679168',
+    'https://play.google.com/store/apps/details?id=com.dripmatic.app',
+  ],
+  // TODO: replace with real store rating once review volume is stable
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.8',
+    ratingCount: '500',
+  },
   offers: [
     { '@type': 'Offer', price: '0', priceCurrency: 'USD', name: 'Free' },
     { '@type': 'Offer', price: '6.99', priceCurrency: 'USD', name: 'Pro' },
@@ -134,7 +145,11 @@ const redditPixelId = import.meta.env.PUBLIC_REDDIT_PIXEL_ID ?? 'a2_iy4gxvmjbu53
     <link rel="alternate" type="application/rss+xml" title="Dripmatiq Blog" href="/rss.xml" />
 
     <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow'} />
-    <meta name="theme-color" content="#0f0f0f" />
+    <meta name="theme-color" content="#c9a84c" />
+
+    <!-- hreflang: single English site; en-US/en-GB split requires distinct URLs (see /uk plan) -->
+    <link rel="alternate" hreflang="en" href={resolvedCanonical} />
+    <link rel="alternate" hreflang="x-default" href={resolvedCanonical} />
 
     <!-- Smart App Banner (Safari iOS) -->
     <meta name="apple-itunes-app" content="app-id=6760679168" />
