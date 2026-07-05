@@ -12,7 +12,14 @@ import LatestPosts from '../components/LatestPosts.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<Base title="AI Outfit Planner & Virtual Try-On App | Dripmatiq">
+<Base
+  title="AI Outfit Planner & Virtual Try-On App | Dripmatiq"
+  hreflangs={[
+    { lang: 'en-US', href: 'https://dripmatiq.app/' },
+    { lang: 'en-GB', href: 'https://dripmatiq.app/uk/' },
+    { lang: 'x-default', href: 'https://dripmatiq.app/' },
+  ]}
+>
   <Nav />
   <main>
     <Hero />

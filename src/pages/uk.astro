@@ -1,0 +1,121 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+
+const appStore = 'https://apps.apple.com/gb/app/dripmatiq/id6760679168';
+const playStore = 'https://play.google.com/store/apps/details?id=com.dripmatic.app&gl=GB';
+
+const features = [
+  { icon: '🪄', title: 'AI Outfit Suggestions', description: 'An AI stylist that learns your taste and generates outfit ideas from your own clothes.' },
+  { icon: '👗', title: 'Virtual Try-On', description: 'See outfits on your body — not a flat collage — before you get dressed or buy anything new.' },
+  { icon: '📅', title: 'Outfit Calendar', description: 'Fresh looks every morning, planned around your diary and the weather.' },
+  { icon: '📸', title: 'Digital Wardrobe Organiser', description: 'Digitise your wardrobe in minutes — photograph garments and auto-tag colour, category, and season.' },
+  { icon: '🎨', title: 'Colour Analysis', description: 'Colours paired to your palette and skin tone, so every combination actually works.' },
+  { icon: '🔒', title: 'Privacy First', description: 'Your wardrobe data stays on-device. No selling, no sharing.' },
+];
+---
+
+<Base
+  title="AI Wardrobe Planner & Virtual Try-On App UK | Dripmatiq"
+  description="AI wardrobe planner with virtual try-on. Organise your wardrobe, get daily outfit ideas from clothes you already own, and see every look on your body. Free download."
+  hreflangs={[
+    { lang: 'en-US', href: 'https://dripmatiq.app/' },
+    { lang: 'en-GB', href: 'https://dripmatiq.app/uk/' },
+    { lang: 'x-default', href: 'https://dripmatiq.app/' },
+  ]}
+>
+  <Nav />
+  <main>
+    <!-- Hero -->
+    <section class="pt-16 pb-12 sm:pt-32 sm:pb-20">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        <p class="text-xs font-bold tracking-wide uppercase text-gold mb-3">For UK wardrobes</p>
+        <h1 class="text-3xl sm:text-hero font-light leading-tight mb-5">
+          The AI wardrobe planner that ends <span class="text-gold">"nothing to wear."</span>
+        </h1>
+        <p class="text-base sm:text-xl text-content-secondary max-w-2xl mx-auto mb-8">
+          Snap your wardrobe once. Dripmatiq builds daily outfits from clothes you already own — and
+          FitMatic virtual try-on shows every look on your body before you get dressed.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href={appStore} class="inline-flex items-center justify-center bg-gold text-surface-primary font-bold text-base px-8 py-4 rounded-full shadow-lg hover:bg-gold-hover transition-colors duration-200 w-full sm:w-auto max-w-xs">
+            Download Free — iOS
+          </a>
+          <a href={playStore} class="inline-flex items-center justify-center border border-border text-content-primary font-semibold text-sm px-8 py-3 rounded-full hover:border-border-active transition-colors duration-200 w-full sm:w-auto max-w-xs">
+            Get it on Android
+          </a>
+        </div>
+        <p class="text-xs text-content-muted mt-4">Free to download · No card required · Upgrade anytime</p>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-16 sm:py-24 bg-surface-secondary">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <h2 class="text-h2 font-light text-center mb-4">Your digital wardrobe, working for you.</h2>
+        <p class="text-content-secondary text-center max-w-xl mx-auto mb-16">
+          Most wardrobe organiser apps stop at cataloguing. Dripmatiq is the one that styles you — and
+          shows you the result on your body.
+        </p>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-6 lg:gap-8">
+          {features.map((f) => (
+            <div class="bg-surface-elevated border border-border rounded-card p-6 hover:border-border-active transition-colors duration-200">
+              <span class="text-3xl mb-4 block">{f.icon}</span>
+              <h3 class="font-bold text-base mb-2">{f.title}</h3>
+              <p class="text-content-secondary text-sm leading-relaxed">{f.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Why UK -->
+    <section class="py-16 sm:py-24">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 space-y-10">
+        <div>
+          <h2 class="text-h2 font-light mb-4">A capsule wardrobe app that earns its place</h2>
+          <p class="text-content-secondary leading-relaxed">
+            Building a capsule wardrobe means knowing what you own and what actually goes together.
+            Dripmatiq digitises your wardrobe, tracks what you wear, and suggests outfits that make the
+            most of pieces you already have — so you buy less and wear more.
+          </p>
+        </div>
+        <div>
+          <h2 class="text-h2 font-light mb-4">Plan outfits around British weather</h2>
+          <p class="text-content-secondary leading-relaxed">
+            Four seasons in one day is a styling problem. Dripmatiq's outfit calendar plans your looks
+            around the forecast and your diary, so the trench comes out before the rain does.
+          </p>
+        </div>
+        <div>
+          <h2 class="text-h2 font-light mb-4">Try on before you buy — or get dressed</h2>
+          <p class="text-content-secondary leading-relaxed">
+            FitMatic virtual try-on renders each outfit on your body. Wondering whether that new piece
+            works with your existing wardrobe? See it on you before you spend a penny.
+          </p>
+        </div>
+        <p class="text-sm text-content-muted">
+          Comparing wardrobe apps? See how Dripmatiq stacks up as a
+          <a href="/alternatives/" class="text-gold hover:text-gold-hover underline underline-offset-4">Whering, Acloset &amp; Stylebook alternative</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 sm:py-20 bg-surface-secondary">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+        <h2 class="text-h2 font-light mb-6">Start with the wardrobe you already own.</h2>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href={appStore} class="inline-flex items-center justify-center bg-gold text-surface-primary font-bold text-base px-8 py-4 rounded-full shadow-lg hover:bg-gold-hover transition-colors duration-200 w-full sm:w-auto max-w-xs">
+            Download Free — iOS
+          </a>
+          <a href={playStore} class="inline-flex items-center justify-center border border-border text-content-primary font-semibold text-sm px-8 py-3 rounded-full hover:border-border-active transition-colors duration-200 w-full sm:w-auto max-w-xs">
+            Get it on Android
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Base>

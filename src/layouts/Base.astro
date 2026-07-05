@@ -7,6 +7,7 @@ interface Props {
   canonicalUrl?: string;
   jsonLd?: string;
   noindex?: boolean;
+  hreflangs?: { lang: string; href: string }[];
   articleMeta?: {
     publishedTime?: string;
     modifiedTime?: string;
@@ -25,11 +26,16 @@ const {
   canonicalUrl,
   jsonLd,
   noindex = false,
+  hreflangs: hreflangsProp,
   articleMeta,
 } = Astro.props;
 
 const siteUrl = 'https://dripmatiq.app';
 const resolvedCanonical = canonicalUrl || new URL(Astro.url.pathname, siteUrl).href;
+const hreflangs = hreflangsProp ?? [
+  { lang: 'en', href: resolvedCanonical },
+  { lang: 'x-default', href: resolvedCanonical },
+];
 const resolvedOgImage = ogImage || `${siteUrl}/assets/og-image.png`;
 
 const isHome = Astro.url.pathname === '/' || Astro.url.pathname === '';
@@ -73,11 +79,11 @@ const appSchema = {
     'https://apps.apple.com/app/dripmatiq/id6760679168',
     'https://play.google.com/store/apps/details?id=com.dripmatic.app',
   ],
-  // TODO: replace with real store rating once review volume is stable
+  // Real US App Store rating (itunes lookup, 2026-07-05). Update as reviews accrue.
   aggregateRating: {
     '@type': 'AggregateRating',
-    ratingValue: '4.8',
-    ratingCount: '500',
+    ratingValue: '5',
+    ratingCount: '1',
   },
   offers: [
     { '@type': 'Offer', price: '0', priceCurrency: 'USD', name: 'Free' },
@@ -147,9 +153,8 @@ const redditPixelId = import.meta.env.PUBLIC_REDDIT_PIXEL_ID ?? 'a2_iy4gxvmjbu53
     <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow'} />
     <meta name="theme-color" content="#c9a84c" />
 
-    <!-- hreflang: single English site; en-US/en-GB split requires distinct URLs (see /uk plan) -->
-    <link rel="alternate" hreflang="en" href={resolvedCanonical} />
-    <link rel="alternate" hreflang="x-default" href={resolvedCanonical} />
+    <!-- hreflang: en-GB pages live under /uk/; pages without a locale variant self-reference -->
+    {hreflangs.map((h) => <link rel="alternate" hreflang={h.lang} href={h.href} />)}
 
     <!-- Smart App Banner (Safari iOS) -->
     <meta name="apple-itunes-app" content="app-id=6760679168" />
