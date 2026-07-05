@@ -1,0 +1,188 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+
+const appStore = 'https://apps.apple.com/app/dripmatiq/id6760679168';
+const playStore = 'https://play.google.com/store/apps/details?id=com.dripmatic.app';
+
+const rows = [
+  { feature: 'Virtual try-on (on your body)', dripmatiq: '✓ FitMatic', whering: '—', acloset: '—', stylebook: '—', styledna: '—' },
+  { feature: 'AI outfit suggestions', dripmatiq: '✓', whering: '✓', acloset: '✓', stylebook: '—', styledna: '✓' },
+  { feature: 'Closet scanner with auto-tagging', dripmatiq: '✓', whering: '✓', acloset: '✓', stylebook: 'Manual', styledna: '—' },
+  { feature: 'Outfit calendar + weather', dripmatiq: '✓', whering: '✓', acloset: '✓', stylebook: '✓', styledna: '—' },
+  { feature: 'Color & skin-tone analysis', dripmatiq: '✓', whering: '—', acloset: '—', stylebook: '—', styledna: '✓' },
+  { feature: 'Free tier with try-on included', dripmatiq: '✓', whering: 'Free tier', acloset: 'Free tier', stylebook: 'Paid only', styledna: 'Free tier' },
+  { feature: 'iOS + Android', dripmatiq: '✓', whering: '✓', acloset: '✓', stylebook: 'iOS only', styledna: '✓' },
+];
+
+const faqs = [
+  {
+    q: 'What is the best Whering alternative?',
+    a: 'Dripmatiq covers everything Whering does — digital wardrobe, AI outfit suggestions, outfit calendar — and adds FitMatic virtual try-on, which renders each outfit on your actual body instead of a flat collage. If you want to see how outfits look on you, Dripmatiq is the strongest Whering alternative.',
+  },
+  {
+    q: 'What is the best Acloset alternative?',
+    a: 'Acloset is a solid digital closet organizer, but its outfit previews are flat-lay collages. Dripmatiq is an Acloset alternative that shows AI-styled outfits on your body with virtual try-on, plus color and skin-tone analysis.',
+  },
+  {
+    q: 'Is there a Stylebook alternative for Android?',
+    a: 'Yes. Stylebook is iOS-only and fully manual. Dripmatiq runs on iOS and Android, auto-tags garments when you scan them, and generates outfits with AI — no manual collaging.',
+  },
+  {
+    q: 'What is the best outfit planner app in 2026?',
+    a: 'The best outfit planner app depends on what you need: Stylebook for manual curation on iOS, Whering for a free digital wardrobe, and Dripmatiq if you want AI outfit suggestions plus virtual try-on that shows every look on your body from clothes you already own.',
+  },
+  {
+    q: 'Is Dripmatiq free?',
+    a: 'Yes. The free tier includes the closet scanner, 25 AI outfits per month, and FitMatic virtual try-on — no credit card required. Pro ($6.99/mo) unlocks unlimited garments and suggestions; Elite ($15.99/mo) adds skin-tone, trend, brand and mood filters.',
+  },
+];
+
+const faqSchema = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+});
+---
+
+<Base
+  title="Best Whering, Acloset & Stylebook Alternative 2026 | Dripmatiq"
+  description="Looking for a Whering, Acloset, Stylebook or Style DNA alternative? Dripmatiq is the wardrobe app with real virtual try-on — see AI outfits on your body. Free download."
+  jsonLd={faqSchema}
+>
+  <Nav />
+  <main>
+    <!-- Hero -->
+    <section class="pt-16 pb-12 sm:pt-32 sm:pb-20">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        <p class="text-xs font-bold tracking-wide uppercase text-gold mb-3">Compare wardrobe apps</p>
+        <h1 class="text-3xl sm:text-hero font-light leading-tight mb-5">
+          The best Whering, Acloset &amp; Style DNA alternative in <span class="text-gold">2026</span>
+        </h1>
+        <p class="text-base sm:text-xl text-content-secondary max-w-2xl mx-auto mb-8">
+          Every digital wardrobe app can catalog your clothes. Only one shows AI-styled outfits
+          <em>on your body</em> before you get dressed. That's the difference.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href={appStore} class="inline-flex items-center justify-center bg-gold text-surface-primary font-bold text-base px-8 py-4 rounded-full shadow-lg hover:bg-gold-hover transition-colors duration-200 w-full sm:w-auto max-w-xs">
+            Download Free — iOS
+          </a>
+          <a href={playStore} class="inline-flex items-center justify-center border border-border text-content-primary font-semibold text-sm px-8 py-3 rounded-full hover:border-border-active transition-colors duration-200 w-full sm:w-auto max-w-xs">
+            Get it on Android
+          </a>
+        </div>
+        <p class="text-xs text-content-muted mt-4">Free to download · No credit card required</p>
+      </div>
+    </section>
+
+    <!-- Comparison table -->
+    <section class="py-16 sm:py-20 bg-surface-secondary">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6">
+        <h2 class="text-h2 font-light text-center mb-10">Dripmatiq vs Whering vs Acloset vs Stylebook vs Style DNA</h2>
+        <div class="overflow-x-auto rounded-card border border-border">
+          <table class="w-full text-sm text-left">
+            <thead>
+              <tr class="border-b border-border bg-surface-elevated">
+                <th class="p-4 font-semibold text-content-secondary">Feature</th>
+                <th class="p-4 font-bold text-gold">Dripmatiq</th>
+                <th class="p-4 font-semibold">Whering</th>
+                <th class="p-4 font-semibold">Acloset</th>
+                <th class="p-4 font-semibold">Stylebook</th>
+                <th class="p-4 font-semibold">Style DNA</th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((r) => (
+                <tr class="border-b border-border last:border-b-0">
+                  <td class="p-4 text-content-secondary">{r.feature}</td>
+                  <td class="p-4 text-gold font-semibold">{r.dripmatiq}</td>
+                  <td class="p-4 text-content-secondary">{r.whering}</td>
+                  <td class="p-4 text-content-secondary">{r.acloset}</td>
+                  <td class="p-4 text-content-secondary">{r.stylebook}</td>
+                  <td class="p-4 text-content-secondary">{r.styledna}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p class="text-xs text-content-muted text-center mt-4">Feature comparison as of July 2026, based on public app listings. Verify current features on each store page.</p>
+      </div>
+    </section>
+
+    <!-- Per-competitor sections -->
+    <section class="py-16 sm:py-24">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 space-y-16">
+        <div>
+          <h2 class="text-h2 font-light mb-4">Whering alternative — with actual try-on</h2>
+          <p class="text-content-secondary leading-relaxed mb-3">
+            Whering made the digital wardrobe mainstream: snap your clothes, get outfit ideas, track wear.
+            Dripmatiq does all of that — then goes where Whering stops. FitMatic virtual try-on renders each
+            AI-suggested outfit on your body, so "would I actually wear this?" gets answered before you're
+            standing in front of the mirror.
+          </p>
+          <p class="text-content-secondary leading-relaxed">
+            If you like Whering's dress-up mechanic but wish the doll were <em>you</em>, that's Dripmatiq.
+          </p>
+        </div>
+        <div>
+          <h2 class="text-h2 font-light mb-4">Acloset alternative — beyond flat collages</h2>
+          <p class="text-content-secondary leading-relaxed">
+            Acloset's AI is good at organizing — auto-background removal, weather-based suggestions, wear
+            stats. But its outfits live as flat-lay collages. Dripmatiq is the Acloset alternative for people
+            who want to see the outfit on their body, with color analysis matched to their skin tone, from
+            clothes they already own.
+          </p>
+        </div>
+        <div>
+          <h2 class="text-h2 font-light mb-4">Stylebook alternative — on Android, without the manual work</h2>
+          <p class="text-content-secondary leading-relaxed">
+            Stylebook is the veteran: powerful, manual, iOS-only, paid up front. Dripmatiq is free to start,
+            runs on iOS and Android, and replaces hours of manual collaging with an AI stylist that digitizes
+            your wardrobe and generates the looks for you.
+          </p>
+        </div>
+        <div>
+          <h2 class="text-h2 font-light mb-4">Style DNA alternative — color analysis plus a real wardrobe</h2>
+          <p class="text-content-secondary leading-relaxed">
+            Style DNA nails color analysis but doesn't manage the clothes you own. Dripmatiq pairs
+            skin-tone-aware color matching with a full digital closet organizer and virtual try-on — analysis
+            you can act on, with your actual wardrobe.
+          </p>
+        </div>
+        <p class="text-sm text-content-muted">
+          Deeper dives: <a href="/blog/dripmatiq-vs-whering-acloset-style-dna/" class="text-gold hover:text-gold-hover underline underline-offset-4">Dripmatiq vs Whering, Acloset &amp; Style DNA</a> ·
+          <a href="/blog/best-virtual-try-on-apps-2026/" class="text-gold hover:text-gold-hover underline underline-offset-4">Best virtual try-on apps in 2026</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 sm:py-24 bg-surface-secondary">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6">
+        <h2 class="text-h2 font-light text-center mb-12">Frequently asked questions</h2>
+        <div class="space-y-8">
+          {faqs.map((f) => (
+            <div class="bg-surface-elevated border border-border rounded-card p-6">
+              <h3 class="font-bold text-base mb-2">{f.q}</h3>
+              <p class="text-content-secondary text-sm leading-relaxed">{f.a}</p>
+            </div>
+          ))}
+        </div>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-14">
+          <a href={appStore} class="inline-flex items-center justify-center bg-gold text-surface-primary font-bold text-base px-8 py-4 rounded-full shadow-lg hover:bg-gold-hover transition-colors duration-200 w-full sm:w-auto max-w-xs">
+            Try Dripmatiq Free
+          </a>
+          <a href={playStore} class="inline-flex items-center justify-center border border-border text-content-primary font-semibold text-sm px-8 py-3 rounded-full hover:border-border-active transition-colors duration-200 w-full sm:w-auto max-w-xs">
+            Get it on Android
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Base>
