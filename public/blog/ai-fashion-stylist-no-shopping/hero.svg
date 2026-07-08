@@ -1,0 +1,81 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">AI Fashion Stylist No Shopping hero image</title>
+  <desc id="desc">Dark background with AI neural network connecting wardrobe items, showing outfit planning without shopping cart</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A0A0A"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent1" x1="238" y1="140" x2="430" y2="332" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+    <linearGradient id="accent2" x1="690" y1="188" x2="898" y2="396" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <filter id="blurGlow" x="130" y="68" width="936" height="494" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="34"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g filter="url(#blurGlow)" opacity="0.35">
+    <circle cx="286" cy="224" r="92" fill="#7C3AED"/>
+    <circle cx="902" cy="262" r="116" fill="#06B6D4"/>
+    <circle cx="604" cy="476" r="102" fill="#22D3EE"/>
+  </g>
+
+  <rect x="86" y="72" width="1028" height="486" rx="28" fill="#0F172A" stroke="#334155"/>
+
+  <rect x="122" y="114" width="334" height="402" rx="20" fill="#111827" stroke="#374151"/>
+  <rect x="486" y="114" width="592" height="180" rx="20" fill="#111827" stroke="#374151"/>
+  <rect x="486" y="314" width="592" height="202" rx="20" fill="#111827" stroke="#374151"/>
+
+  <g opacity="0.95">
+    <rect x="150" y="156" width="278" height="94" rx="16" fill="url(#accent1)"/>
+    <rect x="150" y="268" width="278" height="94" rx="16" fill="#1F2937" stroke="#4B5563"/>
+    <rect x="150" y="380" width="278" height="94" rx="16" fill="#1F2937" stroke="#4B5563"/>
+  </g>
+
+  <g stroke="#E5E7EB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.92">
+    <path d="M198 188c8-18 28-18 36 0"/>
+    <path d="M216 188v42"/>
+    <path d="M176 230h80"/>
+
+    <path d="M276 178c8-18 28-18 36 0"/>
+    <path d="M294 178v52"/>
+    <path d="M254 230h80"/>
+
+    <path d="M359 186c8-18 28-18 36 0"/>
+    <path d="M377 186v44"/>
+    <path d="M337 230h80"/>
+  </g>
+
+  <g>
+    <rect x="520" y="144" width="244" height="120" rx="16" fill="#1F2937" stroke="#4B5563"/>
+    <rect x="784" y="144" width="258" height="120" rx="16" fill="url(#accent2)"/>
+    <rect x="520" y="344" width="522" height="142" rx="16" fill="#1F2937" stroke="#4B5563"/>
+
+    <circle cx="562" cy="200" r="18" fill="#22C55E"/>
+    <rect x="592" y="186" width="144" height="10" rx="5" fill="#E5E7EB" opacity="0.95"/>
+    <rect x="592" y="206" width="108" height="8" rx="4" fill="#9CA3AF"/>
+    <rect x="592" y="222" width="132" height="8" rx="4" fill="#9CA3AF"/>
+
+    <rect x="824" y="178" width="174" height="12" rx="6" fill="#0F172A" opacity="0.9"/>
+    <rect x="824" y="200" width="128" height="10" rx="5" fill="#0F172A" opacity="0.8"/>
+    <rect x="824" y="218" width="152" height="10" rx="5" fill="#0F172A" opacity="0.8"/>
+
+    <rect x="552" y="376" width="148" height="86" rx="12" fill="#0F172A" stroke="#475569"/>
+    <rect x="718" y="376" width="148" height="86" rx="12" fill="#0F172A" stroke="#475569"/>
+    <rect x="884" y="376" width="124" height="86" rx="12" fill="#0F172A" stroke="#475569"/>
+  </g>
+
+  <path d="M430 240C468 240 468 184 506 184" stroke="#22D3EE" stroke-width="3" stroke-dasharray="7 7"/>
+  <path d="M430 352C486 352 486 418 542 418" stroke="#A78BFA" stroke-width="3" stroke-dasharray="7 7"/>
+  <path d="M430 440C480 440 480 500 530 500" stroke="#F43F5E" stroke-width="3" stroke-dasharray="7 7"/>
+
+  <text x="124" y="54" fill="#E5E7EB" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="28" font-weight="700">
+    AI Fashion Stylist — No Shopping Required
+  </text>
+</svg>
