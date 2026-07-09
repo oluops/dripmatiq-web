@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="50%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#a855f7"/>
+    </linearGradient>
+    <linearGradient id="warm" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f43f5e"/>
+      <stop offset="100%" style="stop-color:#f97316"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Ambient glow orbs -->
+  <circle cx="150" cy="150" r="120" fill="url(#accent)" opacity="0.15" filter="url(#glow)"/>
+  <circle cx="1050" cy="480" r="140" fill="url(#warm)" opacity="0.12" filter="url(#glow)"/>
+  <circle cx="600" cy="550" r="100" fill="#22c55e" opacity="0.1" filter="url(#glow)"/>
+
+  <!-- Phone frame -->
+  <rect x="100" y="70" width="280" height="520" rx="40" fill="#0f172a" stroke="#334155" stroke-width="4"/>
+  <rect x="120" y="95" width="240" height="470" rx="24" fill="#020617"/>
+
+  <!-- Phone screen content: Weekly outfit cards -->
+  <!-- Monday -->
+  <rect x="135" y="110" width="210" height="70" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="145" y="135" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="11" font-weight="600">MON</text>
+  <text x="145" y="155" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Knit + Trousers + Loafer</text>
+  <circle cx="320" cy="130" r="10" fill="#22c55e" opacity="0.2"/>
+  <path d="M315 130 L319 134 L325 124" fill="none" stroke="#22c55e" stroke-width="2"/>
+
+  <!-- Tuesday -->
+  <rect x="135" y="190" width="210" height="70" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="145" y="215" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="11" font-weight="600">TUE</text>
+  <text x="145" y="235" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Blazer + Tee + Denim</text>
+  <circle cx="320" cy="210" r="10" fill="#22c55e" opacity="0.2"/>
+  <path d="M315 210 L319 214 L325 204" fill="none" stroke="#22c55e" stroke-width="2"/>
+
+  <!-- Wednesday -->
+  <rect x="135" y="270" width="210" height="70" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="145" y="295" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="11" font-weight="600">WED</text>
+  <text x="145" y="315" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Cardigan + Dress + Boot</text>
+  <circle cx="320" cy="290" r="10" fill="#22c55e" opacity="0.2"/>
+  <path d="M315 290 L319 294 L325 284" fill="none" stroke="#22c55e" stroke-width="2"/>
+
+  <!-- Thursday -->
+  <rect x="135" y="350" width="210" height="70" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="145" y="375" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="11" font-weight="600">THU</text>
+  <text x="145" y="395" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Shirt + Skirt + Heel</text>
+  <circle cx="320" cy="370" r="10" fill="#22c55e" opacity="0.2"/>
+  <path d="M315 370 L319 374 L325 364" fill="none" stroke="#22c55e" stroke-width="2"/>
+
+  <!-- Friday -->
+  <rect x="135" y="430" width="210" height="70" rx="12" fill="url(#warm)" opacity="0.15" stroke="#f97316" stroke-width="1.5"/>
+  <text x="145" y="455" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="11" font-weight="600">FRI</text>
+  <text x="145" y="475" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Casual Set + Sneakers</text>
+  <circle cx="320" cy="450" r="10" fill="#f97316" opacity="0.2"/>
+  <path d="M315 450 L319 454 L325 444" fill="none" stroke="#f97316" stroke-width="2"/>
+
+  <!-- AI sparkle indicator on phone -->
+  <g transform="translate(240, 520)">
+    <circle cx="0" cy="0" r="4" fill="url(#accent)"/>
+    <circle cx="12" cy="-6" r="3" fill="url(#accent)" opacity="0.7"/>
+    <circle cx="-10" cy="-8" r="2.5" fill="url(#accent)" opacity="0.5"/>
+    <circle cx="6" cy="10" r="2" fill="url(#accent)" opacity="0.6"/>
+  </g>
+
+  <!-- Right panel: Dashboard view -->
+  <rect x="450" y="70" width="650" height="250" rx="20" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  
+  <!-- Weather chips -->
+  <g font-family="system-ui, sans-serif" font-size="12">
+    <rect x="480" y="95" width="90" height="32" rx="16" fill="#06b6d4" opacity="0.15" stroke="#06b6d4" stroke-width="1"/>
+    <text x="525" y="115" fill="#06b6d4" text-anchor="middle" font-weight="600">☀️ 72°F</text>
+    
+    <rect x="585" y="95" width="100" height="32" rx="16" fill="#22c55e" opacity="0.15" stroke="#22c55e" stroke-width="1"/>
+    <text x="635" y="115" fill="#22c55e" text-anchor="middle" font-weight="600">☁️ Mon-Wed</text>
+    
+    <rect x="705" y="95" width="95" height="32" rx="16" fill="#f59e0b" opacity="0.15" stroke="#f59e0b" stroke-width="1"/>
+    <text x="752" y="115" fill="#f59e0b" text-anchor="middle" font-weight="600">🌧️ Thu-Fri</text>
+    
+    <rect x="815" y="95" width="85" height="32" rx="16" fill="#a855f7" opacity="0.15" stroke="#a855f7" stroke-width="1"/>
+    <text x="857" y="115" fill="#a855f7" text-anchor="middle" font-weight="600">🎯 3 Events</text>
+  </g>
+
+  <!-- Outfit generation prompt area -->
+  <rect x="480" y="150" width="600" height="140" rx="12" fill="#111827" stroke="#374151" stroke-width="1"/>
+  
+  <text x="500" y="175" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">AI PROMPT</text>
+  <text x="500" y="200" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="13" font-weight="500">"Use only my closet. Build 7 outfits for this week."</text>
+  <text x="500" y="222" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Context: 2 office days, 1 dinner, 1 travel. 68-82°F.</text>
+  <text x="500" y="244" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Priorities: comfortable, polished, repeat shoes ≤ 2×."</text>
+  <text x="500" y="270" fill="#06b6d4" font-family="system-ui, sans-serif" font-size="12" font-weight="600">▶ Generating 7 looks... ✓ Done</text>
+
+  <!-- Bottom panel: Closet stats -->
+  <rect x="450" y="350" width="650" height="250" rx="20" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  
+  <text x="480" y="380" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="14" font-weight="600">YOUR CLOSET INTELLIGENCE</text>
+  <text x="480" y="402" fill="#64748b" font-family="system-ui, sans-serif" font-size="12">147 items logged · 23 formulas saved · 42 weeks tracked</text>
+
+  <!-- Stat cards -->
+  <g>
+    <!-- Items worn -->
+    <rect x="480" y="420" width="180" height="140" rx="14" fill="#1e293b" stroke="#334155"/>
+    <text x="570" y="450" fill="#22c55e" font-family="system-ui, sans-serif" font-size="36" font-weight="700" text-anchor="middle">84%</text>
+    <text x="570" y="475" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">ITEMS WORN</text>
+    <text x="570" y="495" fill="#64748b" font-family="system-ui, sans-serif" font-size="10" text-anchor="middle">this quarter</text>
+    <path d="M495 530 L520 510 L535 518 L550 505 L565 500 L580 498" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Money saved -->
+    <rect x="685" y="420" width="180" height="140" rx="14" fill="#1e293b" stroke="#334155"/>
+    <text x="775" y="450" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="36" font-weight="700" text-anchor="middle">$1.2k</text>
+    <text x="775" y="475" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">SAVED</text>
+    <text x="775" y="495" fill="#64748b" font-family="system-ui, sans-serif" font-size="10" text-anchor="middle">no duplicate buys</text>
+    <circle cx="775" cy="520" r="18" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="8 4"/>
+
+    <!-- Time saved -->
+    <rect x="890" y="420" width="180" height="140" rx="14" fill="#1e293b" stroke="#334155"/>
+    <text x="980" y="450" fill="#06b6d4" font-family="system-ui, sans-serif" font-size="36" font-weight="700" text-anchor="middle">12 min</text>
+    <text x="980" y="475" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">AVG DECIDE</text>
+    <text x="980" y="495" fill="#64748b" font-family="system-ui, sans-serif" font-size="10" text-anchor="middle">down from 22 min</text>
+    <path d="M905 530 L930 525 L955 515 L980 508 L1005 505 L1030 505" fill="none" stroke="#06b6d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- AI connection lines from phone to dashboard -->
+  <path d="M380 250 C450 250, 450 180, 520 180" fill="none" stroke="url(#accent)" stroke-width="2" stroke-dasharray="8 4" opacity="0.5"/>
+  <polygon points="520,173 527,180 520,187" fill="url(#accent)" opacity="0.5"/>
+  
+  <path d="M380 400 C450 400, 450 350, 520 350" fill="none" stroke="url(#accent)" stroke-width="2" stroke-dasharray="8 4" opacity="0.5"/>
+  <polygon points="520,343 527,350 520,357" fill="url(#accent)" opacity="0.5"/>
+
+  <!-- Title -->
+  <text x="480" y="50" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="32" font-weight="700">AI Style Assistant for Everyday Outfits</text>
+  <text x="480" y="85" fill="#64748b" font-family="system-ui, sans-serif" font-size="16">Your closet, understood. Real outfits, zero shopping pressure.</text>
+
+  <!-- Subtle corner accents -->
+  <circle cx="50" cy="50" r="3" fill="#06b6d4" opacity="0.3"/>
+  <circle cx="1150" cy="50" r="2.5" fill="#a855f7" opacity="0.2"/>
+  <circle cx="50" cy="580" r="3" fill="#06b6d4" opacity="0.2"/>
+  <circle cx="1150" cy="580" r="2.5" fill="#a855f7" opacity="0.3"/>
+</svg>

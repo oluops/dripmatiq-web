@@ -1,0 +1,88 @@
+<svg width="1080" height="1920" viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg">
+  <!-- Frame 1: Hook - The Problem -->
+  <g id="frame1" opacity="1">
+    <rect width="1080" height="1920" fill="#0F0F0F"/>
+    <text x="540" y="320" font-family="Georgia, serif" font-size="52" fill="#FFFFFF" text-anchor="middle" font-weight="bold">I built a capsule wardrobe</text>
+    <text x="540" y="390" font-family="Georgia, serif" font-size="52" fill="#FFFFFF" text-anchor="middle" font-weight="bold">TWICE.</text>
+    <text x="540" y="520" font-family="Georgia, serif" font-size="38" fill="#D4A847" text-anchor="middle">Both times it failed.</text>
+    <text x="540" y="700" font-family="Arial, sans-serif" font-size="28" fill="#CCCCCC" text-anchor="middle">37-piece rule. Donated 2 bags.</text>
+    <text x="540" y="760" font-family="Arial, sans-serif" font-size="28" fill="#CCCCCC" text-anchor="middle">Still wore the same 6 outfits.</text>
+    <text x="540" y="900" font-family="Arial, sans-serif" font-size="28" fill="#CCCCCC" text-anchor="middle">30-piece challenge. Photographed grid.</text>
+    <text x="540" y="960" font-family="Arial, sans-serif" font-size="28" fill="#CCCCCC" text-anchor="middle">Still froze at 7 AM for a client call.</text>
+    <text x="540" y="1150" font-family="Georgia, serif" font-size="40" fill="#D4A847" text-anchor="middle">The problem wasn't the clothes.</text>
+    <text x="540" y="1220" font-family="Georgia, serif" font-size="40" fill="#D4A847" text-anchor="middle">It was the OCCASIONS.</text>
+    <text x="540" y="1700" font-family="Arial, sans-serif" font-size="24" fill="#888888" text-anchor="middle">DRIPMATIQ.APP</text>
+  </g>
+
+  <!-- Frame 2: The Realization -->
+  <g id="frame2" opacity="0">
+    <rect width="1080" height="1920" fill="#0F0F0F"/>
+    <text x="540" y="280" font-family="Georgia, serif" font-size="48" fill="#FFFFFF" text-anchor="middle" font-weight="bold">Magazine capsules are for</text>
+    <text x="540" y="350" font-family="Georgia, serif" font-size="48" fill="#D4A847" text-anchor="middle" font-weight="bold">someone else's life.</text>
+    <text x="540" y="500" font-family="Arial, sans-serif" font-size="26" fill="#CCCCCC" text-anchor="middle">My actual week:</text>
+    <text x="540" y="570" font-family="Arial, sans-serif" font-size="26" fill="#CCCCCC" text-anchor="middle">WFH Mon-Wed. Gym Thu AM.</text>
+    <text x="540" y="620" font-family="Arial, sans-serif" font-size="26" fill="#CCCCCC" text-anchor="middle">Client visit Thu PM.</text>
+    <text x="540" y="670" font-family="Arial, sans-serif" font-size="26" fill="#CCCCCC" text-anchor="middle">Casual weekends. One weird formal thing.</text>
+    <text x="540" y="820" font-family="Georgia, serif" font-size="40" fill="#FFFFFF" text-anchor="middle">No 37-piece universal list</text>
+    <text x="540" y="890" font-family="Georgia, serif" font-size="40" fill="#FFFFFF" text-anchor="middle">covers that without dead weight.</text>
+    <text x="540" y="1700" font-family="Arial, sans-serif" font-size="24" fill="#888888" text-anchor="middle">DRIPMATIQ.APP</text>
+  </g>
+
+  <!-- Frame 3: The Shift -->
+  <g id="frame3" opacity="0">
+    <rect width="1080" height="1920" fill="#0F0F0F"/>
+    <text x="540" y="280" font-family="Georgia, serif" font-size="48" fill="#D4A847" text-anchor="middle" font-weight="bold">Stop asking "Does this spark joy?"</text>
+    <text x="540" y="360" font-family="Georgia, serif" font-size="48" fill="#FFFFFF" text-anchor="middle">Start asking:</text>
+    <text x="540" y="480" font-family="Georgia, serif" font-size="52" fill="#D4A847" text-anchor="middle" font-weight="bold">"Which occasion</text>
+    <text x="540" y="550" font-family="Georgia, serif" font-size="52" fill="#D4A847" text-anchor="middle" font-weight="bold">does this cover?"</text>
+    <text x="540" y="700" font-family="Arial, sans-serif" font-size="28" fill="#CCCCCC" text-anchor="middle">If a piece only works for 1 occasion</text>
+    <text x="540" y="760" font-family="Arial, sans-serif" font-size="28" fill="#CCCCCC" text-anchor="middle">you have twice a year → not earning its space.</text>
+    <text x="540" y="860" font-family="Arial, sans-serif" font-size="28" fill="#CCCCCC" text-anchor="middle">If it stretches across 3 weekly contexts →</text>
+    <text x="540" y="920" font-family="Arial, sans-serif" font-size="28" fill="#D4A847" text-anchor="middle" font-weight="bold">It's doing real work. Keep it.</text>
+    <text x="540" y="1700" font-family="Arial, sans-serif" font-size="24" fill="#888888" text-anchor="middle">DRIPMATIQ.APP</text>
+  </g>
+
+  <!-- Frame 4: The AI Solution -->
+  <g id="frame4" opacity="0">
+    <rect width="1080" height="1920" fill="#0F0F0F"/>
+    <text x="540" y="280" font-family="Georgia, serif" font-size"48" fill="#FFFFFF" text-anchor="middle" font-weight="bold">That matrix? Piece × Occasion × Frequency.</text>
+    <text x="540" y="350" font-family="Georgia, serif" font-size="48" fill="#D4A847" text-anchor="middle">AI solves it in seconds.</text>
+    <text x="540" y="520" font-family="Arial, sans-serif" font-size="28" fill="#CCCCCC" text-anchor="middle">Cataloged my actual wardrobe.</text>
+    <text x="540" y="580" font-family="Arial, sans-serif" font-size="28" fill="#CCCCCC" text-anchor="middle">Told AI my real week.</text>
+    <text x="540" y="640" font-family="Arial, sans-serif" font-size="28" fill="#CCCCCC" text-anchor="middle">It found the gaps I couldn't see.</text>
+    <text x="540" y="760" font-family="Arial, sans-serif" font-size="28" fill="#CCCCCC" text-anchor="middle">5 pieces covered WFH but NOTHING</text>
+    <text x="540" y="820" font-family="Arial, sans-serif" font-size="28" fill="#D4A847" text-anchor="middle" font-weight="bold">for gym → errands transition.</text>
+    <text x="540" y="920" font-family="Arial, sans-serif" font-size="28" fill="#CCCCCC" text-anchor="middle">That navy midi skirt I thought was "too formal"?</text>
+    <text x="540" y="980" font-family="Arial, sans-serif" font-size="28" fill="#CCCCCC" text-anchor="middle">Pairs with linen shirt + flats for</text>
+    <text x="540" y="1040" font-family="Arial, sans-serif" font-size="28" fill="#CCCCCC" text-anchor="middle">exactly the casual-weekend look I wanted.</text>
+    <text x="540" y="1700" font-family="Arial, sans-serif" font-size="24" fill="#888888" text-anchor="middle">DRIPMATIQ.APP</text>
+  </g>
+
+  <!-- Frame 5: The Result -->
+  <g id="frame5" opacity="0">
+    <rect width="1080" height="1920" fill="#0F0F0F"/>
+    <text x="540" y="320" font-family="Georgia, serif" font-size="52" fill="#D4A847" text-anchor="middle" font-weight="bold">The capsule wasn't built.</text>
+    <text x="540" y="390" font-family="Georgia, serif" font-size="52" fill="#D4A847" text-anchor="middle" font-weight="bold">It was FOUND.</text>
+    <text x="540" y="540" font-family="Arial, sans-serif" font-size="30" fill="#CCCCCC" text-anchor="middle">Most people already own</text>
+    <text x="540" y="600" font-family="Arial, sans-serif" font-size="30" fill="#CCCCCC" text-anchor="middle">a functional wardrobe.</text>
+    <text x="540" y="660" font-family="Arial, sans-serif" font-size="30" fill="#CCCCCC" text-anchor="middle">They just can't see it.</text>
+    <text x="540" y="760" font-family="Arial, sans-serif" font-size="30" fill="#CCCCCC" text-anchor="middle">Too much noise.</text>
+    <text x="540" y="820" font-family="Arial, sans-serif" font-size="30" fill="#CCCCCC" text-anchor="middle">No system mapping pieces → life.</text>
+    <text x="540" y="1000" font-family="Georgia, serif" font-size="40" fill="#FFFFFF" text-anchor="middle">Your pieces. Your life.</text>
+    <text x="540" y="1070" font-family="Georgia, serif" font-size="40" fill="#FFFFFF" text-anchor="middle">Mapped. Working.</text>
+    <text x="540" y="1250" font-family="Georgia, serif" font-size="36" fill="#D4A847" text-anchor="middle" font-weight="bold">Try Dripmatiq free →</text>
+    <text x="540" y="1320" font-family="Georgia, serif" font-size="36" fill="#D4A847" text-anchor="middle">dripmatiq.app</text>
+    <text x="540" y="1700" font-family="Arial, sans-serif" font-size="24" fill="#888888" text-anchor="middle">DRIPMATIQ.APP</text>
+  </g>
+
+  <!-- Frame 6: CTA -->
+  <g id="frame6" opacity="0">
+    <rect width="1080" height="1920" fill="#0F0F0F"/>
+    <text x="540" y="500" font-family="Georgia, serif" font-size="56" fill="#FFFFFF" text-anchor="middle" font-weight="bold">Stop building capsules</text>
+    <text x="540" y="580" font-family="Georgia, serif" font-size="56" fill="#D4A847" text-anchor="middle" font-weight="bold">for someone else's life.</text>
+    <text x="540" y="760" font-family="Arial, sans-serif" font-size="30" fill="#CCCCCC" text-anchor="middle">See the capsule already hiding in your closet.</text>
+    <text x="540" y="900" font-family="Georgia, serif" font-size="44" fill="#D4A847" text-anchor="middle" font-weight="bold">dripmatiq.app</text>
+    <text x="540" y="1000" font-family="Arial, sans-serif" font-size="26" fill="#888888" text-anchor="middle">Free on iOS & Android</text>
+    <text x="540" y="1700" font-family="Arial, sans-serif" font-size="24" fill="#888888" text-anchor="middle">DRIPMATIQ.APP</text>
+  </g>
+</svg>

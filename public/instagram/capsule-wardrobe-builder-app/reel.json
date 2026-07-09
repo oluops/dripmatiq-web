@@ -1,0 +1,87 @@
+{
+  "slug": "capsule-wardrobe-builder-app",
+  "title": "The Capsule Wardrobe Rule That Quietly Backfires",
+  "description": "I built a capsule wardrobe twice. Both times it failed — because magazine capsules are for someone else's life. Here's how AI helped me find the capsule already hiding in my closet.",
+  "duration_seconds": 70,
+  "frames": [
+    {
+      "id": "frame1",
+      "start_time": 0,
+      "end_time": 10,
+      "duration": 10,
+      "text": "I built a capsule wardrobe TWICE. Both times it failed. 37-piece rule. Donated 2 bags. Still wore the same 6 outfits. 30-piece challenge. Still froze at 7 AM for a client call.",
+      "visual_cue": "Hook - Problem statement with stats"
+    },
+    {
+      "id": "frame2",
+      "start_time": 10,
+      "end_time": 20,
+      "duration": 10,
+      "text": "The problem wasn't the clothes. It was the OCCASIONS. Magazine capsules are for someone else's life. My actual week: WFH Mon-Wed, gym Thu AM, client visit Thu PM, casual weekends, one weird formal thing.",
+      "visual_cue": "Realization - Occasion mismatch"
+    },
+    {
+      "id": "frame3",
+      "start_time": 20,
+      "end_time": 32,
+      "duration": 12,
+      "text": "Stop asking 'Does this spark joy?' Start asking: Which occasion does this cover? If a piece only works for 1 occasion twice a year → not earning its space. If it stretches across 3 weekly contexts → It's doing real work.",
+      "visual_cue": "The Shift - New decision framework"
+    },
+    {
+      "id": "frame4",
+      "start_time": 32,
+      "end_time": 50,
+      "duration": 18,
+      "text": "That matrix? Piece × Occasion × Frequency. AI solves it in seconds. Cataloged my wardrobe, told AI my real week. It found gaps I couldn't see: 5 pieces for WFH but NOTHING for gym→errands. That navy midi skirt I thought was 'too formal'? Pairs with linen shirt + flats for exactly the casual-weekend look I wanted.",
+      "visual_cue": "AI Solution - Phone/UI demo"
+    },
+    {
+      "id": "frame5",
+      "start_time": 50,
+      "end_time": 62,
+      "duration": 12,
+      "text": "The capsule wasn't built. It was FOUND. Most people already own a functional wardrobe. They just can't see it — too much noise, no system mapping pieces to life. Your pieces. Your life. Mapped. Working.",
+      "visual_cue": "Result - Warm resolution"
+    },
+    {
+      "id": "frame6",
+      "start_time": 62,
+      "end_time": 70,
+      "duration": 8,
+      "text": "Stop building capsules for someone else's life. See the capsule already hiding in your closet. dripmatiq.app — Free on iOS & Android.",
+      "visual_cue": "CTA - End card"
+    }
+  ],
+  "audio": {
+    "voiceover": "Warm, conversational, ~160 wpm",
+    "music": "Low-fi, confident, mid-tempo (90-100 BPM), instrumental",
+    "sfx": "Subtle whoosh on text reveals, soft pop on gold highlights"
+  },
+  "style": {
+    "aspect_ratio": "9:16",
+    "resolution": "1080x1920",
+    "font_headline": "Georgia, serif",
+    "font_body": "Arial, sans-serif",
+    "color_primary": "#FFFFFF",
+    "color_accent": "#D4A847",
+    "color_bg": "#0F0F0F",
+    "safe_zone": "center 80%"
+  },
+  "cta": {
+    "primary": "dripmatiq.app",
+    "secondary": "Free on iOS & Android",
+    "utm_source": "instagram",
+    "utm_medium": "reel",
+    "utm_campaign": "capsule-wardrobe-builder-app"
+  },
+  "hashtags": [
+    "capsulewardrobe", "wardrobeorganization", "aistyling", "outfitplanning",
+    "closetorganization", "wardrobetips", "whattowear", "stylehacks",
+    "fashiontips", "personalstyle", "minimalistfashion", "sustainablefashion",
+    "slowfashion", "intentionalstyle", "wardrobeessentials", "aioutfits",
+    "dripmatiq", "closetcleanse", "styleinspo", "outfitideas", "fashionadvice"
+  ],
+  "generated_at": "2026-06-29T00:00:00.000Z",
+  "source_blog": "/home/olu/dripmatiq-web/src/content/blog/capsule-wardrobe-builder-app.md"
+}
