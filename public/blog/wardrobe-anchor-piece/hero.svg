@@ -1,0 +1,47 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="100%" style="stop-color:#1a1a1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle grid pattern -->
+  <defs>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#222" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  
+  <!-- Accent line -->
+  <line x1="120" y1="200" x2="480" y2="200" stroke="#d4a843" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Main title -->
+  <text x="120" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="48" font-weight="700" fill="#fff" letter-spacing="-1.5">
+    The Wardrobe Anchor Piece
+  </text>
+  <text x="120" y="340" font-family="system-ui, -apple-system, sans-serif" font-size="48" font-weight="700" fill="#fff" letter-spacing="-1.5">
+    That Changes Everything
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="120" y="410" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="400" fill="#aaa" line-height="1.5">
+    Your closet has the pieces. It's missing the filter.
+  </text>
+  
+  <!-- Decorative elements - abstract coat hangers -->
+  <g fill="none" stroke="#d4a843" stroke-width="2" opacity="0.3">
+    <path d="M900 120 Q1000 120 1000 180 Q1000 240 900 240 Q800 240 800 180 Q800 120 900 120 M900 240 L900 280"/>
+    <path d="M1000 160 Q1100 160 1100 220 Q1100 280 1000 280 Q900 280 900 220 Q900 160 1000 160 M1000 280 L1000 320"/>
+  </g>
+  
+  <!-- CTA indicator -->
+  <text x="120" y="520" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="500" fill="#d4a843">
+    dripmatiq.app  →
+  </text>
+  
+  <!-- Bottom accent -->
+  <line x1="120" y1="550" x2="300" y2="550" stroke="#d4a843" stroke-width="2" stroke-linecap="round"/>
+</svg>
