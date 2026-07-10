@@ -5,14 +5,14 @@ pubDate: 2026-07-09
 author: Mira
 tags: ["wardrobe", "minimalism", "sustainable fashion", "capsule wardrobe", "outfit planning"]
 heroImage: /blog/how-to-stop-buying-clothes-and-start-using-what-you-already-own/hero.svg
-heroAlt: Illustration of a person smiling while mixing and matching clothes from their closet
+heroAlt: Text card reading "How to Stop Buying Clothes" on a dark background
 ---
 
 I stood in front of my closet last Tuesday, staring at the sea of clothes I’d bought over the past year, and felt that familiar pang: I have nothing to wear. The irony was almost comical—I’d just returned from a shopping spree two days prior, bags full of new tops, dresses, and a pair of shoes I swore I’d wear constantly. Yet here I was, overwhelmed by choice and feeling utterly unprepared for the day ahead.
 
 That moment sparked a question that’s been buzzing in my head ever since: What if the problem isn’t that I don’t have enough clothes, but that I’m not seeing the potential in what I already own?
 
-For years, I treated my wardrobe like a consumable. Buy something new, buying something new, wearing it a few times, then letting it languish in the back while I chased the next trend. The cycle felt endless, and honestly, a little exhausting. I wasn’t just spending money—I was spending mental energy on deciding what to buy, what to return, and what to donate. My closet was full, but my sense of style felt stagnant.
+For years, I treated my wardrobe like a consumable. Buy something new, wear it a few times, then let it languish in the back while I chased the next trend. The cycle felt endless, and honestly, a little exhausting. I wasn’t just spending money—I was spending mental energy on deciding what to buy, what to return, and what to donate. My closet was full, but my sense of style felt stagnant.
 
 I decided to try something different: a buying freeze. Not forever, just for thirty days. During that month, I challenged myself to create outfits exclusively from pieces already hanging in my closet. No online browsing, no window shopping, no “just this one thing” exceptions. If I felt the urge to buy, I had to pause and ask why.
 
