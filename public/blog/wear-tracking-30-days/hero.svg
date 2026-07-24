@@ -1,0 +1,132 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0a0a0a"/>
+  <rect x="100" y="100" width="1000" height="430" rx="16" fill="#141414" stroke="#2a2a2a" stroke-width="2"/>
+  
+  <!-- Calendar grid with outfit tracking -->
+  <g transform="translate(180, 150)">
+    <!-- Week header -->
+    <text x="0" y="-10" font-family="system-ui, sans-serif" font-size="14" fill="#666" text-anchor="start">MON</text>
+    <text x="140" y="-10" font-family="system-ui, sans-serif" font-size="14" fill="#666" text-anchor="start">TUE</text>
+    <text x="280" y="-10" font-family="system-ui, sans-serif" font-size="14" fill="#666" text-anchor="start">WED</text>
+    <text x="420" y="-10" font-family="system-ui, sans-serif" font-size="14" fill="#666" text-anchor="start">THU</text>
+    <text x="560" y="-10" font-family="system-ui, sans-serif" font-size="14" fill="#666" text-anchor="start">FRI</text>
+    <text x="700" y="-10" font-family="system-ui, sans-serif" font-size="14" fill="#666" text-anchor="start">SAT</text>
+    <text x="840" y="-10" font-family="system-ui, sans-serif" font-size="14" fill="#666" text-anchor="start">SUN</text>
+    
+    <!-- Day cards with outfit data - Week 1 -->
+    <g transform="translate(0, 20)">
+      <!-- Mon - Formula 1 -->
+      <rect x="0" y="0" width="120" height="120" rx="8" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+      <rect x="10" y="10" width="100" height="80" rx="4" fill="#1e3a5f"/>
+      <text x="60" y="100" font-family="system-ui, sans-serif" font-size="11" fill="#888" text-anchor="middle">Formula 1</text>
+      <text x="60" y="112" font-family="system-ui, sans-serif" font-size="10" fill="#00d4aa" text-anchor="middle">✓ 18 wears</text>
+      
+      <!-- Tue - Formula 1 -->
+      <rect x="140" y="0" width="120" height="120" rx="8" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+      <rect x="150" y="10" width="100" height="80" rx="4" fill="#1e3a5f"/>
+      <text x="200" y="100" font-family="system-ui, sans-serif" font-size="11" fill="#888" text-anchor="middle">Formula 1</text>
+      <text x="200" y="112" font-family="system-ui, sans-serif" font-size="10" fill="#00d4aa" text-anchor="middle">✓ 22 wears</text>
+      
+      <!-- Wed - Formula 2 -->
+      <rect x="280" y="0" width="120" height="120" rx="8" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+      <rect x="290" y="10" width="100" height="80" rx="4" fill="#3a1e3a"/>
+      <text x="340" y="100" font-family="system-ui, sans-serif" font-size="11" fill="#888" text-anchor="middle">Formula 2</text>
+      <text x="340" y="112" font-family="system-ui, sans-serif" font-size="10" fill="#00d4aa" text-anchor="middle">✓ 15 wears</text>
+      
+      <!-- Thu - Formula 1 -->
+      <rect x="420" y="0" width="120" height="120" rx="8" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+      <rect x="430" y="10" width="100" height="80" rx="4" fill="#1e3a5f"/>
+      <text x="480" y="100" font-family="system-ui, sans-serif" font-size="11" fill="#888" text-anchor="middle">Formula 1</text>
+      <text x="480" y="112" font-family="system-ui, sans-serif" font-size="10" fill="#00d4aa" text-anchor="middle">✓ 18 wears</text>
+      
+      <!-- Fri - Formula 2 -->
+      <rect x="560" y="0" width="120" height="120" rx="8" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+      <rect x="570" y="10" width="100" height="80" rx="4" fill="#3a1e3a"/>
+      <text x="620" y="100" font-family="system-ui, sans-serif" font-size="11" fill="#888" text-anchor="middle">Formula 2</text>
+      <text x="620" y="112" font-family="system-ui, sans-serif" font-size="10" fill="#00d4aa" text-anchor="middle">✓ 15 wears</text>
+      
+      <!-- Sat - Formula 3 -->
+      <rect x="700" y="0" width="120" height="120" rx="8" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+      <rect x="710" y="10" width="100" height="80" rx="4" fill="#1e3a5f"/>
+      <text x="760" y="100" font-family="system-ui, sans-serif" font-size="11" fill="#888" text-anchor="middle">Formula 3</text>
+      <text x="760" y="112" font-family="system-ui, sans-serif" font-size="10" fill="#00d4aa" text-anchor="middle">✓ 8 wears</text>
+      
+      <!-- Sun - Formula 4 -->
+      <rect x="840" y="0" width="120" height="120" rx="8" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+      <rect x="850" y="10" width="100" height="80" rx="4" fill="#1e3a5f"/>
+      <text x="900" y="100" font-family="system-ui, sans-serif" font-size="11" fill="#888" text-anchor="middle">Formula 4</text>
+      <text x="900" y="112" font-family="system-ui, sans-serif" font-size="10" fill="#00d4aa" text-anchor="middle">✓ 6 wears</text>
+    </g>
+    
+    <!-- Week 2 -->
+    <g transform="translate(0, 160)">
+      <rect x="0" y="0" width="120" height="120" rx="8" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+      <rect x="10" y="10" width="100" height="80" rx="4" fill="#1e3a5f"/>
+      <text x="60" y="100" font-family="system-ui, sans-serif" font-size="11" fill="#888" text-anchor="middle">Formula 1</text>
+      <text x="60" y="112" font-family="system-ui, sans-serif" font-size="10" fill="#00d4aa" text-anchor="middle">✓ 18 wears</text>
+      
+      <rect x="140" y="0" width="120" height="120" rx="8" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+      <rect x="150" y="10" width="100" height="80" rx="4" fill="#3a1e3a"/>
+      <text x="200" y="100" font-family="system-ui, sans-serif" font-size="11" fill="#888" text-anchor="middle">Formula 2</text>
+      <text x="200" y="112" font-family="system-ui, sans-serif" font-size="10" fill="#00d4aa" text-anchor="middle">✓ 22 wears</text>
+      
+      <rect x="280" y="0" width="120" height="120" rx="8" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+      <rect x="290" y="10" width="100" height="80" rx="4" fill="#1e3a5f"/>
+      <text x="340" y="100" font-family="system-ui, sans-serif" font-size="11" fill="#888" text-anchor="middle">Formula 1</text>
+      <text x="340" y="112" font-family="system-ui, sans-serif" font-size="10" fill="#00d4aa" text-anchor="middle">✓ 18 wears</text>
+      
+      <rect x="420" y="0" width="120" height="120" rx="8" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+      <rect x="430" y="10" width="100" height="80" rx="4" fill="#1e3a5f"/>
+      <text x="480" y="100" font-family="system-ui, sans-serif" font-size="11" fill="#888" text-anchor="middle">Formula 4</text>
+      <text x="480" y="112" font-family="system-ui, sans-serif" font-size="10" fill="#00d4aa" text-anchor="middle">✓ 6 wears</text>
+      
+      <rect x="560" y="0" width="120" height="120" rx="8" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+      <rect x="570" y="10" width="100" height="80" rx="4" fill="#3a1e3a"/>
+      <text x="620" y="100" font-family="system-ui, sans-serif" font-size="11" fill="#888" text-anchor="middle">Formula 2</text>
+      <text x="620" y="112" font-family="system-ui, sans-serif" font-size="10" fill="#00d4aa" text-anchor="middle">✓ 15 wears</text>
+      
+      <rect x="700" y="0" width="120" height="120" rx="8" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+      <rect x="710" y="10" width="100" height="80" rx="4" fill="#1e3a5f"/>
+      <text x="760" y="100" font-family="system-ui, sans-serif" font-size="11" fill="#888" text-anchor="middle">Formula 3</text>
+      <text x="760" y="112" font-family="system-ui, sans-serif" font-size="10" fill="#00d4aa" text-anchor="middle">✓ 8 wears</text>
+      
+      <rect x="840" y="0" width="120" height="120" rx="8" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+      <rect x="850" y="10" width="100" height="80" rx="4" fill="#1e3a5f"/>
+      <text x="900" y="100" font-family="system-ui, sans-serif" font-size="11" fill="#888" text-anchor="middle">Formula 1</text>
+      <text x="900" y="112" font-family="system-ui, sans-serif" font-size="10" fill="#00d4aa" text-anchor="middle">✓ 18 wears</text>
+    </g>
+    
+    <!-- Week 3 -->
+    <g transform="translate(0, 300)">
+      <rect x="0" y="0" width="120" height="120" rx="8" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+      <rect x="10" y="10" width="100" height="80" rx="4" fill="#1e3a5f"/>
+      <text x="60" y="100" font-family="system-ui, sans-serif" font-size="11" fill="#888" text-anchor="middle">Formula 1</text>
+      <text x="60" y="112" font-family="system-ui, sans-serif" font-size="10" fill="#00d4aa" text-anchor="middle">✓ 18 wears</text>
+      
+      <rect x="140" y="0" width="120" height="120" rx="8" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+      <rect x="150" y="10" width="100" height="80" rx="4" fill="#1e3a5f"/>
+      <text x="200" y="100" font-family="system-ui, sans-serif" font-size="11" fill="#888" text-anchor="middle">Formula 3</text>
+      <text x="200" y="112" font-family="system-ui, sans-serif" font-size="10" fill="#00d4aa" text-anchor="middle">✓ 8 wears</text>
+    </g>
+    
+    <!-- Legend -->
+    <g transform="translate(0, 440)">
+      <rect x="0" y="0" width="16" height="16" rx="3" fill="#1e3a5f"/>
+      <text x="24" y="12" font-family="system-ui, sans-serif" font-size="12" fill="#aaa">Formula 1 (Daily Driver)</text>
+      <rect x="250" y="0" width="16" height="16" rx="3" fill="#3a1e3a"/>
+      <text x="274" y="12" font-family="system-ui, sans-serif" font-size="12" fill="#aaa">Formula 2 (One-Piece)</text>
+      <rect x="500" y="0" width="16" height="16" rx="3" fill="#1e3a5f"/>
+      <text x="524" y="12" font-family="system-ui, sans-serif" font-size="12" fill="#aaa" opacity="0.5">Formula 3/4 (WFH/Travel)</text>
+    </g>
+  </g>
+  
+  <!-- App badge -->
+  <g transform="translate(950, 520)">
+    <rect x="0" y="0" width="130" height="36" rx="8" fill="#1e3a5f"/>
+    <text x="65" y="24" font-family="system-ui, sans-serif" font-size="14" fill="#00d4aa" font-weight="600" text-anchor="middle">dripmatiq.app</text>
+  </g>
+  
+  <!-- Title overlay -->
+  <text x="600" y="80" font-family="system-ui, sans-serif" font-size="28" fill="#fff" font-weight="600" text-anchor="middle">30-Day Wear Tracker</text>
+  <text x="600" y="110" font-family="system-ui, sans-serif" font-size="16" fill="#888" text-anchor="middle">8 pieces · 67% of outfits · 4 formulas</text>
+</svg>
