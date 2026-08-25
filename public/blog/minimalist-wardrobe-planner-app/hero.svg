@@ -1,0 +1,83 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Minimalist wardrobe planner app hero image</title>
+  <desc id="desc">Clean dark interface showing a 30-piece capsule grid with outfit formula cards generating 50 plus combinations.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#111827"/>
+      <stop offset="1" stop-color="#1F2937"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#34D399"/>
+      <stop offset="1" stop-color="#60A5FA"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1050" cy="80" r="180" fill="#334155" opacity="0.2"/>
+  <circle cx="150" cy="580" r="200" fill="#0EA5E9" opacity="0.1"/>
+
+  <text x="80" y="100" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="600">Dripmatiq</text>
+  <text x="80" y="168" fill="#F8FAFC" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="700" letter-spacing="-0.02em">Minimalist Wardrobe Planner</text>
+  <text x="80" y="218" fill="#CBD5E1" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="500">30 pieces. 50+ outfits. Zero shopping.</text>
+
+  <rect x="80" y="268" rx="20" ry="20" width="1040" height="310" fill="url(#card)" stroke="#334155" stroke-width="2"/>
+
+  <rect x="110" y="308" rx="14" width="480" height="244" fill="#0B1220" stroke="#374151"/>
+  <text x="134" y="338" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600">30-Piece Capsule</text>
+  <text x="134" y="360" fill="#64748B" font-family="Inter, Arial, sans-serif" font-size="13">10 tops, 8 bottoms, 4 layers, 4 shoes, 4 acc</text>
+
+  <g opacity="0.95">
+    <rect x="134" y="380" width="76" height="58" rx="8" fill="#334155"/>
+    <rect x="218" y="380" width="76" height="58" rx="8" fill="#475569"/>
+    <rect x="302" y="380" width="76" height="58" rx="8" fill="#64748B"/>
+    <rect x="386" y="380" width="76" height="58" rx="8" fill="#94A3B8"/>
+    <rect x="470" y="380" width="76" height="58" rx="8" fill="#1E293B"/>
+
+    <rect x="134" y="446" width="76" height="58" rx="8" fill="#0F766E"/>
+    <rect x="218" y="446" width="76" height="58" rx="8" fill="#1D4ED8"/>
+    <rect x="302" y="446" width="76" height="58" rx="8" fill="#4338CA"/>
+    <rect x="386" y="446" width="76" height="58" rx="8" fill="#7C2D12"/>
+    <rect x="470" y="446" width="76" height="58" rx="8" fill="#365314"/>
+
+    <rect x="134" y="512" width="76" height="58" rx="8" fill="#111827"/>
+    <rect x="218" y="512" width="76" height="58" rx="8" fill="#1F2937"/>
+    <rect x="302" y="512" width="76" height="58" rx="8" fill="#374151"/>
+    <rect x="386" y="512" width="76" height="58" rx="8" fill="#4B5563"/>
+    <rect x="470" y="512" width="76" height="58" rx="8" fill="#6B7280"/>
+
+    <rect x="134" y="578" width="76" height="58" rx="8" fill="#1F2937"/>
+    <rect x="218" y="578" width="76" height="58" rx="8" fill="#374151"/>
+    <rect x="302" y="578" width="76" height="58" rx="8" fill="#0F766E"/>
+    <rect x="386" y="578" width="76" height="58" rx="8" fill="#1D4ED8"/>
+    <rect x="470" y="578" width="76" height="58" rx="8" fill="#7C2D12"/>
+  </g>
+
+  <rect x="630" y="308" rx="14" width="460" height="244" fill="#0B1220" stroke="#374151"/>
+  <text x="654" y="338" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600">Outfit Formulas 50+ Looks</text>
+
+  <rect x="654" y="360" rx="10" width="412" height="52" fill="url(#accent)" opacity="0.15" stroke="#34D399" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="670" y="390" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="500">Fitted top + Relaxed bottom + Layer + Sneaker = 12 combos</text>
+
+  <rect x="654" y="420" rx="10" width="412" height="52" fill="url(#accent)" opacity="0.15" stroke="#34D399" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="670" y="450" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="500">Boxy tee + Straight denim + Loafer + Blazer = 8 combos</text>
+
+  <rect x="654" y="480" rx="10" width="412" height="52" fill="url(#accent)" opacity="0.15" stroke="#34D399" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="670" y="510" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="500">Knit + Tailored trouser + Belt + Boot = 10 combos</text>
+
+  <rect x="654" y="540" rx="10" width="412" height="52" fill="url(#accent)" opacity="0.15" stroke="#34D399" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="670" y="570" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="500">Silk blouse + Jeans + Heel + Cardigan = 6 combos</text>
+
+  <rect x="654" y="600" rx="10" width="412" height="52" fill="url(#accent)" opacity="0.15" stroke="#34D399" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="670" y="630" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="500">Monochrome base + Contrast layer + Structured bag = 14 combos</text>
+
+  <rect x="80" y="602" rx="12" width="1040" height="28" fill="url(#accent)" opacity="0.15" stroke="#34D399" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="120" y="620" fill="#34D399" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600">30 pieces</text>
+  <text x="280" y="620" fill="#60A5FA" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600">50+ outfits</text>
+  <text x="480" y="620" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="500">0 shopping required</text>
+  <text x="720" y="620" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="500">Cost per wear tracking</text>
+  <text x="960" y="620" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="500">AI formula generation</text>
+</svg>
