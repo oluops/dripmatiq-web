@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="100%" style="stop-color:#1a0a1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Left side: chaotic closet -->
+  <g transform="translate(80, 60)">
+    <text x="200" y="40" font-family="system-ui, sans-serif" font-size="28" font-weight="600" fill="#e8e8e8" text-anchor="middle">What You Think You Have</text>
+    
+    <!-- Clothing items scattered -->
+    <g fill="#3a3a4a" stroke="#4a4a5a" stroke-width="1">
+      <rect x="20" y="80" width="120" height="160" rx="8" opacity="0.6"/>
+      <rect x="160" y="80" width="100" height="140" rx="8" opacity="0.5"/>
+      <rect x="280" y="80" width="110" height="150" rx="8" opacity="0.4"/>
+      <rect x="410" y="80" width="90" height="130" rx="8" opacity="0.5"/>
+      <rect x="20" y="260" width="130" height="110" rx="8" opacity="0.4"/>
+      <rect x="170" y="260" width="100" height="120" rx="8" opacity="0.3"/>
+      <rect x="290" y="260" width="110" height="100" rx="8" opacity="0.5"/>
+      <rect x="420" y="260" width="95" height="115" rx="8" opacity="0.4"/>
+    </g>
+    
+    <!-- Ghost items (faded) -->
+    <g fill="#2a2a3a" stroke="#3a3a4a" stroke-width="1" opacity="0.3">
+      <rect x="20" y="390" width="120" height="160" rx="8"/>
+      <rect x="160" y="390" width="100" height="140" rx="8"/>
+      <rect x="280" y="390" width="110" height="150" rx="8"/>
+      <rect x="410" y="390" width="90" height="130" rx="8"/>
+      <rect x="520" y="80" width="100" height="140" rx="8"/>
+      <rect x="520" y="260" width="110" height="120" rx="8"/>
+      <rect x="520" y="390" width="95" height="115" rx="8"/>
+    </g>
+    
+    <text x="200" y="560" font-family="system-ui, sans-serif" font-size="16" fill="#888" text-anchor="middle">100+ pieces • mostly ghosts</text>
+  </g>
+  
+  <!-- Divider -->
+  <line x1="580" y1="40" x2="580" y2="590" stroke="#333" stroke-width="2" stroke-dasharray="8,8"/>
+  
+  <!-- Right side: MVP pieces with data badges -->
+  <g transform="translate(620, 60)">
+    <text x="200" y="40" font-family="system-ui, sans-serif" font-size="28" font-weight="600" fill="#e8e8e8" text-anchor="middle">What You Actually Wear</text>
+    
+    <!-- MVP items with wear counts -->
+    <g font-family="system-ui, sans-serif">
+      <!-- Navy blazer -->
+      <rect x="40" y="80" width="140" height="180" rx="10" fill="#1a1a2e" stroke="#0066cc" stroke-width="2"/>
+      <text x="110" y="180" font-size="14" fill="#0066cc" font-weight="600" text-anchor="middle">Navy Blazer</text>
+      <text x="110" y="200" font-size="28" fill="#00cc88" font-weight="700" text-anchor="middle">18 wears</text>
+      <text x="110" y="225" font-size="11" fill="#888" text-anchor="middle">work • dinner • travel • pickup</text>
+      
+      <!-- Black boots -->
+      <rect x="220" y="80" width="140" height="180" rx="10" fill="#1a1a2e" stroke="#333" stroke-width="2"/>
+      <text x="290" y="180" font-size="14" fill="#ccc" font-weight="600" text-anchor="middle">Black Boots</text>
+      <text x="290" y="200" font-size="28" fill="#00cc88" font-weight="700" text-anchor="middle">22 wears</text>
+      <text x="290" y="225" font-size="11" fill="#888" text-anchor="middle">everything except beach</text>
+      
+      <!-- White tank -->
+      <rect x="400" y="80" width="140" height="180" rx="10" fill="#1a1a2e" stroke="#fff" stroke-width="1" opacity="0.9"/>
+      <text x="470" y="180" font-size="14" fill="#fff" font-weight="600" text-anchor="middle">White Tank</text>
+      <text x="470" y="200" font-size="28" fill="#00cc88" font-weight="700" text-anchor="middle">15 wears</text>
+      <text x="470" y="225" font-size="11" fill="#888" text-anchor="middle">base for 4 formulas</text>
+      
+      <!-- Jeans -->
+      <rect x="40" y="300" width="140" height="180" rx="10" fill="#1a1a2e" stroke="#2a4a8a" stroke-width="2"/>
+      <text x="110" y="400" font-size="14" fill="#6a9cff" font-weight="600" text-anchor="middle">Straight Jeans</text>
+      <text x="110" y="420" font-size="28" fill="#00cc88" font-weight="700" text-anchor="middle">12 wears</text>
+      <text x="110" y="445" font-size="11" fill="#888" text-anchor="middle">casual • weekend • travel</text>
+      
+      <!-- Camel coat -->
+      <rect x="220" y="300" width="140" height="180" rx="10" fill="#1a1a2e" stroke="#c4a35a" stroke-width="2"/>
+      <text x="290" y="400" font-size="14" fill="#c4a35a" font-weight="600" text-anchor="middle">Camel Coat</text>
+      <text x="290" y="420" font-size="28" fill="#00cc88" font-weight="700" text-anchor="middle">9 wears</text>
+      <text x="290" y="445" font-size="11" fill="#888" text-anchor="middle">commute • dinner • airport</text>
+      
+      <!-- Black loafers -->
+      <rect x="400" y="300" width="140" height="180" rx="10" fill="#1a1a2e" stroke="#222" stroke-width="2"/>
+      <text x="470" y="400" font-size="14" fill="#aaa" font-weight="600" text-anchor="middle">Black Loafers</text>
+      <text x="470" y="420" font-size="28" fill="#00cc88" font-weight="700" text-anchor="middle">11 wears</text>
+      <text x="470" y="445" font-size="11" fill="#888" text-anchor="middle">office • errands • dinner</text>
+    </g>
+    
+    <!-- Summary badge -->
+    <rect x="150" y="520" width="280" height="60" rx="12" fill="#002211" stroke="#00cc88" stroke-width="2"/>
+    <text x="290" y="555" font-family="system-ui, sans-serif" font-size="18" fill="#00cc88" font-weight="700" text-anchor="middle">8 pieces = 67% of outfits</text>
+  </g>
+  
+  <!-- Dripmatiq branding -->
+  <text x="1120" y="610" font-family="system-ui, sans-serif" font-size="14" fill="#444" text-anchor="end">dripmatiq.app</text>
+</svg>
