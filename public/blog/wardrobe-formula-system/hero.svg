@@ -1,0 +1,73 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1a1a2e;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d9b45b;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f0d48a;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <g opacity="0.03">
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#ffffff" stroke-width="0.5"/>
+    </pattern>
+    <rect width="1200" height="630" fill="url(#grid)"/>
+  </g>
+  
+  <g>
+    <rect x="80" y="180" width="140" height="180" rx="12" fill="#1a1a1a" stroke="#d9b45b" stroke-width="1.5" opacity="0.6"/>
+    <rect x="80" y="180" width="140" height="50" rx="12" fill="url(#gold)" opacity="0.3"/>
+    <text x="150" y="212" font-family="system-ui, sans-serif" font-size="14" font-weight="500" fill="#d9b45b" text-anchor="middle" opacity="0.8">ANCHOR</text>
+    
+    <rect x="240" y="200" width="120" height="160" rx="12" fill="#1a1a1a" stroke="#d9b45b" stroke-width="1.5" opacity="0.6"/>
+    <rect x="240" y="200" width="120" height="50" rx="12" fill="url(#gold)" opacity="0.3"/>
+    <text x="300" y="232" font-family="system-ui, sans-serif" font-size="14" font-weight="500" fill="#d9b45b" text-anchor="middle" opacity="0.8">UNIFORM</text>
+    
+    <rect x="380" y="220" width="160" height="140" rx="12" fill="#1a1a1a" stroke="#d9b45b" stroke-width="1.5" opacity="0.6"/>
+    <rect x="380" y="220" width="160" height="50" rx="12" fill="url(#gold)" opacity="0.3"/>
+    <text x="460" y="252" font-family="system-ui, sans-serif" font-size="13" font-weight="500" fill="#d9b45b" text-anchor="middle" opacity="0.8">DRESS UP DOWN</text>
+    
+    <rect x="560" y="190" width="140" height="170" rx="12" fill="#1a1a1a" stroke="#d9b45b" stroke-width="1.5" opacity="0.6"/>
+    <rect x="560" y="190" width="140" height="50" rx="12" fill="url(#gold)" opacity="0.3"/>
+    <text x="630" y="222" font-family="system-ui, sans-serif" font-size="13" font-weight="500" fill="#d9b45b" text-anchor="middle" opacity="0.8">LAYER STACK</text>
+    
+    <rect x="720" y="210" width="140" height="150" rx="12" fill="#1a1a1a" stroke="#d9b45b" stroke-width="1.5" opacity="0.6"/>
+    <rect x="720" y="210" width="140" height="50" rx="12" fill="url(#gold)" opacity="0.3"/>
+    <text x="790" y="242" font-family="system-ui, sans-serif" font-size="14" font-weight="500" fill="#d9b45b" text-anchor="middle" opacity="0.8">THIRD PIECE</text>
+    
+    <line x1="220" y1="265" x2="240" y2="265" stroke="#d9b45b" stroke-width="1.5" stroke-dasharray="8,4" opacity="0.4"/>
+    <line x1="360" y1="265" x2="380" y2="265" stroke="#d9b45b" stroke-width="1.5" stroke-dasharray="8,4" opacity="0.4"/>
+    <line x1="540" y1="265" x2="560" y2="265" stroke="#d9b45b" stroke-width="1.5" stroke-dasharray="8,4" opacity="0.4"/>
+    <line x1="700" y1="265" x2="720" y2="265" stroke="#d9b45b" stroke-width="1.5" stroke-dasharray="8,4" opacity="0.4"/>
+  </g>
+  
+  <text x="600" y="110" font-family="system-ui, sans-serif" font-size="42" font-weight="300" fill="#fff" text-anchor="middle" letter-spacing="-1">Wardrobe Formula System</text>
+  <text x="600" y="150" font-family="system-ui, sans-serif" font-size="20" font-weight="300" fill="#999" text-anchor="middle" letter-spacing="0.5">Organize by outfit structure, not category</text>
+  <line x1="500" y1="165" x2="700" y2="165" stroke="url(#gold)" stroke-width="2" stroke-linecap="round"/>
+  
+  <g font-family="system-ui, sans-serif" text-anchor="middle">
+    <text x="300" y="520" font-size="36" font-weight="600" fill="#d9b45b">5</text>
+    <text x="300" y="550" font-size="14" fill="#999">Core Formulas</text>
+    <text x="600" y="520" font-size="36" font-weight="600" fill="#d9b45b">64+</text>
+    <text x="600" y="550" font-size="14" fill="#999">Outfit Variants</text>
+    <text x="900" y="520" font-size="36" font-weight="600" fill="#d9b45b">0</text>
+    <text x="900" y="550" font-size="14" fill="#999">New Purchases</text>
+  </g>
+  
+  <g transform="translate(600, 590)">
+    <text x="0" y="0" font-family="system-ui, sans-serif" font-size="14" font-weight="500" fill="#d9b45b" text-anchor="middle" letter-spacing="2">DRIPMATIQ</text>
+    <text x="0" y="20" font-family="system-ui, sans-serif" font-size="11" fill="#666" text-anchor="middle" letter-spacing="1">Outfits clothes you already own</text>
+  </g>
+  
+  <g stroke="#d9b45b" stroke-width="1.5" opacity="0.3">
+    <path d="M 40 40 L 120 40 M 40 40 L 40 120" fill="none" stroke-linecap="round"/>
+    <path d="M 1160 40 L 1080 40 M 1160 40 L 1160 120" fill="none" stroke-linecap="round"/>
+    <path d="M 40 590 L 120 590 M 40 590 L 40 510" fill="none" stroke-linecap="round"/>
+    <path d="M 1160 590 L 1080 590 M 1160 590 L 1160 510" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>
