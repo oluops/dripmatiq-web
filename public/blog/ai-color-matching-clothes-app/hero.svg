@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="50%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="warm" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f43f5e"/>
+      <stop offset="100%" style="stop-color:#f97316"/>
+    </linearGradient>
+    <linearGradient id="cool" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#a855f7"/>
+    </linearGradient>
+    <linearGradient id="earth" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#84cc16"/>
+      <stop offset="100%" style="stop-color:#f59e0b"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Ambient glow orbs -->
+  <circle cx="180" cy="120" r="100" fill="url(#cool)" opacity="0.12" filter="url(#glow)"/>
+  <circle cx="1020" cy="510" r="120" fill="url(#warm)" opacity="0.1" filter="url(#glow)"/>
+  <circle cx="600" cy="580" r="80" fill="url(#earth)" opacity="0.08" filter="url(#glow)"/>
+
+  <!-- Left panel: Phone with color analysis -->
+  <rect x="60" y="55" width="300" height="520" rx="40" fill="#0f172a" stroke="#334155" stroke-width="4"/>
+  <rect x="80" y="80" width="260" height="470" rx="24" fill="#020617"/>
+
+  <!-- Phone header -->
+  <rect x="130" y="95" width="160" height="6" rx="3" fill="#334155"/>
+  <circle cx="180" cy="115" r="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+
+  <!-- Color palette visualization on phone -->
+  <g font-family="system-ui, sans-serif">
+    <!-- Palette title -->
+    <text x="210" y="155" fill="#e2e8f0" font-size="14" font-weight="600" text-anchor="middle">YOUR COLOR PALETTE</text>
+    <text x="210" y="175" fill="#64748b" font-size="11" text-anchor="middle">37 items analyzed • 5 families</text>
+
+    <!-- Cool family swatches -->
+    <text x="105" y="205" fill="#06b6d4" font-size="11" font-weight="600">COOL</text>
+    <g transform="translate(105, 210)">
+      <rect x="0" y="0" width="48" height="36" rx="6" fill="#0ea5e9"/>
+      <rect x="54" y="0" width="48" height="36" rx="6" fill="#06b6d4"/>
+      <rect x="108" y="0" width="48" height="36" rx="6" fill="#0891b2"/>
+      <rect x="162" y="0" width="48" height="36" rx="6" fill="#0e7490"/>
+    </g>
+    <text x="105" y="260" fill="#64748b" font-size="10">teal • navy • slate • icy</text>
+
+    <!-- Warm family swatches -->
+    <text x="105" y="290" fill="#f97316" font-size="11" font-weight="600">WARM</text>
+    <g transform="translate(105, 295)">
+      <rect x="0" y="0" width="48" height="36" rx="6" fill="#f97316"/>
+      <rect x="54" y="0" width="48" height="36" rx="6" fill="#f59e0b"/>
+      <rect x="108" y="0" width="48" height="36" rx="6" fill="#ea580c"/>
+      <rect x="162" y="0" width="48" height="36" rx="6" fill="#c2410c"/>
+    </g>
+    <text x="105" y="345" fill="#64748b" font-size="10">rust • amber • terracotta • burnt</text>
+
+    <!-- Neutral family swatches -->
+    <text x="105" y="375" fill="#94a3b8" font-size="11" font-weight="600">NEUTRAL</text>
+    <g transform="translate(105, 380)">
+      <rect x="0" y="0" width="48" height="36" rx="6" fill="#f8fafc"/>
+      <rect x="54" y="0" width="48" height="36" rx="6" fill="#e2e8f0"/>
+      <rect x="108" y="0" width="48" height="36" rx="6" fill="#94a3b8"/>
+      <rect x="162" y="0" width="48" height="36" rx="6" fill="#1e293b"/>
+    </g>
+    <text x="105" y="430" fill="#64748b" font-size="10">cream • gray • charcoal • black</text>
+
+    <!-- Earth family swatches -->
+    <text x="105" y="460" fill="#84cc16" font-size="11" font-weight="600">EARTH</text>
+    <g transform="translate(105, 465)">
+      <rect x="0" y="0" width="48" height="36" rx="6" fill="#84cc16"/>
+      <rect x="54" y="0" width="48" height="36" rx="6" fill="#65a30d"/>
+      <rect x="108" y="0" width="48" height="36" rx="6" fill="#4d7c0f"/>
+      <rect x="162" y="0" width="48" height="36" rx="6" fill="#365314"/>
+    </g>
+    <text x="105" y="515" fill="#64748b" font-size="10">olive • sage • moss • forest</text>
+
+    <!-- Accent family swatches -->
+    <text x="105" y="545" fill="#a855f7" font-size="11" font-weight="600">ACCENT</text>
+    <g transform="translate(105, 550)">
+      <rect x="0" y="0" width="48" height="36" rx="6" fill="#a855f7"/>
+      <rect x="54" y="0" width="48" height="36" rx="6" fill="#ec4899"/>
+      <rect x="108" y="0" width="48" height="36" rx="6" fill="#d946ef"/>
+      <rect x="162" y="0" width="48" height="36" rx="6" fill="#c026d3"/>
+    </g>
+    <text x="105" y="595" fill="#64748b" font-size="10">purple • magenta • fuchsia • violet</text>
+  </g>
+
+  <!-- Right panel: Harmony combinations -->
+  <rect x="420" y="55" width="720" height="520" rx="20" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="460" y="95" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="24" font-weight="700">AI COLOR MATCHING</text>
+  <text x="460" y="122" fill="#64748b" font-family="system-ui, sans-serif" font-size="14">Harmonious combinations from your actual wardrobe</text>
+
+  <!-- Harmony cards -->
+  <g font-family="system-ui, sans-serif">
+    <!-- Card 1: Monochromatic -->
+    <rect x="460" y="150" width="640" height="85" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <circle cx="485" cy="175" r="20" fill="url(#cool)" filter="url(#softGlow)"/>
+    <text x="525" y="168" fill="#06b6d4" font-size="11" font-weight="700">MONOCHROMATIC</text>
+    <text x="525" y="188" fill="#e2e8f0" font-size="13" font-weight="500">Navy blazer + Light blue tee + Dark wash jeans</text>
+    <text x="525" y="208" fill="#94a3b8" font-size="11">Same hue, stepped values • 4 items in your closet</text>
+    <rect x="1000" y="175" width="80" height="36" rx="18" fill="#06b6d4" opacity="0.15" stroke="#06b6d4" stroke-width="1"/>
+    <text x="1040" y="196" fill="#06b6d4" font-size="11" font-weight="600" text-anchor="middle">VIEW 3</text>
+
+    <!-- Card 2: Analogous -->
+    <rect x="460" y="250" width="640" height="85" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <circle cx="485" cy="275" r="20" fill="url(#earth)" filter="url(#softGlow)"/>
+    <text x="525" y="268" fill="#84cc16" font-size="11" font-weight="700">ANALOGOUS</text>
+    <text x="525" y="288" fill="#e2e8f0" font-size="13" font-weight="500">Olive cardigan + Mustard tee + Cognac boots</text>
+    <text x="525" y="308" fill="#94a3b8" font-size="11">Neighbors on color wheel • 6 items in your closet</text>
+    <rect x="1000" y="275" width="80" height="36" rx="18" fill="#84cc16" opacity="0.15" stroke="#84cc16" stroke-width="1"/>
+    <text x="1040" y="296" fill="#84cc16" font-size="11" font-weight="600" text-anchor="middle">VIEW 5</text>
+
+    <!-- Card 3: Complementary (highlighted as AI suggestion) -->
+    <rect x="460" y="350" width="640" height="85" rx="12" fill="#1e293b" stroke="#a855f7" stroke-width="1.5" filter="url(#softGlow)"/>
+    <circle cx="485" cy="375" r="20" fill="url(#warm)" filter="url(#softGlow)"/>
+    <text x="525" y="368" fill="#f97316" font-size="11" font-weight="700">COMPLEMENTARY ⭐ AI PICK</text>
+    <text x="525" y="388" fill="#e2e8f0" font-size="13" font-weight="500">Teal top (muted) + Rust skirt (muted) + Cream sneakers</text>
+    <text x="525" y="408" fill="#94a3b8" font-size="11">Balanced saturation opposites • 87% match from your wear history</text>
+    <rect x="1000" y="375" width="80" height="36" rx="18" fill="#a855f7" opacity="0.15" stroke="#a855f7" stroke-width="1"/>
+    <text x="1040" y="396" fill="#a855f7" font-size="11" font-weight="600" text-anchor="middle">WEAR IT</text>
+
+    <!-- Card 4: Neutral + Pop -->
+    <rect x="460" y="450" width="640" height="85" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <circle cx="485" cy="475" r="20" fill="url(#cool)" filter="url(#softGlow)"/>
+    <text x="525" y="468" fill="#06b6d4" font-size="11" font-weight="700">NEUTRAL + POP</text>
+    <text x="525" y="488" fill="#e2e8f0" font-size="13" font-weight="500">Black trousers + White tee + Emerald scarf + Silver jewelry</text>
+    <text x="525" y="508" fill="#94a3b8" font-size="11">One saturated anchor, rest neutral • 12 items in your closet</text>
+    <rect x="1000" y="475" width="80" height="36" rx="18" fill="#06b6d4" opacity="0.15" stroke="#06b6d4" stroke-width="1"/>
+    <text x="1040" y="496" fill="#06b6d4" font-size="11" font-weight="600" text-anchor="middle">VIEW 4</text>
+  </g>
+
+  <!-- Connection lines from phone to panel -->
+  <path d="M360 200 C400 200, 400 180, 460 180" fill="none" stroke="url(#cool)" stroke-width="2" stroke-dasharray="8 4" opacity="0.5"/>
+  <polygon points="460,173 467,180 460,187" fill="url(#cool)" opacity="0.5"/>
+
+  <path d="M360 370 C400 370, 400 390, 460 390" fill="none" stroke="url(#warm)" stroke-width="2" stroke-dasharray="8 4" opacity="0.5"/>
+  <polygon points="460,383 467,390 460,397" fill="url(#warm)" opacity="0.5"/>
+
+  <!-- Bottom badge -->
+  <rect x="460" y="555" width="300" height="40" rx="20" fill="url(#cool)" opacity="0.1" stroke="#06b6d4" stroke-width="1"/>
+  <text x="610" y="578" fill="#06b6d4" font-family="system-ui, sans-serif" font-size="13" font-weight="600" text-anchor="middle">▶ Analyzing your palette... 37 items ✓</text>
+
+  <!-- Subtle corner accents -->
+  <circle cx="40" cy="40" r="3" fill="#06b6d4" opacity="0.3"/>
+  <circle cx="1160" cy="40" r="2.5" fill="#a855f7" opacity="0.2"/>
+  <circle cx="40" cy="590" r="3" fill="#84cc16" opacity="0.2"/>
+  <circle cx="1160" cy="590" r="2.5" fill="#f97316" opacity="0.3"/>
+</svg>
