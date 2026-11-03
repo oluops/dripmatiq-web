@@ -1,0 +1,118 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Smart Outfit Recommendation App: AI Stylist That Learns Your Closet</title>
+  <desc id="desc">Phone screen showing AI-generated outfit recommendations based on weather forecast and calendar events with smart swap suggestions</desc>
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A0A0A"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="violet" x1="140" y1="120" x2="420" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+    <linearGradient id="warm" x1="760" y1="180" x2="1030" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F59E0B"/>
+      <stop offset="1" stop-color="#F97316"/>
+    </linearGradient>
+    <linearGradient id="cool" x1="140" y1="120" x2="420" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#06B6D4"/>
+      <stop offset="1" stop-color="#3B82F6"/>
+    </linearGradient>
+    <!-- Glow filter -->
+    <filter id="glow" x="80" y="40" width="1040" height="540" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Atmospheric glow circles -->
+  <g filter="url(#glow)" opacity="0.25">
+    <circle cx="200" cy="200" r="100" fill="#06B6D4"/>
+    <circle cx="950" cy="280" r="120" fill="#3B82F6"/>
+    <circle cx="550" cy="500" r="90" fill="#F59E0B"/>
+  </g>
+
+  <!-- Phone Frame -->
+  <rect x="180" y="60" width="360" height="640" rx="40" fill="#0F172A" stroke="#334155" stroke-width="3"/>
+  <rect x="210" y="90" width="300" height="580" rx="24" fill="#020617"/>
+
+  <!-- Phone content -->
+  <!-- Status bar -->
+  <rect x="220" y="100" width="260" height="20" rx="10" fill="#0F172A"/>
+  <text x="350" y="114" fill="#E5E7EB" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="12" font-weight="500" text-anchor="middle">9:41 AM</text>
+  <text x="240" y="114" fill="#E5E7EB" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="12" font-weight="500">📍 58°F • ☔</text>
+  <text x="460" y="114" fill="#E5E7EB" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="12" font-weight="500">🔋 87%</text>
+
+  <!-- App header -->
+  <rect x="220" y="130" width="260" height="60" rx="12" fill="#111827"/>
+  <text x="230" y="155" fill="#F9FAFB" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="16" font-weight="600">Today's Outfits</text>
+  <text x="460" y="155" fill="#9CA3AF" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="12">Jul 28, 2026</text>
+
+  <!-- Outfit card 1 -->
+  <rect x="230" y="200" width="240" height="120" rx="16" fill="#0F172A" stroke="#334155"/>
+  <rect x="240" y="210" width="220" height="100" rx="12" fill="#020617"/>
+  <!-- Outfit items -->
+  <rect x="250" y="220" width="40" height="80" rx="6" fill="#7C3AED" opacity="0.3"/>
+  <rect x="300" y="220" width="40" height="80" rx="6" fill="#F97316" opacity="0.3"/>
+  <rect x="350" y="220" width="40" height="80" rx="6" fill="#06B6D4" opacity="0.3"/>
+  <rect x="400" y="220" width="40" height="80" rx="6" fill="#E5E7EB" opacity="0.3"/>
+  <text x="250" y="320" fill="#F9FAFB" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="10" font-weight="500" text-anchor="middle">Outfit 1</text>
+
+  <!-- Outfit card 2 -->
+  <rect x="230" y="330" width="240" height="120" rx="16" fill="#0F172A" stroke="#334155"/>
+  <rect x="240" y="340" width="220" height="100" rx="12" fill="#020617"/>
+  <!-- Outfit items -->
+  <rect x="250" y="350" width="40" height="80" rx="6" fill="#F59E0B" opacity="0.3"/>
+  <rect x="300" y="350" width="40" height="80" rx="6" fill="#3B82F6" opacity="0.3"/>
+  <rect x="350" y="350" width="40" height="80" rx="6" fill="#F9FAFB" opacity="0.3"/>
+  <rect x="400" y="350" width="40" height="80" rx="6" fill="#F97316" opacity="0.3"/>
+  <text x="250" y="450" fill="#F9FAFB" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="10" font-weight="500" text-anchor="middle">Outfit 2</text>
+
+  <!-- Outfit card 3 -->
+  <rect x="230" y="460" width="240" height="120" rx="16" fill="#0F172A" stroke="#334155"/>
+  <rect x="240" y="470" width="220" height="100" rx="12" fill="#020617"/>
+  <!-- Outfit items -->
+  <rect x="250" y="480" width="40" height="80" rx="6" fill="#A78BFA" opacity="0.3"/>
+  <rect x="300" y="480" width="40" height="80" rx="6" fill="#22C55E" opacity="0.3"/>
+  <rect x="350" y="480" width="40" height="80" rx="6" fill="#F9FAFB" opacity="0.3"/>
+  <rect x="400" y="480" width="40" height="80" rx="6" fill="#F59E0B" opacity="0.3"/>
+  <text x="250" y="580" fill="#F9FAFB" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="10" font-weight="500" text-anchor="middle">Outfit 3</text>
+
+  <!-- Smart swap suggestion -->
+  <rect x="230" y="590" width="240" height="40" rx="20" fill="#1F2937"/>
+  <text x="350" y="615" fill="#F9FAFB" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="12" font-weight="600" text-anchor="middle">💡 Swap shoes → waterproof Chelsea boots for 2PM rain</text>
+
+  <!-- Dashboard Panel -->
+  <rect x="600" y="80" width="520" height="470" rx="20" fill="#0F172A" stroke="#334155"/>
+  <rect x="620" y="100" width="480" height="430" rx="14" fill="#020617"/>
+
+  <!-- Dashboard content -->
+  <text x="630" y="130" fill="#F9FAFB" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="18" font-weight="600">Weather Context</text>
+  <rect x="630" y="140" width="460" height="80" rx="12" fill="#0F172A"/>
+  <text x="640" y="165" fill="#E5E7EB" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="14">58°F • Light rain at 2PM • Feels like 55°F</text>
+  <text x="640" y="190" fill="#E5E7EB" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="14">Calendar: Team standup (9AM), Client walkthrough (1PM), Drinks (6PM)</text>
+
+  <!-- Recommendation details -->
+  <text x="630" y="230" fill="#F9FAFB" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="16" font-weight="600">AI Recommendation Logic</text>
+  <text x="640" y="260" fill="#D1D5DB" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="12">• Color harmony: analogous (purple-orange-blue)</text>
+  <text x="640" y="280" fill="#D1D5DB" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="12">• Proportion: fitted tee + relaxed jeans + structured blazer</text>
+  <text x="640" y="300" fill="#D1D5DB" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="12">• Your preference: 8/10 rated similar combos</text>
+  <text x="640" y="320" fill="#D1D5DB" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="12">• Weather match: layers transition with forecast</text>
+
+  <!-- Stats bar -->
+  <rect x="630" y="350" width="460" height="60" rx="12" fill="#0F172A"/>
+  <text x="640" y="375" fill="#F9FAFB" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="600">87%</text>
+  <text x="640" y="395" fill="#9CA3AF" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="12">outfit match score</text>
+  <text x="820" y="375" fill="#F9FAFB" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="600">3</text>
+  <text x="820" y="395" fill="#9CA3AF" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="12">complete looks</text>
+  <text x="1000" y="375" fill="#F9FAFB" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="600">15s</text>
+  <text x="1000" y="395" fill="#9CA3AF" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="12">daily time saved</text>
+
+  <!-- Footer -->
+  <text x="630" y="430" fill="#F9FAFB" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="16" font-weight="600">How Dripmatiq Learns Your Style</text>
+  <text x="640" y="460" fill="#D1D5DB" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="12">Rate outfits → AI adjusts → Better suggestions</text>
+  <text x="640" y="480" fill="#D1D5DB" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="12">No shopping pushes → Only your closet understood</text>
+</svg>
