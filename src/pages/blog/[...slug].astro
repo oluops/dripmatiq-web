@@ -31,7 +31,7 @@ const readingTime = Math.max(1, Math.ceil(words / 250));
 const allPosts = await getCollection('blog');
 const otherPosts = allPosts
   .filter((p) => p.slug !== post.slug)
-  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+  .sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
 const withOverlap = otherPosts
   .map((p) => ({
     ...p,
@@ -39,12 +39,12 @@ const withOverlap = otherPosts
       post.data.tags.some((pt: string) => pt.toLowerCase() === t.toLowerCase())
     ).length,
   }))
-  .sort((a, b) => b.overlap - a.overlap || b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+  .sort((a, b) => b.overlap - a.overlap || new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
 // Take top 3 by relevance; if fewer than 3 have overlap, fill with recent posts
 const related = withOverlap.slice(0, 3);
 
-const pubDateISO = post.data.pubDate.toISOString();
-const pubDateFormatted = post.data.pubDate.toLocaleDateString('en-US', {
+const pubDateISO = new Date(post.data.pubDate).toISOString();
+const pubDateFormatted = new Date(post.data.pubDate).toLocaleDateString('en-US', {
   year: 'numeric',
   month: 'long',
   day: 'numeric',
@@ -131,8 +131,8 @@ const pinterestShareUrl = `https://pinterest.com/pin/create/button/?url=${encode
   canonicalUrl={postUrl}
   jsonLd={blogPostingLd}
   articleMeta={{
-    publishedTime: post.data.pubDate.toISOString(),
-    modifiedTime: (post.data.updatedDate || post.data.pubDate).toISOString(),
+    publishedTime: new Date(post.data.pubDate).toISOString(),
+    modifiedTime: (post.data.updatedDate ? new Date(post.data.updatedDate) : new Date(post.data.pubDate)).toISOString(),
     author: post.data.author || 'Olu',
     section: post.data.tags?.[0],
     tags: post.data.tags,

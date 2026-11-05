@@ -1,0 +1,102 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="phoneGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f3f4f6;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0891b2;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="cardGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a855f7;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#9333ea;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="cardGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="cardGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#84cc16;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#65a30d;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  <!-- Decorative orbs -->
+  <circle cx="100" cy="100" r="180" fill="#06b6d4" opacity="0.15"/>
+  <circle cx="1100" cy="530" r="200" fill="#a855f7" opacity="0.15"/>
+  <!-- iPhone mockup on left -->
+  <g transform="translate(150,315)">
+    <rect x="-180" y="-360" width="360" height="720" rx="30" fill="url(#phoneGrad)" stroke="#e5e7eb" stroke-width="2"/>
+    <rect x="-160" y="-340" width="320" height="680" rx="20" fill="#f9fafb"/>
+    <!-- App header -->
+    <rect x="-140" y="-300" width="280" height="50" rx="8" fill="#111827"/>
+    <text x="0" y="-268" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="bold">Dripmatiq</text>
+    <!-- Mix and match grid -->
+    <g transform="translate(0, -200)">
+      <!-- Card 1 -->
+      <rect x="-130" y="0" width="120" height="180" rx="12" fill="url(#cardGrad1)"/>
+      <text x="-70" y="60" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">TOP</text>
+      <rect x="-110" y="80" width="80" height="100" rx="6" fill="white" opacity="0.3"/>
+      <!-- Card 2 -->
+      <rect x="10" y="0" width="120" height="180" rx="12" fill="url(#cardGrad2)"/>
+      <text x="70" y="60" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">BOTTOM</text>
+      <rect x="30" y="80" width="80" height="100" rx="6" fill="white" opacity="0.3"/>
+    </g>
+    <g transform="translate(0, 50)">
+      <!-- Card 3 -->
+      <rect x="-130" y="0" width="120" height="180" rx="12" fill="url(#cardGrad3)"/>
+      <text x="-70" y="60" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">LAYER</text>
+      <rect x="-110" y="80" width="80" height="100" rx="6" fill="white" opacity="0.3"/>
+      <!-- Card 4 -->
+      <rect x="10" y="0" width="120" height="180" rx="12" fill="url(#cardGrad4)"/>
+      <text x="70" y="60" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">SHOES</text>
+      <rect x="30" y="80" width="80" height="100" rx="6" fill="white" opacity="0.3"/>
+    </g>
+    <!-- Swap arrow indicator -->
+    <g transform="translate(0, 260)">
+      <circle cx="-70" cy="0" r="24" fill="#f3f4f6" stroke="#d1d5db" stroke-width="2"/>
+      <path d="M-70 -10 L-70 10 M-80 0 L-60 0 M-70 -10 L-80 0 L-70 10" fill="none" stroke="#6366f1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="70" cy="0" r="24" fill="#f3f4f6" stroke="#d1d5db" stroke-width="2"/>
+      <path d="M70 -10 L70 10 M60 0 L80 0 M70 -10 L60 0 L70 10" fill="none" stroke="#6366f1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="0" y="40" text-anchor="middle" fill="#9ca3af" font-family="Arial, sans-serif" font-size="14">AI SWAP</text>
+    </g>
+    <!-- Bottom nav -->
+    <rect x="-140" y="280" width="280" height="60" rx="12" fill="#f3f4f6"/>
+    <circle cx="-60" cy="310" r="8" fill="#6366f1"/>
+    <circle cx="0" cy="310" r="8" fill="#d1d5db"/>
+    <circle cx="60" cy="310" r="8" fill="#d1d5db"/>
+  </g>
+  <!-- Right panel: feature highlights -->
+  <g transform="translate(650, 150)">
+    <text x="0" y="0" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="42" font-weight="bold">Mix and Match</text>
+    <text x="0" y="50" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="22" opacity="0.9">AI builds endless outfits</text>
+    <text x="0" y="85" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="22" opacity="0.9">from your existing closet</text>
+    <!-- Feature pills -->
+    <g transform="translate(-200, 140)">
+      <rect x="0" y="0" width="180" height="48" rx="24" fill="white" opacity="0.2" stroke="white" stroke-width="1" stroke-opacity="0.3"/>
+      <text x="90" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="15" font-weight="600">Closet-only AI</text>
+      <rect x="0" y="60" width="180" height="48" rx="24" fill="white" opacity="0.2" stroke="white" stroke-width="1" stroke-opacity="0.3"/>
+      <text x="90" y="90" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="15" font-weight="600">Weather aware</text>
+      <rect x="0" y="120" width="180" height="48" rx="24" fill="white" opacity="0.2" stroke="white" stroke-width="1" stroke-opacity="0.3"/>
+      <text x="90" y="150" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="15" font-weight="600">Wear tracking</text>
+      <rect x="0" y="180" width="180" height="48" rx="24" fill="white" opacity="0.2" stroke="white" stroke-width="1" stroke-opacity="0.3"/>
+      <text x="90" y="210" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="15" font-weight="600">Zero shopping</text>
+    </g>
+    <!-- Stats -->
+    <g transform="translate(0, 140)">
+      <text x="-180" y="0" text-anchor="middle" fill="#06b6d4" font-family="Arial, sans-serif" font-size="36" font-weight="bold">73%</text>
+      <text x="-180" y="35" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" opacity="0.8">Less decision time</text>
+      <text x="0" y="0" text-anchor="middle" fill="#a855f7" font-family="Arial, sans-serif" font-size="36" font-weight="bold">41%</text>
+      <text x="0" y="35" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" opacity="0.8">Higher cost-per-wear</text>
+      <text x="180" y="0" text-anchor="middle" fill="#f97316" font-family="Arial, sans-serif" font-size="36" font-weight="bold">2.3</text>
+      <text x="180" y="35" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" opacity="0.8">Dupe buys prevented</text>
+    </g>
+  </g>
+  <!-- Bottom tagline -->
+  <text x="600" y="560" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="20" opacity="0.8">Your best wardrobe is already in your closet.</text>
+</svg>

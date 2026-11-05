@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 
 export const GET: APIRoute = async () => {
   const posts = (await getCollection('blog')).sort(
-    (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime()
+    (a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
   );
 
   const siteUrl = 'https://dripmatiq.app';
@@ -18,7 +18,7 @@ export const GET: APIRoute = async () => {
   for (const p of posts) {
     body += `# ${p.data.title}\n\n`;
     body += `URL: ${siteUrl}/blog/${p.slug}/\n`;
-    body += `Published: ${p.data.pubDate.toISOString().slice(0, 10)}\n`;
+    body += `Published: ${new Date(p.data.pubDate).toISOString().slice(0, 10)}\n`;
     body += `Tags: ${p.data.tags.join(', ')}\n`;
     body += `Description: ${p.data.description}\n\n`;
     body += `${p.body}\n\n`;

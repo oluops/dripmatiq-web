@@ -9,7 +9,7 @@ export async function GET(context: APIContext) {
     description: 'Style tips, wardrobe hacks, and AI-powered outfit advice.',
     site: context.site!,
     items: posts
-      .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+      .sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime())
       .map((post) => ({
         title: post.data.title,
         pubDate: post.data.pubDate,
