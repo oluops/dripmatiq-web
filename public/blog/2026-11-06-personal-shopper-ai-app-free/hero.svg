@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Phone screen showing AI personal shopper interface with curated outfit suggestions from user's own wardrobe, no shopping links, dark background with gold accents">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070B14"/>
+      <stop offset="50%" stop-color="#0A0A0A"/>
+      <stop offset="100%" stop-color="#0D1117"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#3D3310" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#0A0A0A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="50%" stop-color="#F2D27A"/>
+      <stop offset="100%" stop-color="#D4AF37"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- Top gold accent line -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#goldline)"/>
+
+  <!-- DRIPMATIQ JOURNAL header -->
+  <text x="80" y="80" font-family="Georgia, Times New Roman, serif" font-size="28" font-weight="700" fill="#F2D27A" letter-spacing="2.5">DRIPMATIQ JOURNAL</text>
+  <line x1="80" y1="95" x2="380" y2="95" stroke="url(#goldline)" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Main title -->
+  <text x="80" y="170" font-family="Georgia, Times New Roman, serif" font-size="52" font-weight="700" fill="#F7F4EC" letter-spacing="0.2" style="line-height: 1.15">Your AI Personal</text>
+  <text x="80" y="230" font-family="Georgia, Times New Roman, serif" font-size="52" font-weight="700" fill="#F7F4EC" letter-spacing="0.2" style="line-height: 1.15">Shopper — Free</text>
+
+  <!-- Subtitle -->
+  <text x="80" y="300" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="500" fill="#B8C0D8" letter-spacing="0.3">Zero shopping links. Zero upsells. Just your closet, curated.</text>
+
+  <!-- Phone mockup showing personal shopper interface -->
+  <g transform="translate(700, 120)" filter="url(#shadow)">
+    <!-- Phone frame -->
+    <rect x="0" y="0" width="420" height="550" rx="40" fill="#0D1117" stroke="#1F2A3A" stroke-width="3"/>
+    <rect x="150" y="8" width="120" height="6" rx="3" fill="#1F2A3A"/> <!-- notch -->
+
+    <!-- Screen content -->
+    <rect x="12" y="30" width="396" height="508" rx="28" fill="#0A0A0A"/>
+
+    <!-- Header bar -->
+    <rect x="24" y="42" width="372" height="60" rx="12" fill="#141820" stroke="#2A2F3A" stroke-width="1"/>
+    <text x="40" y="80" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#F7F4EC">Your Personal Shopper</text>
+    <circle cx="380" cy="72" r="18" fill="#D4AF37" opacity="0.15"/>
+    <text x="374" y="77" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#D4AF37" text-anchor="middle">FREE</text>
+
+    <!-- Outfit cards -->
+    <g transform="translate(24, 120)">
+      <!-- Card 1 -->
+      <rect x="0" y="0" width="360" height="110" rx="12" fill="#141820" stroke="#2A2F3A" stroke-width="1"/>
+      <rect x="16" y="16" width="78" height="78" rx="8" fill="#1E2530" stroke="#D4AF37" stroke-width="1.5"/>
+      <text x="110" y="40" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#F7F4EC">Monday</text>
+      <text x="110" y="62" font-family="Inter, Arial, sans-serif" font-size="12" fill="#B8C0D8">Blazer + Tee + Jeans + Loafers</text>
+      <text x="110" y="82" font-family="Inter, Arial, sans-serif" font-size="10" fill="#8B95A8">Your pieces • 72°F • Client call</text>
+      <text x="110" y="100" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="600" fill="#D4AF37">From your closet</text>
+
+      <!-- Card 2 -->
+      <rect x="0" y="125" width="360" height="110" rx="12" fill="#141820" stroke="#2A2F3A" stroke-width="1"/>
+      <rect x="16" y="141" width="78" height="78" rx="8" fill="#1E2530" stroke="#2A2F3A" stroke-width="1"/>
+      <text x="110" y="165" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#F7F4EC">Wednesday</text>
+      <text x="110" y="187" font-family="Inter, Arial, sans-serif" font-size="12" fill="#B8C0D8">Knit + Trousers + Boots</text>
+      <text x="110" y="207" font-family="Inter, Arial, sans-serif" font-size="10" fill="#8B95A8">Your pieces • 58°F • WFH</text>
+      <text x="110" y="225" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="600" fill="#D4AF37">From your closet</text>
+
+      <!-- Card 3 -->
+      <rect x="0" y="250" width="360" height="110" rx="12" fill="#141820" stroke="#2A2F3A" stroke-width="1"/>
+      <rect x="16" y="266" width="78" height="78" rx="8" fill="#1E2530" stroke="#2A2F3A" stroke-width="1"/>
+      <text x="110" y="290" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#F7F4EC">Friday</text>
+      <text x="110" y="312" font-family="Inter, Arial, sans-serif" font-size="12" fill="#B8C0D8">Denim + Layered Top + Sneakers</text>
+      <text x="110" y="332" font-family="Inter, Arial, sans-serif" font-size="10" fill="#8B95A8">Your pieces • 65°F • Drinks</text>
+      <text x="110" y="350" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="600" fill="#D4AF37">From your closet</text>
+
+      <!-- Card 4 -->
+      <rect x="0" y="375" width="360" height="110" rx="12" fill="#141820" stroke="#2A2F3A" stroke-width="1"/>
+      <rect x="16" y="391" width="78" height="78" rx="8" fill="#1E2530" stroke="#2A2F3A" stroke-width="1"/>
+      <text x="110" y="415" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#F7F4EC">Saturday</text>
+      <text x="110" y="437" font-family="Inter, Arial, sans-serif" font-size="12" fill="#B8C0D8">Hoodie + Joggers + Boots</text>
+      <text x="110" y="457" font-family="Inter, Arial, sans-serif" font-size="10" fill="#8B95A8">Your pieces • 54°F • Errands</text>
+      <text x="110" y="475" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="600" fill="#D4AF37">From your closet</text>
+    </g>
+  </g>
+
+  <!-- Decorative elements - small gold dots -->
+  <circle cx="100" cy="420" r="3" fill="#D4AF37" opacity="0.6"/>
+  <circle cx="140" cy="440" r="2" fill="#F2D27A" opacity="0.4"/>
+  <circle cx="80" cy="460" r="2.5" fill="#D4AF37" opacity="0.5"/>
+  <circle cx="120" cy="480" r="1.5" fill="#F2D27A" opacity="0.3"/>
+
+  <!-- Bottom branding -->
+  <text x="80" y="580" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600" fill="#B8C0D8" letter-spacing="2">DRIPMATIQ.APP</text>
+
+  <!-- Bottom gold accent line -->
+  <rect x="0" y="626" width="1200" height="4" fill="url(#goldline)"/>
+</svg>

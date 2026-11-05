@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Person easily selecting an outfit from a well-organized closet with AI tags floating above each item, dark background with gold accents">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070B14"/>
+      <stop offset="50%" stop-color="#0A0A0A"/>
+      <stop offset="100%" stop-color="#0D1117"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#3D3310" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#0A0A0A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="50%" stop-color="#F2D27A"/>
+      <stop offset="100%" stop-color="#D4AF37"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="0" y="0" width="1200" height="4" fill="url(#goldline)"/>
+
+  <text x="80" y="80" font-family="Georgia, Times New Roman, serif" font-size="28" font-weight="700" fill="#F2D27A" letter-spacing="2.5">DRIPMATIQ JOURNAL</text>
+  <line x1="80" y1="95" x2="380" y2="95" stroke="url(#goldline)" stroke-width="2" stroke-linecap="round"/>
+
+  <text x="80" y="170" font-family="Georgia, Times New Roman, serif" font-size="52" font-weight="700" fill="#F7F4EC" letter-spacing="0.2" style="line-height: 1.15">Stop Decision</text>
+  <text x="80" y="230" font-family="Georgia, Times New Roman, serif" font-size="52" font-weight="700" fill="#F7F4EC" letter-spacing="0.2" style="line-height: 1.15">Fatigue at 7 AM</text>
+
+  <text x="80" y="300" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="500" fill="#B8C0D8" letter-spacing="0.3">AI wardrobe system. 3 min mornings. Zero willpower spent.</text>
+
+  <g transform="translate(700, 120)" filter="url(#shadow)">
+    <rect x="0" y="0" width="420" height="550" rx="40" fill="#0D1117" stroke="#1F2A3A" stroke-width="3"/>
+    <rect x="150" y="8" width="120" height="6" rx="3" fill="#1F2A3A"/>
+    <rect x="12" y="30" width="396" height="508" rx="28" fill="#0A0A0A"/>
+
+    <g transform="translate(24, 40)">
+      <text x="0" y="0" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#F2D27A">Today's Outfit</text>
+      
+      <rect x="0" y="20" width="360" height="200" rx="12" fill="#141820" stroke="#D4AF37" stroke-width="2"/>
+      <text x="180" y="65" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600" fill="#F7F4EC" text-anchor="middle">Merino Tee</text>
+      <text x="180" y="90" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600" fill="#F7F4EC" text-anchor="middle">+ Chambray Shirt</text>
+      <text x="180" y="115" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600" fill="#F7F4EC" text-anchor="middle">+ Chinos</text>
+      <text x="180" y="140" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600" fill="#F7F4EC" text-anchor="middle">+ Chelsea Boots</text>
+      <text x="180" y="175" font-family="Inter, Arial, sans-serif" font-size="12" fill="#D4AF37" text-anchor="middle">72°F • Rain • Client Call</text>
+
+      <rect x="0" y="240" width="360" height="100" rx="12" fill="#1E2530" stroke="#2A2F3A" stroke-width="1"/>
+      <text x="180" y="275" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#F2D27A" text-anchor="middle">Decision Time: 90 seconds</text>
+      <text x="180" y="300" font-family="Inter, Arial, sans-serif" font-size="12" fill="#B8C0D8" text-anchor="middle">AI matched weather + calendar + your closet</text>
+
+      <rect x="0" y="360" width="360" height="140" rx="12" fill="#141820" stroke="#2A2F3A" stroke-width="1"/>
+      <text x="16" y="395" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#F2D27A">This Week</text>
+      <text x="16" y="420" font-family="Inter, Arial, sans-serif" font-size="11" fill="#B8C0D8">Mon: 52°F Rain → Formula 1 ✓</text>
+      <text x="16" y="440" font-family="Inter, Arial, sans-serif" font-size="11" fill="#B8C0D8">Tue: 58°F Clear → Formula 2 ✓</text>
+      <text x="16" y="460" font-family="Inter, Arial, sans-serif" font-size="11" fill="#B8C0D8">Wed: 55°F Cloudy → Formula 4 ✓</text>
+      <text x="16" y="480" font-family="Inter, Arial, sans-serif" font-size="11" fill="#B8C0D8">Thu: 62°F Sunny → Formula 3 ✓</text>
+      <text x="16" y="500" font-family="Inter, Arial, sans-serif" font-size="11" fill="#B8C0D8">Fri: 65°F Clear → Formula 5 ✓</text>
+      <text x="16" y="520" font-family="Inter, Arial, sans-serif" font-size="11" fill="#B8C0D8">Sat/Sun: Casual → Formula 2 ✓</text>
+    </g>
+  </g>
+
+  <circle cx="100" cy="420" r="3" fill="#D4AF37" opacity="0.6"/>
+  <circle cx="140" cy="440" r="2" fill="#F2D27A" opacity="0.4"/>
+  <circle cx="80" cy="460" r="2.5" fill="#D4AF37" opacity="0.5"/>
+  <circle cx="120" cy="480" r="1.5" fill="#F2D27A" opacity="0.3"/>
+
+  <text x="80" y="580" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600" fill="#B8C0D8" letter-spacing="2">DRIPMATIQ.APP</text>
+  <rect x="0" y="626" width="1200" height="4" fill="url(#goldline)"/>
+</svg>
