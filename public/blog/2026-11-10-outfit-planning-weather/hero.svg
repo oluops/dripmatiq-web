@@ -1,0 +1,113 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="100%" style="stop-color:#141414"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d9b45b"/>
+      <stop offset="100%" style="stop-color:#c4a04a"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Subtle grid pattern -->
+  <g stroke="#1a1a1a" stroke-width="0.5" opacity="0.3">
+    <line x1="0" y1="0" x2="1200" y2="630"/>
+    <line x1="1200" y1="0" x2="0" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+  </g>
+  
+  <!-- Left: Phone mockup with weather + outfit -->
+  <g transform="translate(120, 80)">
+    <!-- Phone frame -->
+    <rect x="0" y="0" width="320" height="540" rx="36" fill="#0a0a0a" stroke="#2a2a2a" stroke-width="3"/>
+    <rect x="12" y="12" width="296" height="516" rx="28" fill="#0f0f0f"/>
+    
+    <!-- Top bar -->
+    <rect x="12" y="12" width="296" height="50" rx="12" fill="#141414" opacity="0.8"/>
+    <text x="160" y="44" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#fff" text-anchor="middle">7:42 AM</text>
+    
+    <!-- Weather card -->
+    <rect x="24" y="78" width="264" height="90" rx="16" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="40" y="112" font-family="system-ui, sans-serif" font-size="14" fill="#d9b45b" font-weight="600">TODAY'S FORECAST</text>
+    <text x="40" y="138" font-family="system-ui, sans-serif" font-size="32" font-weight="700" fill="#fff">72°F</text>
+    <text x="100" y="138" font-family="system-ui, sans-serif" font-size="18" fill="#aaa">☀️ Sunny</text>
+    <text x="40" y="158" font-family="system-ui, sans-serif" font-size="12" fill="#888">High 75°F • Low 62°F • 10% rain</text>
+    
+    <!-- Outfit card -->
+    <rect x="24" y="188" width="264" height="200" rx="16" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="40" y="222" font-family="system-ui, sans-serif" font-size="14" fill="#d9b45b" font-weight="600">TODAY'S OUTFIT</text>
+    
+    <!-- Outfit items -->
+    <g font-family="system-ui, sans-serif" font-size="13" fill="#ddd">
+      <text x="40" y="255">⬛ Blazer — navy, structured</text>
+      <text x="40" y="280">⬜ Tee — white, merino blend</text>
+      <text x="40" y="305">👖 Jeans — straight leg, dark wash</text>
+      <text x="40" y="330">👞 Loafers — brown leather</text>
+      <text x="40" y="355">🧣 Scarf — silk, gold accent</text>
+    </g>
+    
+    <!-- Virtual try-on button -->
+    <rect x="40" y="370" width="208" height="44" rx="22" fill="url(#gold)" filter="url(#glow)"/>
+    <text x="144" y="399" font-family="system-ui, sans-serif" font-size="15" font-weight="600" fill="#0a0a0a" text-anchor="middle">Virtual Try-On</text>
+    
+    <!-- Bottom indicator -->
+    <rect x="148" y="510" width="24" height="5" rx="2.5" fill="#333"/>
+  </g>
+  
+  <!-- Right: Three weather apps vs One system -->
+  <g transform="translate(500, 100)">
+    <!-- Before: Three apps -->
+    <text x="0" y="0" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#fff">BEFORE</text>
+    <text x="0" y="28" font-family="system-ui, sans-serif" font-size="14" fill="#888">Three apps. Ten minutes. Zero clarity.</text>
+    
+    <g transform="translate(0, 50)">
+      <g fill="#fff" font-family="system-ui, sans-serif" font-size="13">
+        <rect x="0" y="0" width="320" height="60" rx="12" fill="#1a1a1a" stroke="#442200" stroke-width="1"/>
+        <text x="20" y="28">☀️ App One: 72°F Sunny</text>
+        <text x="20" y="46" font-size="11" fill="#888">"Perfect blazer weather"</text>
+      </g>
+      <g fill="#fff" font-family="system-ui, sans-serif" font-size="13" transform="translate(0, 75)">
+        <rect x="0" y="0" width="320" height="60" rx="12" fill="#1a1a1a" stroke="#442200" stroke-width="1"/>
+        <text x="20" y="28">🌧️ App Two: 68°F Rain 30%</text>
+        <text x="20" y="46" font-size="11" fill="#888">"Need trench + boots"</text>
+      </g>
+      <g fill="#fff" font-family="system-ui, sans-serif" font-size="13" transform="translate(0, 150)">
+        <rect x="0" y="0" width="320" height="60" rx="12" fill="#1a1a1a" stroke="#442200" stroke-width="1"/>
+        <text x="20" y="28">🌡️ App Three: Feels 75°F</text>
+        <text x="20" y="46" font-size="11" fill="#888">"Cardigan might work?"</text>
+      </g>
+      <text x="0" y="240" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#d9b45b">⏱ 10 min • 😰 Anxious • ❌ Wrong choice</text>
+    </g>
+    
+    <!-- After: One system -->
+    <text x="0" y="320" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#fff">AFTER</text>
+    <text x="0" y="348" font-family="system-ui, sans-serif" font-size="14" fill="#888">One system. Thirty seconds. Complete confidence.</text>
+    
+    <g transform="translate(0, 370)">
+      <rect x="0" y="0" width="320" height="140" rx="16" fill="url(#gold)" opacity="0.1" stroke="#d9b45b" stroke-width="1"/>
+      <text x="20" y="35" font-family="system-ui, sans-serif" font-size="16" font-weight="600" fill="#d9b45b">📱 Dripmatiq</text>
+      <text x="20" y="65" font-family="system-ui, sans-serif" font-size="14" fill="#ddd">Weather-matched outfit from YOUR closet</text>
+      <text x="20" y="90" font-family="system-ui, sans-serif" font-size="14" fill="#ddd">Virtual try-on confirms fit</text>
+      <text x="20" y="115" font-family="system-ui, sans-serif" font-size="13" fill="#aaa">Blazer formula • Loafers re-worn • 30 sec</text>
+      <text x="0" y="155" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#4ade80">⏱ 30 sec • 😌 Confident • ✅ Nailed it</text>
+    </g>
+  </g>
+  
+  <!-- Bottom tagline -->
+  <text x="600" y="590" font-family="system-ui, sans-serif" font-size="18" font-weight="500" fill="#d9b45b" text-anchor="middle">Your closet already has the answer. Let Dripmatiq show it to you.</text>
+  
+  <!-- Logo/brand -->
+  <text x="1150" y="610" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#d9b45b" text-anchor="end">dripmatiq.app</text>
+</svg>
