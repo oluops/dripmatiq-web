@@ -1,0 +1,255 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d9b45b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c4a047;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="phoneGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1e1e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f0f0f;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.03">
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#d9b45b" stroke-width="0.5"/>
+    </pattern>
+    <rect width="1200" height="630" fill="url(#grid)"/>
+  </g>
+
+  <!-- Decorative gold lines -->
+  <line x1="100" y1="100" x2="300" y2="100" stroke="url(#goldGrad)" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <line x1="100" y1="100" x2="100" y2="180" stroke="url(#goldGrad)" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <line x1="1100" y1="530" x2="900" y2="530" stroke="url(#goldGrad)" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <line x1="1100" y1="530" x2="1100" y2="450" stroke="url(#goldGrad)" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Phone frame -->
+  <g transform="translate(180, 80)">
+    <!-- Phone body -->
+    <rect x="0" y="0" width="380" height="680" rx="36" fill="url(#phoneGrad)" stroke="#2a2a2a" stroke-width="3"/>
+    
+    <!-- Dynamic island -->
+    <rect x="140" y="12" width="100" height="5" rx="2.5" fill="#0a0a0a"/>
+    
+    <!-- Screen content area -->
+    <rect x="12" y="30" width="356" height="638" rx="24" fill="#0a0a0a">
+      <clipPath id="screenClip">
+        <rect x="12" y="30" width="356" height="638" rx="24"/>
+      </clipPath>
+    </rect>
+
+    <!-- Camera viewfinder overlay -->
+    <g clip-path="url(#screenClip)">
+      <!-- Semi-transparent overlay -->
+      <rect x="12" y="30" width="356" height="638" fill="#0a0a0a" fill-opacity="0.85"/>
+      
+      <!-- Camera frame guide -->
+      <rect x="40" y="120" width="300" height="400" rx="16" fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-dasharray="12 8" opacity="0.7"/>
+      
+      <!-- Corner brackets -->
+      <g stroke="url(#goldGrad)" stroke-width="4" stroke-linecap="round" opacity="0.9">
+        <!-- Top-left -->
+        <path d="M 40 150 L 40 120 L 70 120"/>
+        <!-- Top-right -->
+        <path d="M 340 150 L 340 120 L 310 120"/>
+        <!-- Bottom-left -->
+        <path d="M 40 470 L 40 500 L 70 500"/>
+        <!-- Bottom-right -->
+        <path d="M 340 470 L 340 500 L 310 500"/>
+      </g>
+      
+      <!-- Scanning line animation -->
+      <line x1="40" y1="200" x2="340" y2="200" stroke="url(#goldGrad)" stroke-width="2" opacity="0.8">
+        <animate attributeName="y1" from="120" to="500" dur="2.5s" repeatCount="indefinite"/>
+        <animate attributeName="y2" from="120" to="500" dur="2.5s" repeatCount="indefinite"/>
+      </line>
+      
+      <!-- Detected items as floating cards -->
+      <g filter="url(#softGlow)">
+        <!-- Card 1 - sweater -->
+        <g transform="translate(420, 180)">
+          <rect x="0" y="0" width="140" height="180" rx="12" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1"/>
+          <ellipse cx="70" cy="70" rx="50" ry="45" fill="#3a3a3a" stroke="#4a4a4a" stroke-width="1"/>
+          <ellipse cx="70" cy="70" rx="35" ry="30" fill="#2a2a2a"/>
+          <text x="70" y="135" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#d9b45b" font-weight="500">Sweater</text>
+          <text x="70" y="150" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#888">Mild • Work • All-day</text>
+          <text x="70" y="165" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#888">Loafers • ✓ Tagged</text>
+        </g>
+        
+        <!-- Card 2 - trench -->
+        <g transform="translate(440, 400)">
+          <rect x="0" y="0" width="140" height="180" rx="12" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1"/>
+          <path d="M 20 160 L 30 40 L 110 40 L 120 160 Z" fill="#2a2a2a" stroke="#3a3a3a" stroke-width="1"/>
+          <path d="M 50 60 L 70 100 L 90 60" fill="none" stroke="#d9b45b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+          <text x="70" y="135" text-ancher="middle" font-family="system-ui, sans-serif" font-size="11" fill="#d9b45b" font-weight="500">Trench</text>
+          <text x="70" y="150" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#888">Mild • Rain • Commute</text>
+          <text x="70" y="165" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#888">Boots • ✓ Tagged</text>
+        </g>
+        
+        <!-- Card 3 - jeans -->
+        <g transform="translate(580, 280)">
+          <rect x="0" y="0" width="140" height="180" rx="12" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1"/>
+          <path d="M 25 160 L 25 20 L 115 20 L 115 160 L 100 160 L 100 40 L 40 40 L 40 160 Z" fill="#1a2a3a" stroke="#2a3a4a" stroke-width="1"/>
+          <path d="M 40 40 L 40 160 M 100 40 L 100 160" stroke="#2a3a4a" stroke-width="1" opacity="0.5"/>
+          <text x="70" y="135" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#d9b45b" font-weight="500">Jeans</text>
+          <text x="70" y="150" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#888">Mild • Casual • All-day</text>
+          <text x="70" y="165" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#888">Loafers/Boots • ✓ Tagged</text>
+        </g>
+        
+        <!-- Card 4 - boots -->
+        <g transform="translate(700, 420)">
+          <rect x="0" y="0" width="140" height="180" rx="12" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1"/>
+          <path d="M 35 140 L 45 60 Q 70 30 95 60 L 105 140 Z" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1"/>
+          <ellipse cx="70" cy="55" rx="25" ry="8" fill="#2a2a2a" stroke="#3a3a3a" stroke-width="0.5"/>
+          <text x="70" y="135" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#d9b45b" font-weight="500">Boots</text>
+          <text x="70" y="150" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#888">Waterproof • Walking</text>
+          <text x="70" y="165" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#888">Commute • ✓ Tagged</text>
+        </g>
+      </g>
+      
+      <!-- UI elements bottom -->
+      <rect x="12" y="580" width="356" height="80" rx="24" fill="#121212" stroke="#222" stroke-width="1"/>
+      <circle cx="190" cy="620" r="30" fill="#d9b45b" opacity="0.2"/>
+      <circle cx="190" cy="620" r="22" fill="url(#goldGrad)"/>
+      <path d="M 172 620 L 190 638 L 208 620" fill="none" stroke="#0a0a0a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      
+      <!-- Capture hint -->
+      <text x="190" y="680" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#888">Tap to capture</text>
+    </g>
+  </g>
+
+  <!-- Digital wardrobe cards emerging from phone -->
+  <g transform="translate(580, 200)" filter="url(#softGlow)">
+    <!-- Card stack -->
+    <g opacity="0.9">
+      <rect x="0" y="0" width="280" height="360" rx="16" fill="#121212" stroke="#222" stroke-width="1"/>
+      <!-- Header -->
+      <rect x="0" y="0" width="280" height="56" rx="16" fill="#0a0a0a"/>
+      <text x="20" y="36" font-family="system-ui, sans-serif" font-size="16" fill="#fff" font-weight="600">Digital Wardrobe</text>
+      <text x="260" y="36" text-anchor="end" font-family="system-ui, sans-serif" font-size="13" fill="#d9b45b" font-weight="500">47 pieces</text>
+      
+      <!-- Item rows -->
+      <g font-family="system-ui, sans-serif" font-size="12">
+        <g transform="translate(16, 72)">
+          <rect x="0" y="0" width="248" height="52" rx="8" fill="#1a1a1a" stroke="#222" stroke-width="0.5"/>
+          <ellipse cx="30" cy="26" rx="20" ry="18" fill="#3a3a3a"/>
+          <ellipse cx="30" cy="26" rx="14" ry="12" fill="#2a2a2a"/>
+          <text x="66" y="22" fill="#fff" font-weight="500">Cream Merino Cardigan</text>
+          <text x="66" y="38" fill="#888" font-size="10">Mild • Work • All-day • Loafers</text>
+          <circle cx="228" cy="26" r="10" fill="#d9b45b" opacity="0.2"/>
+          <text x="228" y="30" text-anchor="middle" font-size="11" fill="#d9b45b" font-weight="600">40 wears</text>
+        </g>
+        
+        <g transform="translate(16, 134)">
+          <rect x="0" y="0" width="248" height="52" rx="8" fill="#1a1a1a" stroke="#222" stroke-width="0.5"/>
+          <path d="M 10 42 L 15 10 L 45 10 L 50 42 Z" fill="#2a2a2a"/>
+          <text x="66" y="22" fill="#fff" font-weight="500">Beige Trench Coat</text>
+          <text x="66" y="38" fill="#888" font-size="10">Mild • Rain • Commute • Boots</text>
+          <circle cx="228" cy="26" r="10" fill="#d9b45b" opacity="0.2"/>
+          <text x="228" y="30" text-anchor="middle" font-size="11" fill="#d9b45b" font-weight="600">12 wears</text>
+        </g>
+        
+        <g transform="translate(16, 196)">
+          <rect x="0" y="0" width="248" height="52" rx="8" fill="#1a1a1a" stroke="#222" stroke-width="0.5"/>
+          <rect x="10" y="10" width="40" height="32" rx="4" fill="#1a2a3a" stroke="#2a3a4a"/>
+          <text x="66" y="22" fill="#fff" font-weight="500">Straight-Leg Jeans</text>
+          <text x="66" y="38" fill="#888" font-size="10">Mild • Casual • All-day • Loafers/Boots</text>
+          <circle cx="228" cy="26" r="10" fill="#d9b45b" opacity="0.2"/>
+          <text x="228" y="30" text-anchor="middle" font-size="11" fill="#d9b45b" font-weight="600">28 wears</text>
+        </g>
+        
+        <g transform="translate(16, 258)">
+          <rect x="0" y="0" width="248" height="52" rx="8" fill="#1a1a1a" stroke="#222" stroke-width="0.5"/>
+          <path d="M 20 42 L 25 15 L 45 15 L 50 42 Z" fill="#1a1a1a"/>
+          <text x="66" y="22" fill="#fff" font-weight="500">Ankle Boots (Waterproof)</text>
+          <text x="66" y="38" fill="#888" font-size="10">Commute • Walking • Boots</text>
+          <circle cx="228" cy="26" r="10" fill="#d9b45b" opacity="0.2"/>
+          <text x="228" y="30" text-anchor="middle" font-size="11" fill="#d9b45b" font-weight="600">35 wears</text>
+        </g>
+        
+        <!-- + more indicator -->
+        <g transform="translate(16, 320)">
+          <text x="124" y="16" text-anchor="middle" fill="#666" font-size="12">+ 43 more pieces tagged</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Today's outfit card -->
+  <g transform="translate(580, 440)" filter="url(#glow)">
+    <rect x="0" y="0" width="520" height="120" rx="16" fill="#121212" stroke="url(#goldGrad)" stroke-width="2"/>
+    <rect x="0" y="0" width="6" height="120" rx="16" fill="url(#goldGrad)"/>
+    
+    <text x="20" y="30" font-family="system-ui, sans-serif" font-size="14" fill="#d9b45b" font-weight="600">TODAY'S LOOK — Auto-generated</text>
+    <text x="20" y="52" font-family="system-ui, sans-serif" font-size="20" fill="#fff" font-weight="300">68°F Rain → Trench + Merino + Jeans + Boots</text>
+    <text x="20" y="80" font-family="system-ui, sans-serif" font-size="12" fill="#888">Virtual try-on ready • 30 sec to dressed • Zero trying on</text>
+    
+    <!-- CTA -->
+    <rect x="380" y="70" width="120" height="36" rx="8" fill="url(#goldGrad)"/>
+    <text x="440" y="96" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#0a0a0a" font-weight="600">Wear This</text>
+  </g>
+
+  <!-- Title area -->
+  <text x="100" y="100" font-family="system-ui, sans-serif" font-size="18" fill="#d9b45b" font-weight="500" letter-spacing="2">DRIPMATIQ</text>
+  <text x="100" y="135" font-family="system-ui, sans-serif" font-size="42" fill="#fff" font-weight="200" line-height="1.1">Your Phone Ate</text>
+  <text x="100" y="185" font-family="system-ui, sans-serif" font-size="42" fill="#fff" font-weight="200" line-height="1.1">Your Closet</text>
+  <text x="100" y="235" font-family="system-ui, sans-serif" font-size="42" fill="#fff" font-weight="200" line-height="1.1">(And Gave You</text>
+  <text x="100" y="285" font-family="system-ui, sans-serif" font-size="42" fill="#fff" font-weight="200" line-height="1.1">Outfits Back)</text>
+
+  <!-- Subtitle -->
+  <text x="100" y="350" font-family="system-ui, sans-serif" font-size="18" fill="#aaa" font-weight="300" line-height="1.4">Photo-scan your wardrobe in 10 minutes.</text>
+  <text x="100" y="380" font-family="system-ui, sans-serif" font-size="18" fill="#aaa" font-weight="300" line-height="1.4">Get weather-matched daily outfits with virtual try-on.</text>
+  <text x="100" y="410" font-family="system-ui, sans-serif" font-size="18" fill="#aaa" font-weight="300" line-height="1.4">Finally know what you own and what works.</text>
+
+  <!-- Bottom CTA -->
+  <g transform="translate(100, 470)">
+    <rect x="0" y="0" width="320" height="56" rx="12" fill="url(#goldGrad)"/>
+    <text x="160" y="36" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#0a0a0a" font-weight="600">Try Free at dripmatiq.app</text>
+  </g>
+
+  <!-- Stats badges -->
+  <g font-family="system-ui, sans-serif" transform="translate(100, 550)">
+    <g transform="translate(0, 0)">
+      <circle cx="40" cy="20" r="36" fill="#121212" stroke="#222" stroke-width="1"/>
+      <text x="40" y="12" text-anchor="middle" fill="#d9b45b" font-size="18" font-weight="600">10</text>
+      <text x="40" y="30" text-anchor="middle" fill="#888" font-size="10">min setup</text>
+    </g>
+    <g transform="translate(100, 0)">
+      <circle cx="40" cy="20" r="36" fill="#121212" stroke="#222" stroke-width="1"/>
+      <text x="40" y="12" text-anchor="middle" fill="#d9b45b" font-size="18" font-weight="600">47</text>
+      <text x="40" y="30" text-anchor="middle" fill="#888" font-size="10">pieces tagged</text>
+    </g>
+    <g transform="translate(200, 0)">
+      <circle cx="40" cy="20" r="36" fill="#121212" stroke="#222" stroke-width="1"/>
+      <text x="40" y="12" text-anchor="middle" fill="#d9b45b" font-size="18" font-weight="600">30s</text>
+      <text x="40" y="30" text-anchor="middle" fill="#888" font-size="10">to dressed</text>
+    </g>
+    <g transform="translate(300, 0)">
+      <circle cx="40" cy="20" r="36" fill="#121212" stroke="#222" stroke-width="1"/>
+      <text x="40" y="12" text-anchor="middle" fill="#d9b45b" font-size="18" font-weight="600">87%</text>
+      <text x="40" y="30" text-anchor="middle" fill="#888" font-size="10">spend drop</text>
+    </g>
+  </g>
+</svg>
