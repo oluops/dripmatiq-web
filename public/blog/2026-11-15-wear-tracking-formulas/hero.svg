@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Dark background -->
+  <rect width="1200" height="630" fill="#0a0a0a"/>
+  
+  <!-- Gold accent line -->
+  <line x1="100" y1="80" x2="1100" y2="80" stroke="#d9b45b" stroke-width="2" stroke-dasharray="10,5"/>
+  
+  <!-- Title area -->
+  <text x="600" y="140" text-anchor="middle" font-family="system-ui, sans-serif" font-size="36" font-weight="300" fill="#ffffff" letter-spacing="-0.02em">Your Closet: 134 Items → 5 Formulas</text>
+  <text x="600" y="190" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" font-weight="300" fill="#d9b45b" letter-spacing="-0.01em">85% noise. 15% signal. Wear tracking flips the ratio.</text>
+  
+  <!-- BEFORE panel (left) -->
+  <rect x="60" y="220" width="500" height="350" rx="12" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="310" y="255" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="400" fill="#d9b45b">BEFORE: Chaotic Visibility</text>
+  
+  <!-- Scattered clothing items (visual noise) -->
+  <g fill="#3a3a3a" stroke="#4a4a4a" stroke-width="0.5">
+    <!-- Random scattered rectangles representing clothes -->
+    <rect x="100" y="280" width="60" height="90" rx="4" transform="rotate(-15, 130, 325)" opacity="0.7"/>
+    <rect x="180" y="290" width="50" height="80" rx="4" transform="rotate(8, 205, 330)" opacity="0.6"/>
+    <rect x="260" y="270" width="70" height="100" rx="4" transform="rotate(-5, 295, 320)" opacity="0.7"/>
+    <rect x="350" y="300" width="55" height="85" rx="4" transform="rotate(12, 377, 342)" opacity="0.6"/>
+    <rect x="430" y="285" width="65" height="95" rx="4" transform="rotate(-10, 462, 332)" opacity="0.7"/>
+    <rect x="120" y="390" width="50" height="70" rx="4" transform="rotate(5, 145, 425)" opacity="0.5"/>
+    <rect x="200" y="385" width="80" height="110" rx="4" transform="rotate(-8, 240, 440)" opacity="0.6"/>
+    <rect x="300" y="395" width="55" height="75" rx="4" transform="rotate(15, 327, 432)" opacity="0.5"/>
+    <rect x="380" y="375" width="70" height="100" rx="4" transform="rotate(-3, 415, 425)" opacity="0.6"/>
+    <rect x="460" y="400" width="50" height="80" rx="4" transform="rotate(7, 485, 440)" opacity="0.5"/>
+    <rect x="90" y="480" width="65" height="90" rx="4" transform="rotate(-12, 122, 525)" opacity="0.4"/>
+    <rect x="180" y="490" width="55" height="75" rx="4" transform="rotate(4, 207, 527)" opacity="0.5"/>
+    <rect x="270" y="475" width="75" height="105" rx="4" transform="rotate(-6, 307, 527)" opacity="0.4"/>
+    <rect x="370" y="495" width="60" height="85" rx="4" transform="rotate(10, 400, 537)" opacity="0.5"/>
+    <rect x="450" y="480" width="65" height="95" rx="4" transform="rotate(-4, 482, 527)" opacity="0.4"/>
+  </g>
+  
+  <!-- Stats on BEFORE side -->
+  <text x="310" y="530" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#888888">134 total pieces</text>
+  <text x="310" y="555" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#888888">20 worn regularly</text>
+  <text x="310" y="580" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#d9b45b" font-weight="500">114 invisible (85%)</text>
+  
+  <!-- Arrow/divider -->
+  <text x="600" y="400" text-anchor="middle" font-family="system-ui, sans-serif" font-size="48" fill="#d9b45b">→</text>
+  <text x="600" y="430" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#666666">wear tracking</text>
+  
+  <!-- AFTER panel (right) -->
+  <rect x="640" y="220" width="500" height="350" rx="12" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="890" y="255" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="400" fill="#d9b45b">AFTER: 5 Formulas, 20 Core Pieces</text>
+  
+  <!-- 5 Formula cards -->
+  <g font-family="system-ui, sans-serif">
+    <!-- Formula 1 -->
+    <rect x="670" y="280" width="215" height="130" rx="8" fill="#1a1a1a" stroke="#d9b45b" stroke-width="1.5"/>
+    <text x="777" y="305" text-anchor="middle" font-size="13" font-weight="500" fill="#d9b45b">Formula 1</text>
+    <text x="777" y="325" text-anchor="middle" font-size="16" font-weight="400" fill="#ffffff">WFH Grocery Run</text>
+    <text x="777" y="348" text-anchor="middle" font-size="12" fill="#888888">Merino tee • Joggers • White sneakers</text>
+    <text x="777" y="370" text-anchor="middle" font-size="12" fill="#d9b45b" font-weight="500">3× this week</text>
+    <text x="777" y="392" text-anchor="middle" font-size="11" fill="#666688">Cost/wear: $4.50</text>
+    
+    <!-- Formula 2 -->
+    <rect x="905" y="280" width="215" height="130" rx="8" fill="#1a1a1a" stroke="#d9b45b" stroke-width="1.5"/>
+    <text x="1012" y="305" text-anchor="middle" font-size="13" font-weight="500" fill="#d9b45b">Formula 2</text>
+    <text x="1012" y="325" text-anchor="middle" font-size="16" font-weight="400" fill="#ffffff">Rain Commute + Office</text>
+    <text x="1012" y="348" text-anchor="middle" font-size="12" fill="#888888">Trench • Merino base • Jeans • Boots</text>
+    <text x="1012" y="370" text-anchor="middle" font-size="12" fill="#d9b45b" font-weight="500">Saved Tuesday</text>
+    <text x="1012" y="392" text-anchor="middle" font-size="11" fill="#666688">Cost/wear: $12.00</text>
+    
+    <!-- Formula 3 -->
+    <rect x="670" y="430" width="215" height="130" rx="8" fill="#1a1a1a" stroke="#d9b45b" stroke-width="1.5"/>
+    <text x="777" y="455" text-anchor="middle" font-size="13" font-weight="500" fill="#d9b45b">Formula 3</text>
+    <text x="777" y="475" text-anchor="middle" font-size="16" font-weight="400" fill="#ffffff">Client Dinner</text>
+    <text x="777" y="498" text-anchor="middle" font-size="12" fill="#888888">Navy cashmere • Silk cami • Trousers • Heels</text>
+    <text x="777" y="520" text-anchor="middle" font-size="12" fill="#d9b45b" font-weight="500">Elevated</text>
+    <text x="777" y="542" text-anchor="middle" font-size="11" fill="#666688">Cost/wear: $90.00</text>
+    
+    <!-- Formula 4 -->
+    <rect x="905" y="430" width="215" height="130" rx="8" fill="#1a1a1a" stroke="#d9b45b" stroke-width="1.5"/>
+    <text x="1012" y="455" text-anchor="middle" font-size="13" font-weight="500" fill="#d9b45b">Formula 4</text>
+    <text x="1012" y="475" text-anchor="middle" font-size="16" font-weight="400" fill="#ffffff">Travel Walking Day</text>
+    <text x="1012" y="498" text-anchor="middle" font-size="12" fill="#888888">Rain shell • Merino tee • Chinos • Sneakers</text>
+    <text x="1012" y="520" text-anchor="middle" font-size="12" fill="#d9b45b" font-weight="500">Packed Thursday</text>
+    <text x="1012" y="542" text-anchor="middle" font-size="11" fill="#666688">Cost/wear: $8.90</text>
+  </g>
+  
+  <!-- Formula 5 - bottom center -->
+  <rect x="730" y="510" width="340" height="50" rx="8" fill="#1a1a1a" stroke="#d9b45b" stroke-width="1.5"/>
+  <text x="900" y="532" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="500" fill="#d9b45b">Formula 5</text>
+  <text x="900" y="550" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="400" fill="#ffffff">Date Night — Rust knit • Midi skirt • Ankle boots (Cozy but intentional)</text>
+  
+  <!-- Bottom stats -->
+  <text x="600" y="600" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#666666">43 hrs/yr → 2 hrs/yr planning  •  $2,800/yr → ~$0 impulse  •  Decision fatigue → GONE</text>
+  
+  <!-- Brand -->
+  <text x="600" y="620" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#444444">dripmatiq.app</text>
+</svg>
