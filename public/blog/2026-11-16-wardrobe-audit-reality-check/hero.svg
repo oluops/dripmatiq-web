@@ -1,0 +1,144 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0a0a0a"/>
+  
+  <!-- Divider line -->
+  <line x1="600" y1="60" x2="600" y2="570" stroke="#d9b45b" stroke-width="2" stroke-dasharray="8,8"/>
+  
+  <!-- LEFT: BEFORE - Chaotic closet -->
+  <text x="300" y="50" font-family="system-ui, sans-serif" font-size="28" font-weight="300" fill="#d9b45b" text-anchor="middle">BEFORE</text>
+  <text x="300" y="80" font-family="system-ui, sans-serif" font-size="14" fill="#888" text-anchor="middle">134 items · 114 invisible · 3 black sweaters</text>
+  
+  <!-- Closet rack -->
+  <rect x="120" y="110" width="360" height="2" fill="#333"/>
+  <rect x="115" y="105" width="370" height="12" fill="none" stroke="#333" stroke-width="1"/>
+  
+  <!-- Hangers with clothes - BEFORE (crowded, duplicates highlighted) -->
+  <g id="before-hangers">
+    <!-- Black sweater 1 (cream merino) - MOST WORN -->
+    <g transform="translate(150, 110)">
+      <path d="M0 0 L-20 -30 L20 -30 Z" fill="none" stroke="#d9b45b" stroke-width="3"/>
+      <rect x="-22" y="-55" width="44" height="45" fill="#e8e0d0" stroke="#ccc" stroke-width="1"/>
+      <text x="0" y="-20" font-family="system-ui" font-size="9" fill="#d9b45b" text-anchor="middle" font-weight="600">40 wears</text>
+      <text x="0" y="-8" font-family="system-ui" font-size="8" fill="#aaa" text-anchor="middle">cream merino</text>
+    </g>
+    
+    <!-- Black sweater 2 (navy cashmere) - DUPLICATE -->
+    <g transform="translate(210, 110)">
+      <path d="M0 0 L-20 -30 L20 -30 Z" fill="none" stroke="#ff6b6b" stroke-width="3" stroke-dasharray="4,2"/>
+      <rect x="-22" y="-55" width="44" height="45" fill="#2d3a5e" stroke="#ff6b6b" stroke-width="2"/>
+      <text x="0" y="-20" font-family="system-ui" font-size="9" fill="#ff6b6b" text-anchor="middle" font-weight="600">5 wears</text>
+      <text x="0" y="-8" font-family="system-ui" font-size="8" fill="#ff6b6b" text-anchor="middle">DUPLICATE</text>
+    </g>
+    
+    <!-- Black sweater 3 (charcoal wool) - DUPLICATE -->
+    <g transform="translate(270, 110)">
+      <path d="M0 0 L-20 -30 L20 -30 Z" fill="none" stroke="#ff6b6b" stroke-width="3" stroke-dasharray="4,2"/>
+      <rect x="-22" y="-55" width="44" height="45" fill="#3a3a3a" stroke="#ff6b6b" stroke-width="2"/>
+      <text x="0" y="-20" font-family="system-ui" font-size="9" fill="#ff6b6b" text-anchor="middle" font-weight="600">0 wears</text>
+      <text x="0" y="-8" font-family="system-ui" font-size="8" fill="#ff6b6b" text-anchor="middle">DUPLICATE</text>
+    </g>
+    
+    <!-- Other items (grayed out) -->
+    <g transform="translate(330, 110)">
+      <path d="M0 0 L-20 -30 L20 -30 Z" fill="none" stroke="#444" stroke-width="1"/>
+      <rect x="-22" y="-55" width="44" height="45" fill="#2a2a2a" stroke="#444" stroke-width="1"/>
+    </g>
+    <g transform="translate(390, 110)">
+      <path d="M0 0 L-20 -30 L20 -30 Z" fill="none" stroke="#444" stroke-width="1"/>
+      <rect x="-22" y="-55" width="44" height="45" fill="#2a2a2a" stroke="#444" stroke-width="1"/>
+    </g>
+    <g transform="translate(450, 110)">
+      <path d="M0 0 L-20 -30 L20 -30 Z" fill="none" stroke="#444" stroke-width="1"/>
+      <rect x="-22" y="-55" width="44" height="45" fill="#2a2a2a" stroke="#444" stroke-width="1"/>
+    </g>
+    
+    <!-- Second row -->
+    <g transform="translate(150, 180)">
+      <path d="M0 0 L-20 -30 L20 -30 Z" fill="none" stroke="#444" stroke-width="1"/>
+      <rect x="-22" y="-55" width="44" height="45" fill="#2a2a2a" stroke="#444" stroke-width="1"/>
+    </g>
+    <g transform="translate(210, 180)">
+      <path d="M0 0 L-20 -30 L20 -30 Z" fill="none" stroke="#444" stroke-width="1"/>
+      <rect x="-22" y="-55" width="44" height="45" fill="#2a2a2a" stroke="#444" stroke-width="1"/>
+    </g>
+    <g transform="translate(270, 180)">
+      <path d="M0 0 L-20 -30 L20 -30 Z" fill="none" stroke="#444" stroke-width="1"/>
+      <rect x="-22" y="-55" width="44" height="45" fill="#2a2a2a" stroke="#444" stroke-width="1"/>
+    </g>
+    <g transform="translate(330, 180)">
+      <path d="M0 0 L-20 -30 L20 -30 Z" fill="none" stroke="#444" stroke-width="1"/>
+      <rect x="-22" y="-55" width="44" height="45" fill="#2a2a2a" stroke="#444" stroke-width="1"/>
+    </g>
+    <g transform="translate(390, 180)">
+      <path d="M0 0 L-20 -30 L20 -30 Z" fill="none" stroke="#444" stroke-width="1"/>
+      <rect x="-22" y="-55" width="44" height="45" fill="#2a2a2a" stroke="#444" stroke-width="1"/>
+    </g>
+    <g transform="translate(450, 180)">
+      <path d="M0 0 L-20 -30 L20 -30 Z" fill="none" stroke="#444" stroke-width="1"/>
+      <rect x="-22" y="-55" width="44" height="45" fill="#2a2a2a" stroke="#444" stroke-width="1"/>
+    </g>
+    
+    <!-- More rows (compressed) -->
+    <text x="300" y="260" font-family="system-ui" font-size="12" fill="#555" text-anchor="middle">... 114 more invisible pieces ...</text>
+  </g>
+  
+  <!-- RIGHT: AFTER - 5 Formula System -->
+  <text x="900" y="50" font-family="system-ui, sans-serif" font-size="28" font-weight="300" fill="#d9b45b" text-anchor="middle">AFTER</text>
+  <text x="900" y="80" font-family="system-ui, sans-serif" font-size="14" fill="#888" text-anchor="middle">20 core pieces · 5 formulas · 0 duplicates</text>
+  
+  <!-- Formula cards -->
+  <g id="formula-cards">
+    <!-- Formula 1 -->
+    <g transform="translate(650, 110)">
+      <rect x="0" y="0" width="260" height="90" fill="#1a1a1a" stroke="#d9b45b" stroke-width="1" rx="8"/>
+      <text x="130" y="22" font-family="system-ui" font-size="13" font-weight="500" fill="#d9b45b" text-anchor="middle">Formula 1</text>
+      <text x="130" y="40" font-family="system-ui" font-size="11" fill="#fff" text-anchor="middle">"WFH grocery run"</text>
+      <text x="130" y="58" font-family="system-ui" font-size="10" fill="#aaa" text-anchor="middle">merino tee · joggers · white sneakers</text>
+      <text x="130" y="78" font-family="system-ui" font-size="10" fill="#d9b45b" text-anchor="middle">Worn 3× this week</text>
+    </g>
+    
+    <!-- Formula 2 -->
+    <g transform="translate(650, 215)">
+      <rect x="0" y="0" width="260" height="90" fill="#1a1a1a" stroke="#d9b45b" stroke-width="1" rx="8"/>
+      <text x="130" y="22" font-family="system-ui" font-size="13" font-weight="500" fill="#d9b45b" text-anchor="middle">Formula 2</text>
+      <text x="130" y="40" font-family="system-ui" font-size="11" fill="#fff" text-anchor="middle">"Rain commute + office"</text>
+      <text x="130" y="58" font-family="system-ui" font-size="10" fill="#aaa" text-anchor="middle">trench · merino base · jeans · boots</text>
+      <text x="130" y="78" font-family="system-ui" font-size="10" fill="#d9b45b" text-anchor="middle">Saved Tuesday</text>
+    </g>
+    
+    <!-- Formula 3 -->
+    <g transform="translate(650, 320)">
+      <rect x="0" y="0" width="260" height="90" fill="#1a1a1a" stroke="#d9b45b" stroke-width="1" rx="8"/>
+      <text x="130" y="22" font-family="system-ui" font-size="13" font-weight="500" fill="#d9b45b" text-anchor="middle">Formula 3</text>
+      <text x="130" y="40" font-family="system-ui" font-size="11" fill="#fff" text-anchor="middle">"Client dinner"</text>
+      <text x="130" y="58" font-family="system-ui" font-size="10" fill="#aaa" text-anchor="middle">navy cashmere · silk cami · trousers · heels</text>
+      <text x="130" y="78" font-family="system-ui" font-size="10" fill="#d9b45b" text-anchor="middle">Elevated</text>
+    </g>
+    
+    <!-- Formula 4 -->
+    <g transform="translate(650, 425)">
+      <rect x="0" y="0" width="260" height="90" fill="#1a1a1a" stroke="#d9b45b" stroke-width="1" rx="8"/>
+      <text x="130" y="22" font-family="system-ui" font-size="13" font-weight="500" fill="#d9b45b" text-anchor="middle">Formula 4</text>
+      <text x="130" y="40" font-family="system-ui" font-size="11" fill="#fff" text-anchor="middle">"Travel walking day"</text>
+      <text x="130" y="58" font-family="system-ui" font-size="10" fill="#aaa" text-anchor="middle">rain shell · merino · chinos · sneakers</text>
+      <text x="130" y="78" font-family="system-ui" font-size="10" fill="#d9b45b" text-anchor="middle">Packed Thursday</text>
+    </g>
+    
+    <!-- Formula 5 -->
+    <g transform="translate(650, 530)">
+      <rect x="0" y="0" width="260" height="90" fill="#1a1a1a" stroke="#d9b45b" stroke-width="1" rx="8"/>
+      <text x="130" y="22" font-family="system-ui" font-size="13" font-weight="500" fill="#d9b45b" text-anchor="middle">Formula 5</text>
+      <text x="130" y="40" font-family="system-ui" font-size="11" fill="#fff" text-anchor="middle">"Date night"</text>
+      <text x="130" y="58" font-family="system-ui" font-size="10" fill="#aaa" text-anchor="middle">rust knit · midi skirt · ankle boots</text>
+      <text x="130" y="78" font-family="system-ui" font-size="10" fill="#d9b45b" text-anchor="middle">Cozy intentional</text>
+    </g>
+  </g>
+  
+  <!-- Bottom metrics -->
+  <g transform="translate(150, 550)">
+    <text x="0" y="0" font-family="system-ui" font-size="11" fill="#d9b45b">43 hrs/yr → 2 hrs/yr</text>
+    <text x="0" y="18" font-family="system-ui" font-size="11" fill="#d9b45b">$2,800/yr → ~$0</text>
+    <text x="0" y="36" font-family="system-ui" font-size="11" fill="#d9b45b">Decision fatigue → GONE</text>
+    <text x="0" y="54" font-family="system-ui" font-size="11" fill="#ff6b6b">Duplicates → ZERO</text>
+  </g>
+</svg>
