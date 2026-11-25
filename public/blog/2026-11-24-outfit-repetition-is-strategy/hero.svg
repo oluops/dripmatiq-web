@@ -1,0 +1,134 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark background -->
+  <rect width="1200" height="630" fill="#0a0a0a"/>
+  
+  <!-- Title area -->
+  <text x="600" y="60" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#ffffff">Outfit Repetition Is Strategy</text>
+  <text x="600" y="95" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#888888">134 items → 20 worn → 8 formulas → Zero 7 AM panic</text>
+  
+  <!-- BEFORE: Chaotic 134-item closet -->
+  <rect x="60" y="130" width="500" height="440" fill="#151515" rx="12" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="310" y="165" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="600" fill="#ff6b6b">BEFORE: The Chaos</text>
+  <text x="310" y="195" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#888888">134 pieces owned • 114 invisible • $3,400 sunk cost</text>
+  
+  <!-- 134 small rectangles representing clothes - scattered/chaotic -->
+  <g id="chaos-items">
+    <!-- Row 1 -->
+    <rect x="90" y="220" width="45" height="60" fill="#3a2a2a" rx="3" opacity="0.7"/>
+    <rect x="145" y="220" width="45" height="60" fill="#2a3a2a" rx="3" opacity="0.7"/>
+    <rect x="200" y="220" width="45" height="60" fill="#3a3a2a" rx="3" opacity="0.7"/>
+    <rect x="255" y="220" width="45" height="60" fill="#2a2a3a" rx="3" opacity="0.7"/>
+    <rect x="310" y="220" width="45" height="60" fill="#3a2a3a" rx="3" opacity="0.7"/>
+    <rect x="365" y="220" width="45" height="60" fill="#2a3a3a" rx="3" opacity="0.7"/>
+    <rect x="420" y="220" width="45" height="60" fill="#3a1a1a" rx="3" opacity="0.7"/>
+    <rect x="475" y="220" width="45" height="60" fill="#1a3a1a" rx="3" opacity="0.7"/>
+    
+    <!-- Row 2 -->
+    <rect x="90" y="295" width="45" height="60" fill="#2a2a2a" rx="3" opacity="0.6"/>
+    <rect x="145" y="295" width="45" height="60" fill="#3a3a3a" rx="3" opacity="0.6"/>
+    <rect x="200" y="295" width="45" height="60" fill="#1a1a3a" rx="3" opacity="0.6"/>
+    <rect x="255" y="295" width="45" height="60" fill="#3a1a2a" rx="3" opacity="0.6"/>
+    <rect x="310" y="295" width="45" height="60" fill="#2a3a1a" rx="3" opacity="0.6"/>
+    <rect x="365" y="295" width="45" height="60" fill="#1a2a3a" rx="3" opacity="0.6"/>
+    <rect x="420" y="295" width="45" height="60" fill="#3a2a1a" rx="3" opacity="0.6"/>
+    <rect x="475" y="295" width="45" height="60" fill="#2a1a3a" rx="3" opacity="0.6"/>
+    
+    <!-- Row 3 -->
+    <rect x="90" y="370" width="45" height="60" fill="#2a2a2a" rx="3" opacity="0.5"/>
+    <rect x="145" y="370" width="45" height="60" fill="#3a3a3a" rx="3" opacity="0.5"/>
+    <rect x="200" y="370" width="45" height="60" fill="#1a1a3a" rx="3" opacity="0.5"/>
+    <rect x="255" y="370" width="45" height="60" fill="#3a1a2a" rx="3" opacity="0.5"/>
+    <rect x="310" y="370" width="45" height="60" fill="#2a3a1a" rx="3" opacity="0.5"/>
+    <rect x="365" y="370" width="45" height="60" fill="#1a2a3a" rx="3" opacity="0.5"/>
+    <rect x="420" y="370" width="45" height="60" fill="#3a2a1a" rx="3" opacity="0.5"/>
+    <rect x="475" y="370" width="45" height="60" fill="#2a1a3a" rx="3" opacity="0.5"/>
+    
+    <!-- Row 4 -->
+    <rect x="90" y="445" width="45" height="60" fill="#2a2a2a" rx="3" opacity="0.4"/>
+    <rect x="145" y="445" width="45" height="60" fill="#3a3a3a" rx="3" opacity="0.4"/>
+    <rect x="200" y="445" width="45" height="60" fill="#1a1a3a" rx="3" opacity="0.4"/>
+    <rect x="255" y="445" width="45" height="60" fill="#3a1a2a" rx="3" opacity="0.4"/>
+    <rect x="310" y="445" width="45" height="60" fill="#2a3a1a" rx="3" opacity="0.4"/>
+    <rect x="365" y="445" width="45" height="60" fill="#1a2a3a" rx="3" opacity="0.4"/>
+    <rect x="420" y="445" width="45" height="60" fill="#3a2a1a" rx="3" opacity="0.4"/>
+    <rect x="475" y="445" width="45" height="60" fill="#2a1a3a" rx="3" opacity="0.4"/>
+    
+    <!-- Row 5 - few more to suggest 134 -->
+    <rect x="118" y="520" width="45" height="60" fill="#2a2a2a" rx="3" opacity="0.3"/>
+    <rect x="180" y="520" width="45" height="60" fill="#3a3a3a" rx="3" opacity="0.3"/>
+    <rect x="242" y="520" width="45" height="60" fill="#1a1a3a" rx="3" opacity="0.3"/>
+    <rect x="304" y="520" width="45" height="60" fill="#3a1a2a" rx="3" opacity="0.3"/>
+    <rect x="366" y="520" width="45" height="60" fill="#2a3a1a" rx="3" opacity="0.3"/>
+    <rect x="428" y="520" width="45" height="60" fill="#1a2a3a" rx="3" opacity="0.3"/>
+  </g>
+  
+  <!-- Arrow between -->
+  <text x="600" y="350" text-anchor="middle" font-family="system-ui, sans-serif" font-size="48" fill="#4ade80">→</text>
+  
+  <!-- AFTER: 8-formula system -->
+  <rect x="640" y="130" width="500" height="440" fill="#151515" rx="12" stroke="#2a2a2a" stroke-width="1"/>
+  <text x="890" y="165" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="600" fill="#4ade80">AFTER: 8 Formulas</text>
+  <text x="890" y="195" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#888888">20 core pieces • 100% utilized • 87% less spend</text>
+  
+  <!-- 8 formula cards -->
+  <g id="formula-cards">
+    <!-- Formula 1 -->
+    <rect x="670" y="215" width="220" height="95" fill="#1a1a1a" rx="8" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="685" y="235" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#4ade80">1. Client Days</text>
+    <text x="685" y="255" font-family="system-ui, sans-serif" font-size="11" fill="#aaa">Structure + neutral base + pop</text>
+    <text x="685" y="275" font-family="system-ui, sans-serif" font-size="11" fill="#4ade80">▰▰▰▰▰▰▰▰▰▰ 47 wears</text>
+    <text x="855" y="235" font-family="system-ui, sans-serif" font-size="11" fill="#666">Blazer • Tee • Trousers</text>
+    
+    <!-- Formula 2 -->
+    <rect x="670" y="320" width="220" height="95" fill="#1a1a1a" rx="8" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="685" y="340" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#4ade80">2. Deep Work</text>
+    <text x="685" y="360" font-family="system-ui, sans-serif" font-size="11" fill="#aaa">Soft layers + purposeful accessory</text>
+    <text x="685" y="380" font-family="system-ui, sans-serif" font-size="11" fill="#4ade80">▰▰▰▰▰▰▰▰▰▰ 31 wears</text>
+    <text x="855" y="340" font-family="system-ui, sans-serif" font-size="11" fill="#666">Cardigan • Merino • Scarf</text>
+    
+    <!-- Formula 3 -->
+    <rect x="910" y="215" width="220" height="95" fill="#1a1a1a" rx="8" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="925" y="235" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#4ade80">3. Weekend Errands</text>
+    <text x="925" y="255" font-family="system-ui, sans-serif" font-size="11" fill="#aaa">Functional outer + adaptable mid</text>
+    <text x="925" y="275" font-family="system-ui, sans-serif" font-size="11" fill="#4ade80">▰▰▰▰▰▰▰▰▰▰ 28 wears</text>
+    <text x="1095" y="235" font-family="system-ui, sans-serif" font-size="11" fill="#666">Coat • Hoodie • Jeans</text>
+    
+    <!-- Formula 4 -->
+    <rect x="910" y="320" width="220" height="95" fill="#1a1a1a" rx="8" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="925" y="340" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#4ade80">4. Date Night</text>
+    <text x="925" y="360" font-family="system-ui, sans-serif" font-size="11" fill="#aaa">Elevated piece + grounded base</text>
+    <text x="925" y="380" font-family="system-ui, sans-serif" font-size="11" fill="#4ade80">▰▰▰▰▰▰▰▰▰▰ 19 wears</text>
+    <text x="1095" y="340" font-family="system-ui, sans-serif" font-size="11" fill="#666">Silk top • Trousers • Heels</text>
+    
+    <!-- Formula 5 -->
+    <rect x="670" y="425" width="220" height="95" fill="#1a1a1a" rx="8" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="685" y="445" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#4ade80">5. Travel</text>
+    <text x="685" y="465" font-family="system-ui, sans-serif" font-size="11" fill="#aaa">Wrinkle-proof + climate adapter</text>
+    <text x="685" y="485" font-family="system-ui, sans-serif" font-size="11" fill="#4ade80">▰▰▰▰▰▰▰▰▰▰ 22 wears</text>
+    <text x="855" y="445" font-family="system-ui, sans-serif" font-size="11" fill="#666">Dress • Layer • Sneakers</text>
+    
+    <!-- Formula 6 -->
+    <rect x="670" y="530" width="220" height="95" fill="#1a1a1a" rx="8" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="685" y="550" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#4ade80">6. Creative Days</text>
+    <text x="685" y="570" font-family="system-ui, sans-serif" font-size="11" fill="#aaa">Texture mix + color anchor</text>
+    <text x="685" y="590" font-family="system-ui, sans-serif" font-size="11" fill="#4ade80">▰▰▰▰▰▰▰▰▰▰ 15 wears</text>
+    <text x="855" y="550" font-family="system-ui, sans-serif" font-size="11" fill="#666">Knit • Denim • Boots</text>
+    
+    <!-- Formula 7 -->
+    <rect x="910" y="425" width="220" height="95" fill="#1a1a1a" rx="8" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="925" y="445" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#4ade80">7. Rest Days</text>
+    <text x="925" y="465" font-family="system-ui, sans-serif" font-size="11" fill="#aaa">Pure comfort + one detail</text>
+    <text x="925" y="485" font-family="system-ui, sans-serif" font-size="11" fill="#4ade80">▰▰▰▰▰▰▰▰▰▰ 12 wears</text>
+    <text x="1095" y="445" font-family="system-ui, sans-serif" font-size="11" fill="#666">Sweatpants • Tee • Socks</text>
+    
+    <!-- Formula 8 -->
+    <rect x="910" y="530" width="220" height="95" fill="#1a1a1a" rx="8" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="925" y="550" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#4ade80">8. Weather Pivot</text>
+    <text x="925" y="570" font-family="system-ui, sans-serif" font-size="11" fill="#aaa">Base formula + smart layer swap</text>
+    <text x="925" y="590" font-family="system-ui, sans-serif" font-size="11" fill="#4ade80">▰▰▰▰▰▰▰▰▰▰ 18 wears</text>
+    <text x="1095" y="550" font-family="system-ui, sans-serif" font-size="11" fill="#666">Base • Shell • Accessory</text>
+  </g>
+  
+  <!-- Bottom CTA -->
+  <text x="600" y="610" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#555555">Dripmatiq • Your closet data, visualized • dripmatiq.app</text>
+</svg>
