@@ -1,0 +1,133 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark background -->
+  <rect width="1200" height="630" fill="#0a0a0a"/>
+  
+  <!-- Gold accent line -->
+  <line x1="0" y1="630" x2="1200" y2="630" stroke="#d9b45b" stroke-width="4"/>
+  
+  <!-- Title area -->
+  <text x="600" y="80" font-family="system-ui, sans-serif" font-size="28" font-weight="300" fill="#ffffff" text-anchor="middle" letter-spacing="1">The Accidental Low-Buy Year</text>
+  <text x="600" y="115" font-family="system-ui, sans-serif" font-size="16" font-weight="300" fill="#d9b45b" text-anchor="middle">134 pieces → 20 worn → 8 formulas → 0 panic</text>
+  
+  <!-- BEFORE panel (left) -->
+  <rect x="60" y="160" width="510" height="420" fill="#1a1a1a" stroke="#333333" stroke-width="2" rx="8"/>
+  <text x="315" y="195" font-family="system-ui, sans-serif" font-size="18" font-weight="400" fill="#ff6b6b" text-anchor="middle">BEFORE — Chaos & Duplicates</text>
+  
+  <!-- 134 items visual - scattered rectangles -->
+  <g fill="#444444" stroke="#555555" stroke-width="1">
+    <!-- Row 1 -->
+    <rect x="80" y="220" width="45" height="60" rx="3"/>
+    <rect x="140" y="220" width="45" height="60" rx="3"/>
+    <rect x="200" y="220" width="45" height="60" rx="3"/>
+    <rect x="260" y="220" width="45" height="60" rx="3"/>
+    <rect x="320" y="220" width="45" height="60" rx="3"/>
+    <rect x="380" y="220" width="45" height="60" rx="3"/>
+    <rect x="440" y="220" width="45" height="60" rx="3"/>
+    <!-- Row 2 -->
+    <rect x="80" y="295" width="45" height="60" rx="3"/>
+    <rect x="140" y="295" width="45" height="60" rx="3"/>
+    <rect x="200" y="295" width="45" height="60" rx="3"/>
+    <rect x="260" y="295" width="45" height="60" rx="3"/>
+    <rect x="320" y="295" width="45" height="60" rx="3"/>
+    <rect x="380" y="295" width="45" height="60" rx="3"/>
+    <rect x="440" y="295" width="45" height="60" rx="3"/>
+    <!-- Row 3 -->
+    <rect x="80" y="370" width="45" height="60" rx="3"/>
+    <rect x="140" y="370" width="45" height="60" rx="3"/>
+    <rect x="200" y="370" width="45" height="60" rx="3"/>
+    <rect x="260" y="370" width="45" height="60" rx="3"/>
+    <rect x="320" y="370" width="45" height="60" rx="3"/>
+    <rect x="380" y="370" width="45" height="60" rx="3"/>
+    <rect x="440" y="370" width="45" height="60" rx="3"/>
+    <!-- Row 4 -->
+    <rect x="80" y="445" width="45" height="60" rx="3"/>
+    <rect x="140" y="445" width="45" height="60" rx="3"/>
+    <rect x="200" y="445" width="45" height="60" rx="3"/>
+    <rect x="260" y="445" width="45" height="60" rx="3"/>
+    <rect x="320" y="445" width="45" height="60" rx="3"/>
+    <rect x="380" y="445" width="45" height="60" rx="3"/>
+    <rect x="440" y="445" width="45" height="60" rx="3"/>
+  </g>
+  
+  <!-- Highlight duplicates in red -->
+  <g fill="#ff4444" fill-opacity="0.7" stroke="#ff6666" stroke-width="2">
+    <rect x="140" y="220" width="45" height="60" rx="3"/>
+    <rect x="320" y="220" width="45" height="60" rx="3"/>
+    <rect x="200" y="295" width="45" height="60" rx="3"/>
+    <rect x="440" y="295" width="45" height="60" rx="3"/>
+    <rect x="80" y="370" width="45" height="60" rx="3"/>
+    <rect x="260" y="370" width="45" height="60" rx="3"/>
+    <rect x="380" y="445" width="45" height="60" rx="3"/>
+  </g>
+  
+  <!-- Duplicate labels -->
+  <text x="162" y="215" font-family="system-ui, sans-serif" font-size="10" fill="#ff6b6b" text-anchor="middle">DUP</text>
+  <text x="342" y="215" font-family="system-ui, sans-serif" font-size="10" fill="#ff6b6b" text-anchor="middle">DUP</text>
+  <text x="222" y="290" font-family="system-ui, sans-serif" font-size="10" fill="#ff6b6b" text-anchor="middle">DUP</text>
+  <text x="462" y="290" font-family="system-ui, sans-serif" font-size="10" fill="#ff6b6b" text-anchor="middle">DUP</text>
+  <text x="102" y="365" font-family="system-ui, sans-serif" font-size="10" fill="#ff6b6b" text-anchor="middle">DUP</text>
+  <text x="282" y="365" font-family="system-ui, sans-serif" font-size="10" fill="#ff6b6b" text-anchor="middle">DUP</text>
+  <text x="402" y="440" font-family="system-ui, sans-serif" font-size="10" fill="#ff6b6b" text-anchor="middle">DUP</text>
+  
+  <!-- Before stats -->
+  <text x="315" y="550" font-family="system-ui, sans-serif" font-size="14" fill="#888888" text-anchor="middle">134 items • 7 duplicates • $3,400 invisible • 0 formulas</text>
+  
+  <!-- Arrow -->
+  <g transform="translate(590, 350)">
+    <polygon points="0,-15 30,0 0,15" fill="#d9b45b"/>
+    <rect x="-15" y="-2" width="30" height="4" fill="#d9b45b"/>
+  </g>
+  
+  <!-- AFTER panel (right) -->
+  <rect x="630" y="160" width="510" height="420" fill="#1a1a1a" stroke="#d9b45b" stroke-width="2" rx="8"/>
+  <text x="885" y="195" font-family="system-ui, sans-serif" font-size="18" font-weight="400" fill="#d9b45b" text-anchor="middle">AFTER — 8 Formulas, 20 Anchors</text>
+  
+  <!-- 8 formula cards -->
+  <g font-family="system-ui, sans-serif" font-size="12" fill="#ffffff">
+    <!-- Formula 1 -->
+    <rect x="650" y="215" width="470" height="42" fill="#222222" stroke="#333333" stroke-width="1" rx="4"/>
+    <text x="670" y="242" font-size="13" font-weight="400" fill="#d9b45b">1. Client Days</text>
+    <text x="900" y="242" font-size="11" fill="#888888">turtleneck(47) + trousers(31) + loafers + coat(42)</text>
+    
+    <!-- Formula 2 -->
+    <rect x="650" y="265" width="470" height="42" fill="#222222" stroke="#333333" stroke-width="1" rx="4"/>
+    <text x="670" y="292" font-size="13" font-weight="400" fill="#d9b45b">2. Deep Work</text>
+    <text x="900" y="292" font-size="11" fill="#888888">merino crewneck + relaxed jeans + wool socks</text>
+    
+    <!-- Formula 3 -->
+    <rect x="650" y="315" width="470" height="42" fill="#222222" stroke="#333333" stroke-width="1" rx="4"/>
+    <text x="670" y="342" font-size="13" font-weight="400" fill="#d9b45b">3. Weekend</text>
+    <text x="900" y="342" font-size="11" fill="#888888">white tee + chore coat + denim + sneakers</text>
+    
+    <!-- Formula 4 -->
+    <rect x="650" y="365" width="470" height="42" fill="#222222" stroke="#333333" stroke-width="1" rx="4"/>
+    <text x="670" y="392" font-size="13" font-weight="400" fill="#d9b45b">4. Date Night</text>
+    <text x="900" y="392" font-size="11" fill="#888888">silk cami(12) + midi skirt + leather jacket(28) + boots</text>
+    
+    <!-- Formula 5 -->
+    <rect x="650" y="415" width="470" height="42" fill="#222222" stroke="#333333" stroke-width="1" rx="4"/>
+    <text x="670" y="442" font-size="13" font-weight="400" fill="#d9b45b">5. Travel</text>
+    <text x="900" y="442" font-size="11" fill="#888888">merino dress + cardigan + scarf(18) + down vest</text>
+    
+    <!-- Formula 6 -->
+    <rect x="650" y="465" width="470" height="42" fill="#222222" stroke="#333333" stroke-width="1" rx="4"/>
+    <text x="670" y="492" font-size="13" font-weight="400" fill="#d9b45b">6. Creative</text>
+    <text x="900" y="492" font-size="11" fill="#888888">striped boatneck + wide-leg trousers + clogs</text>
+    
+    <!-- Formula 7 -->
+    <rect x="650" y="515" width="470" height="42" fill="#222222" stroke="#333333" stroke-width="1" rx="4"/>
+    <text x="670" y="542" font-size="13" font-weight="400" fill="#d9b45b">7. Rest</text>
+    <text x="900" y="542" font-size="11" fill="#888888">cashmere hoodie + joggers + wool socks</text>
+    
+    <!-- Formula 8 -->
+    <rect x="650" y="565" width="470" height="42" fill="#222222" stroke="#333333" stroke-width="1" rx="4"/>
+    <text x="670" y="592" font-size="13" font-weight="400" fill="#d9b45b">8. Weather Pivot</text>
+    <text x="900" y="592" font-size="11" fill="#888888">any formula + rain shell(14) / down vest / linen shirt</text>
+  </g>
+  
+  <!-- After stats -->
+  <text x="885" y="610" font-family="system-ui, sans-serif" font-size="13" fill="#d9b45b" text-anchor="middle">20 core pieces • 8 formulas • $445 intentional spend • ∞ confidence</text>
+  
+  <!-- Dripmatiq branding -->
+  <text x="1150" y="615" font-family="system-ui, sans-serif" font-size="11" font-weight="300" fill="#444444" text-anchor="end">dripmatiq.app</text>
+</svg>
