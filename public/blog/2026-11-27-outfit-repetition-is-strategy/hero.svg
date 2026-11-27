@@ -1,0 +1,233 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark background #0a0a0a -->
+  <rect width="1200" height="630" fill="#0a0a0a"/>
+  
+  <!-- Left panel: BEFORE - Chaotic 134-item closet -->
+  <rect x="60" y="60" width="500" height="510" fill="#1a1a1a" rx="12" stroke="#333" stroke-width="2"/>
+  <text x="310" y="120" font-family="system-ui, sans-serif" font-size="24" font-weight="600" fill="#d9b45b" text-anchor="middle">BEFORE</text>
+  <text x="310" y="155" font-family="system-ui, sans-serif" font-size="16" fill="#888" text-anchor="middle">134 items · 20 worn · 114 invisible</text>
+  
+  <!-- Closet rod -->
+  <line x1="100" y1="200" x2="460" y2="200" stroke="#444" stroke-width="4"/>
+  <line x1="100" y1="200" x2="100" y2="210" stroke="#444" stroke-width="4"/>
+  <line x1="460" y1="200" x2="460" y2="210" stroke="#444" stroke-width="4"/>
+  
+  <!-- Hangers with clothes - chaotic mix -->
+  <g font-family="system-ui, sans-serif" font-size="10">
+    <!-- Row 1: tops -->
+    <g transform="translate(110, 220)">
+      <path d="M0,0 L15,-20 L30,0 M15,-20 L15,-35" stroke="#555" fill="none" stroke-width="1.5"/>
+      <rect x="-12" y="-35" width="24" height="22" fill="#2d2d2d" stroke="#444" rx="2"/>
+      <text x="0" y="-18" fill="#aaa" text-anchor="middle" font-size="8">navy sweater</text>
+    </g>
+    <g transform="translate(155, 220)">
+      <path d="M0,0 L15,-20 L30,0 M15,-20 L15,-35" stroke="#555" fill="none" stroke-width="1.5"/>
+      <rect x="-12" y="-35" width="24" height="22" fill="#2d2d2d" stroke="#444" rx="2"/>
+      <text x="0" y="-18" fill="#aaa" text-anchor="middle" font-size="8">navy sweater</text>
+    </g>
+    <g transform="translate(200, 220)">
+      <path d="M0,0 L15,-20 L30,0 M15,-20 L15,-35" stroke="#555" fill="none" stroke-width="1.5"/>
+      <rect x="-12" y="-35" width="24" height="22" fill="#2d2d2d" stroke="#444" rx="2"/>
+      <text x="0" y="-18" fill="#aaa" text-anchor="middle" font-size="8">navy sweater</text>
+    </g>
+    <g transform="translate(245, 220)">
+      <path d="M0,0 L15,-20 L30,0 M15,-20 L15,-35" stroke="#555" fill="none" stroke-width="1.5"/>
+      <rect x="-12" y="-35" width="24" height="22" fill="#3d2d2d" stroke="#554" rx="2"/>
+      <text x="0" y="-18" fill="#aaa" text-anchor="middle" font-size="8">olive cardigan</text>
+    </g>
+    <g transform="translate(290, 220)">
+      <path d="M0,0 L15,-20 L30,0 M15,-20 L15,-35" stroke="#555" fill="none" stroke-width="1.5"/>
+      <rect x="-12" y="-35" width="24" height="22" fill="#3d2d2d" stroke="#554" rx="2"/>
+      <text x="0" y="-18" fill="#aaa" text-anchor="middle" font-size="8">olive cardigan</text>
+    </g>
+    <g transform="translate(335, 220)">
+      <path d="M0,0 L15,-20 L30,0 M15,-20 L15,-35" stroke="#555" fill="none" stroke-width="1.5"/>
+      <rect x="-12" y="-35" width="24" height="22" fill="#1a1a1a" stroke="#444" rx="2"/>
+      <text x="0" y="-18" fill="#aaa" text-anchor="middle" font-size="8">striped tee</text>
+    </g>
+    <g transform="translate(380, 220)">
+      <path d="M0,0 L15,-20 L30,0 M15,-20 L15,-35" stroke="#555" fill="none" stroke-width="1.5"/>
+      <rect x="-12" y="-35" width="24" height="22" fill="#1a1a1a" stroke="#444" rx="2"/>
+      <text x="0" y="-18" fill="#aaa" text-anchor="middle" font-size="8">striped tee</text>
+    </g>
+    <g transform="translate(425, 220)">
+      <path d="M0,0 L15,-20 L30,0 M15,-20 L15,-35" stroke="#555" fill="none" stroke-width="1.5"/>
+      <rect x="-12" y="-35" width="24" height="22" fill="#1a1a1a" stroke="#444" rx="2"/>
+      <text x="0" y="-18" fill="#aaa" text-anchor="middle" font-size="8">striped tee</text>
+    </g>
+    <g transform="translate(455, 220)">
+      <path d="M0,0 L15,-20 L30,0 M15,-20 L15,-35" stroke="#555" fill="none" stroke-width="1.5"/>
+      <rect x="-12" y="-35" width="24" height="22" fill="#1a1a1a" stroke="#444" rx="2"/>
+      <text x="0" y="-18" fill="#aaa" text-anchor="middle" font-size="8">striped tee</text>
+    </g>
+    
+    <!-- Row 2: bottoms/dresses -->
+    <g transform="translate(110, 320)">
+      <path d="M0,0 L15,-20 L30,0 M15,-20 L15,-35" stroke="#555" fill="none" stroke-width="1.5"/>
+      <path d="M-12,-35 L12,-35 L8,-65 L-8,-65 Z" fill="#1a1a1a" stroke="#444"/>
+      <text x="0" y="-50" fill="#aaa" text-anchor="middle" font-size="8">black trousers</text>
+    </g>
+    <g transform="translate(155, 320)">
+      <path d="M0,0 L15,-20 L30,0 M15,-20 L15,-35" stroke="#555" fill="none" stroke-width="1.5"/>
+      <path d="M-12,-35 L12,-35 L8,-65 L-8,-65 Z" fill="#2d2d2d" stroke="#444"/>
+      <text x="0" y="-50" fill="#aaa" text-anchor="middle" font-size="8">navy trousers</text>
+    </g>
+    <g transform="translate(200, 320)">
+      <path d="M0,0 L15,-20 L30,0 M15,-20 L15,-35" stroke="#555" fill="none" stroke-width="1.5"/>
+      <path d="M-15,-35 L15,-35 L10,-65 L-10,-65 Z" fill="#3d2d2d" stroke="#554"/>
+      <text x="0" y="-50" fill="#aaa" text-anchor="middle" font-size="8">olive pants</text>
+    </g>
+    <g transform="translate(245, 320)">
+      <path d="M0,0 L15,-20 L30,0 M15,-20 L15,-35" stroke="#555" fill="none" stroke-width="1.5"/>
+      <path d="M-18,-35 L18,-35 L12,-75 L-12,-75 Z" fill="#2d1a1a" stroke="#544"/>
+      <text x="0" y="-55" fill="#aaa" text-anchor="middle" font-size="8">midi dress</text>
+    </g>
+    <g transform="translate(295, 320)">
+      <path d="M0,0 L15,-20 L30,0 M15,-20 L15,-35" stroke="#555" fill="none" stroke-width="1.5"/>
+      <path d="M-12,-35 L12,-35 L8,-65 L-8,-65 Z" fill="#1a1a1a" stroke="#444"/>
+      <text x="0" y="-50" fill="#aaa" text-anchor="middle" font-size="8">black trousers</text>
+    </g>
+    <g transform="translate(340, 320)">
+      <path d="M0,0 L15,-20 L30,0 M15,-20 L15,-35" stroke="#555" fill="none" stroke-width="1.5"/>
+      <path d="M-12,-35 L12,-35 L8,-65 L-8,-65 Z" fill="#1a1a1a" stroke="#444"/>
+      <text x="0" y="-50" fill="#aaa" text-anchor="middle" font-size="8">black trousers</text>
+    </g>
+    <g transform="translate(385, 320)">
+      <path d="M0,0 L15,-20 L30,0 M15,-20 L15,-35" stroke="#555" fill="none" stroke-width="1.5"/>
+      <path d="M-15,-35 L15,-35 L10,-65 L-10,-65 Z" fill="#2d2d1a" stroke="#554"/>
+      <text x="0" y="-50" fill="#aaa" text-anchor="middle" font-size="8">cream silk</text>
+    </g>
+    <g transform="translate(430, 320)">
+      <path d="M0,0 L15,-20 L30,0 M15,-20 L15,-35" stroke="#555" fill="none" stroke-width="1.5"/>
+      <path d="M-15,-35 L15,-35 L10,-65 L-10,-65 Z" fill="#2d2d1a" stroke="#554"/>
+      <text x="0" y="-50" fill="#aaa" text-anchor="middle" font-size="8">cream silk</text>
+    </g>
+    
+    <!-- Row 3: outerwear/shoes -->
+    <g transform="translate(110, 420)">
+      <path d="M0,0 L15,-20 L30,0 M15,-20 L15,-35" stroke="#555" fill="none" stroke-width="1.5"/>
+      <path d="M-18,-35 L18,-35 L12,-75 L-12,-75 Z" fill="#2d1a1a" stroke="#544"/>
+      <text x="0" y="-55" fill="#aaa" text-anchor="middle" font-size="8">trench coat</text>
+    </g>
+    <g transform="translate(155, 420)">
+      <path d="M0,0 L15,-20 L30,0 M15,-20 L15,-35" stroke="#555" fill="none" stroke-width="1.5"/>
+      <path d="M-18,-35 L18,-35 L12,-75 L-12,-75 Z" fill="#1a2d1a" stroke="#454"/>
+      <text x="0" y="-55" fill="#aaa" text-anchor="middle" font-size="8">blazer</text>
+    </g>
+    <g transform="translate(200, 420)">
+      <path d="M0,0 L15,-20 L30,0 M15,-20 L15,-35" stroke="#555" fill="none" stroke-width="1.5"/>
+      <path d="M-18,-35 L18,-35 L12,-75 L-12,-75 Z" fill="#1a2d1a" stroke="#454"/>
+      <text x="0" y="-55" fill="#aaa" text-anchor="middle" font-size="8">blazer</text>
+    </g>
+    <g transform="translate(245, 420)">
+      <path d="M0,0 L15,-20 L30,0 M15,-20 L15,-35" stroke="#555" fill="none" stroke-width="1.5"/>
+      <ellipse cx="0" cy="-20" rx="14" ry="6" fill="#1a1a1a" stroke="#444"/>
+      <text x="0" y="-15" fill="#aaa" text-anchor="middle" font-size="8">black boots</text>
+    </g>
+    <g transform="translate(290, 420)">
+      <path d="M0,0 L15,-20 L30,0 M15,-20 L15,-35" stroke="#555" fill="none" stroke-width="1.5"/>
+      <ellipse cx="0" cy="-20" rx="14" ry="6" fill="#1a1a1a" stroke="#444"/>
+      <text x="0" y="-15" fill="#aaa" text-anchor="middle" font-size="8">black boots</text>
+    </g>
+    <g transform="translate(335, 420)">
+      <path d="M0,0 L15,-20 L30,0 M15,-20 L15,-35" stroke="#555" fill="none" stroke-width="1.5"/>
+      <ellipse cx="0" cy="-20" rx="14" ry="6" fill="#2d2d1a" stroke="#554"/>
+      <text x="0" y="-15" fill="#aaa" text-anchor="middle" font-size="8">clean sneakers</text>
+    </g>
+    <g transform="translate(380, 420)">
+      <path d="M0,0 L15,-20 L30,0 M15,-20 L15,-35" stroke="#555" fill="none" stroke-width="1.5"/>
+      <ellipse cx="0" cy="-20" rx="14" ry="6" fill="#2d2d1a" stroke="#554"/>
+      <text x="0" y="-15" fill="#aaa" text-anchor="middle" font-size="8">clean sneakers</text>
+    </g>
+    <g transform="translate(425, 420)">
+      <path d="M0,0 L15,-20 L30,0 M15,-20 L15,-35" stroke="#555" fill="none" stroke-width="1.5"/>
+      <ellipse cx="0" cy="-20" rx="14" ry="6" fill="#2d1a1a" stroke="#544"/>
+      <text x="0" y="-15" fill="#aaa" text-anchor="middle" font-size="8">heels</text>
+    </g>
+    <g transform="translate(455, 420)">
+      <path d="M0,0 L15,-20 L30,0 M15,-20 L15,-35" stroke="#555" fill="none" stroke-width="1.5"/>
+      <ellipse cx="0" cy="-20" rx="14" ry="6" fill="#2d1a1a" stroke="#544"/>
+      <text x="0" y="-15" fill="#aaa" text-anchor="middle" font-size="8">heels</text>
+    </g>
+  </g>
+  
+  <!-- Red duplicate indicators -->
+  <g fill="#ff4444" font-family="system-ui, sans-serif" font-size="10" font-weight="bold">
+    <text x="145" y="255" text-anchor="middle">DUPLICATE</text>
+    <text x="190" y="255" text-anchor="middle">DUPLICATE</text>
+    <text x="235" y="255" text-anchor="middle">DUPLICATE</text>
+    <text x="278" y="255" text-anchor="middle">DUPLICATE</text>
+    <text x="323" y="255" text-anchor="middle">DUPLICATE</text>
+    <text x="368" y="255" text-anchor="middle">DUPLICATE</text>
+    <text x="413" y="255" text-anchor="middle">DUPLICATE</text>
+    <text x="443" y="255" text-anchor="middle">DUPLICATE</text>
+  </g>
+  
+  <!-- Right panel: AFTER - 8-formula system -->
+  <rect x="640" y="60" width="500" height="510" fill="#1a1a1a" rx="12" stroke="#d9b45b" stroke-width="2"/>
+  <text x="890" y="120" font-family="system-ui, sans-serif" font-size="24" font-weight="600" fill="#d9b45b" text-anchor="middle">AFTER</text>
+  <text x="890" y="155" font-family="system-ui, sans-serif" font-size="16" fill="#888" text-anchor="middle">20 core pieces · 8 formulas · 125+ outfits</text>
+  
+  <!-- Formula cards -->
+  <g font-family="system-ui, sans-serif">
+    <!-- Formula 1 -->
+    <rect x="670" y="180" width="440" height="52" fill="#1a1a1a" rx="8" stroke="#333" stroke-width="1"/>
+    <text x="690" y="210" font-size="13" font-weight="600" fill="#d9b45b">Formula 1: Anchor Uniform</text>
+    <text x="690" y="228" font-size="11" fill="#888">blazer + trousers + tee → 60% of pro days · 28 wears/mo · $4.20/wear</text>
+    <circle cx="1080" cy="206" r="8" fill="#22c55e"/>
+    <text x="1080" y="210" font-size="10" fill="#0a0a0a" text-anchor="middle" font-weight="bold">✓</text>
+    
+    <!-- Formula 2 -->
+    <rect x="670" y="242" width="440" height="52" fill="#1a1a1a" rx="8" stroke="#333" stroke-width="1"/>
+    <text x="690" y="272" font-size="13" font-weight="600" fill="#d9b45b">Formula 2: Dress Up/Down</text>
+    <text x="690" y="290" font-size="11" fill="#888">midi dress + shoe swap → boardroom to dinner · 12 wears/mo · $8.50/wear</text>
+    <circle cx="1080" cy="268" r="8" fill="#22c55e"/>
+    <text x="1080" y="272" font-size="10" fill="#0a0a0a" text-anchor="middle" font-weight="bold">✓</text>
+    
+    <!-- Formula 3 -->
+    <rect x="670" y="304" width="440" height="52" fill="#1a1a1a" rx="8" stroke="#333" stroke-width="1"/>
+    <text x="690" y="334" font-size="13" font-weight="600" fill="#d9b45b">Formula 3: Layer Stack</text>
+    <text x="690" y="352" font-size="11" fill="#888">base + mid + shell → seasonal rotation · 35 wears/mo · $3.80/wear</text>
+    <circle cx="1080" cy="330" r="8" fill="#22c55e"/>
+    <text x="1080" y="334" font-size="10" fill="#0a0a0a" text-anchor="middle" font-weight="bold">✓</text>
+    
+    <!-- Formula 4 -->
+    <rect x="670" y="366" width="440" height="52" fill="#1a1a1a" rx="8" stroke="#333" stroke-width="1"/>
+    <text x="690" y="396" font-size="13" font-weight="600" fill="#d9b45b">Formula 4: Third Piece</text>
+    <text x="690" y="414" font-size="11" fill="#888">scarf / necklace / bag / vest → instant polish · 18 wears/mo · $5.10/wear</text>
+    <circle cx="1080" cy="392" r="8" fill="#22c55e"/>
+    <text x="1080" y="396" font-size="10" fill="#0a0a0a" text-anchor="middle" font-weight="bold">✓</text>
+    
+    <!-- Formula 5 -->
+    <rect x="670" y="428" width="440" height="52" fill="#1a1a1a" rx="8" stroke="#333" stroke-width="1"/>
+    <text x="690" y="458" font-size="13" font-weight="600" fill="#d9b45b">Formula 5: Weekend Reset</text>
+    <text x="690" y="476" font-size="11" fill="#888">denim + knit + sneakers → comfort with structure · 22 wears/mo · $4.50/wear</text>
+    <circle cx="1080" cy="454" r="8" fill="#22c55e"/>
+    <text x="1080" y="458" font-size="10" fill="#0a0a0a" text-anchor="middle" font-weight="bold">✓</text>
+    
+    <!-- Formula 6 -->
+    <rect x="670" y="490" width="440" height="52" fill="#1a1a1a" rx="8" stroke="#333" stroke-width="1"/>
+    <text x="690" y="520" font-size="13" font-weight="600" fill="#d9b45b">Formula 6: Travel Capsule</text>
+    <text x="690" y="538" font-size="11" fill="#888">3 formulas · 7 days · 1 carry-on → zero decision fatigue · 8 wears/trip</text>
+    <circle cx="1080" cy="516" r="8" fill="#22c55e"/>
+    <text x="1080" y="520" font-size="10" fill="#0a0a0a" text-anchor="middle" font-weight="bold">✓</text>
+    
+    <!-- Formula 7 -->
+    <rect x="670" y="552" width="440" height="52" fill="#1a1a1a" rx="8" stroke="#333" stroke-width="1"/>
+    <text x="690" y="582" font-size="13" font-weight="600" fill="#d9b45b">Formula 7: Weather Adapter</text>
+    <text x="690" y="600" font-size="11" fill="#888">rain / heat / cold variants per formula → always ready · 15 wears/mo</text>
+    <circle cx="1080" cy="578" r="8" fill="#22c55e"/>
+    <text x="1080" y="582" font-size="10" fill="#0a0a0a" text-anchor="middle" font-weight="bold">✓</text>
+    
+    <!-- Formula 8 -->
+    <rect x="670" y="614" width="440" height="52" fill="#1a1a1a" rx="8" stroke="#333" stroke-width="1"/>
+    <text x="690" y="644" font-size="13" font-weight="600" fill="#d9b45b">Formula 8: Occasion Bridge</text>
+    <text x="690" y="662" font-size="11" fill="#888">work → event → casual without full change · 10 wears/mo · $6.20/wear</text>
+    <circle cx="1080" cy="640" r="8" fill="#22c55e"/>
+    <text x="1080" y="644" font-size="10" fill="#0a0a0a" text-anchor="middle" font-weight="bold">✓</text>
+  </g>
+  
+  <!-- Bottom stat bar -->
+  <rect x="60" y="585" width="1080" height="30" fill="#1a1a1a" rx="6" stroke="#d9b45b" stroke-width="1.5"/>
+  <text x="600" y="606" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#d9b45b" text-anchor="middle">87% clothing spend reduction · 91 hrs/yr saved · 125+ outfits from 20 pieces</text>
+</svg>
